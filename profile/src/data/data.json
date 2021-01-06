@@ -1,0 +1,239 @@
+{
+    "image":"assets/images/avatar/avatar7.png",
+    "name":"Bryan Silverio",
+    "location":"Querétaro, México",
+    "email":"bryansilverio12@gmail.com",
+    "phone":"4461158755",
+    "profile":"Desarrollador",
+    "about_me":" A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence was created for the bliss of souls like mine.I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents.",
+    "social_network":[
+        {
+            "name":"linkedin",
+            "url":"https://www.linkedin.com/in/bryan-silverio-6b417098"
+        },
+        {
+            "name":"twitter",
+            "url":"#"
+        },
+        {
+            "name":"github",
+            "url":"https://github.com/bsn12993"
+        }
+    ],
+    "skills":[
+        {
+            "name":"C#",
+            "value":"75"
+        },
+        {
+            "name":"VueJs",
+            "value":"50"
+        },
+        {
+            "name":"Laravel",
+            "value":"60"
+        },
+        {
+            "name":"SQL Server",
+            "value":"75"
+        },
+        {
+            "name":"SQL Server",
+            "value":"75"
+        }
+    ],
+    "experience":[
+        {
+            "logo":"assets/images/avatar/8.png",
+            "position":"Desarrollador",
+            "start_date":"2019-08-12",
+            "end_date":"Actualmente",
+            "company":"Bitfx",
+            "description":"<p>Desarrollo y diseño de base de datos de nueva versión aplicación web de servicios de traslado ejecutivos, desarrollo de back y front en Laravel y Vue.</p><p>Desarrollo de web api en .NET para integrar servicio con centro de pagos.</p><p>Participación en proyecto web para BMW Safety, desarrollo de frontend con Vue y Vuetify.</p>",
+            "projects":[
+                {
+                    "name":"Loop",
+                    "description":"",
+                    "technologies":[
+                        "Laravel",
+                        "PHP",
+                        "MySQL",
+                        "Firebase",
+                        "NodeJS",
+                        "VueJS",
+                        "WepApi"
+                    ]
+                },
+                {
+                    "name":"SafetyApp",
+                    "description":"",
+                    "technologies":[
+                        "VueJS",
+                        "Vuetify",
+                        "Vuex"
+                    ]
+                }
+            ]
+        },
+        {
+            "logo":"assets/images/avatar/8.png",
+            "position":"Desarrollador .NET",
+            "start_date":"2018-01-28",
+            "end_date":"Agosto 2019",
+            "company":"TasiSoft",
+            "description":"<p>Desarrollo de aplicación web para IEQSA, administrador y sitio web, permitiendo administrar la información del sitio web desde el administrador.</p><p>Desarrollo de módulos para la nueva versión de proyecto interno: registro de entrada, calendario, solicitud de vacaciones, directorio de contactos usando DNN.</p>",
+            "projects":[
+                {
+                    "name":"Tasinet",
+                    "description":"",
+                    "technologies":[
+                        "DNN",
+                        "C#",
+                        ".NET",
+                        "SQLServer",
+                        "Javascript"
+                    ]
+                },
+                {
+                    "name":"IEQSA",
+                    "description":"",
+                    "technologies":[
+                        "C#",
+                        ".NET",
+                        "SQLServer",
+                        "Javascript"
+                    ]
+                }
+            ]
+        },
+        {
+            "logo":"assets/images/companies/dwsoftware.png",
+            "position":"Desarrollador de Software",
+            "start_date":"2017-08-21",
+            "end_date":"Noviembre 2017",
+            "company":"DW Software",
+            "description":"<p>Integración de web service de DHL para obtener información de envíos.</p><p>Participación en proyecto web para rastreo de envío de paquetes de DHL, desarrollo de back en .NET.</p>",
+            "projects":[
+                {
+                    "name":"Webservice Client DHL ",
+                    "description":"",
+                    "technologies":[
+                        "C#",
+                        ".NET"
+                    ]
+                },
+                {
+                    "name":"Ryder",
+                    "description":"",
+                    "technologies":[
+                        "C#",
+                        ".NET",
+                        "Javascript",
+                        "WepApi"
+                    ]
+                }
+            ]
+        },
+        {
+            "logo":"assets/images/companies/itg.png",
+            "position":"Desarrollador web",
+            "start_date":"2015-08-20",
+            "end_date":"Agosto 2017",
+            "company":"IT Group",
+            "description":"<p>Participación en proyecto web para automatizar la administración de información de archivos excel a aplicación web.</p><p>Participación en proyecto web para flotillas de autos, desarrollo de módulos de orden de ingreso, visualización de facturas.Participación de sistema web PMO para administración de proyectos de forma interna, módulos de tareas y actividades, calendario.</p>",
+            "projects":[
+                {
+                    "name":"PMO",
+                    "description":"",
+                    "technologies":[
+                        "C#",
+                        ".NET",
+                        "Javascript",
+                        "SQLServer"
+                    ]
+                },
+                {
+                    "name":"Remarkable",
+                    "description":"",
+                    "technologies":[
+                        "Java",
+                        "Javascript",
+                        "SQLServer"
+                    ]
+                },
+                {
+                    "name":"Speedee",
+                    "description":"",
+                    "technologies":[
+                        "Java",
+                        "Javascript",
+                        "SQLServer"
+                    ]
+                }
+            ]
+        }
+    ],
+    "education":[
+        {
+            "carrer":"Ing. en Sistemas Computacionales",
+            "start_date":"Septiembre 2012",
+            "end_date":"Diciembre 2015",
+            "university":"Universidad Politecnica de Querétaro",
+            "description":""
+        }
+    ],
+    "projects":[
+        {
+            "name":"SafetyApp",
+            "url":"",
+            "description":"",
+            "technologies":[
+                "Javascript",
+                "VueJS",
+                "Vuetify"
+            ]
+        },
+        {
+            "name":"Loop",
+            "url":"",
+            "description":"",
+            "technologies":[
+                "Laravel",
+                "PHP",
+                "Javascript",
+                "VueJS",
+                "MySQL",
+                "NodeJS",
+                "Firebase"
+            ]
+        },
+        {
+            "name":"Tasinet",
+            "url":"",
+            "description":"",
+            "technologies":[
+                ".NET",
+                "Javascript",
+                "JQuery",
+                "SQLServer",
+                "C#",
+                "DNN"
+            ]
+        },
+        {
+            "name":"IEQSA",
+            "url":"",
+            "description":"",
+            "technologies":[
+                ".NET",
+                "Javascript",
+                "JQuery",
+                "SQLServer",
+                "C#"
+            ]
+        }
+    ],
+    "personalProjects":[
+        
+    ]
+}

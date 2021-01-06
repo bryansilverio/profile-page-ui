@@ -1,0 +1,24 @@
+{
+    "title":"My profile",
+    "welcome":"This is my profile page",
+    "i_am":"I´m",
+    "about_me":"About me",
+    "skills":"Skills",
+    "contact":"Contact",
+    "info":"Information",
+    "titles":{
+        "information":"Information",
+        "experience":"Experience",
+        "projects":"Projects"
+    },
+    "menu":{
+        "profile":"Profile",
+        "experience":"Experience"
+    },
+    "message":"Message",
+    "information":{
+        "name":"Name",
+        "email":"Email",
+        "location":"Location"
+    }
+}
