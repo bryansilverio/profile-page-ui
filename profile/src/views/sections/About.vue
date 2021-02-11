@@ -5,8 +5,8 @@
       <!-- ======= About Me ======= -->
       <div class="about-me container">
         <div class="section-title">
-          <h2>About</h2>
-          <p>Learn more about me</p>
+          <h2>{{ $t("menu.about") }}</h2>
+          <p class="mt-3">{{ $t("sections.about.title") }}</p>
         </div>
 
         <div class="row">
@@ -32,11 +32,13 @@
                   </li>
                   <li>
                     <i class="icofont-rounded-right"></i>
-                    <strong>Phone: </strong> {{ data.about.phone }}
+                    <strong>{{ $t("sections.about.phone") }}: </strong>
+                    {{ data.about.phone }}
                   </li>
                   <li>
                     <i class="icofont-rounded-right"></i>
-                    <strong>City: </strong>{{ data.about.location }}
+                    <strong>{{ $t("sections.about.city") }}: </strong
+                    >{{ data.about.location }}
                   </li>
                 </ul>
               </div>
@@ -52,7 +54,8 @@
                   </li>
                   <li>
                     <i class="icofont-rounded-right"></i>
-                    <strong>PhEmailone: </strong> {{ data.about.email }}
+                    <strong>{{ $t("sections.about.email") }}: </strong>
+                    {{ data.about.email }}
                   </li>
                   <li>
                     <i class="icofont-rounded-right"></i>
@@ -116,7 +119,7 @@
       <!-- ======= Skills  ======= -->
       <div class="skills container">
         <div class="section-title">
-          <h2>Skills</h2>
+          <h2>{{ $t("sections.about.skills") }}</h2>
         </div>
 
         <div class="row skills-content">

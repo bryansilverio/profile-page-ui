@@ -12,22 +12,34 @@
 
         <nav class="nav-menu d-none d-lg-block">
           <ul>
-            <li class="active"><a href="#header">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#resume">Resume</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li class="active">
+              <a href="#header">{{ $t("menu.home") }}</a>
+            </li>
+            <li>
+              <a href="#about">{{ $t("menu.about") }}</a>
+            </li>
+            <li>
+              <a href="#resume">{{ $t("menu.resume") }}</a>
+            </li>
+            <li>
+              <a href="#services">{{ $t("menu.services") }}</a>
+            </li>
+            <li>
+              <a href="#portfolio">{{ $t("menu.portfolio") }}</a>
+            </li>
+            <li>
+              <a href="#contact">{{ $t("menu.contact") }}</a>
+            </li>
           </ul>
         </nav>
         <!-- .nav-menu -->
 
         <div class="social-links">
-          <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
-          <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
-          <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
-          <a href="#" class="google-plus"><i class="icofont-skype"></i></a>
-          <a href="#" class="linkedin"><i class="icofont-linkedin"></i></a>
+          <SocialNetworkItem
+            v-for="(item, index) in data.social_network"
+            :key="index"
+            :item="item"
+          />
         </div>
       </div>
     </header>
@@ -35,8 +47,12 @@
   </div>
 </template>
 <script>
+//Components
+import SocialNetworkItem from "@/views/components/SocialNetworkItem";
+
 export default {
   name: "Home",
+  components: { SocialNetworkItem },
   props: { data: Object },
 };
 </script>

@@ -1,24 +1,47 @@
 {
-    "title":"Mi perfil",
-    "welcome":"Esta es mi pagína de perfil",
-    "i_am":"Soy",
-    "about_me":"Sobre mi",
-    "skills":"Conocimientos",
-    "contact":"Contacto",
-    "info":"Información",
-    "titles":{
-        "information":"Información",
-        "experience":"Experiencia",
-        "projects":"Proyectos"
-    }, 
     "menu":{
-        "profile":"Perfil",
-        "experience":"Experiencia"
+        "home":"Inicio",
+        "about":"Sobre mi",
+        "resume":"Resumen",
+        "services":"Servicios",
+        "portfolio":"Portafolio",
+        "contact":"Contacto"
     },
-    "message":"Mensaje",
-    "information":{
-        "name":"Nombre",
-        "email":"Correo",
-        "location":"Ubicación"
+    "sections":{
+        "home":{
+        },
+        "about":{
+            "title":"Mas sobre mi",
+            "phone":"Teléfono",
+            "city":"Ciudad",
+            "email":"Correo",
+            "skills":"Conocimientos"
+        },
+        "resume":{
+            "title":"Mi resumen",
+            "education":"Education",
+            "experience":"Experiencia"
+        },
+        "services":{
+    
+        },
+        "portfolio":{
+    
+        },
+        "contact":{
+            "title":"Contacto",
+            "city":"Ubicación",
+            "email":"Correo",
+            "contact":"Contacto",
+            "phone":"Teléfono",
+            "form":{
+                "name":"Nombre",
+                "email":"Correo",
+                "subject":"Asunto",
+                "message":"Mensaje",
+                "btnSendMessage":"Enviar mensaje",
+                "messageResponse":"Tu mensaje ha sido enviado. Gracias!"
+            }
+        }
     }
 }

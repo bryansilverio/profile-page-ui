@@ -4,8 +4,8 @@
     <section id="portfolio" class="portfolio">
       <div class="container">
         <div class="section-title">
-          <h2>Portfolio</h2>
-          <p>My Works</p>
+          <h2>{{ $t("menu.portfolio") }}</h2>
+          <p class="mt-3">My Works</p>
         </div>
 
         <div class="row">

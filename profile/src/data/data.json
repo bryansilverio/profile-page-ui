@@ -11,15 +11,18 @@
     "social_network":[
         {
             "name":"linkedin",
-            "url":"https://www.linkedin.com/in/bryan-silverio-6b417098"
+            "url":"https://www.linkedin.com/in/bryan-silverio-6b417098",
+            "icon":"linkedin"
         },
         {
             "name":"twitter",
-            "url":"#"
+            "url":"#",
+            "icon":"twitter"
         },
         {
             "name":"github",
-            "url":"https://github.com/bsn12993"
+            "url":"https://github.com/bsn12993",
+            "icon":"github"
         }
     ],
     "skills":[

@@ -4,8 +4,8 @@
     <section id="services" class="services">
       <div class="container">
         <div class="section-title">
-          <h2>Services</h2>
-          <p>My Services</p>
+          <h2>{{ $t("menu.services") }}</h2>
+          <p class="mt-3">My Services</p>
         </div>
 
         <div class="row">

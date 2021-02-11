@@ -1,24 +1,47 @@
 {
-    "title":"My profile",
-    "welcome":"This is my profile page",
-    "i_am":"I´m",
-    "about_me":"About me",
-    "skills":"Skills",
-    "contact":"Contact",
-    "info":"Information",
-    "titles":{
-        "information":"Information",
-        "experience":"Experience",
-        "projects":"Projects"
-    },
     "menu":{
-        "profile":"Profile",
-        "experience":"Experience"
+        "home":"Home",
+        "about":"About",
+        "resume":"Resume",
+        "services":"Services",
+        "portfolio":"Portfolio",
+        "contact":"Contact"
     },
-    "message":"Message",
-    "information":{
-        "name":"Name",
-        "email":"Email",
-        "location":"Location"
+    "sections":{
+        "home":{
+        },
+        "about":{
+            "title":"Learn more about me",
+            "phone":"Phone",
+            "city":"City",
+            "email":"Email",
+            "skills":"Skills"
+        },
+        "resume":{
+            "title":"Chek my resume",
+            "education":"Education",
+            "experience":"Experience"
+        },
+        "services":{
+
+        },
+        "portfolio":{
+
+        },
+        "contact":{
+            "title":"Contact me",
+            "city":"Location",
+            "email":"Email",
+            "contact":"Contact",
+            "phone":"Phone",
+            "form":{
+                "name":"Name",
+                "email":"Email",
+                "subject":"Subject",
+                "message":"Message",
+                "btnSendMessage":"Send message",
+                "messageResponse":"Your message has been sent. Thank you!"
+            }
+        }
     }
 }
