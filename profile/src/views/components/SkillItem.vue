@@ -7,7 +7,8 @@
       <div
         class="progress-bar"
         role="progressbar"
-        aria-valuenow="100"
+        :aria-valuenow="item.value"
+        :width="item.value"
         aria-valuemin="0"
         aria-valuemax="100"
       ></div>
