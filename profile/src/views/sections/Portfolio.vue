@@ -39,7 +39,7 @@
                     ><i class="bx bx-plus"></i
                   ></a>
                   <a
-                    href="portfolio-details.html"
+                    @click="redirectToPage('/portfolio/1/details')"
                     data-gall="portfolioDetailsGallery"
                     data-vbtype="iframe"
                     class="venobox"
@@ -70,7 +70,7 @@
                     ><i class="bx bx-plus"></i
                   ></a>
                   <a
-                    href="portfolio-details.html"
+                     @click="redirectToPage('/portfolio/1/details')"
                     data-gall="portfolioDetailsGallery"
                     data-vbtype="iframe"
                     class="venobox"
@@ -101,7 +101,7 @@
                     ><i class="bx bx-plus"></i
                   ></a>
                   <a
-                    href="portfolio-details.html"
+                     @click="redirectToPage('/portfolio/1/details')"
                     data-gall="portfolioDetailsGallery"
                     data-vbtype="iframe"
                     class="venobox"
@@ -132,7 +132,7 @@
                     ><i class="bx bx-plus"></i
                   ></a>
                   <a
-                    href="portfolio-details.html"
+                     @click="redirectToPage('/portfolio/1/details')"
                     data-gall="portfolioDetailsGallery"
                     data-vbtype="iframe"
                     class="venobox"
@@ -163,7 +163,7 @@
                     ><i class="bx bx-plus"></i
                   ></a>
                   <a
-                    href="portfolio-details.html"
+                     @click="redirectToPage('/portfolio/1/details')"
                     data-gall="portfolioDetailsGallery"
                     data-vbtype="iframe"
                     class="venobox"
@@ -194,7 +194,7 @@
                     ><i class="bx bx-plus"></i
                   ></a>
                   <a
-                    href="portfolio-details.html"
+                     @click="redirectToPage('/portfolio/1/details')"
                     data-gall="portfolioDetailsGallery"
                     data-vbtype="iframe"
                     class="venobox"
@@ -225,7 +225,7 @@
                     ><i class="bx bx-plus"></i
                   ></a>
                   <a
-                    href="portfolio-details.html"
+                     @click="redirectToPage('/portfolio/1/details')"
                     data-gall="portfolioDetailsGallery"
                     data-vbtype="iframe"
                     class="venobox"
@@ -256,7 +256,7 @@
                     ><i class="bx bx-plus"></i
                   ></a>
                   <a
-                    href="portfolio-details.html"
+                     @click="redirectToPage('/portfolio/1/details')"
                     data-gall="portfolioDetailsGallery"
                     data-vbtype="iframe"
                     class="venobox"
@@ -287,7 +287,7 @@
                     ><i class="bx bx-plus"></i
                   ></a>
                   <a
-                    href="portfolio-details.html"
+                     @click="redirectToPage('/portfolio/1/details')"
                     data-gall="portfolioDetailsGallery"
                     data-vbtype="iframe"
                     class="venobox"
@@ -305,8 +305,10 @@
   </div>
 </template>
 <script>
+import mixins from "@/mixins/index";
 export default {
   name: "Portfolio",
+  mixins: [mixins],
   props: { data: Object },
 };
 </script>
