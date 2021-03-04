@@ -15,7 +15,7 @@
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
             <h3>{{ data.about.profile }}</h3>
-            <p class="font-italic">
+            <p class="font-italic" v-show="false">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
@@ -48,7 +48,7 @@
                 </ul>
               </div>
             </div>
-            <p>
+            <p v-show="false">
               Officiis eligendi itaque labore et dolorum mollitia officiis optio
               vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor
               incidunt officia tempore. Et eius omnis. Cupiditate ut dicta
@@ -63,7 +63,7 @@
       <!-- End About Me -->
 
       <!-- ======= Counts ======= -->
-      <div class="counts container">
+      <div class="counts container" v-show="false">
         <div class="row">
           <div class="col-lg-3 col-md-6">
             <div class="count-box">
@@ -127,7 +127,7 @@
       <!-- End Skills -->
 
       <!-- ======= Testimonials ======= -->
-      <div class="testimonials container">
+      <div class="testimonials container" v-show="false">
         <div class="section-title">
           <h2>Testimonials</h2>
         </div>

@@ -11,15 +11,15 @@
 
           <div class="row">
             <div class="col-lg-6">
-              <h3 class="resume-title">Sumary</h3>
+              <h3 class="resume-title">{{$t("sections.resume.resume")}}</h3>
               <div class="resume-item pb-0">
-                <h4>Alice Barkley</h4>
-                <p><em>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.</em></p>
+                <h4>{{data.name}}</h4>
+                <p v-show="false"><em>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.</em></p>
                 <p>
                 <ul>
-                  <li>Portland par 127,Orlando, FL</li>
-                  <li>(123) 456-7891</li>
-                  <li>alice.barkley@example.com</li>
+                  <li>{{data.about.location}}</li>
+                  <li>{{ data.about.phone }}</li>
+                  <li>{{ data.about.email }}</li>
                 </ul>
                 </p>
               </div>

@@ -9,6 +9,7 @@
     },
     "sections":{
         "home":{
+            "phrase":"Hi! I'm a passionate <span>developer</span>"
         },
         "about":{
             "title":"Learn more about me",
@@ -19,6 +20,7 @@
         },
         "resume":{
             "title":"Chek my resume",
+            "resume":"Resume",
             "education":"Education",
             "experience":"Experience"
         },

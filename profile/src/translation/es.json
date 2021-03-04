@@ -9,6 +9,7 @@
     },
     "sections":{
         "home":{
+            "phrase":"Soy un <span>desarrollador</span> apasionado"
         },
         "about":{
             "title":"Mas sobre mi",
@@ -19,7 +20,8 @@
         },
         "resume":{
             "title":"Mi resumen",
-            "education":"Education",
+            "resume":"Resumen",
+            "education":"Educación",
             "experience":"Experiencia"
         },
         "services":{

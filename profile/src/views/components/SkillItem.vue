@@ -26,7 +26,7 @@ export default {
   },
   methods: {
     setValue(value) {
-      let progressbar = document.querySelectorAll(".progress-bar");
+      let progressbar = document.getElementsByClassName("progress-bar");
       console.log(value)
       if (progressbar) {
         progressbar.forEach((element) => {

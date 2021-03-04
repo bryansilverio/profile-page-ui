@@ -8,7 +8,7 @@
         </h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html" class="mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
-        <h2>I'm a passionate <span>graphic designer</span> from New York</h2>
+        <h2><p v-html="$t('sections.home.phrase')"></p></h2>
 
         <nav class="nav-menu d-none d-lg-block">
           <ul>
@@ -21,7 +21,7 @@
             <li @click="changeSection(3)">
               <a href="#resume">{{ $t("menu.resume") }}</a>
             </li>
-            <li @click="changeSection(4)">
+            <li @click="changeSection(4)" v-show="false">
               <a href="#services">{{ $t("menu.services") }}</a>
             </li>
             <li @click="changeSection(5)">

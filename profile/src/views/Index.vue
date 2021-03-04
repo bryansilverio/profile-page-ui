@@ -10,7 +10,7 @@
     <Resume :data="data" />
 
     <!-- Services -->
-    <Services :data="data" />
+    <Services :data="data" v-show="false"/>
 
     <!-- Portfolio -->
     <Portfolio :data="data" />
