@@ -23,6 +23,7 @@
           <PortfolioItem
             v-for="(item, index) in data.projects"
             :key="index"
+            :index="index"
             :item="item"
           />
         </div>
@@ -41,5 +42,10 @@ export default {
   mixins: [mixins],
   components: { PortfolioItem },
   props: { data: Object },
+  watch: {
+    data(value) {
+      console.log(value);
+    },
+  },
 };
 </script>

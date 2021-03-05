@@ -15,7 +15,7 @@
             ><i class="bx bx-plus"></i
           ></a>
           <a
-            @click="redirectToPage('/portfolio/1/details')"
+            @click="redirectToPage('/portfolio/' + item.id + '/details')"
             data-gall="portfolioDetailsGallery"
             data-vbtype="iframe"
             class="venobox"
@@ -28,9 +28,12 @@
   </div>
 </template>
 <script>
+import generalMixin from "@/mixins/index";
 export default {
   name: "PortfolioItem",
+  mixins: [generalMixin],
   props: {
+    index: Number,
     item: Object,
   },
 };

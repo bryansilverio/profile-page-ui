@@ -104,7 +104,8 @@
     ],
     "projects":[
         {
-            "proyect_type":"Web",
+            "id":1,
+            "project_type":"Web",
             "name":"Centro de rehabilitación ebano",
             "image_preview":"assets/img/portfolio/website_ebano.png",
             "url":"https://centroderehabilitacionebano.com/",
@@ -116,7 +117,8 @@
             ]
         },
         {
-            "proyect_type":"Web",
+            "id":2,
+            "project_type":"Web",
             "name":"SafetyApp",
             "image_preview":"",
             "url":"",
@@ -128,7 +130,8 @@
             ]
         },
         {
-            "proyect_type":"Web",
+            "id":3,
+            "project_type":"Web",
             "name":"Loop",
             "image_preview":"",
             "url":"",
@@ -144,7 +147,8 @@
             ]
         },
         {
-            "proyect_type":"Web",
+            "id":4,
+            "project_type":"Web",
             "name":"Tasinet",
             "image_preview":"",
             "url":"",
@@ -159,7 +163,8 @@
             ]
         },
         {
-            "proyect_type":"Web",
+            "id":5,
+            "project_type":"Web",
             "name":"IEQSA",
             "image_preview":"",
             "url":"",

@@ -3,8 +3,8 @@
     <!-- ======= Header ======= -->
     <header id="header" class="header-tops">
       <div class="container">
-        <h1>
-          <a href="/">{{ data.name }}</a>
+        <h1 @click="changeSection(1)">
+          <a>{{ data.name }}</a>
         </h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html" class="mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
@@ -62,6 +62,7 @@ export default {
   props: { data: Object },
   mounted() {
     this.changeSection(1);
+    console.log(this.data)
   },
   methods: {
     changeSection(section = 1) {

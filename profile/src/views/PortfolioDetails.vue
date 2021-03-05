@@ -3,56 +3,101 @@
   <div id="portfolio-details" class="portfolio-details">
     <div class="container">
       <div class="row">
+        <div class="col-lg-12 offset-md-8">
+          <button @click="goToBack()">
+            <i class="icofont-arrow-left"></i>
+            Atras
+          </button>
+        </div>
+      </div>
+      <div class="row" v-if="project">
         <div class="col-lg-8">
           <h2 class="portfolio-title">
-            This is an example of portfolio detail
+            {{ $t("sections.portfolio.title") }}
           </h2>
-          <div class="owl-carousel portfolio-details-carousel">
-          
+          <div class="portfolio-details-carousel">
             <img
-              src="assets/img/portfolio/portfolio-details-1.jpg"
+              :src="project.image_preview"
               class="img-fluid"
-              alt=""
+              :alt="project.name"
             />
-            <img
-              src="assets/img/portfolio/portfolio-details-2.jpg"
-              class="img-fluid"
-              alt=""
-            />
-            <img
-              src="assets/img/portfolio/portfolio-details-3.jpg"
-              class="img-fluid"
-              alt=""
-            /> 
           </div>
         </div>
 
         <div class="col-lg-4 portfolio-info">
-          <h3>Project information</h3>
+          <h3>{{ $t("sections.portfolio.project_information") }}</h3>
           <ul>
-            <li><strong>Category</strong>: Web design</li>
-            <li><strong>Client</strong>: ASU Company</li>
-            <li><strong>Project date</strong>: 01 March, 2020</li>
             <li>
-              <strong>Project URL</strong>: <a href="#">www.example.com</a>
+              <strong>{{ $t("sections.portfolio.type") }}</strong
+              >: {{ project.project_type }}
+            </li>
+            <li>
+              <strong>{{ $t("sections.portfolio.name") }}</strong
+              >: {{ project.name }}
+            </li>
+            <li>
+              <strong>URL</strong>: <a href="#">{{ project.url }}</a>
             </li>
           </ul>
 
           <p>
-            Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque
-            inventore commodi labore quia quia. Exercitationem repudiandae
-            officiis neque suscipit non officia eaque itaque enim. Voluptatem
-            officia accusantium nesciunt est omnis tempora consectetur
-            dignissimos. Sequi nulla at esse enim cum deserunt eius.
+            {{ project.description }}
           </p>
+          <input-tag
+            v-model="project.technologies"
+            :read-only="true"
+          ></input-tag>
+        </div>
+        <div class="col-lg-12 portfolio-info">
+          <h3>{{ $t("sections.portfolio.description") }}</h3>
+          <p>{{ project.description }}</p>
         </div>
       </div>
     </div>
   </div>
   <!-- End Portfolio Details -->
 </template>
+<style>
+.vue-input-tag-wrapper {
+  background-color: transparent !important;
+  border: transparent !important;
+}
+
+.vue-input-tag-wrapper .input-tag {
+  background-color: #080a29;
+}
+</style>
 <script>
+import data from "@/data/data";
+import generalMixin from "@/mixins/index";
+import InputTag from "vue-input-tag";
 export default {
   name: "PortfolioDetails",
+  components: { InputTag },
+  mixins: [generalMixin],
+  data() {
+    return {
+      project: null,
+    };
+  },
+  created() {
+    let projectId = this.$route.params.id;
+    if (projectId) {
+      this.findProject(projectId);
+    }
+  },
+  methods: {
+    findProject(id) {
+      let collection = data.projects ? data.projects : [];
+      if (!id) return;
+      let findProject = collection.find((el) => el.id == id);
+      if (findProject) {
+        this.project = findProject;
+      }
+    },
+    goToBack() {
+      this.$router.go(-1);
+    },
+  },
 };
 </script>

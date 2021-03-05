@@ -28,7 +28,11 @@
     
         },
         "portfolio":{
-    
+            "title":"Detalle del proyecto",
+            "project_information":"Información del proyecto",
+            "name":"Nombre",
+            "type":"Tipo",
+            "description":"Descripción"
         },
         "contact":{
             "title":"Contacto",

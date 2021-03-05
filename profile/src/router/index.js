@@ -10,12 +10,19 @@ export default new Router({
     {
       path: "/",
       name: "index",
-      component: require("@/views/Index.vue").default,
-    },
-    {
-      path: "portfolio/:id/details",
-      name: "portfolio-details",
-      component: require("@/views/PortfolioDetails.vue").default,
+      component: () => import("@/layouts/Main"),
+      children: [
+        {
+          path: "",
+          name: "index",
+          component: () => import("@/views/Index"),
+        },
+        {
+          path: "portfolio/:id/details",
+          name: "portfolio-details",
+          component: () => import("@/views/PortfolioDetails"),
+        },
+      ],
     },
   ],
 });

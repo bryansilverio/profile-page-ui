@@ -10,6 +10,7 @@
   "dependencies": {
     "@growthbunker/vuesocial": "^0.1.2",
     "@growthbunker/vuetimeline": "^0.1.17",
+    "@johmun/vue-tags-input": "^2.1.0",
     "@mdi/font": "^5.8.55",
     "babel-helper-vue-jsx-merge-props": "^2.0.3",
     "core-js": "^3.6.5",
@@ -19,6 +20,7 @@
     "timeline-vuejs": "^1.1.7",
     "vue": "^2.6.11",
     "vue-i18n": "^8.22.1",
+    "vue-input-tag": "^2.0.7",
     "vue-jquery": "^1.0.6",
     "vue-js-modal": "^2.0.0-rc.6",
     "vue-material": "^1.0.0-beta-15",
