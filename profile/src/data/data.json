@@ -34,12 +34,22 @@
         {
             "name":".NET",
             "value":"75",
-            "image":"assets/img/skills/dot_net.png"
+            "image":"assets/img/skills/.NET.png"
         },
         {
             "name":"VueJs",
             "value":"50",
             "image":"assets/img/skills/vue.png"
+        },
+        {
+            "name":"Vuetify",
+            "value":"60",
+            "image":"assets/img/skills/Vuetify.png"
+        },
+        {
+            "name":"npm",
+            "value":"60",
+            "image":"assets/img/skills/npm.png"
         },
         {
             "name":"Laravel",
@@ -53,7 +63,8 @@
         },
         {
             "name":"SQL Server",
-            "value":"75"
+            "value":"75",
+            "image":"assets/img/skills/sqlserver.png"
         },
         {
             "name":"MySQL",
@@ -67,7 +78,8 @@
         },
         {
             "name":"Xamarin Forms",
-            "value":"50"
+            "value":"50",
+            "image":"assets/img/skills/xamarin.png"
         },
         {
             "name":"Java",
