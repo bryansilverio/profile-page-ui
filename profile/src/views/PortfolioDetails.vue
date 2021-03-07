@@ -71,6 +71,7 @@
 import data from "@/data/data";
 import generalMixin from "@/mixins/index";
 import InputTag from "vue-input-tag";
+//import { Carousel, Slide } from "vue-carousel";
 export default {
   name: "PortfolioDetails",
   components: { InputTag },

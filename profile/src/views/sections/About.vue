@@ -105,19 +105,10 @@
         <div class="section-title">
           <h2>{{ $t("sections.about.skills") }}</h2>
         </div>
-
         <div class="row skills-content">
           <div
-            class="col-lg-6"
-            v-for="item in skills_left_side"
-            :key="item.index"
-          >
-            <SkillItem :item="item" />
-          </div>
-
-          <div
-            class="col-lg-6"
-            v-for="item in skills_rigth_side"
+            class="col-lg-1 mt-4"
+            v-for="item in data.skills"
             :key="item.index"
           >
             <SkillItem :item="item" />
@@ -239,31 +230,7 @@ export default {
       skills_rigth_side: [],
     };
   },
-  created() {
-    this.getSkills();
-  },
-  methods: {
-    getSkills() {
-      let total_skills = this.data.skills.length + 1;
-      let half = Math.round(total_skills / 2);
-      console.log(total_skills);
-      console.log(half);
-      this.data.skills.forEach((element, index) => {
-        let index_aux = index + 1;
-        let option = {
-          index: index_aux,
-          name: element.name,
-          value: element.value,
-        };
-        if (index_aux < half) {
-          this.skills_left_side.push(option);
-        } else {
-          this.skills_rigth_side.push(option);
-        }
-      });
-      console.log(this.skills_left_side);
-      console.log(this.skills_rigth_side);
-    },
-  },
+  created() {},
+  methods: {},
 };
 </script>

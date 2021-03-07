@@ -1,17 +1,7 @@
 <template>
-  <div class="progress">
-    <span class="skill"
-      >{{ item.name }} <i class="val">{{ item.value }}+%</i></span
-    >
-    <div class="progress-bar-wrap">
-      <div
-        class="progress-bar"
-        role="progressbar"
-        :aria-valuenow="item.value"
-        :width="item.value + 'px'"
-        aria-valuemin="0"
-        aria-valuemax="100"
-      ></div>
+  <div class="card">
+    <div class="card-body text-center">
+      <img :src="item.image" class="img-fluid mx-auto" />
     </div>
   </div>
 </template>
@@ -19,21 +9,6 @@
 export default {
   name: "SkillItem",
   props: { item: Object },
-  watch: {
-    item(value) {
-      this.setValue(value);
-    },
-  },
-  methods: {
-    setValue(value) {
-      let progressbar = document.getElementsByClassName("progress-bar");
-      console.log(value)
-      if (progressbar) {
-        progressbar.forEach((element) => {
-          console.log(element);
-        });
-      }
-    },
-  },
+  methods: {},
 };
 </script>

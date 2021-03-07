@@ -42,6 +42,11 @@ export default {
   mixins: [mixins],
   components: { PortfolioItem },
   props: { data: Object },
+  data() {
+    return {
+      visible: true,
+    };
+  },
   watch: {
     data(value) {
       console.log(value);

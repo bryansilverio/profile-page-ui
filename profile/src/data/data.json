@@ -28,15 +28,28 @@
     "skills":[
         {
             "name":"C#",
-            "value":"75"
+            "value":"75",
+            "image":"assets/img/skills/csharp.png"
+        },
+        {
+            "name":".NET",
+            "value":"75",
+            "image":"assets/img/skills/dot_net.png"
         },
         {
             "name":"VueJs",
-            "value":"50"
+            "value":"50",
+            "image":"assets/img/skills/vue.png"
         },
         {
             "name":"Laravel",
-            "value":"60"
+            "value":"60",
+            "image":"assets/img/skills/laravel.png"
+        },
+        {
+            "name":"Php",
+            "value":"60",
+            "image":"assets/img/skills/php.png"
         },
         {
             "name":"SQL Server",
@@ -44,11 +57,13 @@
         },
         {
             "name":"MySQL",
-            "value":"75"
+            "value":"75",
+            "image":"assets/img/skills/mysqlworkbench.png"
         },
         {
             "name":"Javascript",
-            "value":"75"
+            "value":"75",
+            "image":"assets/img/skills/js.png"
         },
         {
             "name":"Xamarin Forms",
@@ -56,7 +71,8 @@
         },
         {
             "name":"Java",
-            "value":"60"
+            "value":"60",
+            "image":"assets/img/skills/java.png"
         }
     ],
     "experience":[
@@ -107,13 +123,36 @@
             "id":1,
             "project_type":"Web",
             "name":"Centro de rehabilitación ebano",
-            "image_preview":"assets/img/portfolio/website_ebano.png",
-            "url":"https://centroderehabilitacionebano.com/",
-            "description":"",
+            "image_preview":"assets/img/portfolio/ebano/01.png",
+            "images":[
+                "assets/img/portfolio/ebano/01.png"
+            ],
+            "url":"https://centroderehabilitacionebano.com",
+            "description":"Desarrollo de Sitio web para el Centro de Rehabilitación Ébano la cual brinda un programa integral de prevención y rehabilitación emocional, físia y espiritual a las personas con adicciones",
             "technologies":[
                 "Javascript",
                 "HTML",
                 "CSS"
+            ]
+        }, 
+        {
+            "id":5,
+            "project_type":"Web",
+            "name":"IEQSA",
+            "image_preview":"assets/img/portfolio/ieqsa/01.png",
+            "images":[
+                "assets/img/portfolio/ieqsa/01.png",
+                "assets/img/portfolio/ieqsa/01.png",
+                "assets/img/portfolio/ieqsa/01.png"
+            ],
+            "url":"http://www.ieqsa.com.mx",
+            "description":"Desarrollo de administrador y sitio web para IEQSA",
+            "technologies":[
+                ".NET",
+                "Javascript",
+                "JQuery",
+                "SQLServer",
+                "C#"
             ]
         },
         {
@@ -144,37 +183,6 @@
                 "MySQL",
                 "NodeJS",
                 "Firebase"
-            ]
-        },
-        {
-            "id":4,
-            "project_type":"Web",
-            "name":"Tasinet",
-            "image_preview":"",
-            "url":"",
-            "description":"",
-            "technologies":[
-                ".NET",
-                "Javascript",
-                "JQuery",
-                "SQLServer",
-                "C#",
-                "DNN"
-            ]
-        },
-        {
-            "id":5,
-            "project_type":"Web",
-            "name":"IEQSA",
-            "image_preview":"",
-            "url":"",
-            "description":"",
-            "technologies":[
-                ".NET",
-                "Javascript",
-                "JQuery",
-                "SQLServer",
-                "C#"
             ]
         }
     ],
