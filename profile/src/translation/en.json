@@ -9,7 +9,7 @@
     },
     "sections":{
         "home":{
-            "phrase":"Hi! I'm a passionate <span>developer</span>"
+            "phrase":"<span>Developer</span>"
         },
         "about":{
             "title":"Learn more about me",

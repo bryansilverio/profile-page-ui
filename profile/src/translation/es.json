@@ -9,7 +9,7 @@
     },
     "sections":{
         "home":{
-            "phrase":"Soy un <span>desarrollador</span> apasionado"
+            "phrase":"<span>Desarrollador</span>"
         },
         "about":{
             "title":"Mas sobre mi",
