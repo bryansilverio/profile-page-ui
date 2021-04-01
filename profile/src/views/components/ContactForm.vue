@@ -1,12 +1,12 @@
 <template>
-  <div>
+  <div class="col-lg-8 mt-5 mt-lg-0">
     <form
       action="forms/contact.php"
       method="post"
       role="form"
-      class="php-email-form mt-4"
+      class="php-email-form"
     >
-      <div class="form-row">
+      <div class="row">
         <div class="col-md-6 form-group">
           <input
             type="text"
@@ -14,48 +14,40 @@
             class="form-control"
             id="name"
             :placeholder="$t('sections.contact.form.name')"
-            data-rule="minlen:4"
-            data-msg="Please enter at least 4 chars"
+            required
           />
-          <div class="validate"></div>
         </div>
-        <div class="col-md-6 form-group">
+        <div class="col-md-6 form-group mt-3 mt-md-0">
           <input
             type="email"
             class="form-control"
             name="email"
             id="email"
             :placeholder="$t('sections.contact.form.email')"
-            data-rule="email"
-            data-msg="Please enter a valid email"
+            required
           />
-          <div class="validate"></div>
         </div>
       </div>
-      <div class="form-group">
+      <div class="form-group mt-3">
         <input
           type="text"
           class="form-control"
           name="subject"
           id="subject"
           :placeholder="$t('sections.contact.form.subject')"
-          data-rule="minlen:4"
-          data-msg="Please enter at least 8 chars of subject"
+          required
         />
-        <div class="validate"></div>
       </div>
-      <div class="form-group">
+      <div class="form-group mt-3">
         <textarea
           class="form-control"
           name="message"
           rows="5"
-          data-rule="required"
-          data-msg="Please write something for us"
           :placeholder="$t('sections.contact.form.message')"
+          required
         ></textarea>
-        <div class="validate"></div>
       </div>
-      <div class="mb-3">
+      <div class="my-3">
         <div class="loading">Loading</div>
         <div class="error-message"></div>
         <div class="sent-message">

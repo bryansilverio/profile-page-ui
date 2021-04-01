@@ -1,15 +1,23 @@
 <template>
   <div>
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio">
-      <div class="container">
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container" data-aos="fade-up">
         <div class="section-title">
           <h2>{{ $t("menu.portfolio") }}</h2>
-          <p class="mt-3">{{ $t("menu.portfolio") }}</p>
+          <p>
+            Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
+            aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
+            quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
+            fugiat sit in iste officiis commodi quidem hic quas.
+          </p>
         </div>
 
-        <div class="row" v-show="false">
-          <div class="col-lg-12 d-flex justify-content-center">
+        <div class="row">
+          <div
+            class="col-lg-12 d-flex justify-content-center"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
               <li data-filter=".filter-app">App</li>
@@ -19,22 +27,24 @@
           </div>
         </div>
 
-        <div class="row portfolio-container">
+        <div
+          class="row portfolio-container"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
           <PortfolioItem
             v-for="(item, index) in data.projects"
             :key="index"
-            :index="index"
             :item="item"
+            :filterApp="'filter-web'"
           />
         </div>
       </div>
     </section>
-    <!-- End Portfolio Section -->
   </div>
 </template>
 <script>
 import mixins from "@/mixins/index";
-
 import PortfolioItem from "@/views/components/PortfolioItem";
 
 export default {

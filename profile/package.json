@@ -15,7 +15,7 @@
     "babel-helper-vue-jsx-merge-props": "^2.0.3",
     "core-js": "^3.6.5",
     "easy-circular-progress": "^1.0.4",
-    "jquery": "^3.5.1",
+    "jquery": "^3.6.0",
     "jsdom": "^16.4.0",
     "timeline-vuejs": "^1.1.7",
     "vue": "^2.6.11",

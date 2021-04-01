@@ -1,7 +1,7 @@
 <template>
   <div class="resume-item">
     <h4>{{ item.carrer }}</h4>
-    <h5>{{ item.start_date }} - {{ item.end_date }}</h5>
+    <h5>{{ item.start_date }} - {{ item.start_date }}</h5>
     <p>
       <em>{{ item.university }}</em>
     </p>

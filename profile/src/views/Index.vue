@@ -1,8 +1,9 @@
 <template>
   <div>
     <!-- Home -->
-    <Home :data="data" />
+    <Header :data="data" />
 
+    <Home :data="data" />
     <!-- About -->
     <About :data="data" />
 
@@ -10,18 +11,18 @@
     <Resume :data="data" />
 
     <!-- Services -->
-    <Services :data="data" v-show="false"/>
+    <Services :data="data" v-show="false" />
 
     <!-- Portfolio -->
     <Portfolio :data="data" />
 
     <!-- Contact -->
     <Contact :data="data" />
-
   </div>
 </template>
 <script>
 //components
+import Header from "./sections/Header";
 import Home from "./sections/Home";
 import About from "./sections/About";
 import Resume from "./sections/Resume";
@@ -34,7 +35,7 @@ import data from "@/data/data";
 
 export default {
   name: "Index",
-  components: { Home, About, Resume, Services, Portfolio, Contact },
+  components: { Header, Home, About, Resume, Services, Portfolio, Contact },
   computed: {
     data() {
       return data;

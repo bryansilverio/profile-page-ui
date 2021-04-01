@@ -4,6 +4,8 @@ import i18n from './translation/i18n'
 import vuetify from './plugins/vuetify'
 import router from './router/index'
 
+window.$ = window.jQuery = require('jquery')
+
 import '../node_modules/timeline-vuejs/dist/timeline-vuejs.css'
 /**
  * Tabs

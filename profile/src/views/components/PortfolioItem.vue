@@ -1,5 +1,5 @@
 <template>
-  <div class="col-lg-4 col-md-6 portfolio-item">
+  <div :class="'col-lg-4 col-md-6 portfolio-item ' + filterApp">
     <div class="portfolio-wrap">
       <img :src="item.image_preview" class="img-fluid" alt="" />
       <div class="portfolio-info">
@@ -7,18 +7,16 @@
         <p>{{ item.project_type }}</p>
         <div class="portfolio-links">
           <a
-            @click="showImage()"
-            data-gall="portfolioGallery"
-            class="venobox"
+            href="assets/img/portfolio/portfolio-1.jpg"
+            data-gallery="portfolioGallery"
+            class="portfolio-lightbox"
             :title="item.name"
-            target="_blank"
             ><i class="bx bx-plus"></i
           ></a>
           <a
-            @click="redirectToPage('/portfolio/' + item.id + '/details')"
-            data-gall="portfolioDetailsGallery"
-            data-vbtype="iframe"
-            class="venobox"
+            href="portfolio-details.html"
+            class="portfolio-details-lightbox"
+            data-glightbox="type: external"
             title="Portfolio Details"
             ><i class="bx bx-link"></i
           ></a>
@@ -54,6 +52,7 @@ export default {
   props: {
     index: Number,
     item: Object,
+    filterApp: String,
   },
   methods: {
     showImage() {
