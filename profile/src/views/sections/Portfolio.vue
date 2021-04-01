@@ -19,10 +19,18 @@
             data-aos-delay="100"
           >
             <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
+              <li data-filter="*" class="filter-active">
+                {{ $t("sections.portfolio.category.all") }}
+              </li>
+              <li data-filter=".filter-company">
+                {{ $t("sections.portfolio.category.company") }}
+              </li>
+              <li data-filter=".filter-personal">
+                {{ $t("sections.portfolio.category.personal") }}
+              </li>
+              <li data-filter=".filter-freelance">
+                {{ $t("sections.portfolio.category.freelance") }}
+              </li>
             </ul>
           </div>
         </div>
@@ -36,7 +44,7 @@
             v-for="(item, index) in data.projects"
             :key="index"
             :item="item"
-            :filterApp="'filter-web'"
+            :filterApp="'filter-' + item.category"
           />
         </div>
       </div>

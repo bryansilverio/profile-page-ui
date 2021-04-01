@@ -133,6 +133,7 @@
     "projects":[
         {
             "id":1,
+            "category":"freelance",
             "project_type":"Web",
             "name":"Centro de rehabilitación ebano",
             "image_preview":"assets/img/portfolio/ebano/01.png",
@@ -149,6 +150,7 @@
         }, 
         {
             "id":5,
+            "category":"company",
             "project_type":"Web",
             "name":"IEQSA",
             "image_preview":"assets/img/portfolio/ieqsa/01.png",
@@ -169,6 +171,7 @@
         },
         {
             "id":2,
+            "category":"company",
             "project_type":"Web",
             "name":"SafetyApp",
             "image_preview":"",
@@ -182,6 +185,7 @@
         },
         {
             "id":3,
+            "category":"company",
             "project_type":"Web",
             "name":"Loop",
             "image_preview":"",

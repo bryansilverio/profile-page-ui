@@ -28,6 +28,12 @@
     
         },
         "portfolio":{
+            "category":{
+                "all":"Todos",
+                "company":"Empresa",
+                "personal":"Personal",
+                "freelance":"Freelance"
+            },
             "title":"Detalle del proyecto",
             "project_information":"Información del proyecto",
             "name":"Nombre",

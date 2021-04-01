@@ -13,7 +13,7 @@
         </div>
 
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-lg-12">
             <h3 class="resume-title">Sumary</h3>
             <div class="resume-item pb-0">
               <h4>{{ data.name }}</h4>
@@ -39,7 +39,7 @@
               :item="item"
             />
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-12">
             <h3 class="resume-title">{{ $t("sections.resume.experience") }}</h3>
             <ExperienceItem
               v-for="(item, index) in experience"
