@@ -17,7 +17,7 @@
 
               <div class="email">
                 <i class="bi bi-envelope"></i>
-                <h4>Em{{ $t("sections.contact.email") }}ail:</h4>
+                <h4>{{ $t("sections.contact.email") }}:</h4>
                 <p>{{ data.about.email }}</p>
               </div>
 

@@ -4,9 +4,13 @@
     <Header :data="data" />
 
     <Home :data="data" />
+
     <!-- About -->
     <About :data="data" />
 
+    <!-- Skills -->
+    <Skills :data="data" />
+    
     <!-- Resume -->
     <Resume :data="data" />
 
@@ -25,6 +29,7 @@
 import Header from "./sections/Header";
 import Home from "./sections/Home";
 import About from "./sections/About";
+import Skills from "./sections/Skills";
 import Resume from "./sections/Resume";
 import Services from "./sections/Services";
 import Portfolio from "./sections/Portfolio";
@@ -35,7 +40,16 @@ import data from "@/data/data";
 
 export default {
   name: "Index",
-  components: { Header, Home, About, Resume, Services, Portfolio, Contact },
+  components: {
+    Header,
+    Home,
+    About,
+    Skills,
+    Resume,
+    Services,
+    Portfolio,
+    Contact,
+  },
   computed: {
     data() {
       return data;
