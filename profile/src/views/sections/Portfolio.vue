@@ -19,16 +19,16 @@
             data-aos-delay="100"
           >
             <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">
+              <li @click="findProjectsByCategory('all')">
                 {{ $t("sections.portfolio.category.all") }}
               </li>
-              <li data-filter=".filter-company">
+              <li @click="findProjectsByCategory('company')">
                 {{ $t("sections.portfolio.category.company") }}
               </li>
-              <li data-filter=".filter-personal">
+              <li @click="findProjectsByCategory('personal')">
                 {{ $t("sections.portfolio.category.personal") }}
               </li>
-              <li data-filter=".filter-freelance">
+              <li @click="findProjectsByCategory('freelance')">
                 {{ $t("sections.portfolio.category.freelance") }}
               </li>
             </ul>
@@ -41,10 +41,9 @@
           data-aos-delay="200"
         >
           <PortfolioItem
-            v-for="(item, index) in data.projects"
+            v-for="(item, index) in projects"
             :key="index"
             :item="item"
-            :filterApp="'filter-' + item.category"
           />
         </div>
       </div>
@@ -63,11 +62,27 @@ export default {
   data() {
     return {
       visible: true,
+      projects: [],
     };
   },
   watch: {
     data(value) {
       console.log(value);
+    },
+  },
+  created() {
+    this.findProjectsByCategory();
+  },
+  methods: {
+    findProjectsByCategory(category = "all") {
+      this.projects = [];
+      if (category == "all") {
+        this.projects = this.data.projects;
+      } else {
+        this.projects = this.data.projects.filter(
+          (x) => x.category == category
+        );
+      }
     },
   },
 };

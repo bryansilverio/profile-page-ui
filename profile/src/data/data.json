@@ -94,7 +94,21 @@
             "start_date":"2019-08-12",
             "end_date":"Actualmente",
             "company":"Bitfx",
-            "description":"<p>Desarrollo y diseño de base de datos de nueva versión aplicación web de servicios de traslado ejecutivos, desarrollo de back y front en Laravel y Vue.</p><p>Desarrollo de web api en .NET para integrar servicio con centro de pagos.</p><p>Participación en proyecto web para BMW Safety, desarrollo de frontend con Vue y Vuetify.</p>"
+            "technologies":[
+                "PHP", 
+                "Laravel", 
+                "VueJS", 
+                "Vuetify", 
+                "MySQL", 
+                "PostgreSQL", 
+                "NodeJS", 
+                "Firebase", 
+                "C# .NET Core", 
+                "Javascript", 
+                "Axios", 
+                "Java"
+            ],
+            "description":"<p><strong>Proyecto: Loop. Migración de proyecto .NET a Laravel para servicios de transporte ejecutivo.</strong></p><ul><li>Diseño de arquitectura del proyecto y base de datos. Desarrollo de Backend y Frontend usando Laravel, Vue, MySQL.</li><li>Desarrollo de APIs para aplicación móvil, integración de API Google Maps e integración con Firebase usando NodeJS.</li><li>Desarrollo de Web API usando C# .NET Core para conectar servicio de centro de pagos para realizar pagos con tarjeta de crédito. Implementación de Swagger para las documentar APIs.</li></ul><p><strong>Proyecto: SafetyApp. Sistema web para la planta de San Luis Potosí para optimizar el proceso de creación de instrucciones de seguridad.</strong></p><ul><li>Desarrollo de Frontend usando Vue y Vuetify, Integración de Apis con axios.</li><li>Apoyo con creación de servicios con JAX-RS, detección de errores de servicios usando debugger.</li></ul>"
         },
         {
             "logo":"assets/images/avatar/8.png",
@@ -102,7 +116,17 @@
             "start_date":"2018-01-28",
             "end_date":"Agosto 2019",
             "company":"TasiSoft",
-            "description":"<p>Desarrollo de aplicación web para IEQSA, administrador y sitio web, permitiendo administrar la información del sitio web desde el administrador.</p><p>Desarrollo de módulos para la nueva versión de proyecto interno: registro de entrada, calendario, solicitud de vacaciones, directorio de contactos usando DNN.</p>"
+            "technologies":[
+               " C# .NET Framework (MVC)", 
+               "Entity Framework", 
+               "SQL Server", 
+               "DNN", 
+               "Html",
+                "Css", 
+                "Jquery", 
+                "Javascript"
+            ],
+            "description":"<p><strong>Proyecto:IEQSA.Portal web y administrador para IEQSA.</strong></p><p>Sitio: <a href='http://www.ieqsa.com.mx' target='_blank'>http://www.ieqsa.com.mx</a></p><ul><li>Diseño de arquitectura de proyecto y base de datos, desarrollo de Backend y Frontend usando C# .NET Framework y SQL Server para el administrador y sitio web.</li><li>Documentación técnica y manual de usuario.</li><li>Publicación de proyectos en producción en servidor del cliente en IIS.</li></ul><p><strong>Proyecto: Tasinet2. Desarrollo de módulos para la nueva versión de la aplicación interna Tasinet2.</strong></p><ul><li>Desarrollo de módulos usando C# .NET Framework y la plataforma DNN.</li><li>Migración de plataforma interna con DNN.</li><li>Documentación técnica y manuales de usuario.</li></ul>"
         },
         {
             "logo":"assets/images/companies/dwsoftware.png",
@@ -110,7 +134,15 @@
             "start_date":"2017-08-21",
             "end_date":"Noviembre 2017",
             "company":"DW Software",
-            "description":"<p>Integración de web service de DHL para obtener información de envíos.</p><p>Participación en proyecto web para rastreo de envío de paquetes de DHL, desarrollo de back en .NET.</p>"    
+            "technologies":[
+                "C# .NET Framework", 
+                "Razor", 
+                "Css", 
+                "Javascript", 
+                "HTML", 
+                "Jquery"
+            ],
+            "description":"<p><strong>Proyecto: Web Service DHL. Librería para consumo de web service DHL.</strong></p> <ul><li>Mapeo de estatus del web service SOAP de DHL.</li><li>Desarrollo del backend de librería (biblioteca de clases) para consumo de web service DHL.</li></ul><p><strong>Proyecto: Ryder. Aplicación web para obtener información sobre el envío de paquetes a través de paqueterías.</strong></p><ul><li>Desarrollo de Backend e integración de frontend usando C# con .NET Framework e integración de Api Rest usando arquitectura SOA.</li><li>Integración de librería (biblioteca de clases) para consultar servicio Web DHL para obtener la información actual de los envíos a través de su paquetería.</li></ul>"    
         },
         {
             "logo":"assets/images/companies/itg.png",
@@ -118,7 +150,17 @@
             "start_date":"2015-08-20",
             "end_date":"Agosto 2017",
             "company":"IT Group",
-            "description":"<p>Participación en proyecto web para automatizar la administración de información de archivos excel a aplicación web.</p><p>Participación en proyecto web para flotillas de autos, desarrollo de módulos de orden de ingreso, visualización de facturas.Participación de sistema web PMO para administración de proyectos de forma interna, módulos de tareas y actividades, calendario.</p>"
+            "technologies":[
+                "Java (J2EE)", 
+                "SQL Server", 
+                "C# .NET Framework", 
+                "Jasper Report", 
+                "Html", 
+                "Javascript", 
+                "Css",
+                "Jquery"
+            ],
+            "description":"<p><strong>Proyecto: Remarkable. Desarrollo de aplicación web para mejorar el manejo de información de usar macros a usar base de datos y aplicación web.</strong></p><ul><li>Diseño y desarrollo de backend, frontend y base de datos, usando J2EE y SQL Server.</li><li>Generación de reportes con Jasper Reports.</li><li>Documentación técnica y manual de usuario.</li></ul><p><strong>Proyecto: Prototipo Harley-Davidson. Aplicación web para control de productos, registro y búsqueda de productos.</strong></p><ul><li>Desarrollo de backend y frontend, usando J2EE y SQL Server. Integración de librería Quaggajs para lectura de código de barras.</li></ul>"
         }
     ],
     "education":[
@@ -160,7 +202,7 @@
                 "assets/img/portfolio/ieqsa/01.png"
             ],
             "url":"http://www.ieqsa.com.mx",
-            "description":"Desarrollo de administrador y sitio web para IEQSA",
+            "description":"<p>Desarrollo de administrador y sitio web para IEQSA</p><p>El proyecto consiste en la siguiente arquitectura:</p><ul><li><p><strong>Core: </strong>Esta capa contiene utileria, funcionalidad generica que se puede usar en cualquier parte de proyecto como encriptación, guardado de imagenes etc.</p></li><li><p><strong>Data: </strong>Esta capa contiene las clases de las entidades para enviar la información para persistirla, enums.</p></li><li><p><strong>DataAccess: </strong>Esta capa contiene la persistencia a la base de datos. Contiene los repositorios y le contexto para EntityFramework.</p></li><li><p><strong>Portal: </strong>Esta capa es el proyecto web el cual consultara la información a mostrar en el portal</p></li><li><p><strong>Administrador: </strong>Esta capa es el proyecto administrador en donde se gestiona la información que se mostrara en el portal accediendo solamente con credenciales. </p></li></ul>",
             "technologies":[
                 ".NET",
                 "Javascript",
@@ -174,9 +216,9 @@
             "category":"company",
             "project_type":"Web",
             "name":"SafetyApp",
-            "image_preview":"",
+            "image_preview":"assets/img/portfolio/bmw/01.png",
             "url":"",
-            "description":"",
+            "description":" <p>SafetyApp. Sistema web para la planta de San Luis Potosí para optimizar el proceso de creación de instrucciones de seguridad.</p><p>Desarrollo de frontend separado del backend. El frontend se desarrollo usando VueJS, Vuetify. Implementación de apis con axios.</p>",
             "technologies":[
                 "Javascript",
                 "VueJS",
@@ -188,9 +230,9 @@
             "category":"company",
             "project_type":"Web",
             "name":"Loop",
-            "image_preview":"",
+            "image_preview":"assets/img/portfolio/loop/01.png",
             "url":"",
-            "description":"",
+            "description":"<p>Migración de proyecto .NET a Laravel.</p><p>La arquitectura implementada en este proyecto fue la siguiente:</p><ul><li><strong>Domain: </strong><p>Esta capa contiene las entidades que representan las tablas de la base de datos, enums, constantantes</p></li><li><strong>Repository: </strong><p>Esta capa contiene las operaciónes de persistencia a la base de datos. Cada entidad contiene su repositorio con las operaciónes correspondientes implementando Inyección de dependencias. </p></li><li><strong>Services: </strong><p>Esta capa contiene la logica de cada operación donde se encuentran las validaciones antes de invocar algun metodo del repositorio, también envio de correos, guardado de archivo, etc, implementando Inyección de dependencias. </p></li> <li><strong>Api: </strong><p>Esta capa es donde se encuentran los controladores como punto de entrada a las peticiones. </p></li></ul><p>En frontend se uso vue integrado dentro de las vistas blade de php</p><p>Se implmento un WebApi en .Net Core para conectar con un servicio de centro de pagos. </p><p>En esta api se implmento Swagger para documentación de las apis.</p><p>Se desarrollaron apis para aplicación movil, usando apiDoc como herramienta para documentarlas</p>",
             "technologies":[
                 "Laravel",
                 "PHP",

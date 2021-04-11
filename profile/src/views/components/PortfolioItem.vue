@@ -1,5 +1,5 @@
 <template>
-  <div :class="'col-lg-4 col-md-6 portfolio-item ' + filterApp">
+  <div :class="'col-lg-4 col-md-6 portfolio-item '">
     <div class="portfolio-wrap">
       <img :src="item.image_preview" class="img-fluid" alt="" />
       <div class="portfolio-info">
@@ -45,7 +45,6 @@ export default {
   props: {
     index: Number,
     item: Object,
-    filterApp: String,
   },
   methods: {
     goToProject(item) {

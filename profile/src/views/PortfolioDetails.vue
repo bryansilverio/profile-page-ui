@@ -46,7 +46,7 @@
         </div>
         <div class="col-lg-12 portfolio-info">
           <h3>{{ $t("sections.portfolio.description") }}</h3>
-          <p>{{ project.description }}</p>
+          <p v-html="project.description"></p>
         </div>
       </div>
     </div>
