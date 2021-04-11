@@ -5,7 +5,7 @@
       <div class="row">
         <div class="col-lg-12 offset-md-8">
           <button @click="goToBack()">
-            <i class="icofont-arrow-left"></i>
+            <i class="bx bx-arrow-back"></i>
             Atras
           </button>
         </div>
@@ -39,10 +39,6 @@
               <strong>URL</strong>: <a href="#">{{ project.url }}</a>
             </li>
           </ul>
-
-          <p>
-            {{ project.description }}
-          </p>
           <input-tag
             v-model="project.technologies"
             :read-only="true"
@@ -61,10 +57,6 @@
 .vue-input-tag-wrapper {
   background-color: transparent !important;
   border: transparent !important;
-}
-
-.vue-input-tag-wrapper .input-tag {
-  background-color: #080a29;
 }
 </style>
 <script>
@@ -97,7 +89,7 @@ export default {
       }
     },
     goToBack() {
-      this.$router.go(-1);
+      this.$router.push({ path: "/" });
     },
   },
 };

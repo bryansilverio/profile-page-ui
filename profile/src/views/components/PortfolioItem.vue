@@ -7,14 +7,7 @@
         <p>{{ item.project_type }}</p>
         <div class="portfolio-links">
           <a
-            href="assets/img/portfolio/portfolio-1.jpg"
-            data-gallery="portfolioGallery"
-            class="portfolio-lightbox"
-            :title="item.name"
-            ><i class="bx bx-plus"></i
-          ></a>
-          <a
-            href="portfolio-details.html"
+            @click="goToProject(item)"
             class="portfolio-details-lightbox"
             data-glightbox="type: external"
             title="Portfolio Details"
@@ -55,8 +48,8 @@ export default {
     filterApp: String,
   },
   methods: {
-    showImage() {
-      this.showShadowBox = !this.showShadowBox;
+    goToProject(item) {
+      this.$router.push({ path: "portfolio/" + item.id + "/details" });
     },
   },
 };
