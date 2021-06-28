@@ -1,19 +1,14 @@
 import Vue from 'vue'
 import App from './App.vue'
-import i18n from './translation/i18n'
-import vuetify from './plugins/vuetify'
-import router from './router/index'
-
-window.$ = window.jQuery = require('jquery')
- 
+import router from './router'
+import store from './store'
+import vuetify from './plugins/vuetify';
 
 Vue.config.productionTip = false
 
-var app = new Vue({
+new Vue({
   router,
-  i18n,
+  store,
   vuetify,
-  render: (h) => h(App),
+  render: h => h(App)
 }).$mount('#app')
-
-export default app

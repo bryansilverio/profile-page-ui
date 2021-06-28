@@ -1,14 +1,30 @@
 <template>
-  <div>
-    <router-view />
-  </div>
+  <v-app>
+    <p-toolbar />
+    <v-content style="background-color: white">
+      <!-- <HelloWorld /> -->
+      <router-view />
+    </v-content>
+    <p-footer />
+  </v-app>
 </template>
+
 <script>
-//Components
-//import Index from "@/views/Index";
+import PToolbar from "./components/PToolbar";
+import PFooter from "./components/PFooter";
+// import HelloWorld from "./components/HelloWorld";
 
 export default {
   name: "App",
-  //components: { Index },
+
+  components: {
+    // HelloWorld,
+    PToolbar,
+    PFooter
+  },
+
+  data: () => ({
+    //
+  })
 };
 </script>
