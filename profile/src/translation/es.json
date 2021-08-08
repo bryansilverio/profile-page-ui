@@ -1,59 +1,16 @@
 {
-    "menu":{
-        "home":"Inicio",
-        "about":"Sobre mi",
-        "resume":"Resumen",
-        "services":"Servicios",
-        "portfolio":"Portafolio",
-        "contact":"Contacto"
+  "menu": {
+    "about": {
+      "title": "Sobre mí",
+      "href": "#about"
     },
-    "sections":{
-        "home":{
-            "phrase":"<span>Desarrollador</span>"
-        },
-        "about":{
-            "title":"Mas sobre mi",
-            "phone":"Teléfono",
-            "city":"Ciudad",
-            "email":"Correo",
-            "skills":"Conocimientos"
-        },
-        "resume":{
-            "title":"Mi resumen",
-            "resume":"Resumen",
-            "education":"Educación",
-            "experience":"Experiencia"
-        },
-        "services":{
-    
-        },
-        "portfolio":{
-            "category":{
-                "all":"Todos",
-                "company":"Empresa",
-                "personal":"Personal",
-                "freelance":"Freelance"
-            },
-            "title":"Detalle del proyecto",
-            "project_information":"Información del proyecto",
-            "name":"Nombre",
-            "type":"Tipo",
-            "description":"Descripción"
-        },
-        "contact":{
-            "title":"Contacto",
-            "city":"Ubicación",
-            "email":"Correo",
-            "contact":"Contacto",
-            "phone":"Teléfono",
-            "form":{
-                "name":"Nombre",
-                "email":"Correo",
-                "subject":"Asunto",
-                "message":"Mensaje",
-                "btnSendMessage":"Enviar mensaje",
-                "messageResponse":"Tu mensaje ha sido enviado. Gracias!"
-            }
-        }
+    "projects": {
+      "title": "Proyectos",
+      "href": "#portfolio"
+    },
+    "contact": {
+      "title": "Contacto",
+      "href": "#contact"
     }
+  }
 }

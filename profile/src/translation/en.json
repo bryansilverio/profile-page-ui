@@ -1,59 +1,16 @@
 {
-    "menu":{
-        "home":"Home",
-        "about":"About",
-        "resume":"Resume",
-        "services":"Services",
-        "portfolio":"Portfolio",
-        "contact":"Contact"
+  "menu": {
+    "about": {
+      "title": "About",
+      "href": "#about"
     },
-    "sections":{
-        "home":{
-            "phrase":"<span>Developer</span>"
-        },
-        "about":{
-            "title":"Learn more about me",
-            "phone":"Phone",
-            "city":"City",
-            "email":"Email",
-            "skills":"Skills"
-        },
-        "resume":{
-            "title":"Chek my resume",
-            "resume":"Resume",
-            "education":"Education",
-            "experience":"Experience"
-        },
-        "services":{
-
-        },
-        "portfolio":{
-            "category":{
-                "all":"All",
-                "company":"Company",
-                "personal":"Personal",
-                "freelance":"Freelance"
-            },
-            "title":"Project detail",
-            "project_information":"Project information",
-            "name":"Name",
-            "type":"Type",
-            "description":"Description"
-        },
-        "contact":{
-            "title":"Contact me",
-            "city":"Location",
-            "email":"Email",
-            "contact":"Contact",
-            "phone":"Phone",
-            "form":{
-                "name":"Name",
-                "email":"Email",
-                "subject":"Subject",
-                "message":"Message",
-                "btnSendMessage":"Send message",
-                "messageResponse":"Your message has been sent. Thank you!"
-            }
-        }
+    "projects": {
+      "title": "Projects",
+      "href": "#portfolio"
+    },
+    "contact": {
+      "title": "Contact",
+      "href": "#contact"
     }
+  }
 }

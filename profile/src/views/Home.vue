@@ -17,7 +17,7 @@
                   'title font-weight-bold': $vuetify.breakpoint.smAndDown,
                 }"
               >
-                Welcome to my page.
+                {{ intro.title }}
               </div>
               <div
                 :class="{
@@ -25,7 +25,7 @@
                   'subtitle-1': $vuetify.breakpoint.smAndDown,
                 }"
               >
-                I make applications.
+                {{ intro.subtitle }}
               </div>
             </v-col>
           </v-row>
@@ -35,23 +35,35 @@
     <v-container class="mt-5">
       <v-layout wrap>
         <v-flex xs12>
-          <div class="display-1 font-weight-bold" id="about">This is me</div>
+          <div class="display-1 font-weight-bold" id="about">
+            {{ about.title }}
+          </div>
         </v-flex>
         <v-flex xs12 mt-5>
-          <div class="body-1">{{ aboutText }}</div>
-          <div class="body-1 mt-3">
-            Working on starting an app development business and always looking
-            for new clients! Would love to talk to you about your idea.
-          </div>
+          <div class="body-1">{{ about.description }}</div>
         </v-flex>
       </v-layout>
       <v-layout wrap my-5>
         <v-flex xs12>
-          <div class="display-1 font-weight-bold" id="portfolio">My Work</div>
+          <div class="display-1 font-weight-bold" id="portfolio">
+            Experiencia
+          </div>
         </v-flex>
         <v-flex xs12 class="mt-5">
           <v-layout wrap>
-            <template v-for="(app, i) in apps">
+            <PExperience :experience="experience" />
+          </v-layout>
+        </v-flex>
+      </v-layout>
+      <v-layout wrap my-5 v-show="false">
+        <v-flex xs12>
+          <div class="display-1 font-weight-bold" id="portfolio">
+            {{ work.title }}
+          </div>
+        </v-flex>
+        <v-flex xs12 class="mt-5">
+          <v-layout wrap>
+            <template v-for="(app, i) in work.apps">
               <v-flex :key="i" xs12 sm6 md4>
                 <p-portfolio-app :app="app" />
               </v-flex>
@@ -62,7 +74,7 @@
       <v-layout wrap my-5>
         <v-flex xs12 mb-5>
           <div class="display-1 font-weight-bold" id="contact">
-            Send me a message
+            Contacto
           </div>
         </v-flex>
         <template v-for="(contact, i) in contactLinks">
@@ -71,42 +83,31 @@
           </v-flex>
         </template>
       </v-layout>
-      <!-- <v-layout wrap my-5>
-        <v-flex xs12>
-          <div class="display-1 font-weight-bold">Press</div>
-        </v-flex>
-        <v-flex xs12>
-          <v-layout>
-            <v-card width="">
-              <v-card-title>Press card</v-card-title>
-            </v-card>
-          </v-layout>
-        </v-flex>
-      </v-layout>-->
     </v-container>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-// import HelloWorld from "@/components/HelloWorld.vue";
 import PPortfolioApp from "@/components/PPortfolioApp.vue";
 import PContactInfo from "@/components/PContactInfo.vue";
-
-import dataObject from "@/data/data.json"
+import PExperience from "@/components/PExperience.vue";
+import dataObject from "@/data/data.json";
 
 export default {
-  name: "home",
+  name: "Home",
   components: {
-    // HelloWorld,
     PPortfolioApp,
     PContactInfo,
+    PExperience,
   },
   data() {
     return {
-      aboutText:dataObject.aboutText,
+      intro: dataObject.intro,
+      about: dataObject.about,
+      work: dataObject.work,
       apps: dataObject.apps,
       contactLinks: dataObject.contactLinks,
+      experience: dataObject.experience,
     };
   },
 };

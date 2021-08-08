@@ -1,61 +1,347 @@
 {
-    "aboutText":"I enjoy building apps in my free time when I'm not doing much. Looking to get into machine learning and trying to automate as many things as possible. Love to encourage new coders that they can do it too! I'm not very smart, just curious to see how things work. I'm also not that good of a writer as you can see. lol. Anyways, you are free to download any of the code thats on my github! And I hope you have a great day!",
+  "intro": {
+    "title": "Bienvenido",
+    "subtitle": "Desarrollador web"
+  },
+  "about": {
+    "title": "Sobre mi",
+    "description": "Me gusta investigar y aprender todo lo relacionado con la tecnologia para poder aplicar lo conocimientos en los proyectos personales y en el trabajo."
+  },
+  "work": {
+    "title": "Mis proyectos",
     "apps": [
-        {
-          "name": "Fasting App",
-          "price": "COMMING SOON",
-          "logo": "food-vision-logo.png",
-          "platforms": [
-            {
-              "name": "web",
-              "icon": "mdi-web",
-              "link": "https://apps.apple.com/us/app/food-vision/id1437083324"
-            }
-          ],
-          "description":
-            "One day my friend and I were eating at a restaurant and she suddenly asked me what an item looks like. I looked up at her an told her I didnt know. Then she told me why dont you make an app where you can see the pictures of food thats on the menu? Then I made Food Vision. :)",
-          "technologies": [
-            {
-              "name": "VueJs",
-              "icon": "mdi-vuejs",
-              "link": ""
-            },
-            {
-              "name": "Vuetify",
-              "icon": "mdi-vuetify",
-              "link": ""
-            },
-            {
-              "name": "NodeJs",
-              "icon": "mdi-nodejs",
-              "link": ""
-            }
-          ],
-          "code": {
-            "name": "github",
-            "icon": "mdi-github",
+      {
+        "name": "Fasting App",
+        "price": "COMMING SOON",
+        "logo": "food-vision-logo.png",
+        "platforms": [
+          {
+            "name": "web",
+            "icon": "mdi-web",
+            "link": "https://apps.apple.com/us/app/food-vision/id1437083324"
+          }
+        ],
+        "description": "One day my friend and I were eating at a restaurant and she suddenly asked me what an item looks like. I looked up at her an told her I didnt know. Then she told me why dont you make an app where you can see the pictures of food thats on the menu? Then I made Food Vision. :)",
+        "technologies": [
+          {
+            "name": "VueJs",
+            "icon": "mdi-vuejs",
+            "link": ""
+          },
+          {
+            "name": "Vuetify",
+            "icon": "mdi-vuetify",
+            "link": ""
+          },
+          {
+            "name": "NodeJs",
+            "icon": "mdi-nodejs",
             "link": ""
           }
+        ],
+        "code": {
+          "name": "github",
+          "icon": "mdi-github",
+          "link": ""
+        }
+      }
+    ]
+  },
+  "experience":[
+    {
+      "company":"Gonet - BBVA",
+      "position":"Desarrollador Java",
+      "startDate":"May 2021",
+      "endDate":"",
+      "descripcion":"<h3>Proyecto: BBVA API Market - Amazon Pay.</h3><p>Desarrollo de APIs Restful para exponer funcionalidad de la banca a consumidores terceros (en este caso a Amazon).</p><ul><li>Creación de Documento Funcional Técnico (DFT) para definir la funcionalidad de API con base a la definición de los servicios.</li><li>Creación de documentación técnica de APIs para portal API Market en RAML.</li><li>Desarrollo de API en Java usando Quarkus.</li></ul><br><h3>Proyecto: BBVA GloMo (App BBVA).</h3><p>Documentación y seguimiento de las APIs usadas por la aplicación BBVA Mx actualmente.</p><ul><li>Identificación de servicios agrupados por funcionalidad.</li><li>Pruebas de servicios y obtención de payloads para documentación</li></ul>",
+      "technologies":[
+        {
+          "name": "Java",
+          "icon": "mdi-language-java",
+          "link": ""
+        },
+        {
+          "name": "API",
+          "icon": "mdi-api",
+          "link": ""
         }
       ],
-      "contactLinks": [
+      "projects":[
         {
-          "name": "Email",
-          "value": "bryansilverio12@gmail.com",
-          "link": "mailto:bryansilverio12@gmail.com",
-          "icon": "mdi-email"
-        },
-        {
-          "name": "LinkedIn",
-          "value": "Bryan Silverio",
-          "link": "https://www.linkedin.com/in/bryan-silverio-6b417098/",
-          "icon": "mdi-linkedin"
-        },
-        {
-          "name": "Github",
-          "value": "bsn12993",
-          "link": "https://github.com/bsn12993/",
-          "icon": "mdi-github"
+          "name":"",
+          "description":""
         }
       ]
+    },
+    {
+      "company":"Bitfx",
+      "position":"Desarrollador Fullstack",
+      "startDate":"Ago 2019",
+      "endDate":"Abr 2021",
+      "descripcion":"<h3>Proyecto: SafetyApp.</h3> <p>Sistema web para la planta de San Luis Potosí para optimizar el proceso de creación de instrucciones de seguridad.</p> <ul><li>Desarrollo de Frontend usando Vue y Vuetify, Integración de Apis con axios.</li><li>Apoyo con servicios con JAX-RS, detección de errores de servicios usando debugger.</li></ul><br><h3>Proyecto: Loop.</h3><p>Migración de proyecto .NET a Laravel para servicios de transporte ejecutivo.</p><ul><li>Diseño de arquitectura del proyecto y base de datos, desarrollo de backend y frontend usando Laravel, Vue, MySQL.</li><li>Desarrollo de APIs para aplicación móvil, integración de API Google Maps e integración con Firebase usando NodeJS. </li><li>Desarrollo de Web API usando C# .NET Core para conectar servicio de centro de pagos para realizar pagos con tarjeta de crédito. </li><li>Implementación de Swagger para las documentar APIs.</li></ul>",
+      "technologies":[
+        {
+          "name": "VueJs",
+          "icon": "mdi-vuejs",
+          "link": ""
+        },
+        {
+          "name": "Vuetify",
+          "icon": "mdi-vuetify",
+          "link": ""
+        },
+        {
+          "name": "NodeJs",
+          "icon": "mdi-nodejs",
+          "link": ""
+        },
+        {
+          "name": "Laravel",
+          "icon": "mdi-laravel",
+          "link": ""
+        },
+        {
+          "name": "Firebase",
+          "icon": "mdi-firebase",
+          "link": ""
+        },
+        {
+          "name": "PHP",
+          "icon": "mdi-language-php",
+          "link": ""
+        },
+        {
+          "name": "API",
+          "icon": "mdi-api",
+          "link": ""
+        },
+        {
+          "name": "Javascript",
+          "icon": "mdi-language-javascript",
+          "link": ""
+        },
+        {
+          "name": "HTML",
+          "icon": "mdi-language-html5",
+          "link": ""
+        },
+        {
+          "name": "CSS",
+          "icon": "mdi-language-css3",
+          "link": ""
+        },
+        {
+          "name": "Bootstrap",
+          "icon": "mdi-bootstrap",
+          "link": ""
+        },
+        {
+          "name": "JQuery",
+          "icon": "mdi-jquery",
+          "link": ""
+        }
+      ],
+      "projects":[
+        {
+          "name":"",
+          "description":""
+        }
+      ]
+    },
+    {
+      "company":"TasiSoftware",
+      "position":"Desarrollador .NET",
+      "startDate":"Ene 2018",
+      "endDate":"Jun 2019",
+      "descripcion":"<h3>Proyecto: IEQSA.</h3><p>Desarrollo de administrador y sitio web para IEQSA.</p> <p>Sitio: <a target='_blank' href='http://www.ieqsa.com.mx/'>ieqsa</a>.</p> <ul><li>Diseño de arquitectura de proyecto y base de datos, desarrollo de Backend y Frontend usando C# .NET Framework y SQL Server para el administrador y sitio web. </li><li>Documentación técnica y manual de usuario.</li><li>Publicación de proyectos en producción en servidor del cliente en IIS.</li></ul> <br><h3>Proyecto: Tasinet2.</h3><p>Desarrollo de módulos para la nueva versión de la aplicación interna Tasinet2.</p><ul><li>Desarrollo de módulos usando C# .NET Framework y la plataforma DNN.Migración de plataforma interna con DNN.</li><li>Documentación técnica y manuales de usuario.</li></ul>",
+      "technologies":[
+        {
+          "name": ".NET",
+          "icon": "mdi-dot-net",
+          "link": ""
+        },
+        {
+          "name": "Visual Studio",
+          "icon": "mdi-microsoft-visual-studio",
+          "link": ""
+        },
+        {
+          "name": "Javascript",
+          "icon": "mdi-language-javascript",
+          "link": ""
+        },
+        {
+          "name": "HTML",
+          "icon": "mdi-language-html5",
+          "link": ""
+        },
+        {
+          "name": "CSS",
+          "icon": "mdi-language-css3",
+          "link": ""
+        },
+        {
+          "name": "Bootstrap",
+          "icon": "mdi-bootstrap",
+          "link": ""
+        },
+        {
+          "name": "JQuery",
+          "icon": "mdi-jquery",
+          "link": ""
+        },
+        {
+          "name": "SQL Server",
+          "icon": "mdi-database",
+          "link": ""
+        },
+        {
+          "name": "GIT",
+          "icon": "mdi-git",
+          "link": ""
+        }
+      ],
+      "projects":[
+        {
+          "name":"",
+          "description":""
+        }
+      ]
+    },
+    {
+      "company":"DW Software",
+      "position":"Desarrollador de Software",
+      "startDate":"Ago 2017",
+      "endDate":"Nov 2017",
+      "descripcion":"<h3>Proyecto: Web Service DHL.</h3> <p>Librería para consumo de web service DHL.</p><ul><li>Mapeo de estatus del web service SOAP de DHL.</li><li>Desarrollo del backend de librería (biblioteca de clases) para consumo de web service DHL.</li></ul><br><h3>Proyecto: Ryder.</h3><p>Aplicación web para obtener información sobre el envío de paquetes a través de paqueterías.</p><ul><li>Desarrollo de Backend e integración de frontend usando C# con .NET Framework e integración de Api Rest usando arquitectura SOA.</li><li>Integración de librería (biblioteca de clases) para consultar servicio Web DHL para obtener la información actual de los envíos a través de su paquetería.</li></ul>",
+      "technologies":[
+        {
+          "name": ".NET",
+          "icon": "mdi-dot-net",
+          "link": ""
+        },
+        {
+          "name": "Visual Studio",
+          "icon": "mdi-microsoft-visual-studio",
+          "link": ""
+        },
+        {
+          "name": "Javascript",
+          "icon": "mdi-language-javascript",
+          "link": ""
+        },
+        {
+          "name": "HTML",
+          "icon": "mdi-language-html5",
+          "link": ""
+        },
+        {
+          "name": "CSS",
+          "icon": "mdi-language-css3",
+          "link": ""
+        },
+        {
+          "name": "Bootstrap",
+          "icon": "mdi-bootstrap",
+          "link": ""
+        },
+        {
+          "name": "JQuery",
+          "icon": "mdi-jquery",
+          "link": ""
+        },
+        {
+          "name": "SQL Server",
+          "icon": "mdi-database",
+          "link": ""
+        },
+        {
+          "name": "GIT",
+          "icon": "mdi-git",
+          "link": ""
+        }
+      ],
+      "projects":[
+        {
+          "name":"",
+          "description":""
+        }
+      ]
+    },
+    {
+      "company":"IT Group",
+      "position":"Desarrollador Web",
+      "startDate":"Ago 2015",
+      "endDate":"Ago 2017",
+      "descripcion":"<h3>Proyecto: Remarkable.</h3><p>Desarrollo de aplicación web para mejorar el manejo de información de usar macros a usar base de datos y aplicación web.</p><ul><li>Diseño y desarrollo de backend, frontend y base de datos, usando J2EE y SQL Server.</li><li>Generación de reportes con Jasper Reports.</li><li>Documentación técnica y manual de usuario.</li></ul><br><h3>Proyecto: Prototipo Harley-Davidson.</h3><p>Aplicación web para control de productos, registro y búsqueda de productos.</p><ul><li>Desarrollo de backend y frontend, usando J2EE y SQL Server. Integración de librería Quaggajs para lectura de código de barras.</li></ul>",
+      "technologies":[
+        {
+          "name": "Java",
+          "icon": "mdi-language-java",
+          "link": ""
+        },
+        {
+          "name": ".NET",
+          "icon": "mdi-dot-net",
+          "link": ""
+        },
+        {
+          "name": "Visual Studio",
+          "icon": "mdi-microsoft-visual-studio",
+          "link": ""
+        },
+        {
+          "name": "Javascript",
+          "icon": "mdi-language-javascript",
+          "link": ""
+        },
+        {
+          "name": "HTML",
+          "icon": "mdi-language-html5",
+          "link": ""
+        },
+        {
+          "name": "CSS",
+          "icon": "mdi-language-css3",
+          "link": ""
+        },
+        {
+          "name": "Bootstrap",
+          "icon": "mdi-bootstrap",
+          "link": ""
+        },
+        {
+          "name": "JQuery",
+          "icon": "mdi-jquery",
+          "link": ""
+        }
+      ],
+      "projects":[
+        {
+          "name":"",
+          "description":""
+        }
+      ]
+    }
+  ],
+  "contactLinks": [
+    {
+      "name": "Email",
+      "value": "bryansilverio12@gmail.com",
+      "link": "mailto:bryansilverio12@gmail.com",
+      "icon": "mdi-email"
+    },
+    {
+      "name": "LinkedIn",
+      "value": "Bryan Silverio",
+      "link": "https://www.linkedin.com/in/bryan-silverio-6b417098/",
+      "icon": "mdi-linkedin"
+    },
+    {
+      "name": "Github",
+      "value": "bsn12993",
+      "link": "https://github.com/bsn12993/",
+      "icon": "mdi-github"
+    }
+  ]
 }

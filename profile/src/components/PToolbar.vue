@@ -12,17 +12,17 @@
               :x-small="$vuetify.breakpoint.smAndDown"
               @click="$vuetify.goTo('#about',options )"
               text
-            >About</v-btn>
+            >Sobre mí</v-btn>
             <v-btn
               :x-small="$vuetify.breakpoint.smAndDown"
               @click="$vuetify.goTo('#portfolio',options )"
               text
-            >My Work</v-btn>
+            >Experiencia</v-btn>
             <v-btn
               :x-small="$vuetify.breakpoint.smAndDown"
               @click="$vuetify.goTo('#contact',options )"
               text
-            >Contact</v-btn>
+            >Contacto</v-btn>
           </v-toolbar-items>
         </v-layout>
       </v-container>
