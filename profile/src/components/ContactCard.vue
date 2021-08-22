@@ -1,24 +1,17 @@
 <template>
-  <v-card class="mx-auto" max-width="400">
-    <v-sheet class="white--text align-end" :color="item.color" height="100px">
-      <v-card-title>
-        <v-avatar color="">
+  <v-card class="mx-auto" max-width="400" :color="item.color">
+    <v-card-text class="pb-0" :color="item.color">
+      <center>
+        <v-avatar color="white">
           <v-icon x-large>
             {{ item.icon }}
           </v-icon>
         </v-avatar>
-      </v-card-title>
-    </v-sheet>
-
-    <v-card-subtitle class="pb-0">
-      {{ item.name }}
-    </v-card-subtitle>
-
-    <v-card-actions>
-      <v-btn color="orange" text>
-        Ir al sitio
-      </v-btn>
-    </v-card-actions>
+      </center>
+      <center>
+        <h4>{{ item.name }}</h4>
+      </center>
+    </v-card-text>
   </v-card>
 </template>
 <script>

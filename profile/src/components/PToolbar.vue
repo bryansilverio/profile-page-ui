@@ -1,21 +1,16 @@
 <template>
-  <v-app-bar flat absolute color="#051626" dark height="120px">
-    <v-layout justify-center>
+  <v-app-bar flat absolute color="#051626" dark>
+    <v-app-bar-nav-icon></v-app-bar-nav-icon>
+    <v-toolbar-title>
+      <router-link to="/">
+        Portafolio
+      </router-link>
+    </v-toolbar-title>
+
+    <v-layout justify-start>
       <v-container>
         <v-layout>
-          <router-link to="/">
-            <v-btn
-              text
-              :class="{
-                'display-1 font-weight-bold': $vuetify.breakpoint.smAndUp,
-                'title font-weight-bold': $vuetify.breakpoint.smAndDown,
-              }"
-              >Bs</v-btn
-            >
-          </router-link>
-
-          <v-spacer></v-spacer>
-          <v-toolbar-items class="text-right">
+          <v-toolbar-items class="text-left">
             <router-link to="/about">
               <v-btn :x-small="$vuetify.breakpoint.smAndDown" text
                 >Sobre mí</v-btn

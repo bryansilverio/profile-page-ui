@@ -1,5 +1,7 @@
 <template>
   <div class="">
+    <v-parallax src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"></v-parallax>
+    <!--
     <v-img dark max-height="500px" src="/assets/img/bg03.png">
       <v-layout fill-height align-center>
         <v-container>
@@ -26,6 +28,7 @@
         </v-container>
       </v-layout>
     </v-img>
+    -->
     <v-row class="m-5 mt-10 mb-10" style="background-color:#051626">
       <v-layout fill-height align-center>
         <v-container m-5>
