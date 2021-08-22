@@ -39,8 +39,8 @@
       </v-card>
     </v-container>
     <v-container>
-      <v-card>
-        <v-card-text>
+      <v-card style="background-color:#051626">
+        <v-card-text class="white--text">
           <v-layout wrap my-5>
             <v-flex xs12>
               <div class="display-1 font-weight-bold" id="portfolio">

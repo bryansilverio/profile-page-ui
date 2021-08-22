@@ -343,5 +343,109 @@
       "link": "https://github.com/bsn12993/",
       "icon": "mdi-github"
     }
+  ],
+  "technologies":[
+    {
+      "name": "VueJs",
+      "icon": "mdi-vuejs",
+      "link": "",
+      "color":"green"
+    },
+    {
+      "name": "Vuetify",
+      "icon": "mdi-vuetify",
+      "link": "",
+      "color":"blue"
+    },
+    {
+      "name": "NodeJs",
+      "icon": "mdi-nodejs",
+      "link": "",
+      "color":"green"
+    },
+    {
+      "name": "Laravel",
+      "icon": "mdi-laravel",
+      "link": "",
+      "color":"orange"
+    },
+    {
+      "name": "Firebase",
+      "icon": "mdi-firebase",
+      "link": "",
+      "color":"yellow"
+    },
+    {
+      "name": "PHP",
+      "icon": "mdi-language-php",
+      "link": "",
+      "color":"blue"
+    },
+    {
+      "name": "API",
+      "icon": "mdi-api",
+      "link": "",
+      "color":""
+    },
+    {
+      "name": "Javascript",
+      "icon": "mdi-language-javascript",
+      "link": "",
+      "color":"blue"
+    },
+    {
+      "name": "HTML",
+      "icon": "mdi-language-html5",
+      "link": "",
+      "color":"orange"
+    },
+    {
+      "name": "CSS",
+      "icon": "mdi-language-css3",
+      "link": "",
+      "color":"yellow"
+    },
+    {
+      "name": "Bootstrap",
+      "icon": "mdi-bootstrap",
+      "link": "",
+      "color":"purple"
+    },
+    {
+      "name": "JQuery",
+      "icon": "mdi-jquery",
+      "link": "",
+      "color":"blue"
+    },
+    {
+      "name": "Java",
+      "icon": "mdi-language-java",
+      "link": "",
+      "color":"orange"
+    },
+    {
+      "name": ".NET",
+      "icon": "mdi-dot-net",
+      "link": "",
+      "color":"purple"
+    },
+    {
+      "name": "Visual Studio",
+      "icon": "mdi-microsoft-visual-studio",
+      "link": "",
+      "color":"purple"
+    },
+    {
+      "name": "SQL Server",
+      "icon": "mdi-database",
+      "link": "",
+      "color":"yellow"
+    },
+    {
+      "name": "GIT",
+      "icon": "mdi-git",
+      "link": "",
+      "color":"orange"
+    }
   ]
 }

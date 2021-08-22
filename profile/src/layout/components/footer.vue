@@ -1,10 +1,10 @@
 <template>
   <v-footer dark padless>
     <v-card class="flex" flat tile>
-      <v-card-title class="dark">
+      <v-card-title class="#051626">
         <v-btn
-          v-for="contact in contactLinks"
-          :key="contact"
+          v-for="(contact, i) in contactLinks"
+          :key="i"
           class="mx-4"
           dark
           icon

@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar flat absolute color="#0B0E17" dark height="120px">
+  <v-app-bar flat absolute color="#051626" dark height="120px">
     <v-layout justify-center>
       <v-container>
         <v-layout>

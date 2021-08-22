@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="">
     <v-img dark max-height="500px" src="/assets/img/bg03.png">
       <v-layout fill-height align-center>
         <v-container>
@@ -26,33 +26,35 @@
         </v-container>
       </v-layout>
     </v-img>
-    <v-container class="mt-5">
-      <v-layout wrap>
-        <v-flex xs4 m-5>
-          <v-col cols="12">
-            <AboutMeCard :title="about.title" :text="about.description" />
-          </v-col>
-        </v-flex>
-        <v-flex xs8 m-5>
-          <v-col cols="12">
-            <ContactCard :title="'Contacto'" />
-          </v-col>
-        </v-flex>
+    <v-row class="m-5 mt-10 mb-10" style="background-color:#051626">
+      <v-layout fill-height align-center>
+        <v-container m-5>
+          <v-row align="center" justify="center" class="white--text">
+            <v-col cols="12">
+             <center> <h1 class="align-center">Conocimientos</h1></center>
+            </v-col>
+          </v-row>
+          <v-row>
+            <template v-for="(item, i) in technologies">
+              <v-col cols="2" :key="i">
+                <ContactCard :item="item" />
+              </v-col>
+            </template>
+          </v-row>
+        </v-container>
       </v-layout>
-    </v-container>
+    </v-row>
   </div>
 </template>
 
 <script>
 import dataObject from "@/data/data.json";
 
-import AboutMeCard from "@/components/AboutMeCard";
 import ContactCard from "@/components/ContactCard";
 
 export default {
   name: "Home",
   components: {
-    AboutMeCard,
     ContactCard,
   },
   data() {
@@ -63,6 +65,7 @@ export default {
       apps: dataObject.apps,
       contactLinks: dataObject.contactLinks,
       experience: dataObject.experience,
+      technologies: dataObject.technologies,
     };
   },
   mounted() {
