@@ -1,0 +1,24 @@
+{
+ "menu":[
+     {
+         "to":"/",
+         "name":"Inicio",
+         "css":"active"
+     },
+     {
+        "to":"about",
+        "name":"Sobre mí",
+        "css":""
+    },
+    {
+        "to":"resume",
+        "name":"Resumen",
+        "css":""
+    },
+    {
+        "to":"contact",
+        "name":"Contacto",
+        "css":""
+    }
+ ]   
+}

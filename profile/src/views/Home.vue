@@ -1,78 +1,26 @@
 <template>
-  <div class="">
-    <v-parallax src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"></v-parallax>
-    <!--
-    <v-img dark max-height="500px" src="/assets/img/bg03.png">
-      <v-layout fill-height align-center>
-        <v-container>
-          <v-row align="center" justify="center" class="white--text">
-            <v-col cols="12">
-              <div
-                :class="{
-                  'display-2 font-weight-bold ': $vuetify.breakpoint.smAndUp,
-                  'title font-weight-bold': $vuetify.breakpoint.smAndDown,
-                }"
-              >
-                {{ intro.title }}
-              </div>
-              <div
-                :class="{
-                  headline: $vuetify.breakpoint.smAndUp,
-                  'subtitle-1': $vuetify.breakpoint.smAndDown,
-                }"
-              >
-                {{ $store.state.titlePage }}
-              </div>
-            </v-col>
-          </v-row>
-        </v-container>
-      </v-layout>
-    </v-img>
-    -->
-    <v-row class="m-5 mt-10 mb-10" style="background-color:#051626">
-      <v-layout fill-height align-center>
-        <v-container m-5>
-          <v-row align="center" justify="center" class="white--text">
-            <v-col cols="12">
-             <center> <h1 class="align-center">Conocimientos</h1></center>
-            </v-col>
-          </v-row>
-          <v-row>
-            <template v-for="(item, i) in technologies">
-              <v-col cols="2" :key="i">
-                <ContactCard :item="item" />
-              </v-col>
-            </template>
-          </v-row>
-        </v-container>
-      </v-layout>
-    </v-row>
-  </div>
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div
+      class="container d-flex flex-column align-items-center"
+      data-aos="zoom-in"
+      data-aos-delay="100"
+    >
+      <h1>{{ home.name }}</h1>
+      <h2>{{ home.profile }}</h2>
+      <router-link to="about" class="btn-about">About me</router-link>
+    </div>
+  </section>
+  <!-- End Hero -->
 </template>
-
 <script>
 import dataObject from "@/data/data.json";
-
-import ContactCard from "@/components/ContactCard";
-
 export default {
   name: "Home",
-  components: {
-    ContactCard,
-  },
   data() {
     return {
-      intro: dataObject.intro,
-      about: dataObject.about,
-      work: dataObject.work,
-      apps: dataObject.apps,
-      contactLinks: dataObject.contactLinks,
-      experience: dataObject.experience,
-      technologies: dataObject.technologies,
+      home: dataObject.home,
     };
-  },
-  mounted() {
-    this.$store.commit("setTitlePage", "Bienvenido");
   },
 };
 </script>

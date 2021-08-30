@@ -1,11 +1,11 @@
 {
-  "intro": {
-    "title": "Bienvenido",
-    "subtitle": "Desarrollador web"
+  "home": {
+    "name": "Bryan Silverio Nieves",
+    "profile": "Desarrollador web"
   },
   "about": {
-    "title": "Sobre mi",
-    "description": "Me gusta investigar y aprender todo lo relacionado con la tecnologia para poder aplicar lo conocimientos en los proyectos personales y en el trabajo."
+    "description": "Me gusta investigar y aprender todo lo relacionado con la tecnologia para poder aplicar lo conocimientos en los proyectos personales y en el trabajo.",
+    "profile":"Desarrollador Fullstack"
   },
   "work": {
     "title": "Mis proyectos",
@@ -324,24 +324,39 @@
       ]
     }
   ],
+  "education":[
+    {
+      "company":"Universidad Polítecnica de Querétaro",
+      "position":"Ing. Sistemas Computacionales",
+      "startDate":"Sep 2012",
+      "endDate":"Dic 2015",
+      "status":"Titulado"
+    }
+  ],
   "contactLinks": [
     {
-      "name": "Email",
+      "name": "email",
       "value": "bryansilverio12@gmail.com",
       "link": "mailto:bryansilverio12@gmail.com",
-      "icon": "mdi-email"
+      "icon": "bi bi-envelope"
     },
     {
-      "name": "LinkedIn",
+      "name": "linkedIn",
       "value": "Bryan Silverio",
       "link": "https://www.linkedin.com/in/bryan-silverio-6b417098/",
-      "icon": "mdi-linkedin"
+      "icon": "bi bi-linkedin"
     },
     {
-      "name": "Github",
+      "name": "github",
       "value": "bsn12993",
       "link": "https://github.com/bsn12993/",
-      "icon": "mdi-github"
+      "icon": "bi bi-github"
+    },
+    {
+      "name": "phone",
+      "value": "4461158755",
+      "link": "tel:4461158755",
+      "icon": "bi bi-phone"
     }
   ],
   "technologies":[
