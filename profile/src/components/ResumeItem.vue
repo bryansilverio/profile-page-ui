@@ -5,6 +5,9 @@
     <p>
       <em>{{ value.company }} </em>
     </p>
+    <p>
+      <a v-if="value.link" :href="value.link" target="_blank">Enlace</a>
+    </p>
     <p v-html="value.descripcion"></p>
   </div>
 </template>

@@ -9,15 +9,28 @@
         </div>
 
         <div class="row">
-          <div class="col-lg-12">
-            <h3 class="resume-title">Educación</h3>
-            <ResumeItem
-              v-for="(item, index) in education"
-              :key="index"
-              :value="item"
-            />
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-lg-12">
+                <h3 class="resume-title">Educación</h3>
+                <ResumeItem
+                  v-for="(item, index) in education"
+                  :key="index"
+                  :value="item"
+                />
+              </div>
+
+              <div class="col-lg-12">
+                <h3 class="resume-title">Cursos/Certificaciones</h3>
+                <ResumeItem
+                  v-for="(item, index) in courses"
+                  :key="index"
+                  :value="item"
+                />
+              </div>
+            </div>
           </div>
-          <div class="col-lg-12">
+          <div class="col-lg-6">
             <h3 class="resume-title">Experiencia Profesional</h3>
             <ResumeItem
               v-for="(item, index) in experiences"
@@ -44,6 +57,7 @@ export default {
     return {
       experiences: dataObject.experience,
       education: dataObject.education,
+      courses: dataObject.courses,
     };
   },
 };

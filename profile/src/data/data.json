@@ -333,6 +333,26 @@
       "status":"Titulado"
     }
   ],
+  "courses":[
+    {
+      "company":"CertiProf",
+      "position":"Scrum Developer Professional Certificate SDPC",
+      "startDate":"Ago 2021",
+      "endDate":"",
+      "status":"",
+      "link":"https://drive.google.com/file/d/1axfDRHqIT3rJ5V-nyRwpVpOHgBuHlbrW/view?usp=sharing",
+      "descripcion":"Certificación para conocer y aplicar el marco de trabajo scrum en los proyectos."
+    },
+    {
+      "company":"BBVA",
+      "position":"Api Specialized",
+      "startDate":"Jul 2021",
+      "endDate":"",
+      "status":"",
+      "link":"",
+      "descripcion":"Certificación para desarrollar apis bajo los estandares de BBVA"
+    }
+  ],
   "contactLinks": [
     {
       "name": "email",
