@@ -1,51 +1,28 @@
 <template>
-  <div>
-    <!-- ======= Header ======= -->
-    <header id="header" class="fixed-top">
-      <div
-        class="container-fluid d-flex justify-content-between align-items-center"
-      >
-        <h1 class="logo me-auto me-lg-0">
-          <router-link to="/">Bsilverio</router-link>
-        </h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-
-        <nav id="navbar" class="navbar order-last order-lg-0">
-          <ul>
-            <li v-for="(item, index) in menu" :key="index">
-              <router-link :to="item.to" :class="item.css">{{
-                item.name
-              }}</router-link>
-            </li>
-          </ul>
-          <i class="bi bi-list mobile-nav-toggle"></i>
-        </nav>
-        <!-- .navbar -->
-
-        <div class="header-social-links">
-          <ContactLinkItem
-            v-for="(item, index) in contactLinks"
-            :key="index"
-            :to="item.link"
-            :socialNetworkType="item.name"
-            :iconSocialNetworkType="item.icon"
-          />
-        </div>
+  <nav class="navbar">
+    <div class="max-width">
+      <div class="logo">
+        <a href="#">Portfo<span>lio.</span></a>
       </div>
-    </header>
-    <!-- End Header -->
-  </div>
+      <ul class="menu">
+        <li><a href="#home" class="menu-btn">Inicio</a></li>
+        <li><a href="#about" class="menu-btn">Sobre mi</a></li>
+        <li><a href="#services" class="menu-btn">Servicios</a></li>
+        <li><a href="#skills" class="menu-btn">Conocimientos</a></li>
+        <li><a href="#contact" class="menu-btn">Contacto</a></li>
+      </ul>
+      <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
 </template>
 <script>
 import dataObject from "@/data/data.json";
 import menuObject from "@/data/menu.json";
 
-import ContactLinkItem from "@/components/ContactLinkItem";
-
 export default {
   name: "NavBar",
-  components: { ContactLinkItem },
   data() {
     return {
       contactLinks: dataObject.contactLinks,

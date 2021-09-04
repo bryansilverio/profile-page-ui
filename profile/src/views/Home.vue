@@ -1,26 +1,23 @@
 <template>
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
-    <div
-      class="container d-flex flex-column align-items-center"
-      data-aos="zoom-in"
-      data-aos-delay="100"
-    >
-      <h1>{{ home.name }}</h1>
-      <h2>{{ home.profile }}</h2>
-      <router-link to="about" class="btn-about">About me</router-link>
+  <section class="home" id="home">
+    <div class="max-width">
+      <div class="home-content">
+        <div class="text-1">Hello, my name is</div>
+        <div class="text-2">{{ data.home.name }}</div>
+        <div class="text-3">And I'm a <span class="typing"></span></div>
+        <a href="#contact">Contacto</a>
+      </div>
     </div>
   </section>
-  <!-- End Hero -->
 </template>
 <script>
-import dataObject from "@/data/data.json";
 export default {
   name: "Home",
+  props: {
+    data: Object,
+  },
   data() {
-    return {
-      home: dataObject.home,
-    };
+    return {};
   },
 };
 </script>

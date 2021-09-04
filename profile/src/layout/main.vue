@@ -1,7 +1,9 @@
 <template>
   <div>
     <NavBar />
-    <Content />
+    <main class="l-main">
+      <Content />
+    </main>
     <Footer />
   </div>
 </template>

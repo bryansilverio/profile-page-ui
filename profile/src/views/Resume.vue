@@ -1,58 +1,47 @@
 <template>
-  <main id="main">
-    <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
-          <h2>Resumen</h2>
-          <p></p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="row">
-              <div class="col-lg-12">
-                <h3 class="resume-title">Educación</h3>
-                <ResumeItem
-                  v-for="(item, index) in education"
-                  :key="index"
-                  :value="item"
-                />
-              </div>
-
-              <div class="col-lg-12">
-                <h3 class="resume-title">Cursos/Certificaciones</h3>
-                <ResumeItem
-                  v-for="(item, index) in courses"
-                  :key="index"
-                  :value="item"
-                />
-              </div>
-            </div>
+  <section class="services" id="services">
+    <div class="max-width">
+      <h2 class="title">Servicios</h2>
+      <div class="serv-content">
+        <div class="card">
+          <div class="box">
+            <i class="fas fa-paint-brush"></i>
+            <div class="text">Web Design</div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia
+              sunt, quasi quo illo enim.
+            </p>
           </div>
-          <div class="col-lg-6">
-            <h3 class="resume-title">Experiencia Profesional</h3>
-            <ResumeItem
-              v-for="(item, index) in experiences"
-              :key="index"
-              :value="item"
-            />
+        </div>
+        <div class="card">
+          <div class="box">
+            <i class="fas fa-chart-line"></i>
+            <div class="text">Advertising</div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia
+              sunt, quasi quo illo enim.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="box">
+            <i class="fas fa-code"></i>
+            <div class="text">Apps Design</div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia
+              sunt, quasi quo illo enim.
+            </p>
           </div>
         </div>
       </div>
-    </section>
-    <!-- End Resume Section -->
-  </main>
-  <!-- End #main -->
+    </div>
+  </section>
 </template>
 <script>
 import dataObject from "@/data/data.json";
 
-import ResumeItem from "@/components/ResumeItem";
-
 export default {
   name: "Resume",
-  components: { ResumeItem },
   data() {
     return {
       experiences: dataObject.experience,

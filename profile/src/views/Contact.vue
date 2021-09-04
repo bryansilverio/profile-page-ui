@@ -1,70 +1,86 @@
 <template>
-  <main id="main">
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
-          <h2>Contacto</h2>
-          <p>
-          </p>
-        </div>
-
-        <div>
-          <iframe
-            style="border:0; width: 100%; height: 270px;"
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
-            frameborder="0"
-            allowfullscreen
-          ></iframe>
-        </div>
-
-        <div class="row mt-5">
-          <div class="col-lg-4">
-            <div class="info">
-              <ContactItem
-                contactType="address"
-                iconContactType="bi bi-geo-alt"
-                label="Ciudad"
-                value="Qro. MX"
-              />
-              <ContactItem
-                contactType="email"
-                iconContactType="bi bi-envelope"
-                label="Correo"
-                value="bryansilverio12@gmail.com"
-              />
-              <ContactItem
-                contactType="email"
-                iconContactType="bi bi-phone"
-                label="Teléfono"
-                value="4461158755"
-              />
+  <section class="contact" id="contact">
+    <div class="max-width">
+      <h2 class="title">Contacto</h2>
+      <div class="contact-content">
+        <div class="column left">
+          <div class="text">Contacto</div>
+          <p></p>
+          <div class="icons">
+            <div class="row">
+              <i class="fas fa-user"></i>
+              <div class="info">
+                <div class="head">Nombre</div>
+                <div class="sub-title">{{ name }}</div>
+              </div>
+            </div>
+            <div class="row">
+              <i class="fas fa-map-marker-alt"></i>
+              <div class="info">
+                <div class="head">Direeción</div>
+                <div class="sub-title">Qro. MX</div>
+              </div>
+            </div>
+            <div class="row" v-if="emailContact">
+              <i class="fas fa-envelope"></i>
+              <div class="info">
+                <div class="head">Correo</div>
+                <div class="sub-title">{{ emailContact.value }}</div>
+              </div>
             </div>
           </div>
-
-          <div class="col-lg-8 mt-5 mt-lg-0">
-            <SendMessage />
-          </div>
+        </div>
+        <div class="column right">
+          <div class="text">Mensage</div>
+          <form action="#">
+            <div class="fields">
+              <div class="field name">
+                <input type="text" placeholder="Nombre" required />
+              </div>
+              <div class="field email">
+                <input type="email" placeholder="Correo" required />
+              </div>
+            </div>
+            <div class="field">
+              <input type="text" placeholder="Asunto" required />
+            </div>
+            <div class="field textarea">
+              <textarea
+                cols="30"
+                rows="10"
+                placeholder="Mensage.."
+                required
+              ></textarea>
+            </div>
+            <div class="button-area">
+              <button type="submit">Envier mensage</button>
+            </div>
+          </form>
         </div>
       </div>
-    </section>
-    <!-- End Contact Section -->
-  </main>
-  <!-- End #main -->
+    </div>
+  </section>
 </template>
 <script>
-import dataObject from "@/data/data.json";
-
-import ContactItem from "@/components/ContactItem";
-import SendMessage from "@/components/SendMessage";
-
 export default {
   name: "Contact",
-  components: { ContactItem, SendMessage },
+  props: {
+    name: String,
+    data: Array,
+  },
   data() {
     return {
-      contactLinks: dataObject.contactLinks,
+      emailContact: null,
     };
+  },
+  created() {
+    this.getEmail(this.data);
+  },
+  methods: {
+    getEmail(items = []) {
+      this.emailContact = null;
+      this.emailContact = items.find(({ type }) => type === "EMAIL");
+    },
   },
 };
 </script>

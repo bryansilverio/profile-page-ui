@@ -1,11 +1,11 @@
 {
   "home": {
-    "name": "Bryan Silverio Nieves",
+    "name": "Bryan Silverio",
     "profile": "Desarrollador web"
   },
   "about": {
     "description": "Me gusta investigar y aprender todo lo relacionado con la tecnologia para poder aplicar lo conocimientos en los proyectos personales y en el trabajo.",
-    "profile":"Desarrollador Fullstack"
+    "profile": "Desarrollador Fullstack"
   },
   "work": {
     "title": "Mis proyectos",
@@ -47,14 +47,14 @@
       }
     ]
   },
-  "experience":[
+  "experience": [
     {
-      "company":"Gonet - BBVA",
-      "position":"Desarrollador Java",
-      "startDate":"May 2021",
-      "endDate":"",
-      "descripcion":"<h3>Proyecto: BBVA API Market - Amazon Pay.</h3><p>Desarrollo de APIs Restful para exponer funcionalidad de la banca a consumidores terceros (en este caso a Amazon).</p><ul><li>Creación de Documento Funcional Técnico (DFT) para definir la funcionalidad de API con base a la definición de los servicios.</li><li>Creación de documentación técnica de APIs para portal API Market en RAML.</li><li>Desarrollo de API en Java usando Quarkus.</li></ul><br><h3>Proyecto: BBVA GloMo (App BBVA).</h3><p>Documentación y seguimiento de las APIs usadas por la aplicación BBVA Mx actualmente.</p><ul><li>Identificación de servicios agrupados por funcionalidad.</li><li>Pruebas de servicios y obtención de payloads para documentación</li></ul>",
-      "technologies":[
+      "company": "Gonet - BBVA",
+      "position": "Desarrollador Java",
+      "startDate": "May 2021",
+      "endDate": "",
+      "descripcion": "<h3>Proyecto: BBVA API Market - Amazon Pay.</h3><p>Desarrollo de APIs Restful para exponer funcionalidad de la banca a consumidores terceros (en este caso a Amazon).</p><ul><li>Creación de Documento Funcional Técnico (DFT) para definir la funcionalidad de API con base a la definición de los servicios.</li><li>Creación de documentación técnica de APIs para portal API Market en RAML.</li><li>Desarrollo de API en Java usando Quarkus.</li></ul><br><h3>Proyecto: BBVA GloMo (App BBVA).</h3><p>Documentación y seguimiento de las APIs usadas por la aplicación BBVA Mx actualmente.</p><ul><li>Identificación de servicios agrupados por funcionalidad.</li><li>Pruebas de servicios y obtención de payloads para documentación</li></ul>",
+      "technologies": [
         {
           "name": "Java",
           "icon": "mdi-language-java",
@@ -66,20 +66,20 @@
           "link": ""
         }
       ],
-      "projects":[
+      "projects": [
         {
-          "name":"",
-          "description":""
+          "name": "",
+          "description": ""
         }
       ]
     },
     {
-      "company":"Bitfx",
-      "position":"Desarrollador Fullstack",
-      "startDate":"Ago 2019",
-      "endDate":"Abr 2021",
-      "descripcion":"<h3>Proyecto: SafetyApp.</h3> <p>Sistema web para la planta de San Luis Potosí para optimizar el proceso de creación de instrucciones de seguridad.</p> <ul><li>Desarrollo de Frontend usando Vue y Vuetify, Integración de Apis con axios.</li><li>Apoyo con servicios con JAX-RS, detección de errores de servicios usando debugger.</li></ul><br><h3>Proyecto: Loop.</h3><p>Migración de proyecto .NET a Laravel para servicios de transporte ejecutivo.</p><ul><li>Diseño de arquitectura del proyecto y base de datos, desarrollo de backend y frontend usando Laravel, Vue, MySQL.</li><li>Desarrollo de APIs para aplicación móvil, integración de API Google Maps e integración con Firebase usando NodeJS. </li><li>Desarrollo de Web API usando C# .NET Core para conectar servicio de centro de pagos para realizar pagos con tarjeta de crédito. </li><li>Implementación de Swagger para las documentar APIs.</li></ul>",
-      "technologies":[
+      "company": "Bitfx",
+      "position": "Desarrollador Fullstack",
+      "startDate": "Ago 2019",
+      "endDate": "Abr 2021",
+      "descripcion": "<h3>Proyecto: SafetyApp.</h3> <p>Sistema web para la planta de San Luis Potosí para optimizar el proceso de creación de instrucciones de seguridad.</p> <ul><li>Desarrollo de Frontend usando Vue y Vuetify, Integración de Apis con axios.</li><li>Apoyo con servicios con JAX-RS, detección de errores de servicios usando debugger.</li></ul><br><h3>Proyecto: Loop.</h3><p>Migración de proyecto .NET a Laravel para servicios de transporte ejecutivo.</p><ul><li>Diseño de arquitectura del proyecto y base de datos, desarrollo de backend y frontend usando Laravel, Vue, MySQL.</li><li>Desarrollo de APIs para aplicación móvil, integración de API Google Maps e integración con Firebase usando NodeJS. </li><li>Desarrollo de Web API usando C# .NET Core para conectar servicio de centro de pagos para realizar pagos con tarjeta de crédito. </li><li>Implementación de Swagger para las documentar APIs.</li></ul>",
+      "technologies": [
         {
           "name": "VueJs",
           "icon": "mdi-vuejs",
@@ -141,20 +141,20 @@
           "link": ""
         }
       ],
-      "projects":[
+      "projects": [
         {
-          "name":"",
-          "description":""
+          "name": "",
+          "description": ""
         }
       ]
     },
     {
-      "company":"TasiSoftware",
-      "position":"Desarrollador .NET",
-      "startDate":"Ene 2018",
-      "endDate":"Jun 2019",
-      "descripcion":"<h3>Proyecto: IEQSA.</h3><p>Desarrollo de administrador y sitio web para IEQSA.</p> <p>Sitio: <a target='_blank' href='http://www.ieqsa.com.mx/'>ieqsa</a>.</p> <ul><li>Diseño de arquitectura de proyecto y base de datos, desarrollo de Backend y Frontend usando C# .NET Framework y SQL Server para el administrador y sitio web. </li><li>Documentación técnica y manual de usuario.</li><li>Publicación de proyectos en producción en servidor del cliente en IIS.</li></ul> <br><h3>Proyecto: Tasinet2.</h3><p>Desarrollo de módulos para la nueva versión de la aplicación interna Tasinet2.</p><ul><li>Desarrollo de módulos usando C# .NET Framework y la plataforma DNN.Migración de plataforma interna con DNN.</li><li>Documentación técnica y manuales de usuario.</li></ul>",
-      "technologies":[
+      "company": "TasiSoftware",
+      "position": "Desarrollador .NET",
+      "startDate": "Ene 2018",
+      "endDate": "Jun 2019",
+      "descripcion": "<h3>Proyecto: IEQSA.</h3><p>Desarrollo de administrador y sitio web para IEQSA.</p> <p>Sitio: <a target='_blank' href='http://www.ieqsa.com.mx/'>ieqsa</a>.</p> <ul><li>Diseño de arquitectura de proyecto y base de datos, desarrollo de Backend y Frontend usando C# .NET Framework y SQL Server para el administrador y sitio web. </li><li>Documentación técnica y manual de usuario.</li><li>Publicación de proyectos en producción en servidor del cliente en IIS.</li></ul> <br><h3>Proyecto: Tasinet2.</h3><p>Desarrollo de módulos para la nueva versión de la aplicación interna Tasinet2.</p><ul><li>Desarrollo de módulos usando C# .NET Framework y la plataforma DNN.Migración de plataforma interna con DNN.</li><li>Documentación técnica y manuales de usuario.</li></ul>",
+      "technologies": [
         {
           "name": ".NET",
           "icon": "mdi-dot-net",
@@ -201,20 +201,20 @@
           "link": ""
         }
       ],
-      "projects":[
+      "projects": [
         {
-          "name":"",
-          "description":""
+          "name": "",
+          "description": ""
         }
       ]
     },
     {
-      "company":"DW Software",
-      "position":"Desarrollador de Software",
-      "startDate":"Ago 2017",
-      "endDate":"Nov 2017",
-      "descripcion":"<h3>Proyecto: Web Service DHL.</h3> <p>Librería para consumo de web service DHL.</p><ul><li>Mapeo de estatus del web service SOAP de DHL.</li><li>Desarrollo del backend de librería (biblioteca de clases) para consumo de web service DHL.</li></ul><br><h3>Proyecto: Ryder.</h3><p>Aplicación web para obtener información sobre el envío de paquetes a través de paqueterías.</p><ul><li>Desarrollo de Backend e integración de frontend usando C# con .NET Framework e integración de Api Rest usando arquitectura SOA.</li><li>Integración de librería (biblioteca de clases) para consultar servicio Web DHL para obtener la información actual de los envíos a través de su paquetería.</li></ul>",
-      "technologies":[
+      "company": "DW Software",
+      "position": "Desarrollador de Software",
+      "startDate": "Ago 2017",
+      "endDate": "Nov 2017",
+      "descripcion": "<h3>Proyecto: Web Service DHL.</h3> <p>Librería para consumo de web service DHL.</p><ul><li>Mapeo de estatus del web service SOAP de DHL.</li><li>Desarrollo del backend de librería (biblioteca de clases) para consumo de web service DHL.</li></ul><br><h3>Proyecto: Ryder.</h3><p>Aplicación web para obtener información sobre el envío de paquetes a través de paqueterías.</p><ul><li>Desarrollo de Backend e integración de frontend usando C# con .NET Framework e integración de Api Rest usando arquitectura SOA.</li><li>Integración de librería (biblioteca de clases) para consultar servicio Web DHL para obtener la información actual de los envíos a través de su paquetería.</li></ul>",
+      "technologies": [
         {
           "name": ".NET",
           "icon": "mdi-dot-net",
@@ -261,20 +261,20 @@
           "link": ""
         }
       ],
-      "projects":[
+      "projects": [
         {
-          "name":"",
-          "description":""
+          "name": "",
+          "description": ""
         }
       ]
     },
     {
-      "company":"IT Group",
-      "position":"Desarrollador Web",
-      "startDate":"Ago 2015",
-      "endDate":"Ago 2017",
-      "descripcion":"<h3>Proyecto: Remarkable.</h3><p>Desarrollo de aplicación web para mejorar el manejo de información de usar macros a usar base de datos y aplicación web.</p><ul><li>Diseño y desarrollo de backend, frontend y base de datos, usando J2EE y SQL Server.</li><li>Generación de reportes con Jasper Reports.</li><li>Documentación técnica y manual de usuario.</li></ul><br><h3>Proyecto: Prototipo Harley-Davidson.</h3><p>Aplicación web para control de productos, registro y búsqueda de productos.</p><ul><li>Desarrollo de backend y frontend, usando J2EE y SQL Server. Integración de librería Quaggajs para lectura de código de barras.</li></ul>",
-      "technologies":[
+      "company": "IT Group",
+      "position": "Desarrollador Web",
+      "startDate": "Ago 2015",
+      "endDate": "Ago 2017",
+      "descripcion": "<h3>Proyecto: Remarkable.</h3><p>Desarrollo de aplicación web para mejorar el manejo de información de usar macros a usar base de datos y aplicación web.</p><ul><li>Diseño y desarrollo de backend, frontend y base de datos, usando J2EE y SQL Server.</li><li>Generación de reportes con Jasper Reports.</li><li>Documentación técnica y manual de usuario.</li></ul><br><h3>Proyecto: Prototipo Harley-Davidson.</h3><p>Aplicación web para control de productos, registro y búsqueda de productos.</p><ul><li>Desarrollo de backend y frontend, usando J2EE y SQL Server. Integración de librería Quaggajs para lectura de código de barras.</li></ul>",
+      "technologies": [
         {
           "name": "Java",
           "icon": "mdi-language-java",
@@ -316,41 +316,41 @@
           "link": ""
         }
       ],
-      "projects":[
+      "projects": [
         {
-          "name":"",
-          "description":""
+          "name": "",
+          "description": ""
         }
       ]
     }
   ],
-  "education":[
+  "education": [
     {
-      "company":"Universidad Polítecnica de Querétaro",
-      "position":"Ing. Sistemas Computacionales",
-      "startDate":"Sep 2012",
-      "endDate":"Dic 2015",
-      "status":"Titulado"
+      "company": "Universidad Polítecnica de Querétaro",
+      "position": "Ing. Sistemas Computacionales",
+      "startDate": "Sep 2012",
+      "endDate": "Dic 2015",
+      "status": "Titulado"
     }
   ],
-  "courses":[
+  "courses": [
     {
-      "company":"CertiProf",
-      "position":"Scrum Developer Professional Certificate SDPC",
-      "startDate":"Ago 2021",
-      "endDate":"",
-      "status":"",
-      "link":"https://drive.google.com/file/d/1axfDRHqIT3rJ5V-nyRwpVpOHgBuHlbrW/view?usp=sharing",
-      "descripcion":"Certificación para conocer y aplicar el marco de trabajo scrum en los proyectos."
+      "company": "CertiProf",
+      "position": "Scrum Developer Professional Certificate SDPC",
+      "startDate": "Ago 2021",
+      "endDate": "",
+      "status": "",
+      "link": "https://drive.google.com/file/d/1axfDRHqIT3rJ5V-nyRwpVpOHgBuHlbrW/view?usp=sharing",
+      "descripcion": "Certificación para conocer y aplicar el marco de trabajo scrum en los proyectos."
     },
     {
-      "company":"BBVA",
-      "position":"Api Specialized",
-      "startDate":"Jul 2021",
-      "endDate":"",
-      "status":"",
-      "link":"",
-      "descripcion":"Certificación para desarrollar apis bajo los estandares de BBVA"
+      "company": "BBVA",
+      "position": "Api Specialized",
+      "startDate": "Jul 2021",
+      "endDate": "",
+      "status": "",
+      "link": "",
+      "descripcion": "Certificación para desarrollar apis bajo los estandares de BBVA"
     }
   ],
   "contactLinks": [
@@ -358,129 +358,133 @@
       "name": "email",
       "value": "bryansilverio12@gmail.com",
       "link": "mailto:bryansilverio12@gmail.com",
-      "icon": "bi bi-envelope"
-    },
-    {
-      "name": "linkedIn",
-      "value": "Bryan Silverio",
-      "link": "https://www.linkedin.com/in/bryan-silverio-6b417098/",
-      "icon": "bi bi-linkedin"
-    },
-    {
-      "name": "github",
-      "value": "bsn12993",
-      "link": "https://github.com/bsn12993/",
-      "icon": "bi bi-github"
+      "icon": "bx bxl-envelope",
+      "type": "EMAIL"
     },
     {
       "name": "phone",
       "value": "4461158755",
       "link": "tel:4461158755",
-      "icon": "bi bi-phone"
+      "icon": "bx bxl-phone",
+      "type": "PHONE"
+    },
+    {
+      "name": "linkedIn",
+      "value": "Bryan Silverio",
+      "link": "https://www.linkedin.com/in/bryan-silverio-6b417098/",
+      "icon": "bx bxl-linkedin",
+      "type": "SOCIAL_NETWORK"
+    },
+    {
+      "name": "github",
+      "value": "bsn12993",
+      "link": "https://github.com/bsn12993/",
+      "icon": "bx bxl-github",
+      "type": "SOCIAL_NETWORK"
     }
   ],
-  "technologies":[
+  "skills": [
     {
       "name": "VueJs",
-      "icon": "mdi-vuejs",
+      "icon": "bx bxl-vuejs",
       "link": "",
-      "color":"green"
+      "color": "green"
     },
     {
       "name": "Vuetify",
-      "icon": "mdi-vuetify",
+      "icon": "bx bxl-vuetify",
       "link": "",
-      "color":"blue"
+      "color": "blue"
     },
     {
       "name": "NodeJs",
-      "icon": "mdi-nodejs",
+      "icon": "bx bxl-nodejs",
       "link": "",
-      "color":"green"
+      "color": "green"
     },
     {
       "name": "Laravel",
-      "icon": "mdi-laravel",
+      "icon": "bx bxl-laravel",
       "link": "",
-      "color":"orange"
+      "color": "orange"
     },
     {
       "name": "Firebase",
-      "icon": "mdi-firebase",
+      "icon": "bx bxl-firebase",
       "link": "",
-      "color":"yellow"
+      "color": "yellow"
     },
     {
       "name": "PHP",
-      "icon": "mdi-language-php",
+      "icon": "bx bxl-language-php",
       "link": "",
-      "color":"blue"
+      "color": "blue"
     },
     {
       "name": "API",
-      "icon": "mdi-api",
+      "icon": "bx bxl-api",
       "link": "",
-      "color":""
+      "color": ""
     },
     {
       "name": "Javascript",
-      "icon": "mdi-language-javascript",
+      "icon": "bx bxl-javascript",
       "link": "",
-      "color":"blue"
+      "color": "blue"
     },
     {
       "name": "HTML",
-      "icon": "mdi-language-html5",
+      "icon": "bx bxl-html5",
       "link": "",
-      "color":"orange"
+      "color": "orange"
     },
     {
       "name": "CSS",
-      "icon": "mdi-language-css3",
+      "icon": "bx bxl-css3",
       "link": "",
-      "color":"yellow"
+      "color": "yellow"
     },
     {
       "name": "Bootstrap",
-      "icon": "mdi-bootstrap",
+      "icon": "bx bxl-bootstrap",
       "link": "",
-      "color":"purple"
+      "color": "purple"
     },
     {
       "name": "JQuery",
-      "icon": "mdi-jquery",
+      "icon": "bx bxl-jquery",
       "link": "",
-      "color":"blue"
+      "color": "blue"
     },
     {
       "name": "Java",
-      "icon": "mdi-language-java",
+      "icon": "bx bxl-language-java",
       "link": "",
-      "color":"orange"
+      "color": "orange"
     },
     {
       "name": ".NET",
-      "icon": "mdi-dot-net",
+      "icon": "bx bxl-dot-net",
       "link": "",
-      "color":"purple"
+      "color": "purple"
     },
     {
       "name": "Visual Studio",
-      "icon": "mdi-microsoft-visual-studio",
+      "icon": "bx bxl-microsoft-visual-studio",
       "link": "",
-      "color":"purple"
+      "color": "purple"
     },
     {
       "name": "SQL Server",
-      "icon": "mdi-database",
+      "icon": "bx bxl-database",
       "link": "",
-      "color":"yellow"
+      "color": "yellow"
     },
     {
       "name": "GIT",
-      "icon": "mdi-git",
+      "icon": "bx bxl-git",
       "link": "",
-      "color":"orange"
+      "color": "orange"
     }
   ]
 }
