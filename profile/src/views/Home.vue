@@ -2,9 +2,9 @@
   <section class="home" id="home">
     <div class="max-width">
       <div class="home-content">
-        <div class="text-1">Hello, my name is</div>
+        <div v-show="false" class="text-1">Hello, my name is</div>
         <div class="text-2">{{ data.home.name }}</div>
-        <div class="text-3">And I'm a <span class="typing"></span></div>
+        <div class="text-3"><span class="typing">Desarrollador web</span></div>
         <a href="#contact">Contacto</a>
       </div>
     </div>

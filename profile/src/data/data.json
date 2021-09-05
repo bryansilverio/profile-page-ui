@@ -372,14 +372,14 @@
       "name": "linkedIn",
       "value": "Bryan Silverio",
       "link": "https://www.linkedin.com/in/bryan-silverio-6b417098/",
-      "icon": "bx bxl-linkedin",
+      "icon": "fas fa-linkedin",
       "type": "SOCIAL_NETWORK"
     },
     {
       "name": "github",
       "value": "bsn12993",
       "link": "https://github.com/bsn12993/",
-      "icon": "bx bxl-github",
+      "icon": "fab fa-github",
       "type": "SOCIAL_NETWORK"
     }
   ],
@@ -388,103 +388,120 @@
       "name": "VueJs",
       "icon": "bx bxl-vuejs",
       "link": "",
-      "color": "green"
+      "color": "green",
+      "value": "100"
     },
     {
       "name": "Vuetify",
       "icon": "bx bxl-vuetify",
       "link": "",
-      "color": "blue"
+      "color": "blue",
+      "value": "100"
     },
     {
       "name": "NodeJs",
       "icon": "bx bxl-nodejs",
       "link": "",
-      "color": "green"
+      "color": "green",
+      "value": "100"
     },
     {
       "name": "Laravel",
       "icon": "bx bxl-laravel",
       "link": "",
-      "color": "orange"
+      "color": "orange",
+      "value": "100"
     },
     {
       "name": "Firebase",
       "icon": "bx bxl-firebase",
       "link": "",
-      "color": "yellow"
+      "color": "yellow",
+      "value": "100"
     },
     {
       "name": "PHP",
       "icon": "bx bxl-language-php",
       "link": "",
-      "color": "blue"
+      "color": "blue",
+      "value": "100"
     },
     {
       "name": "API",
       "icon": "bx bxl-api",
       "link": "",
-      "color": ""
+      "color": "",
+      "value": "100"
     },
     {
       "name": "Javascript",
       "icon": "bx bxl-javascript",
       "link": "",
-      "color": "blue"
+      "color": "blue",
+      "value": "100"
     },
     {
       "name": "HTML",
       "icon": "bx bxl-html5",
       "link": "",
-      "color": "orange"
+      "color": "orange",
+      "value": "100"
     },
     {
       "name": "CSS",
       "icon": "bx bxl-css3",
       "link": "",
-      "color": "yellow"
+      "color": "yellow",
+      "value": "100"
     },
     {
       "name": "Bootstrap",
       "icon": "bx bxl-bootstrap",
       "link": "",
-      "color": "purple"
+      "color": "purple",
+      "value": "100"
     },
     {
       "name": "JQuery",
       "icon": "bx bxl-jquery",
       "link": "",
-      "color": "blue"
+      "color": "blue",
+      "value": "100"
     },
     {
       "name": "Java",
       "icon": "bx bxl-language-java",
       "link": "",
-      "color": "orange"
+      "color": "orange",
+      "value": "100"
     },
     {
       "name": ".NET",
       "icon": "bx bxl-dot-net",
       "link": "",
-      "color": "purple"
+      "color": "purple",
+      "value": "100"
     },
     {
       "name": "Visual Studio",
       "icon": "bx bxl-microsoft-visual-studio",
       "link": "",
-      "color": "purple"
+      "color": "purple",
+      "value": "100"
     },
     {
       "name": "SQL Server",
       "icon": "bx bxl-database",
       "link": "",
-      "color": "yellow"
+      "color": "yellow",
+      "value": "100"
     },
     {
       "name": "GIT",
       "icon": "bx bxl-git",
       "link": "",
-      "color": "orange"
+      "color": "orange",
+      "value": "100"
     }
   ]
 }

@@ -7,9 +7,7 @@
           <img src="assets/images/profile-1.jpeg" alt="" />
         </div>
         <div class="column right">
-          <div class="text">
-            I'm {{ name }} and I'm a <span class="typing-2"></span>
-          </div>
+          <div class="text">{{ name }}<span class="typing-2"></span></div>
           <p>
             {{ data.description }}
           </p>

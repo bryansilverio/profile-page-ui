@@ -9,7 +9,7 @@
               <span>{{ item.name }}</span>
               <span>90%</span>
             </div>
-            <div :class="'line ' + item.name"></div>
+            <div class="line" :style="'width:' + item.value + '%'"></div>
           </div>
         </div>
         <div class="column right">
@@ -18,7 +18,7 @@
               <span>{{ item.name }}</span>
               <span>90%</span>
             </div>
-            <div :class="'line ' + item.name"></div>
+            <div class="line" :style="'width:' + item.value + '%'"></div>
           </div>
         </div>
       </div>

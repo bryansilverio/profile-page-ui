@@ -31,7 +31,7 @@
           </div>
         </div>
         <div class="column right">
-          <div class="text">Mensage</div>
+          <div class="text">Mensaje</div>
           <form action="#">
             <div class="fields">
               <div class="field name">
@@ -48,12 +48,12 @@
               <textarea
                 cols="30"
                 rows="10"
-                placeholder="Mensage.."
+                placeholder="Mensaje.."
                 required
               ></textarea>
             </div>
             <div class="button-area">
-              <button type="submit">Envier mensage</button>
+              <button type="submit">Envier Mensaje</button>
             </div>
           </form>
         </div>
