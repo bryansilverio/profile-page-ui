@@ -386,14 +386,14 @@
   "skills": [
     {
       "name": "VueJs",
-      "icon": "bx bxl-vuejs",
+      "icon": "fab fa-brands fa-vuejs",
       "link": "",
       "color": "green",
       "value": "100"
     },
     {
       "name": "Vuetify",
-      "icon": "bx bxl-vuetify",
+      "icon": "fab fa-solid fa-code",
       "link": "",
       "color": "blue",
       "value": "100"
@@ -407,7 +407,7 @@
     },
     {
       "name": "Laravel",
-      "icon": "bx bxl-laravel",
+      "icon": "fab fa-brands fa-laravel",
       "link": "",
       "color": "orange",
       "value": "100"
@@ -421,7 +421,7 @@
     },
     {
       "name": "PHP",
-      "icon": "bx bxl-language-php",
+      "icon": "bx bxl-php",
       "link": "",
       "color": "blue",
       "value": "100"
@@ -435,7 +435,7 @@
     },
     {
       "name": "Javascript",
-      "icon": "bx bxl-javascript",
+      "icon": "fab fa-brands fa-js",
       "link": "",
       "color": "blue",
       "value": "100"
@@ -470,7 +470,7 @@
     },
     {
       "name": "Java",
-      "icon": "bx bxl-language-java",
+      "icon": "fab fa-solid fa-rectangle-code",
       "link": "",
       "color": "orange",
       "value": "100"
@@ -484,7 +484,7 @@
     },
     {
       "name": "Visual Studio",
-      "icon": "bx bxl-microsoft-visual-studio",
+      "icon": "fab fa-solid fa-rectangle-code",
       "link": "",
       "color": "purple",
       "value": "100"
