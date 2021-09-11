@@ -11,7 +11,7 @@
           <p>
             {{ data.description }}
           </p>
-          <a href="#">Descargar CV</a>
+          <a :href="data.cv" target="_blank">Descargar CV</a>
         </div>
       </div>
     </div>

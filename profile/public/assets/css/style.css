@@ -320,11 +320,11 @@ section .title::after{
     content: "";
 }
 .skills .skills-content .card{
-    width: calc(23% - 10px);
-    background: #222;
+    width: calc(33% - 20px);
+    /*background: #222;*/
     text-align: center;
     border-radius: 6px;
-    padding: 20px 25px;
+    padding: 50px 25px;
     cursor: pointer;
     transition: all 0.3s ease;
 }

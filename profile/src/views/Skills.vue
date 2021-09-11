@@ -3,12 +3,14 @@
     <div class="max-width">
       <h2 class="title">Conocimientos</h2>
       <div class="skills-content">
-        <div class="card" v-for="(item, index) in data" :key="index">
-          <div class="box">
-            <i :class="item.icon"></i>
-            <div class="text">{{ item.name }}</div>
+        <template v-for="(item, index) in data">
+          <div class="card" :key="index" v-if="item.icon">
+            <div class="box">
+              <i :class="item.icon"></i>
+              <div class="text" v-show="false">{{ item.name }}</div>
+            </div>
           </div>
-        </div>
+        </template>
       </div>
     </div>
   </section>

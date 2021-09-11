@@ -5,7 +5,8 @@
   },
   "about": {
     "description": "Me gusta investigar y aprender todo lo relacionado con la tecnologia para poder aplicar lo conocimientos en los proyectos personales y en el trabajo.",
-    "profile": "Desarrollador Fullstack"
+    "profile": "Desarrollador Fullstack",
+    "cv":"https://drive.google.com/file/d/1__xmuoIgpgK5PZXKQj-DyaAulz8liV0u/view?usp=sharing"
   },
   "work": {
     "title": "Mis proyectos",
@@ -393,7 +394,7 @@
     },
     {
       "name": "Vuetify",
-      "icon": "fab fa-solid fa-code",
+      "icon": "",
       "link": "",
       "color": "blue",
       "value": "100"
@@ -428,7 +429,7 @@
     },
     {
       "name": "API",
-      "icon": "bx bxl-api",
+      "icon": "",
       "link": "",
       "color": "",
       "value": "100"
@@ -470,28 +471,28 @@
     },
     {
       "name": "Java",
-      "icon": "fab fa-solid fa-rectangle-code",
+      "icon": "",
       "link": "",
       "color": "orange",
       "value": "100"
     },
     {
       "name": ".NET",
-      "icon": "bx bxl-dot-net",
+      "icon": "",
       "link": "",
       "color": "purple",
       "value": "100"
     },
     {
       "name": "Visual Studio",
-      "icon": "fab fa-solid fa-rectangle-code",
+      "icon": "",
       "link": "",
       "color": "purple",
       "value": "100"
     },
     {
       "name": "SQL Server",
-      "icon": "bx bxl-database",
+      "icon": "",
       "link": "",
       "color": "yellow",
       "value": "100"
