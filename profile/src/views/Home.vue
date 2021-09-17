@@ -1,11 +1,15 @@
 <template>
-  <section class="home" id="home">
-    <div class="max-width">
-      <div class="home-content">
-        <div v-show="false" class="text-1">Hello, my name is</div>
-        <div class="text-2">{{ data.home.name }}</div>
-        <div class="text-3"><span class="typing">Desarrollador web</span></div>
-        <a href="#contact">Contacto</a>
+  <!--hero header-->
+  <section class="pt-7 pt-md-8" id="home">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 mx-auto my-auto text-center">
+          <h1>Desarrollo de aplicaciones web.</h1>
+          <p class="lead mt-4 mb-5">
+            Desarrollo de aplicaciones web para tu negocio.
+          </p>
+          <p><img class="img-fluid" src="assets/img/mockup.png" alt="Mockup" /></p>
+        </div>
       </div>
     </div>
   </section>

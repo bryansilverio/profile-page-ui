@@ -1,19 +1,42 @@
 <template>
-  <nav class="navbar">
-    <div class="max-width">
-      <div class="logo">
-        <a v-show="false" href="#">Portfo<span>lio.</span></a>
-      </div>
-      <ul class="menu" :class="menuActive ? 'active' : ''">
-        <li><a href="#home" class="menu-btn">Inicio</a></li>
-        <li><a href="#about" class="menu-btn">Sobre mi</a></li>
-        <li><a href="#services" class="menu-btn">Servicios</a></li>
-        <li><a href="#skills" class="menu-btn">Conocimientos</a></li>
-        <li><a href="#contact" class="menu-btn">Contacto</a></li>
+  <!--navigation-->
+  <nav
+    class="navbar navbar-expand-md navbar-light bg-white fixed-top sticky-navigation"
+  >
+    <a class="navbar-brand mx-auto" href="index.html">
+      Bsilverio
+    </a>
+    <button
+      class="navbar-toggler navbar-toggler-right border-0"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarCollapse"
+      aria-controls="navbarCollapse"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span data-feather="grid"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link page-scroll" href="#about">Sobre mí</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link page-scroll" href="#services">Servicios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link page-scroll" href="#process">Proceso</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link page-scroll" href="#blog">Blog</a>
+        </li>
       </ul>
-      <div class="menu-btn" @click="openMenu()">
-        <i class="fas fa-bars"></i>
-      </div>
+      <form class="form-inline">
+        <p class="mb-0 mx-3">
+          <a class="page-scroll font-weight-bold" href="#contact">Contacto</a>
+        </p>
+      </form>
     </div>
   </nav>
 </template>
