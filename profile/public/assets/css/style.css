@@ -9,3 +9,25 @@ span,
 p {
   color: white;
 }
+
+.white {
+  color: white;
+}
+
+.bg-home {
+  background-image: url("../img/software-developer-6521720_1920.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  height: 45rem;
+}
+
+@media (min-width: 375px) and (max-width: 400px), (min-width: 468px) {
+  .bg-home {
+    background-image: url("../img/software-developer-6521720_1920.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    height: 45rem;
+  }
+}

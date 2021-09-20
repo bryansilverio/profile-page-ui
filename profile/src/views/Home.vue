@@ -4,11 +4,11 @@
     <div class="container">
       <div class="row">
         <div class="col-md-8 mx-auto my-auto text-center">
-          <h1>Desarrollo de aplicaciones web.</h1>
+          <h1 class="white">Desarrollo de aplicaciones web.</h1>
           <p class="lead mt-4 mb-5">
             Desarrollo de aplicaciones web para tu negocio.
           </p>
-          <p><img class="img-fluid" src="assets/img/mockup.png" alt="Mockup" /></p>
+          <p v-show="false"><img class="img-fluid" src="assets/img/mockup.png" alt="Mockup" /></p>
         </div>
       </div>
     </div>

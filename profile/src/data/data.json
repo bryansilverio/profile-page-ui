@@ -359,28 +359,28 @@
       "name": "email",
       "value": "bryansilverio12@gmail.com",
       "link": "mailto:bryansilverio12@gmail.com",
-      "icon": "bx bxl-envelope",
+      "icon": "fa fa-envelope",
       "type": "EMAIL"
     },
     {
       "name": "phone",
       "value": "4461158755",
       "link": "tel:4461158755",
-      "icon": "bx bxl-phone",
+      "icon": "fa fa-phone",
       "type": "PHONE"
     },
     {
       "name": "linkedIn",
       "value": "Bryan Silverio",
       "link": "https://www.linkedin.com/in/bryan-silverio-6b417098/",
-      "icon": "fas fa-linkedin",
+      "icon": "fa fa-linkedin",
       "type": "SOCIAL_NETWORK"
     },
     {
       "name": "github",
       "value": "bsn12993",
       "link": "https://github.com/bsn12993/",
-      "icon": "fab fa-github",
+      "icon": "fa fa-github",
       "type": "SOCIAL_NETWORK"
     }
   ],

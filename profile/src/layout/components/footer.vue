@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6 mx-auto text-center">
-          <ul class="list-inline">
+          <ul class="list-inline" v-show="false">
             <li class="list-inline-item"><a href="#">Privacy</a></li>
             <li class="list-inline-item"><a href="#">Terms</a></li>
             <li class="list-inline-item"><a href="#">Affiliates</a></li>
@@ -14,17 +14,14 @@
             Social media
           </p>
           <ul class="list-inline social social-dark social-sm">
-            <li class="list-inline-item">
-              <a href=""><i class="fa fa-facebook"></i></a>
-            </li>
-            <li class="list-inline-item">
-              <a href=""><i class="fa fa-twitter"></i></a>
-            </li>
-            <li class="list-inline-item">
-              <a href=""><i class="fa fa-google-plus"></i></a>
-            </li>
-            <li class="list-inline-item">
-              <a href=""><i class="fa fa-dribbble"></i></a>
+            <li
+              class="list-inline-item"
+              v-for="(item, index) in socialNetworks"
+              :key="index"
+            >
+              <a :href="item.link" target="_blank"
+                ><i :class="item.icon"></i
+              ></a>
             </li>
           </ul>
         </div>
@@ -45,16 +42,19 @@ export default {
   data() {
     return {
       socialNetworks: [],
-      data: dataObject.contactLinks,
     };
   },
   created() {
-    this.getSocialNetworks(this.data);
+    this.getSocialNetworks();
   },
   methods: {
-    getSocialNetworks(items = []) {
+    getSocialNetworks() {
       this.socialNetworks = [];
-      this.socialNetworks = items.find(({ type }) => type === "SOCIAL_NETWORK");
+      dataObject.contactLinks.forEach((element) => {
+        if (element.type == "SOCIAL_NETWORK") {
+          this.socialNetworks.push(element);
+        }
+      });
     },
   },
 };

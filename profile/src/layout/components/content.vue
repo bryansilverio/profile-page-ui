@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Home :data="data" />
+    <Home :data="data" class="bg-home"/>
     <About :data="data.about" :name="data.home.name" />
     <Services :data="data.work" />
     <Contact :data="data.contactLinks" :name="data.home.name" />
