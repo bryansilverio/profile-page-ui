@@ -1,0 +1,170 @@
+
+.work_experience {
+  position: relative;
+  margin-top: 30px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .work_experience {
+    margin-top: 0;
+  }
+}
+@media (max-width: 767px) {
+  .work_experience {
+    margin-top: 0;
+  }
+}
+.work_experience::before {
+  position: absolute;
+  content: "";
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background-color: #00a78e;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .work_experience::before {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .work_experience::before {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .single_experience {
+    margin-top: 25px;
+  }
+}
+@media (max-width: 767px) {
+  .single_experience {
+    margin-top: 25px;
+  }
+}
+.single_experience .experience_title {
+  width: 46%;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .single_experience .experience_title {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .single_experience .experience_title {
+    width: 100%;
+  }
+}
+.single_experience .experience_title .title {
+  font-size: 25px;
+  font-weight: 600;
+}
+@media (max-width: 767px) {
+  .single_experience .experience_title .title {
+    font-size: 20px;
+  }
+}
+.single_experience .experience_title p {
+  color: #00a78e;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 10px;
+}
+@media (max-width: 767px) {
+  .single_experience .experience_title p {
+    font-size: 15px;
+  }
+}
+.single_experience .experience_title .date {
+  font-size: 16px;
+  font-weight: 600;
+  color: #646f87;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 10px;
+}
+@media (max-width: 767px) {
+  .single_experience .experience_title .date {
+    font-size: 15px;
+  }
+}
+.single_experience .experience_number {
+  width: 8%;
+  text-align: center;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .single_experience .experience_number {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .single_experience .experience_number {
+    display: none;
+  }
+}
+.single_experience .experience_number span {
+  width: 55px;
+  height: 55px;
+  line-height: 51px;
+  text-align: center;
+  border: 2px solid #00a78e;
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  color: #00a78e;
+  border-radius: 50%;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  background-color: #fff;
+}
+.single_experience .experience_content {
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(196, 196, 196, 0.3);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(196, 196, 196, 0.3);
+  box-shadow: 0px 0px 10px 0px rgba(196, 196, 196, 0.3);
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #fff;
+  width: 46%;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .single_experience .experience_content {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .single_experience .experience_content {
+    width: 100%;
+    margin-top: 30px;
+    padding: 20px;
+  }
+}
+.single_experience .experience_content p {
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+.single_experience:hover .experience_number span {
+  background-color: #00a78e;
+  color: #fff;
+}
+.single_experience:hover .experience_content {
+  background-color: #00a78e;
+}
+.single_experience:hover .experience_content p {
+  color: #fff;
+}
