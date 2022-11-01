@@ -6,48 +6,78 @@
   "about": {
     "description": "Me gusta investigar y aprender todo lo relacionado con la tecnologia para poder aplicar lo conocimientos en los proyectos personales y en el trabajo.",
     "profile": "Desarrollador Fullstack",
-    "cv":"https://drive.google.com/file/d/1__xmuoIgpgK5PZXKQj-DyaAulz8liV0u/view?usp=sharing"
+    "cv": "https://drive.google.com/file/d/1__xmuoIgpgK5PZXKQj-DyaAulz8liV0u/view?usp=sharing"
   },
-  "work": {
-    "title": "Mis proyectos",
-    "apps": [
-      {
-        "name": "Fasting App",
-        "price": "COMMING SOON",
-        "logo": "food-vision-logo.png",
-        "platforms": [
-          {
-            "name": "web",
-            "icon": "mdi-web",
-            "link": "https://apps.apple.com/us/app/food-vision/id1437083324"
-          }
-        ],
-        "description": "One day my friend and I were eating at a restaurant and she suddenly asked me what an item looks like. I looked up at her an told her I didnt know. Then she told me why dont you make an app where you can see the pictures of food thats on the menu? Then I made Food Vision. :)",
-        "technologies": [
-          {
-            "name": "VueJs",
-            "icon": "mdi-vuejs",
-            "link": ""
-          },
-          {
-            "name": "Vuetify",
-            "icon": "mdi-vuetify",
-            "link": ""
-          },
-          {
-            "name": "NodeJs",
-            "icon": "mdi-nodejs",
-            "link": ""
-          }
-        ],
-        "code": {
-          "name": "github",
-          "icon": "mdi-github",
+  "apps": [
+    {
+      "logo": "food-vision-logo.png",
+      "platforms": [
+        {
+          "name": "web",
+          "icon": "fa fa-globe",
+          "link": "https://centroderehabilitacionebano.com"
+        }
+      ],
+      "name": "Centro de rehabilitación ebano",
+      "description": "Desarrollo de Sitio web para el Centro de Rehabilitación Ébano la cual brinda un programa integral de prevención y rehabilitación emocional, físia y espiritual a las personas con adicciones",
+      "technologies": [
+        {
+          "name": "VueJs",
+          "icon": "mdi-vuejs",
+          "link": ""
+        },
+        {
+          "name": "Vuetify",
+          "icon": "mdi-vuetify",
+          "link": ""
+        },
+        {
+          "name": "NodeJs",
+          "icon": "mdi-nodejs",
           "link": ""
         }
+      ],
+      "code": {
+        "name": "github",
+        "icon": "mdi-github",
+        "link": ""
       }
-    ]
-  },
+    },
+    {
+      "logo": "food-vision-logo.png",
+      "platforms": [
+        {
+          "name": "web",
+          "icon": "mdi-web",
+          "link": "http://www.ieqsa.com.mx"
+        }
+      ],
+      "name": "IEQSA",
+      "description": "<p>Desarrollo de administrador y sitio web para IEQSA</p><p>El proyecto consiste en la siguiente arquitectura:</p><ul><li><p><strong>Core: </strong>Esta capa contiene utileria, funcionalidad generica que se puede usar en cualquier parte de proyecto como encriptación, guardado de imagenes etc.</p></li><li><p><strong>Data: </strong>Esta capa contiene las clases de las entidades para enviar la información para persistirla, enums.</p></li><li><p><strong>DataAccess: </strong>Esta capa contiene la persistencia a la base de datos. Contiene los repositorios y le contexto para EntityFramework.</p></li><li><p><strong>Portal: </strong>Esta capa es el proyecto web el cual consultara la información a mostrar en el portal</p></li><li><p><strong>Administrador: </strong>Esta capa es el proyecto administrador en donde se gestiona la información que se mostrara en el portal accediendo solamente con credenciales. </p></li></ul>",
+      "technologies": [
+        {
+          "name": "VueJs",
+          "icon": "mdi-vuejs",
+          "link": ""
+        },
+        {
+          "name": "Vuetify",
+          "icon": "mdi-vuetify",
+          "link": ""
+        },
+        {
+          "name": "NodeJs",
+          "icon": "mdi-nodejs",
+          "link": ""
+        }
+      ],
+      "code": {
+        "name": "github",
+        "icon": "mdi-github",
+        "link": ""
+      }
+    }
+  ],
   "experience": [
     {
       "company": "Gonet - BBVA",

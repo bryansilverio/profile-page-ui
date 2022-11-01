@@ -7,7 +7,7 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    component: () => import("@/layout/main"),
+    component: () => import("@/components/layout/main"),
     children:[
       {
         path: '/',
@@ -15,7 +15,7 @@ const routes = [
         // route level code-splitting
         // this generates a separate chunk (about.[hash].js) for this route
         // which is lazy-loaded when the route is visited.
-        component: () => import(/* webpackChunkName: "about" */ '../views/Home.vue')
+        //component: () => import(/* webpackChunkName: "about" */ '../views/Home.vue')
       },
       {
         path: '/about',
@@ -23,15 +23,23 @@ const routes = [
         // route level code-splitting
         // this generates a separate chunk (about.[hash].js) for this route
         // which is lazy-loaded when the route is visited.
-        component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+        component: () => import(/* webpackChunkName: "about" */ '../components/Sections/About.vue')
       },
       {
-        path: '/services',
-        name: 'services',
+        path: '/skills',
+        name: 'skills',
         // route level code-splitting
         // this generates a separate chunk (about.[hash].js) for this route
         // which is lazy-loaded when the route is visited.
-        component: () => import(/* webpackChunkName: "about" */ '../views/Services.vue')
+        component: () => import(/* webpackChunkName: "about" */ '../components/Sections/Skills.vue')
+      },
+      {
+        path: '/work-experience',
+        name: 'work-experience',
+        // route level code-splitting
+        // this generates a separate chunk (about.[hash].js) for this route
+        // which is lazy-loaded when the route is visited.
+        component: () => import(/* webpackChunkName: "about" */ '../components/Sections/WorkExperience.vue')
       },
       {
         path: '/contact',
@@ -39,8 +47,8 @@ const routes = [
         // route level code-splitting
         // this generates a separate chunk (about.[hash].js) for this route
         // which is lazy-loaded when the route is visited.
-        component: () => import(/* webpackChunkName: "about" */ '../views/Contact.vue')
-      }
+        component: () => import(/* webpackChunkName: "about" */ '../components/Sections/Contact.vue')
+      }      
     ]
   }
 ]
