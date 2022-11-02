@@ -23,7 +23,7 @@
                 <div class="col-lg-6 col-md-6 col-sm-7">
                     <div class="header_hero_image mt-50 wow fadeInRightBig" data-wow-duration="1.3s"
                         data-wow-delay="1.8s">
-                        <img src="assets/images/hero.png" alt="hero">
+                        <img :src="image" alt="hero">
                     </div> <!-- header hero image -->
                 </div>
             </div> <!-- row -->
@@ -52,40 +52,50 @@ export default {
             title: '',
             subtitle: '',
             text: '',
-            url: ''
+            image: '',
+            url:''
         };
+    },
+    created(){
+        this.setData();
     },
     methods:{
         setData(){
+           
             if(this.$route.path=='/'){
                 this.title="Bryan Silverio";
                 this.subtitle="Desarrollador de software";
                 this.text="";
-                this.url="assets/images/hero.png";
+                this.image="assets/images/hero.png";
+                this.url="/about"
             }
             else if(this.$route.path=='/about'){
                 this.title="Sobre mi";
                 this.subtitle="Desarrollador de software";
                 this.text="";
-                this.url="assets/images/hero.png";
+                this.image="assets/images/hero.png";
+                this.url="/work-experience"
             }
             else if(this.$route.path=='/work-experience'){
                 this.title="Mi Experiencia";
                 this.subtitle="Desarrollador de software";
                 this.text="";
-                this.url="assets/images/hero.png";
+                this.image="assets/images/hero.png";
+                this.url="/work-experience"
             }
             else if(this.$route.path=='/projects'){
                 this.title="Mis projectos";
                 this.subtitle="Desarrollador de software";
                 this.text="";
-                this.url="assets/images/hero.png";
+                this.image="assets/images/hero.png";
+                this.url="/work-experience"
             }
             else if(this.$route.path=='/contact'){
                 this.title="Contacto";
                 this.subtitle="Desarrollador de software";
                 this.text="";
-                this.url="assets/images/hero.png";
+                this.image="assets/images/hero.png";
+                this.url="/work-experience"
             }
         }
     }

@@ -1,0 +1,29 @@
+.single_counter .counter_icon i {
+  color: #293651;
+  font-size: 67px;
+  line-height: 70px;
+}
+@media (max-width: 767px) {
+  .single_counter .counter_icon i {
+    font-size: 55px;
+    line-height: 60px;
+  }
+}
+.single_counter .counter_content {
+  padding-left: 30px;
+}
+.single_counter .counter_content .count {
+  font-size: 35px;
+  font-weight: 600;
+  color: #00a78e;
+  font-family: montserrat, sans-serif;
+}
+@media (max-width: 767px) {
+  .single_counter .counter_content .count {
+    font-size: 30px;
+  }
+}
+.single_counter .counter_content p {
+  font-weight: 600;
+  font-family: montserrat, sans-serif;
+}

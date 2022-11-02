@@ -25,7 +25,7 @@
             </div> <!-- container -->
         </div> <!-- header navbar -->
 
-        <Home/>
+        <Home v-if="$route.path=='/'"/>
 
     </section>
 

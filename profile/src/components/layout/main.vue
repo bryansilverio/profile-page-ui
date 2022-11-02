@@ -1,7 +1,7 @@
 <template>
   <div>
     <Preloader />
-    <Header />
+    <Header/>
     <Content />
     <Footer />
   </div>
