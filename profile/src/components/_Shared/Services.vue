@@ -43,17 +43,17 @@ export default {
                 {
                     title: 'Frontend',
                     icon: 'lni lni-code',
-                    description: '<p>Desarrollo de frontend usando principalmente VueJs como framework aparte de html, css y javascript.</p><p>Permitiendo construir la interfaz grafica que visualizara el cliente o consumidor final para operar.</p><p>Permitiendo separar el frontend del backend lo que permite que sea mas flexible el mantenimiento del frontend</p>'
+                    description: '<p>Desarrollo de frontend usando principalmente VueJs como framework aparte de html, css y javascript.'
                 },
                 {
                     title: 'Backend',
                     icon: 'lni lni-dev',
-                    description: '<p>Desarollo de la funcionalidad que consumira el frontend, usando principalmente C# (.NET Core) y Java (Spring).</p><p>Permitiendo desarrollar la logica de negocio y las principales operaciones que necesita el frontend.</p> <p>Tambien permite desacoparlo estas operaciones del frontend.</p>'
+                    description: '<p>Desarollo de la funcionalidad que consumira el frontend, usando principalmente C# (.NET Core) y Java (Spring).'
                 },
                 {
                     title: 'APIs REST',
                     icon: 'lni lni-cloud-network',
-                    description: ' <p>Diseño y desarrollo de microservicios basados en REST, buscando que el diseño de la API sea entendible para los consumidores y que cumpla la operación y sentido funcional.</p>'
+                    description: ' <p>Diseño y desarrollo de microservicios basados en REST, buscando que el diseño de la API use los patrones de REST.</p>'
                 }
             ]
         };

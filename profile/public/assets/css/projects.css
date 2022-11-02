@@ -1,0 +1,118 @@
+/*! CSS Used from: https://preview.uideck.com/items/freelancer/assets/css/slick.css */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+.slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.slick-list:focus {
+  outline: none;
+}
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.slick-track:before,
+.slick-track:after {
+  display: table;
+  content: "";
+}
+.slick-track:after {
+  clear: both;
+}
+.slick-slide {
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+.slick-slide img {
+  display: block;
+}
+.slick-initialized .slick-slide {
+  display: block;
+}
+.project_area {
+  padding-bottom: 180px;
+}
+.single_project {
+  margin-top: 30px;
+}
+.single_project .project_image img {
+  width: 100%;
+  border-radius: 5px;
+}
+.single_project .project_content {
+  margin-top: 25px;
+}
+.single_project .project_content .project_title a {
+  font-size: 20px;
+  font-weight: 600;
+  color: #293651;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+.single_project .project_content .project_title a:hover {
+  color: #00a78e;
+}
+.single_project .project_content p {
+  margin-top: 5px;
+}
+.project_active .slick-arrow {
+  position: absolute;
+  bottom: -80px;
+  right: 50%;
+  z-index: 9;
+  margin: 0 15px;
+  cursor: pointer;
+}
+.project_active .slick-arrow i {
+  font-size: 18px;
+  color: #646f87;
+  line-height: 24px;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+.project_active .slick-arrow.next {
+  right: auto;
+  left: 50%;
+}
+.project_active .slick-arrow:hover i {
+  color: #00a78e;
+}
+.slick-initialized .slick-slide {
+  outline: 0;
+}

@@ -39,37 +39,42 @@ export default {
                 {
                     position: 'Desarrollador Java',
                     company: 'GoNet - BBVA',
-                    date: 'Mayo 2021',
+                    logo:'assets/logos/gonet.png',
+                    date: 'Mayo 2021 - Actualmente',
                     number: '05',
-                    content: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr sedia magnaliquya ratsed diam Lorem ipsum dolor sit amconsetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam.Lorem ipsum dolor sit ametconsete tur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diamLorem ipsum dolor consetetur sadipscing elitr sed diam nonumy diam...'
+                    content: '<p>Participación en proyecto dentro de BBVA relacionado a la banca, desarrollo de APIs/microservicios usando Restful, usando Java, RAML para documentar APIs, Kanban (Jira).</p>'
                 },
                 {
                     position: 'Desarrollador Fullstack',
                     company: 'Bitfx',
+                    logo:'assets/logos/bitfx.png',
                     date: 'Agosto 2019 - Abril 2021',
                     number: '04',
-                    content: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr sedia magnaliquya ratsed diam Lorem ipsum dolor sit amconsetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam.Lorem ipsum dolor sit ametconsete tur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diamLorem ipsum dolor consetetur sadipscing elitr sed diam nonumy diam...'
+                    content: '<p>Participación en proyectos como fullstack, backend (PHP Laravel), Frontend (VueJS, Vuetify), base de datos (MySQL, Eloquent), control de versiones (GIT). </p>'
                 },
                 {
                     position: 'Desarrollador .NET',
                     company: 'Tasi Software',
+                    logo:'assets/logos/tasisoftware.png',
                     date: 'Enero 2018 - Agosto 2019',
                     number: '03',
-                    content: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr sedia magnaliquya ratsed diam Lorem ipsum dolor sit amconsetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam.Lorem ipsum dolor sit ametconsete tur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diamLorem ipsum dolor consetetur sadipscing elitr sed diam nonumy diam...'
+                    content: '<p>Participación en proyectos (.NET Framework) y soporte a plataforma de reclutamiento.</p>'
                 },
                 {
                     position: 'Desarrollador .NET',
                     company: 'DW Software',
+                    logo:'assets/logos/dwsoftware.png',
                     date: 'Agosto 2017 - Noviembre 2017',
                     number: '02',
-                    content: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr sedia magnaliquya ratsed diam Lorem ipsum dolor sit amconsetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam.Lorem ipsum dolor sit ametconsete tur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diamLorem ipsum dolor consetetur sadipscing elitr sed diam nonumy diam...'
+                    content: '<p>Participación de proyecto (.NET Framework) relacionado a logística, Ryder y DHL, usando arquitectura SOA.</p>'
                 },
                 {
                     position: 'Desarrollador Web',
                     company: 'IT Group',
+                    logo:'assets/logos/itgroup.webb',
                     date: 'Agosto 2015 - Agosto 2017',
                     number: '01',
-                    content: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr sedia magnaliquya ratsed diam Lorem ipsum dolor sit amconsetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam.Lorem ipsum dolor sit ametconsete tur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diamLorem ipsum dolor consetetur sadipscing elitr sed diam nonumy diam...'
+                    content: '<p>Participación de proyectos web como fullstack, backend (Java, .NET Framework), frontend (Javascript, Html), base de datos (SQL Server, MySQL), control de versiones (GIT).</p>'
                 },
             ]
         };

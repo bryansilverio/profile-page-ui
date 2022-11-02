@@ -15,14 +15,14 @@
                       </ul>
                       <span class="email">someone@example.com</span>
                       <ul class="footer_menu">
-                          <li><a href="#">Home</a></li>
-                          <li><a href="#">About Us</a></li>
-                          <li><a href="#">Service</a></li>
-                          <li><a href="#">Portfolio</a></li>
-                          <li><a href="#">Pricing</a></li>
-                          <li><a href="#">Contact Us</a></li>
+                          <li><a href="#">Inicio</a></li>
+                          <li><a href="#">Sobre mi</a></li>
+                          <li><a href="#">Experiencia</a></li>
+                          <li><a href="#">Proyectos</a></li>
+                          <li><a href="#">Contacto</a></li>
+                          <li><a href="https://bssilverio.wordpress.com/" target="_blank">Sitio Wordpress</a></li>
                       </ul>
-                      <p class="credit pt-45">Template Designed and Developed by <a href="https://uideck.com/" rel="nofollow">UIdeck</a></p>
+                      <p class="credit pt-45">Designed and Developed by <a href="" rel="nofollow"></a></p>
                   </div> <!-- footer content -->
               </div>
           </div>  <!-- row -->

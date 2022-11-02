@@ -7,20 +7,34 @@
                     style="visibility: visible; animation-duration: 1.3s; animation-delay: 0.2s; animation-name: fadeIn;">
                     <div :class="'experience_title ' + getPosition(i)">
                         <h3 class="title">{{ v.position }}</h3>
+                        <div>
+                            <img :src="v.logo" alt="" class="circular--square" />
                         <p>{{ v.company }}</p>
+                        </div>
+                        
                         <span class="date">{{ v.date }}</span>
                     </div>
                     <div class="experience_number">
                         <span>{{ v.number }}</span>
                     </div>
                     <div :class="'experience_content ' + getContent(i)">
-                        <p>{{ v.content }}</p>
+                        <div v-html="v.content"></div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </template>
+<style>
+.circular--square {
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+    width: 10%;
+    height: auto;
+}
+</style>
 <script>
 export default {
     name: "WorkExperienceItem",
