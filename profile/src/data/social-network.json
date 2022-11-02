@@ -7,6 +7,11 @@
     {
         "name":"Linkedin",
         "icon":"lni lni-linkedin",
-        "url":""
+        "url":"https://www.linkedin.com/"
+    },
+    {
+        "name":"GitHub",
+        "icon":"lni lni-github",
+        "url":"https://github.com/bsn12993"
     }
 ]

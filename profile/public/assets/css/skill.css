@@ -27,3 +27,9 @@
   font-weight: 600;
   font-family: montserrat, sans-serif;
 }
+
+
+.icon_hover:hover{
+  background-color: #c2c4c9;
+  border-radius: 30%;
+}

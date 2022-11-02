@@ -7,11 +7,10 @@
                     style="visibility: visible; animation-duration: 1.3s; animation-delay: 0.2s; animation-name: fadeIn;">
                     <div :class="'experience_title ' + getPosition(i)">
                         <h3 class="title">{{ v.position }}</h3>
-                        <div>
-                            <img :src="v.logo" alt="" class="circular--square" />
-                        <p>{{ v.company }}</p>
+                        <div style="display: inline-block">
+                            <avatar :image="v.logo" :size="50" color="white"></avatar> {{ v.company }}
                         </div>
-                        
+                        <br>
                         <span class="date">{{ v.date }}</span>
                     </div>
                     <div class="experience_number">
@@ -25,19 +24,11 @@
         </div>
     </div>
 </template>
-<style>
-.circular--square {
-    border-top-left-radius: 50% 50%;
-    border-top-right-radius: 50% 50%;
-    border-bottom-right-radius: 50% 50%;
-    border-bottom-left-radius: 50% 50%;
-    width: 10%;
-    height: auto;
-}
-</style>
 <script>
+import Avatar from 'vue-avatar-component'
 export default {
     name: "WorkExperienceItem",
+    components: { Avatar },
     props: {
         workExperiences: Array
     },

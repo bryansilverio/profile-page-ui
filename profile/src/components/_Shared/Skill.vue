@@ -15,12 +15,12 @@
                 </div>
             </div> <!-- row -->
             <div class="row">
-                <div class="col-lg-2 col-sm-6" v-for="(v, i) in technologiesIcons" :key="i">
+                <div class="col-lg-2 col-sm-6 icon_hover" v-for="(v, i) in technologiesIcons" :key="i">
                     <div class="single_counter mt-50 d-flex align-items-center wow fadeIn" data-wow-duration="1.3s"
                         data-wow-delay="0.2s"
                         style="visibility: visible; animation-duration: 1.3s; animation-delay: 0.2s; animation-name: fadeIn;">
                         <div class="counter_icon">
-                            <img :src="v.value" alt="">
+                            <img :src="v.value" alt="" :title="v.name">
                         </div>
                     </div>
                 </div>
@@ -30,6 +30,7 @@
 </template>
 <script>
 import technologies_data from '@/data/technologies.json'
+
 export default {
     name: "Skill",
     computed: {

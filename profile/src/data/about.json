@@ -1,0 +1,21 @@
+{
+    "about":"<p>Mi nombre es Bryan Silverio, soy desarrollador de software y desarrollador web.</p><p>Inicie mi carrera profesional en 2016 en el desarrollo de web, he participado en diferentes empresas donde he trabajado en diferentes proyectos de diferentes sectores.</p><p>Actualmente me encuentro laborando en BBVA como desarrollador Java orientado a diseño y desarrollo de microservicios basados en REST, lo que me ha permitido mejorar y fortalecer conocimientos y habilidades.</p>",
+    "mainTechnologies":[
+        {
+            "type":"Backend",
+            "name":"C# | .NET Core | JAVA"
+        },
+        {
+            "type":"Frontend",
+            "name":"HTML | CSS | JavaScript | VueJs"
+        },
+        {
+            "type":"API",
+            "name":"API REST | Microservicios"
+        },
+        {
+            "type":"Devtools",
+            "name":"GIT | Jira"
+        }
+    ]
+}

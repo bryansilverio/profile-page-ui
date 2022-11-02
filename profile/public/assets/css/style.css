@@ -1384,8 +1384,8 @@ p {
   line-height: 40px;
   text-align: center;
   border-radius: 50%;
-  font-size: 18px;
-  color: #646f87;
+  font-size: 25px;
+  color: #ffffff;
   background-color: rgba(41, 54, 81, 0.07);
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
@@ -1423,7 +1423,7 @@ p {
 .footer_content .footer_menu li a {
   font-size: 16px;
   font-weight: 600;
-  color: #293651;
+  color: #ffffff;
 }
 @media (max-width: 767px) {
   .footer_content .footer_menu li a {
@@ -1432,3 +1432,35 @@ p {
 }
 
 /*# sourceMappingURL=style.css.map */
+.bg-footer{
+  background-color: #293651;
+}
+
+.credit{
+  color: white;
+}
+
+.sub_title_footer{
+  font-size: 17px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.content_footer{
+  margin-top: 10px;
+  color: #adb5bd;
+  font-size: 15px;
+}
+
+.footer_menu > .footer_social{
+  color: #adb5bd;
+}
+
+.footer_menu > .content_footer:hover{
+  color: #adb5bd;
+}
+
+.footer_menu{
+  float: left;
+}
+

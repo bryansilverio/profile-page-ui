@@ -13,8 +13,8 @@
                         </h2>
                         <span class="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.8s">{{ subtitle }}</span>
                         <p class="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1.1s">{{ text }}</p>
-                        <a href="https://rebrand.ly/freelancer-ud" rel="nofollow" class="main-btn wow fadeInUp"
-                            data-wow-duration="1.3s" data-wow-delay="1.4s">Contactame</a>
+                        <a href="/contact" rel="nofollow" class="main-btn wow fadeInUp" data-wow-duration="1.3s"
+                            data-wow-delay="1.4s">Contactame</a>
                     </div> <!-- header hero content -->
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-7">
@@ -33,15 +33,7 @@ import social_network_data from '@/data/social-network.json'
 export default {
     name: "Home",
     watch: {
-        $route(to, from) {
-            /* eslint-disable no-console */
-            console.log("to", to);
-            console.log("from", from);
-
-            console.log(window.location.href);
-            console.log(this.$route.path);
-            console.log(this.$route.params);
-            /* eslint-enable no-console */
+        $route() {
             this.setData();
         }
     },
