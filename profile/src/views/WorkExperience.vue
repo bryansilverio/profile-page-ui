@@ -27,58 +27,18 @@
     </div>
 </template>
 <script>
+import work_experiences_data from '@/data/work-experiences.json'
 import Services from '@/components/_Shared/Services.vue'
 import Skill from '@/components/_Shared/Skill.vue'
 import WorkExperienceItem from '@/components/_Shared/WorkExperienceItem.vue'
 export default {
     name: "WorkExperience",
     components: { WorkExperienceItem, Services, Skill },
-    data() {
-        return {
-            workExperiences: [
-                {
-                    position: 'Desarrollador Java',
-                    company: 'GoNet - BBVA',
-                    logo:'assets/logos/gonet.png',
-                    date: 'Mayo 2021 - Actualmente',
-                    number: '05',
-                    content: '<p>Participación en proyecto dentro de BBVA relacionado a la banca, desarrollo de APIs/microservicios usando Restful, usando Java, RAML para documentar APIs, Kanban (Jira).</p>'
-                },
-                {
-                    position: 'Desarrollador Fullstack',
-                    company: 'Bitfx',
-                    logo:'assets/logos/bitfx.png',
-                    date: 'Agosto 2019 - Abril 2021',
-                    number: '04',
-                    content: '<p>Participación en proyectos como fullstack, backend (PHP Laravel), Frontend (VueJS, Vuetify), base de datos (MySQL, Eloquent), control de versiones (GIT). </p>'
-                },
-                {
-                    position: 'Desarrollador .NET',
-                    company: 'Tasi Software',
-                    logo:'assets/logos/tasisoftware.png',
-                    date: 'Enero 2018 - Agosto 2019',
-                    number: '03',
-                    content: '<p>Participación en proyectos (.NET Framework) y soporte a plataforma de reclutamiento.</p>'
-                },
-                {
-                    position: 'Desarrollador .NET',
-                    company: 'DW Software',
-                    logo:'assets/logos/dwsoftware.png',
-                    date: 'Agosto 2017 - Noviembre 2017',
-                    number: '02',
-                    content: '<p>Participación de proyecto (.NET Framework) relacionado a logística, Ryder y DHL, usando arquitectura SOA.</p>'
-                },
-                {
-                    position: 'Desarrollador Web',
-                    company: 'IT Group',
-                    logo:'assets/logos/itgroup.webb',
-                    date: 'Agosto 2015 - Agosto 2017',
-                    number: '01',
-                    content: '<p>Participación de proyectos web como fullstack, backend (Java, .NET Framework), frontend (Javascript, Html), base de datos (SQL Server, MySQL), control de versiones (GIT).</p>'
-                },
-            ]
-        };
-    },
+    computed: {
+        workExperiences() {
+            return work_experiences_data
+        }
+    }
 };
 </script>
   

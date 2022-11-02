@@ -1,10 +1,7 @@
 <template>
     <div id="home" class="header_hero">
         <ul class="header_social d-none d-lg-block">
-            <li><a href="#"><i class="lni lni-facebook-filled"></i></a></li>
-            <li><a href="#"><i class="lni lni-twitter-filled"></i></a></li>
-            <li><a href="#"><i class="lni lni-instagram-filled"></i></a></li>
-            <li><a href="#"><i class="lni lni-linkedin-original"></i></a></li>
+            <li v-for="(v, i) in socialNetwork" :key="i"><a :href="v.url"><i :class="v.icon"></i></a></li>
         </ul>
         <div class="container">
             <div class="row align-items-center justify-content-center justify-content-lg-between">
@@ -32,6 +29,7 @@
     </div> <!-- header hero -->
 </template>
 <script>
+import social_network_data from '@/data/social-network.json'
 export default {
     name: "Home",
     watch: {
@@ -53,50 +51,55 @@ export default {
             subtitle: '',
             text: '',
             image: '',
-            url:''
+            url: ''
         };
     },
-    created(){
+    created() {
         this.setData();
     },
-    methods:{
-        setData(){
-           
-            if(this.$route.path=='/'){
-                this.title="Bryan Silverio";
-                this.subtitle="Desarrollador de software";
-                this.text="";
-                this.image="assets/images/hero.png";
-                this.url="/about"
+    methods: {
+        setData() {
+
+            if (this.$route.path == '/') {
+                this.title = "Bryan Silverio";
+                this.subtitle = "Desarrollador de software";
+                this.text = "";
+                this.image = "assets/images/hero.png";
+                this.url = "/about"
             }
-            else if(this.$route.path=='/about'){
-                this.title="Sobre mi";
-                this.subtitle="Desarrollador de software";
-                this.text="";
-                this.image="assets/images/hero.png";
-                this.url="/work-experience"
+            else if (this.$route.path == '/about') {
+                this.title = "Sobre mi";
+                this.subtitle = "Desarrollador de software";
+                this.text = "";
+                this.image = "assets/images/hero.png";
+                this.url = "/work-experience"
             }
-            else if(this.$route.path=='/work-experience'){
-                this.title="Mi Experiencia";
-                this.subtitle="Desarrollador de software";
-                this.text="";
-                this.image="assets/images/hero.png";
-                this.url="/work-experience"
+            else if (this.$route.path == '/work-experience') {
+                this.title = "Mi Experiencia";
+                this.subtitle = "Desarrollador de software";
+                this.text = "";
+                this.image = "assets/images/hero.png";
+                this.url = "/work-experience"
             }
-            else if(this.$route.path=='/projects'){
-                this.title="Mis projectos";
-                this.subtitle="Desarrollador de software";
-                this.text="";
-                this.image="assets/images/hero.png";
-                this.url="/work-experience"
+            else if (this.$route.path == '/projects') {
+                this.title = "Mis projectos";
+                this.subtitle = "Desarrollador de software";
+                this.text = "";
+                this.image = "assets/images/hero.png";
+                this.url = "/work-experience"
             }
-            else if(this.$route.path=='/contact'){
-                this.title="Contacto";
-                this.subtitle="Desarrollador de software";
-                this.text="";
-                this.image="assets/images/hero.png";
-                this.url="/work-experience"
+            else if (this.$route.path == '/contact') {
+                this.title = "Contacto";
+                this.subtitle = "Desarrollador de software";
+                this.text = "";
+                this.image = "assets/images/hero.png";
+                this.url = "/work-experience"
             }
+        }
+    },
+    computed: {
+        socialNetwork() {
+            return social_network_data
         }
     }
 };

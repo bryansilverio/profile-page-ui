@@ -15,7 +15,7 @@
                 </div>
             </div> <!-- row -->
             <div class="row">
-                <div class="col-lg-2 col-sm-6" v-for="(v, i) in icons" :key="i">
+                <div class="col-lg-2 col-sm-6" v-for="(v, i) in technologiesIcons" :key="i">
                     <div class="single_counter mt-50 d-flex align-items-center wow fadeIn" data-wow-duration="1.3s"
                         data-wow-delay="0.2s"
                         style="visibility: visible; animation-duration: 1.3s; animation-delay: 0.2s; animation-name: fadeIn;">
@@ -29,36 +29,14 @@
     </section>
 </template>
 <script>
+import technologies_data from '@/data/technologies.json'
 export default {
     name: "Skill",
-    data() {
-        return {
-            icons: [
-                {
-                    value: 'assets/icons/icons8-api-60.png',
-                    name:''
-                },
-                {
-                    value: 'assets/icons/icons8-c-sharp-logo-50.png'
-                },
-                {
-                    value: 'assets/icons/icons8-java-50.png'
-                },
-                {
-                    value: 'assets/icons/icons8-html-52.png'
-                },
-                {
-                    value: 'assets/icons/icons8-javascript-50.png'
-                },
-                {
-                    value: 'assets/icons/icons8-sql-52.png'
-                },
-                {
-                    value: 'assets/icons/icons8-css3-48.png'
-                }
-            ]
-        };
-    },
+    computed: {
+        technologiesIcons() {
+            return technologies_data
+        }
+    }
 };
 </script>
   

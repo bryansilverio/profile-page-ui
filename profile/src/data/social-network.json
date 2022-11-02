@@ -1,0 +1,12 @@
+[
+    {
+        "name":"Wordpress",
+        "icon":"lni lni-wordpress",
+        "url":"https://bssilverio.wordpress.com/"
+    },
+    {
+        "name":"Linkedin",
+        "icon":"lni lni-linkedin",
+        "url":""
+    }
+]

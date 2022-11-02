@@ -9,40 +9,13 @@
   </div>
 </template>
 <script>
+import menu_data from '@/data/menu.json'
 export default {
   name: "Menu",
-  data() {
-    return {
-      paths: [
-        {
-          url: '/',
-          name: 'Inicio',
-          isActive: 'active'
-        },
-        {
-          url: '/about',
-          name: 'Sobre mí',
-          isActive: ''
-        },
-        {
-          url: '/work-experience',
-          name: 'Experiencia',
-          isActive: ''
-        },
-        {
-          url: '/projects',
-          name: 'Proyectos',
-          isActive: ''
-        },
-        {
-          url: '/contact',
-          name: 'Contacto',
-          isActive: ''
-        }
-      ]
-    };
-  },
-  methods: {
+  computed: {
+    paths() {
+      return menu_data
+    }
   }
 };
 </script>
