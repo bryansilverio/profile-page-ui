@@ -1,7 +1,7 @@
 <template>
     <!--====== FOOTER PART START ======-->
 
-    <footer id="footer" class="footer_area gray-bg pt-115 pb-120 bg-footer">
+    <footer id="footer" class="footer_area gray-bg pt-30 pb-20 bg-footer">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3">
