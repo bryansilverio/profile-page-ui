@@ -6,7 +6,7 @@
                 <div class="col-sm-9">
                     <div class="section_title pb-30">
                         <h5 class="sub_title">Proyectos</h5>
-                        <h3 class="main_title">Ultimos proyectos</h3>
+                        <h3 class="main_title">Proyectos en que he participado</h3>
                         <ul class="line">
                             <li></li>
                             <li></li>
@@ -20,150 +20,71 @@
                     </div>
                 </div>
             </div>
-            <div v-show="false" class="row project_active slick-initialized slick-slider"><span class="prev slick-arrow"
-                    style="display: block;"><i class="lni lni-chevron-left"></i></span>
+            <div class="row project_active slick-initialized slick-slider" v-for="(v, i) in projects" :key="i">
+                
+                <div class="call_to_action_area">
+                    <div class="container">
+                        <div class="project_wrapper wow fadeIn" data-wow-duration="1.3s" data-wow-delay="0.5s">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="project_box d-md-flex justify-content-between align-items-center">
+                                        <div class="project_content">
+                                            <h3 class="project_title">{{ v.company.name }}</h3>
+                                            <ul class="line">
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                            </ul>
+                                        </div> <!-- call to action content -->
 
+                                        <div class="project_logo">
+                                            <avatar :image="v.company.logo" :size="100" color="white"></avatar>
+                                        </div> <!-- call to action btn -->
+                                    </div> <!-- call to action box -->
+                                </div>
+                            </div>  <!-- row -->
+                        </div>  <!-- call to action wrapper -->
+                    </div> <!-- container -->
+                </div>
 
-
-
-                <div class="slick-list draggable">
-                    <div class="slick-track"
-                        style="opacity: 1; width: 3600px; transform: translate3d(-720px, 0px, 0px);">
-                        <div class="col-lg-4 slick-slide slick-cloned" tabindex="-1" style="width: 360px;"
-                            data-slick-index="-2" aria-hidden="true">
-                            <div class="single_project">
-                                <div class="project_image">
-                                    <img src="assets/images/project-2.jpg" alt="project">
-                                </div>
-                                <div class="project_content">
-                                    <h4>Search Engine Optimization</h4>
-                                    <p>Digital Marketing</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 slick-slide slick-cloned" tabindex="-1" style="width: 360px;"
-                            data-slick-index="-1" aria-hidden="true">
-                            <div class="single_project">
-                                <div class="project_image">
-                                    <img src="assets/images/project-1.jpg" alt="project">
-                                </div>
-                                <div class="project_content">
-                                    <h4 class="project_title"><a href="#" tabindex="-1">HTML/CSS Coding</a></h4>
-                                    <p>Front-end Development</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 slick-slide slick-current slick-active" tabindex="0" style="width: 360px;"
-                            data-slick-index="0" aria-hidden="false">
-                            <div class="single_project">
-                                <div class="project_image">
-                                    <img src="assets/images/project-3.jpg" alt="project">
-                                </div>
-                                <div class="project_content">
-                                    <h4 class="project_title"><a href="#" tabindex="0">Creative Agency Landing page</a>
-                                    </h4>
-                                    <p>UI/UX Design</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 slick-slide slick-active" tabindex="0" style="width: 360px;"
-                            data-slick-index="1" aria-hidden="false">
-                            <div class="single_project ">
-                                <div class="project_image">
-                                    <img src="assets/images/project-1.jpg" alt="project">
-                                </div>
-                                <div class="project_content">
-                                    <h4 class="project_title"><a href="#" tabindex="0">App Landing Page</a></h4>
-                                    <p>Web Design</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 slick-slide" tabindex="-1" style="width: 360px;" data-slick-index="2"
-                            aria-hidden="true">
-                            <div class="single_project">
-                                <div class="project_image">
-                                    <img src="assets/images/project-2.jpg" alt="project">
-                                </div>
-                                <div class="project_content">
-                                    <h4>Search Engine Optimization</h4>
-                                    <p>Digital Marketing</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 slick-slide" tabindex="-1" style="width: 360px;" data-slick-index="3"
-                            aria-hidden="true">
-                            <div class="single_project">
-                                <div class="project_image">
-                                    <img src="assets/images/project-1.jpg" alt="project">
-                                </div>
-                                <div class="project_content">
-                                    <h4 class="project_title"><a href="#" tabindex="-1">HTML/CSS Coding</a></h4>
-                                    <p>Front-end Development</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 slick-slide slick-cloned" tabindex="-1" style="width: 360px;"
-                            data-slick-index="4" aria-hidden="true">
-                            <div class="single_project">
-                                <div class="project_image">
-                                    <img src="assets/images/project-3.jpg" alt="project">
-                                </div>
-                                <div class="project_content">
-                                    <h4 class="project_title"><a href="#" tabindex="-1">Creative Agency Landing page</a>
-                                    </h4>
-                                    <p>UI/UX Design</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 slick-slide slick-cloned" tabindex="-1" style="width: 360px;"
-                            data-slick-index="5" aria-hidden="true">
-                            <div class="single_project ">
-                                <div class="project_image">
-                                    <img src="assets/images/project-1.jpg" alt="project">
-                                </div>
-                                <div class="project_content">
-                                    <h4 class="project_title"><a href="#" tabindex="-1">App Landing Page</a></h4>
-                                    <p>Web Design</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 slick-slide slick-cloned" tabindex="-1" style="width: 360px;"
-                            data-slick-index="6" aria-hidden="true">
-                            <div class="single_project">
-                                <div class="project_image">
-                                    <img src="assets/images/project-2.jpg" alt="project">
-                                </div>
-                                <div class="project_content">
-                                    <h4>Search Engine Optimization</h4>
-                                    <p>Digital Marketing</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 slick-slide slick-cloned" tabindex="-1" style="width: 360px;"
-                            data-slick-index="7" aria-hidden="true">
-                            <div class="single_project">
-                                <div class="project_image">
-                                    <img src="assets/images/project-1.jpg" alt="project">
-                                </div>
-                                <div class="project_content">
-                                    <h4 class="project_title"><a href="#" tabindex="-1">HTML/CSS Coding</a></h4>
-                                    <p>Front-end Development</p>
+                <div class="slick-list">
+                    <div class="slick-track">
+                        <div class="row">
+                            <div class="col-lg-4" v-for="(p, i) in v.company.projects" :key="i">
+                                <div class="single_project wow fadeInUpBig">
+                                    <div class="project_image">
+                                        <img :src="p.image" alt="project">
+                                    </div>
+                                    <div class="project_content">
+                                        <h4 class="project_title">{{ p.name }}</h4>
+                                        <p class="project_content">{{ p.description }}</p>
+                                        <p class="project_content">{{ p.type }}</p>
+                                        <template v-if="p.technologies.length">
+                                            <vue-badges v-for="(t, i) in p.technologies" :key="i" :badges='[[t.name]]'>
+                                            </vue-badges>
+                                        </template>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div><span class="next slick-arrow" style="display: block;"><i
-                        class="lni lni-chevron-right"></i></span>
+                </div>
+
             </div>
         </div>
     </section>
 </template>
 <script>
+import Avatar from 'vue-avatar-component'
+import projects_data from '@/data/projects.json'
 export default {
     name: "Projects",
-    data() {
-        return {};
-    },
+    components: { Avatar },
+    computed: {
+        projects() {
+            return projects_data
+        }
+    }
 };
 </script>
     

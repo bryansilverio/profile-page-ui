@@ -42,7 +42,6 @@
 .slick-track:before,
 .slick-track:after {
   display: table;
-  content: "";
 }
 .slick-track:after {
   clear: both;
@@ -64,6 +63,9 @@
 }
 .single_project {
   margin-top: 30px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  cursor: pointer;
 }
 .single_project .project_image img {
   width: 100%;
@@ -87,6 +89,24 @@
 }
 .single_project .project_content p {
   margin-top: 5px;
+}
+.single_project:hover{
+  background-color: #293651;
+  color:white;
+}
+.single_project .project_content .project_title{
+  margin: 15px;
+}
+.single_project:hover .project_content .project_title {
+  color: #fff;
+  margin: 15px;
+}
+.single_project .project_content{
+  margin: 15px;
+}
+.single_project:hover .project_content{
+  color: #fff;
+  margin: 15px;
 }
 .project_active .slick-arrow {
   position: absolute;
@@ -115,4 +135,80 @@
 }
 .slick-initialized .slick-slide {
   outline: 0;
+}
+.project_wrapper {
+  position: relative;
+}
+.project_wrapper::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /*background-image: url(../images/shape.png);*/
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.06;
+}
+.project_box {
+  background-color: #293651;
+  padding: 0px 60px 0px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  z-index: 5;
+}
+.project_box .project_content .project_title {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .project_box .project_content .project_title {
+    font-size: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .project_box .project_content .project_title {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .project_box .project_content .project_title {
+    font-size: 26px;
+  }
+}
+.project_box .project_content .line {
+  padding-top: 10px;
+}
+.project_box .project_content .line li {
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 50px;
+  height: 3px;
+}
+.project_box .project_content .line li:nth-of-type(1) {
+  width: 64px;
+}
+.project_box .project_content .line li:nth-of-type(2) {
+  width: 10px;
+}
+.project_box .project_content .line li:nth-of-type(3) {
+  width: 7px;
+}
+.project_box .project_content p {
+  color: #fff;
+  margin-top: 15px;
+}
+.project_box .project_logo {
+  margin-top: 30px;
+}
+.project_box .project_logo .main-btn {
+  color: #293651;
+  background-color: #fff;
+}
+.project_box .project_logo .main-btn:hover {
+  background-color: rgba(255, 255, 255, 0.8);
 }

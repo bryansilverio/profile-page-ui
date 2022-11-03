@@ -1,22 +1,31 @@
 <template>
     <div class="work_experience">
-        <div class="row" v-for="(v, i) in workExperiences" :key="i">
-            <div class="col-lg-12">
+        <div class="row">
+            <div class="col-lg-12" v-for="(v, i) in workExperiences" :key="i" style="cursor: pointer">
                 <div class="single_experience d-lg-flex align-items-center flex-wrap wow fadeIn"
                     data-wow-duration="1.3s" data-wow-delay="0.2s"
                     style="visibility: visible; animation-duration: 1.3s; animation-delay: 0.2s; animation-name: fadeIn;">
                     <div :class="'experience_title ' + getPosition(i)">
-                        <h3 class="title">{{ v.position }}</h3>
-                        <div style="display: inline-block">
-                            <avatar :image="v.logo" :size="50" color="white"></avatar> {{ v.company }}
-                        </div>
-                        <br>
-                        <span class="date">{{ v.date }}</span>
                     </div>
                     <div class="experience_number">
                         <span>{{ v.number }}</span>
                     </div>
                     <div :class="'experience_content ' + getContent(i)">
+                        <h3 class="title">{{ v.position }}</h3>
+                        <div>
+                            <table>
+                                <tr>
+                                    <td rowspan="2">
+                                        <avatar :image="v.logo" :size="100" color="white"></avatar>
+                                    </td>
+                                    <td>
+                                        <span class="company_name" style="margin-right: 5px">{{ v.company }}</span>
+                                        <br>
+                                        <span class="company_date">{{ v.date }}</span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
                         <div v-html="v.content"></div>
                     </div>
                 </div>

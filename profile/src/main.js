@@ -6,6 +6,9 @@ import store from "./store";
 import vTitle from 'vuejs-title'
 Vue.use(vTitle)
 
+import VueBadges from 'vue-badges'
+Vue.use(VueBadges)
+
 Vue.config.productionTip = false;
 
 new Vue({
