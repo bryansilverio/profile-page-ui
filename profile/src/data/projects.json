@@ -143,9 +143,9 @@
     "name": "IEQSA",
     "type": "Desarrollo Fullstack - .NET",
     "image": "assets/background/background_01.jpg",
-    "description": "Desarrollo de portal web y administrador para gestionar la información que se muestra en el sitio web de la empresa.",
+    "description": "",
     "company": {
-      "name": "TasiSoftware",
+      "name": "Tasi Software",
       "logo": "assets/logos/tasisoftware.png"
     },
     "technologies": [
