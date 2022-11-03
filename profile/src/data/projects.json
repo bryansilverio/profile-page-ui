@@ -1,287 +1,274 @@
 [
   {
+    "name": "API Market",
+    "type": "Desarrollo de diseño y desarrollo de APIs",
+    "image": "assets/background/background_01.jpg",
+    "description": "Proyecto que consistia en crear microservicios basados en REST para permitir exponer la funcionalidad bancaria a terceros.",
     "company": {
       "name": "GoNet - BBVA",
-      "logo": "assets/logos/gonet.png",
-      "description": "",
-      "projects": [
-        {
-          "name": "API Market",
-          "type": "Desarrollo de diseño y desarrollo de APIs",
-          "image": "assets/background/background_01.jpg",
-          "description": "Proyecto que consistia en crear microservicios basados en REST para permitir exponer la funcionalidad bancaria a terceros.",
-          "technologies": [
-            {
-              "name": "Java",
-              "type": "Backend"
-            },
-            {
-              "name": "Quarkus",
-              "type": "Backend"
-            },
-            {
-              "name": "RAML",
-              "type": "Backend"
-            },
-            {
-              "name": "Git",
-              "type": "Devtools"
-            },
-            {
-              "name": "Jira",
-              "type": "Devtools"
-            }
-          ]
-        },
-        {
-          "name": "Mobile Retail Servicing",
-          "type": "Desarrollo de diseño y desarrollo de APIs",
-          "image": "assets/background/background_01.jpg",
-          "description": "Área en donde se da soporte a los microservicios que usa la aplicación movíl BBVA.",
-          "technologies": [
-            {
-              "name": "Java",
-              "type": "Backend"
-            },
-            {
-              "name": "Maven",
-              "type": "Backend"
-            },
-            {
-              "name": "Spring",
-              "type": "Backend"
-            },
-            {
-              "name": "RAML",
-              "type": "Backend"
-            },
-            {
-              "name": "Git",
-              "type": "Devtools"
-            },
-            {
-              "name": "Jira",
-              "type": "Devtools"
-            }
-          ]
-        }
-      ]
-    }
+      "logo": "assets/logos/gonet.png"
+    },
+    "technologies": [
+      {
+        "name": "Java",
+        "type": "Backend"
+      },
+      {
+        "name": "Quarkus",
+        "type": "Backend"
+      },
+      {
+        "name": "RAML",
+        "type": "Backend"
+      },
+      {
+        "name": "Git",
+        "type": "Devtools"
+      },
+      {
+        "name": "Jira",
+        "type": "Devtools"
+      }
+    ]
   },
   {
+    "name": "Mobile Retail Servicing",
+    "type": "Desarrollo de diseño y desarrollo de APIs",
+    "image": "assets/background/background_01.jpg",
+    "description": "Área en donde se da soporte a los microservicios que usa la aplicación movíl BBVA.",
+    "company": {
+      "name": "GoNet - BBVA",
+      "logo": "assets/logos/gonet.png"
+    },
+    "technologies": [
+      {
+        "name": "Java",
+        "type": "Backend"
+      },
+      {
+        "name": "Maven",
+        "type": "Backend"
+      },
+      {
+        "name": "Spring",
+        "type": "Backend"
+      },
+      {
+        "name": "RAML",
+        "type": "Backend"
+      },
+      {
+        "name": "Git",
+        "type": "Devtools"
+      },
+      {
+        "name": "Jira",
+        "type": "Devtools"
+      }
+    ]
+  },
+  {
+    "name": "Loop",
+    "type": "Desarrollo Web - Fullstack",
+    "image": "assets/background/background_01.jpg",
+    "description": "Desarrollo de aplicación web para administrador los servicios de traslado viajes ejecutivos.",
     "company": {
       "name": "Bitfx",
-      "logo": "assets/logos/bitfx.png",
-      "description": "",
-      "projects": [
-        {
-          "name": "Loop",
-          "type": "Desarrollo Web - Fullstack",
-          "image": "assets/background/background_01.jpg",
-          "description": "Desarrollo de aplicación web para administrador los servicios de traslado viajes ejecutivos.",
-          "technologies": [
-            {
-              "name": "PHP",
-              "type": "Backend"
-            },
-            {
-              "name": "Laravel",
-              "type": "Backend"
-            },
-            {
-              "name": "CSS",
-              "type": "Frontend"
-            },
-            {
-              "name": "Javascript",
-              "type": "Frontend"
-            },
-            {
-              "name": "VueJS",
-              "type": "Frontend"
-            },
-            {
-              "name": "MySQL",
-              "type": "Database"
-            }
-          ]
-        },
-        {
-          "name": "BMW Safety",
-          "type": "Desarrollo Web - Frontend",
-          "image": "assets/background/background_01.jpg",
-          "description": "Desarrollo de aplicación web para gestionar las instrucciones de forma digital en la planta de San Luis Potosí de BMW.",
-          "technologies": [
-            {
-              "name": "Laravel",
-              "type": "Backend"
-            },
-            {
-              "name": "CSS",
-              "type": "Frontend"
-            },
-            {
-              "name": "Javascript",
-              "type": "Frontend"
-            },
-            {
-              "name": "VueJS",
-              "type": "Frontend"
-            },
-            {
-              "name": "Vuerfy",
-              "type": "Frontend"
-            },
-            {
-              "name": "Java",
-              "type": "Backend"
-            }
-          ]
-        }
-      ]
-    }
+      "logo": "assets/logos/bitfx.png"
+    },
+    "technologies": [
+      {
+        "name": "PHP",
+        "type": "Backend"
+      },
+      {
+        "name": "Laravel",
+        "type": "Backend"
+      },
+      {
+        "name": "CSS",
+        "type": "Frontend"
+      },
+      {
+        "name": "Javascript",
+        "type": "Frontend"
+      },
+      {
+        "name": "VueJS",
+        "type": "Frontend"
+      },
+      {
+        "name": "MySQL",
+        "type": "Database"
+      }
+    ]
   },
   {
+    "name": "BMW Safety",
+    "type": "Desarrollo Web - Frontend",
+    "image": "assets/background/background_01.jpg",
+    "description": "Desarrollo de aplicación web para gestionar las instrucciones de forma digital en la planta de San Luis Potosí de BMW.",
+    "company": {
+      "name": "Bitfx",
+      "logo": "assets/logos/bitfx.png"
+    },
+    "technologies": [
+      {
+        "name": "Laravel",
+        "type": "Backend"
+      },
+      {
+        "name": "CSS",
+        "type": "Frontend"
+      },
+      {
+        "name": "Javascript",
+        "type": "Frontend"
+      },
+      {
+        "name": "VueJS",
+        "type": "Frontend"
+      },
+      {
+        "name": "Vuerfy",
+        "type": "Frontend"
+      },
+      {
+        "name": "Java",
+        "type": "Backend"
+      }
+    ]
+  },
+  {
+    "name": "IEQSA",
+    "type": "Desarrollo Fullstack - .NET",
+    "image": "assets/background/background_01.jpg",
+    "description": "Desarrollo de portal web y administrador para gestionar la información que se muestra en el sitio web de la empresa.",
     "company": {
       "name": "TasiSoftware",
-      "logo": "assets/logos/tasisoftware.png",
-      "description": "",
-      "projects": [
-        {
-          "name": "IEQSA",
-          "type": "Desarrollo Fullstack - .NET",
-          "image": "assets/background/background_01.jpg",
-          "description": "Desarrollo de portal web y administrador para gestionar la información que se muestra en el sitio web de la empresa.",
-          "technologies": [
-            {
-              "name": "CSHARP",
-              "type": "Backend"
-            },
-            {
-              "name": ".NET Framework",
-              "type": "Backend"
-            },
-            {
-              "name": "CSS",
-              "type": "Frontend"
-            },
-            {
-              "name": "Javascript",
-              "type": "Frontend"
-            },
-            {
-              "name": "SQL",
-              "type": "Database"
-            }
-          ]
-        },
-        {
-          "name": "Portal TasiSoftware",
-          "type": "Desarrollo Backend - .NET",
-          "image": "assets/background/background_01.jpg",
-          "description": "Desarrollo del nuevo portal para gestionar la información de la empresa.",
-          "technologies": [
-            {
-              "name": "CSHARP",
-              "type": "Backend"
-            },
-            {
-              "name": ".NET Framework",
-              "type": "Backend"
-            },
-            {
-              "name": "DNN",
-              "type": "Backend"
-            },
-            {
-              "name": "CSS",
-              "type": "Frontend"
-            },
-            {
-              "name": "Javascript",
-              "type": "Frontend"
-            },
-            {
-              "name": "SQL",
-              "type": "Database"
-            }
-          ]
-        }
-      ]
-    }
+      "logo": "assets/logos/tasisoftware.png"
+    },
+    "technologies": [
+      {
+        "name": "CSHARP",
+        "type": "Backend"
+      },
+      {
+        "name": ".NET Framework",
+        "type": "Backend"
+      },
+      {
+        "name": "CSS",
+        "type": "Frontend"
+      },
+      {
+        "name": "Javascript",
+        "type": "Frontend"
+      },
+      {
+        "name": "SQL",
+        "type": "Database"
+      }
+    ]
   },
   {
+    "name": "Portal TasiSoftware",
+    "type": "Desarrollo Backend - .NET",
+    "image": "assets/background/background_01.jpg",
+    "description": "Desarrollo del nuevo portal para gestionar la información de la empresa.",
+    "company": {
+      "name": "TasiSoftware",
+      "logo": "assets/logos/tasisoftware.png"
+    },
+    "technologies": [
+      {
+        "name": "CSHARP",
+        "type": "Backend"
+      },
+      {
+        "name": ".NET Framework",
+        "type": "Backend"
+      },
+      {
+        "name": "DNN",
+        "type": "Backend"
+      },
+      {
+        "name": "CSS",
+        "type": "Frontend"
+      },
+      {
+        "name": "Javascript",
+        "type": "Frontend"
+      },
+      {
+        "name": "SQL",
+        "type": "Database"
+      }
+    ]
+  },
+  {
+    "name": "Ryder",
+    "type": "Desarrollador Backend - .NET",
+    "image": "assets/background/background_01.jpg",
     "company": {
       "name": "DW Software",
-      "logo": "assets/logos/dwsoftware.jfif",
-      "description": "",
-      "projects": [
-        {
-          "name": "Ryder",
-          "type": "Desarrollador Backend - .NET",
-          "image": "assets/background/background_01.jpg",
-          "description": "Desarrollo de aplicación web para tener el tracking de la paquetería Ryder, ademas de integrar el Web Service de DHL.",
-          "technologies": [
-            {
-              "name": "CSHARP",
-              "type": "Backend"
-            },
-            {
-              "name": ".NET Framework",
-              "type": "Backend"
-            },
-            {
-              "name": "CSS",
-              "type": "Frontend"
-            },
-            {
-              "name": "Javascript",
-              "type": "Frontend"
-            },
-            {
-              "name": "SQL",
-              "type": "Database"
-            }
-          ]
-        }
-      ]
-    }
+      "logo": "assets/logos/dwsoftware.jfif"
+    },
+    "description": "Desarrollo de aplicación web para tener el tracking de la paquetería Ryder, ademas de integrar el Web Service de DHL.",
+    "technologies": [
+      {
+        "name": "CSHARP",
+        "type": "Backend"
+      },
+      {
+        "name": ".NET Framework",
+        "type": "Backend"
+      },
+      {
+        "name": "CSS",
+        "type": "Frontend"
+      },
+      {
+        "name": "Javascript",
+        "type": "Frontend"
+      },
+      {
+        "name": "SQL",
+        "type": "Database"
+      }
+    ]
   },
   {
+    "name": "Remarkable",
+    "type": "Desarrollo Web - Fullstack",
+    "image": "assets/background/background_01.jpg",
+    "description": "Desarrollo de aplicación web para permitir gestionar la información de call center para servicios de mantenimiento de agencias de autos",
     "company": {
       "name": "IT Group",
-      "description": "",
-      "logo": "assets/logos/itgroup.png",
-      "projects": [
-        {
-          "name": "Remarkable",
-          "type": "Desarrollo Web - Fullstack",
-          "image": "assets/background/background_01.jpg",
-          "description": "Desarrollo de aplicación web para permitir gestionar la información de call center para servicios de mantenimiento de agencias de autos",
-          "technologies": [
-            {
-              "name": "Java",
-              "type": "Backend"
-            },
-            {
-              "name": "HTML",
-              "type": "Frontend"
-            },
-            {
-              "name": "CSS",
-              "type": "Frontend"
-            },
-            {
-              "name": "Javascript",
-              "type": "Frontend"
-            },
-            {
-              "name": "SQL",
-              "type": "Database"
-            }
-          ]
-        }
-      ]
-    }
+      "logo": "assets/logos/itgroup.png"
+    },
+    "technologies": [
+      {
+        "name": "Java",
+        "type": "Backend"
+      },
+      {
+        "name": "HTML",
+        "type": "Frontend"
+      },
+      {
+        "name": "CSS",
+        "type": "Frontend"
+      },
+      {
+        "name": "Javascript",
+        "type": "Frontend"
+      },
+      {
+        "name": "SQL",
+        "type": "Database"
+      }
+    ]
   }
 ]
