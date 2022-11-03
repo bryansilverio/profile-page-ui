@@ -33,7 +33,7 @@
         </div>
     </div>
 </template>
-<script>
+<script lang="js">
 import Avatar from 'vue-avatar-component'
 export default {
     name: "WorkExperienceItem",

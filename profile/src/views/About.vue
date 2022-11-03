@@ -16,10 +16,27 @@
                         </ul>
                     </div> <!-- section title -->
                 </div>
+                <div class="col-lg-6 col-md-9">
+                    <div class="about_image mt-50 wow fadeInRightBig" data-wow-duration="1.3s" data-wow-delay="0.5s">
+                        <img src="assets/images/about_hero.png" alt="Hero">
+                        <div class="about_shape"></div>
+                    </div> <!-- about image -->
+                </div>
                 <div class="col-lg-6">
                     <div class="about_content mt-45 wow fadeInLeftBig" data-wow-duration="1.3s" data-wow-delay="0.5s">
                         <div v-html="data.about"></div>
                     </div> <!-- about content -->
+                </div>
+                <div class="col-lg-6">
+                    <div class="section_title text-center pb-30">
+                        <h5 class="sub_title">Conocimientos</h5>
+                        <h3 class="main_title">Principales conocimientos</h3>
+                        <ul class="line">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div> <!-- section title -->
                 </div>
                 <div class="col-lg-6">
                     <div class="about_content mt-45 wow fadeInLeftBig" data-wow-duration="1.3s" data-wow-delay="0.5s">
@@ -42,9 +59,6 @@
                     </div> <!-- about content -->
                 </div>
             </div> <!-- row -->
-
-
-
         </div> <!-- container -->
     </section>
 

@@ -18,8 +18,6 @@
                 </div>
 
                 <WorkExperienceItem :workExperiences="workExperiences" />
-                {{ workExperiences.length }}
-
             </div>
         </section>
 
