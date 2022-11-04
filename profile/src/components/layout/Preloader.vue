@@ -1,7 +1,7 @@
 <template>
   <!--====== PRELOADER PART START ======-->
 
-  <div class="preloader">
+  <div class="preloader" v-show="show">
       <div class="loader">
           <div class="ytp-spinner">
               <div class="ytp-spinner-container">
@@ -23,6 +23,12 @@
 <script>
 export default {
   name: "Preloader",
+  props:{
+    show:{
+        type:Boolean,
+        default:false
+    }
+  },
   data() {
     return {};
   },

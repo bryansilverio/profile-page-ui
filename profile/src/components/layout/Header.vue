@@ -25,24 +25,23 @@
             </div> <!-- container -->
         </div> <!-- header navbar -->
 
-        <Home v-if="$route.path=='/'"/>
+        <IntroHome v-if="this.$route.name == 'home'" />
+        <AboutHome v-else-if="this.$route.name == 'about'" />
+        <WorkExperienceHome v-else-if="this.$route.name == 'work-experience'" />
+        <ProjectHome v-else-if="this.$route.name == 'projects'" />
 
     </section>
 
     <!--====== HEADER PART ENDS ======-->
 </template>
 <script>
-import Home from '@/components/layout/Home.vue'
+import IntroHome from '@/components/_Shared/IntroHome.vue'
+import AboutHome from '@/components/_Shared/AboutHome.vue'
+import WorkExperienceHome from '@/components/_Shared/WorkExperienceHome.vue'
+import ProjectHome from '@/components/_Shared/ProjectHome.vue'
 import Menu from '@/components/_Shared/Menu.vue'
 export default {
     name: "Header",
-    components: { Home, Menu },
-    data() {
-        return {
-        };
-    },
-    methods: {
-
-    },
+    components: { IntroHome, Menu, AboutHome, WorkExperienceHome, ProjectHome }
 };
 </script>

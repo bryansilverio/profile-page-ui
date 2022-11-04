@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Services />
+        <Preloader :show="showPreloader" />
         <section id="work" class="work_experience_area pt-115">
             <div class="container">
                 <div class="row justify-content-center">
@@ -26,12 +26,28 @@
 </template>
 <script>
 import work_experiences_data from '@/data/work-experiences.json'
-import Services from '@/components/_Shared/Services.vue'
 import Skill from '@/components/_Shared/Skill.vue'
 import WorkExperienceItem from '@/components/_Shared/WorkExperienceItem.vue'
+import Preloader from "@/components/layout/Preloader.vue";
 export default {
     name: "WorkExperience",
-    components: { WorkExperienceItem, Services, Skill },
+    components: { WorkExperienceItem, Skill, Preloader },
+    data() {
+        return {
+            showPreloader: true
+        }
+    },
+    created() {
+        this.getShowPreloader()
+    },
+    methods: {
+        getShowPreloader() {
+            let thix = this
+            setTimeout(function () {
+                thix.showPreloader = false
+            }, 1000);
+        }
+    },
     computed: {
         workExperiences() {
             return work_experiences_data
