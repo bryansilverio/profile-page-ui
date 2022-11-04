@@ -3,7 +3,7 @@
     "name": "API Market",
     "type": "Desarrollo de diseño y desarrollo de APIs",
     "image": "assets/background/background_01.jpg",
-    "description": "Proyecto que consistia en crear microservicios basados en REST para permitir exponer la funcionalidad bancaria a terceros.",
+    "description": "",
     "company": {
       "name": "GoNet - BBVA",
       "logo": "assets/logos/gonet.png"
@@ -35,7 +35,7 @@
     "name": "Mobile Retail Servicing",
     "type": "Desarrollo de diseño y desarrollo de APIs",
     "image": "assets/background/background_01.jpg",
-    "description": "Área en donde se da soporte a los microservicios que usa la aplicación movíl BBVA.",
+    "description": "",
     "company": {
       "name": "GoNet - BBVA",
       "logo": "assets/logos/gonet.png"
@@ -71,7 +71,7 @@
     "name": "Loop",
     "type": "Desarrollo Web - Fullstack",
     "image": "assets/background/background_01.jpg",
-    "description": "Desarrollo de aplicación web para administrador los servicios de traslado viajes ejecutivos.",
+    "description": "",
     "company": {
       "name": "Bitfx",
       "logo": "assets/logos/bitfx.png"
@@ -107,7 +107,7 @@
     "name": "BMW Safety",
     "type": "Desarrollo Web - Frontend",
     "image": "assets/background/background_01.jpg",
-    "description": "Desarrollo de aplicación web para gestionar las instrucciones de forma digital en la planta de San Luis Potosí de BMW.",
+    "description": "",
     "company": {
       "name": "Bitfx",
       "logo": "assets/logos/bitfx.png"
@@ -175,7 +175,7 @@
     "name": "Portal TasiSoftware",
     "type": "Desarrollo Backend - .NET",
     "image": "assets/background/background_01.jpg",
-    "description": "Desarrollo del nuevo portal para gestionar la información de la empresa.",
+    "description": "",
     "company": {
       "name": "TasiSoftware",
       "logo": "assets/logos/tasisoftware.png"
@@ -211,11 +211,11 @@
     "name": "Ryder",
     "type": "Desarrollador Backend - .NET",
     "image": "assets/background/background_01.jpg",
+    "description": "",
     "company": {
       "name": "DW Software",
       "logo": "assets/logos/dwsoftware.jfif"
     },
-    "description": "Desarrollo de aplicación web para tener el tracking de la paquetería Ryder, ademas de integrar el Web Service de DHL.",
     "technologies": [
       {
         "name": "CSHARP",
@@ -243,7 +243,7 @@
     "name": "Remarkable",
     "type": "Desarrollo Web - Fullstack",
     "image": "assets/background/background_01.jpg",
-    "description": "Desarrollo de aplicación web para permitir gestionar la información de call center para servicios de mantenimiento de agencias de autos",
+    "description": "",
     "company": {
       "name": "IT Group",
       "logo": "assets/logos/itgroup.png"
