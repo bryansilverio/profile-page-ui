@@ -1,5 +1,6 @@
 [
   {
+    "id":"API-MARKET",
     "name": "API Market",
     "type": "Desarrollo de diseño y desarrollo de APIs",
     "image": "assets/background/background_01.jpg",
@@ -32,6 +33,7 @@
     ]
   },
   {
+    "id":"MOBILE-RETAIL-SERVICING",
     "name": "Mobile Retail Servicing",
     "type": "Desarrollo de diseño y desarrollo de APIs",
     "image": "assets/background/background_01.jpg",
@@ -68,6 +70,7 @@
     ]
   },
   {
+    "id":"LOOP",
     "name": "Loop",
     "type": "Desarrollo Web - Fullstack",
     "image": "assets/background/background_01.jpg",
@@ -104,6 +107,7 @@
     ]
   },
   {
+    "id":"BMW-SAFETY",
     "name": "BMW Safety",
     "type": "Desarrollo Web - Frontend",
     "image": "assets/background/background_01.jpg",
@@ -140,6 +144,7 @@
     ]
   },
   {
+    "id":"IEQSA",
     "name": "IEQSA",
     "type": "Desarrollo Fullstack - .NET",
     "image": "assets/background/background_01.jpg",
@@ -172,7 +177,8 @@
     ]
   },
   {
-    "name": "Portal TasiSoftware",
+    "id":"PORTAL-TASINET2",
+    "name": "Portal Tasinet2",
     "type": "Desarrollo Backend - .NET",
     "image": "assets/background/background_01.jpg",
     "description": "",
@@ -208,6 +214,7 @@
     ]
   },
   {
+    "id":"RYDER",
     "name": "Ryder",
     "type": "Desarrollador Backend - .NET",
     "image": "assets/background/background_01.jpg",
@@ -240,6 +247,7 @@
     ]
   },
   {
+    "id":"RMK",
     "name": "Remarkable",
     "type": "Desarrollo Web - Fullstack",
     "image": "assets/background/background_01.jpg",

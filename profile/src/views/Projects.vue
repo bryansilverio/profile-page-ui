@@ -41,7 +41,8 @@
                 <div class="slick-list">
                     <div class="slick-track">
                         <div class="row">
-                            <div class="col-lg-4" v-for="(p, i) in projects" :key="i">
+                            <div class="col-lg-4" v-for="(p, i) in projects" :key="i"
+                                @click="goToProjectDetails(p.id)">
                                 <div class="single_project wow fadeInUpBig">
                                     <div class="project_image">
                                         <img :src="p.image" alt="project" />
@@ -123,6 +124,9 @@ export default {
                 this.projects = projects_data;
             }
         },
+        goToProjectDetails(id = '') {
+            this.$router.push('/projects/' + id);
+        }
     },
 };
 </script>
