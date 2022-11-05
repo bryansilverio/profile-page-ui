@@ -18,8 +18,7 @@
                     </div> <!-- header hero content -->
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-7">
-                    <div class="header_hero_image mt-50 wow fadeInRightBig" data-wow-duration="1.3s"
-                        data-wow-delay="1.8s">
+                    <div class="header_hero_image mt-50">
                         <img :src="image" alt="hero">
                     </div> <!-- header hero image -->
                 </div>
