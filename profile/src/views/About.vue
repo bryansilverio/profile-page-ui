@@ -30,6 +30,7 @@
                             <div v-html="data.about"></div>
                         </div> <!-- about content -->
                     </div>
+                    <!--
                     <div class="col-lg-6">
                         <div class="section_title text-center pb-30">
                             <h5 class="sub_title">Conocimientos</h5>
@@ -39,7 +40,7 @@
                                 <li></li>
                                 <li></li>
                             </ul>
-                        </div> <!-- section title -->
+                        </div>  
                     </div>
                     <div class="col-lg-6">
                         <div class="about_content mt-45 wow fadeInLeftBig" data-wow-duration="1.3s"
@@ -58,10 +59,10 @@
                                             <div class="bar progress_line" data-width="85"></div>
                                         </div>
                                     </div>
-                                </div> <!-- skill item -->
-                            </div> <!-- about skill -->
-                        </div> <!-- about content -->
-                    </div>
+                                </div>  
+                            </div> 
+                        </div>  
+                    </div>-->
                 </div> <!-- row -->
             </div> <!-- container -->
         </section>

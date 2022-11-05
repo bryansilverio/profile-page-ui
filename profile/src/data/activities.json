@@ -7,7 +7,7 @@
   {
     "title": "Backend",
     "image": "assets/images/api.jpg",
-    "description": "<p>Desarollo de la funcionalidad que consumira el frontend, usando principalmente C# (.NET Core) y Java (Spring)."
+    "description": "<p>Desarollo de backend usando principalmente C# (.NET Core) y Java (Spring)."
   },
   {
     "title": "APIs REST",
