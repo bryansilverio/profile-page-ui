@@ -9,12 +9,20 @@
                     <div class="header_hero_content mt-45">
                         <h5 class="header_sub_title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">
                             {{ subtitle }}</h5>
-                        <h2 class="header_title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.5s">{{ title }}
+                        <h2 class="header_title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.5s">
+                            {{ title }}
                         </h2>
-                        <span class="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.8s">{{ subtitle }}</span>
-                        <p class="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1.1s">{{ text }}</p>
+                        <span class="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.8s">
+                            {{ subtitle }}
+                        </span>
+                        <p class="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1.1s">
+                            {{ text }}
+                        </p>
                         <a href="/contact" rel="nofollow" class="main-btn wow fadeInUp" data-wow-duration="1.3s"
-                            data-wow-delay="1.4s">Contactame</a>
+                            data-wow-delay="1.4s">
+                            Contactame
+                            
+                        </a>
                     </div> <!-- header hero content -->
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-7">

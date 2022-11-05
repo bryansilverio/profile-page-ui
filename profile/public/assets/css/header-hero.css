@@ -92,6 +92,7 @@
 @media (max-width: 767px) {
   .header_hero_content .header_sub_title {
     font-size: 24px;
+    color: #646f87;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -108,6 +109,7 @@
 @media (max-width: 767px) {
   .header_hero_content .header_title {
     font-size: 24px;
+    color: #646f87;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -121,6 +123,12 @@
   color: #ffffff;
   margin-top: 15px;
 }
+@media (max-width: 767px){
+    .header_hero_content span{
+        color: #646f87;
+    }
+}
+
 .header_hero_content p {
   margin-top: 15px;
 }
@@ -153,3 +161,57 @@ img:hover {
   pointer-events: none;
   opacity: 1;
 }
+
+/*===== Button Style Alternative =====*/
+.main-btn-home-about {
+    display: inline-block;
+    font-weight: 600;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding: 0 40px;
+    font-size: 16px;
+    line-height: 55px;
+    height: 55px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 5;
+    -webkit-transition: all 0.4s ease-out 0s;
+    -moz-transition: all 0.4s ease-out 0s;
+    -ms-transition: all 0.4s ease-out 0s;
+    -o-transition: all 0.4s ease-out 0s;
+    transition: all 0.4s ease-out 0s;
+    background-color: #ff5c35;
+    border-radius: 9999px;
+  }
+  @media (max-width: 767px) {
+    .main-btn-home-about {
+      padding: 0 30px;
+      height: 45px;
+      line-height: 45px;
+    }
+  }
+  .main-btn-home-about:hover {
+    background-color:#c72c05;
+    color: #fff;
+  }
+  .main-btn-home-about.main-btn-2 {
+    background-color: transparent;
+    color: #646f87;
+    border: 2px solid #a93a20;
+    line-height: 51px;
+  }
+  @media (max-width: 767px) {
+    .main-btn-home-about.main-btn-2 {
+      line-height: 41px;
+    }
+  }
+  .main-btn-home-about.main-btn-2:hover {
+    background-color: rgba(100, 111, 135, 0.2);
+    color: #646f87;
+  }
