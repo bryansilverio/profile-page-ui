@@ -1,0 +1,88 @@
+/*===========================
+       04.SERVICE css 
+===========================*/
+.services_area {
+    background-color: #f9f9f9;
+  }
+  
+  .single_service {
+    padding: 30px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(196, 196, 196, 0.3);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(196, 196, 196, 0.3);
+    box-shadow: 0px 0px 10px 0px rgba(196, 196, 196, 0.3);
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+    background-color: #fff;
+  }
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    .single_service {
+      padding: 20px;
+    }
+  }
+  .single_service .service_icon i {
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    font-size: 46px;
+    background-color: #293651;
+    color: #fff;
+    border-radius: 25px;
+    border-bottom-right-radius: 0;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+  }
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    .single_service .service_icon i {
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+      font-size: 36px;
+    }
+  }
+  .single_service .service_content {
+    margin-top: 25px;
+  }
+  .single_service .service_content .service_title a {
+    font-size: 22px;
+    font-weight: 600;
+    color: #293651;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+  }
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    .single_service .service_content .service_title a {
+      font-size: 18px;
+    }
+  }
+  .single_service .service_content p {
+    margin-top: 20px;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+  }
+  .single_service:hover {
+    background-color: #293651;
+  }
+  .single_service:hover .service_icon i {
+    background-color: #fff;
+    color: #293651;
+  }
+  .single_service:hover .service_content .service_title a {
+    color: #fff;
+  }
+  .single_service:hover .service_content p {
+    color: #fff;
+  }

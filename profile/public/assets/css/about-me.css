@@ -1,0 +1,120 @@
+/*===========================
+        03.ABOUT css 
+===========================*/
+.about_image {
+    position: relative;
+  }
+  .about_image img {
+    width: 100%;
+  }
+  .about_image .about_shape {
+    width: 404px;
+    height: 525px;
+    border-left: 15px solid #293651;
+    border-bottom: 15px solid #293651;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
+  @media (max-width: 767px) {
+    .about_image .about_shape {
+      width: 100%;
+      height: 380px;
+    }
+  }
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    .about_image .about_shape {
+      width: 404px;
+      height: 525px;
+    }
+  }
+  .about_image .about_shape::before {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 85%;
+    background-color: #293651;
+    bottom: 0;
+    right: 0;
+  }
+  .about_image .about_shape::after {
+    position: absolute;
+    content: "";
+    width: 104%;
+    height: 15px;
+    background-color: #293651;
+    top: 36px;
+    right: -2px;
+    -webkit-transform: rotate(11deg);
+    -moz-transform: rotate(11deg);
+    -ms-transform: rotate(11deg);
+    -o-transform: rotate(11deg);
+    transform: rotate(11deg);
+    border-top-left-radius: 20px;
+  }
+  @media (max-width: 767px) {
+    .about_image .about_shape::after {
+      top: 27px;
+    }
+  }
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    .about_image .about_shape::after {
+      top: 37px;
+    }
+  }
+  
+  .about_content p {
+    margin-top: 10px;
+  }
+  
+  .skill_item .skill_header {
+    position: relative;
+  }
+  .skill_item .skill_header .skill_title {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .skill_item .skill_header .skill_percentage {
+    position: absolute;
+    top: -3px;
+    right: 0;
+  }
+  .skill_item .skill_header .skill_percentage p {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .skill_item .skill_bar {
+    margin-top: 15px;
+  }
+  .skill_item .skill_bar .bar_inner {
+    width: 100%;
+    height: 9px;
+    border-radius: 5px;
+    background-color: rgba(100, 111, 135, 0.11);
+    position: relative;
+  }
+  .skill_item .skill_bar .bar_inner .progress_line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 9px;
+    border-radius: 5px;
+    background-color: #293651;
+    -webkit-transition: all 2s ease-out 0s;
+    -moz-transition: all 2s ease-out 0s;
+    -ms-transition: all 2s ease-out 0s;
+    -o-transition: all 2s ease-out 0s;
+    transition: all 2s ease-out 0s;
+    width: 0;
+  }
+  .skill_item .skill_bar .bar_inner .progress_line::before {
+    position: absolute;
+    content: "";
+    width: 7px;
+    height: 18px;
+    background-color: #fff;
+    border: 2px solid #293651;
+    top: -5px;
+    right: 0;
+  }
