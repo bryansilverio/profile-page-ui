@@ -59,7 +59,8 @@
   display: block;
 }
 .project_area {
-  padding-bottom: 180px;
+  padding-bottom: 150px;
+  background-color: #f9f9f9;
 }
 .single_project {
   margin-top: 30px;
@@ -211,4 +212,51 @@
 }
 .project_box .project_logo .main-btn:hover {
   background-color: rgba(255, 255, 255, 0.8);
+}
+
+.project_item {
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px 0px rgb(196 196 196 / 30%);
+}
+.project_item .title_project {
+  margin-top: 10px;
+  font-size: 15px;
+  margin-bottom:10px;
+}
+.project_item:hover {
+  background-color: #1d262d;
+  border-radius: 5px;
+}
+.project_item:hover .title_project {
+  color: #fff;
+  margin-top: 10px;
+}
+.project_item .text-description p{
+  color: #293651;
+}
+.project_item:hover .text-description p {
+  color: #fff;
+}
+.project_list_companies {
+  margin-top: 10px;
+  border-radius: 5px;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px 0px rgb(196 196 196 / 30%);
+}
+.project_filter_title{
+  font-size: 18px;
+  margin-bottom: 30px;
+  position: relative;
+  font-weight: 600;
+  line-height: 28px;
+  z-index: 1;
+}
+
+.project_filter_list{
+  margin: 0px;
+  padding: 0px;
+  list-style-type:none;
 }

@@ -1,7 +1,9 @@
 <template>
     <div id="home" class="header_hero">
         <ul class="header_social d-none d-lg-block">
-            <li v-for="(v, i) in socialNetwork" :key="i"><a :href="v.url"><i :class="v.icon"></i></a></li>
+            <li v-for="(v, i) in socialNetwork" :key="i">
+                <a :href="v.url"><i :class="v.icon"></i></a>
+            </li>
         </ul>
         <div class="container">
             <div class="row align-items-center justify-content-center justify-content-lg-between">
@@ -11,12 +13,17 @@
                             {{ title }}
                         </h2>
                         <h5 class="header_sub_title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">
-                            {{ subtitle }}
+
                         </h5>
-                        <span class="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.8s">{{ subtitle }}</span>
-                        <p class="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1.1s">{{ text }}</p>
-                        <a href="/contact" rel="nofollow" class="main-btn wow fadeInUp" data-wow-duration="1.3s"
-                            data-wow-delay="1.4s">Contactame</a>
+                        <span class="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.8s">
+                            {{ subtitle }}
+                        </span>
+                        <p class="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1.1s">
+                            {{ text }}
+                        </p>
+                        <router-link class="main-btn-home-about mt-50" to="/contact">
+                            Contacto <i class="lni lni-chevron-right-circle"></i>
+                        </router-link>
                     </div> <!-- header hero content -->
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-7">
@@ -37,7 +44,7 @@ export default {
     data() {
         return {
             title: 'Proyectos',
-            subtitle: '',
+            subtitle: 'Estos son los proyectos en los que he participado en mi experiencia laboralal igual que personales',
             text: '',
             image: 'assets/images/hero.png',
             url: ''

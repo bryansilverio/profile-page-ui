@@ -11,7 +11,7 @@
                             {{ title }}
                         </h2>
                         <h5 class="header_sub_title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">
-                            {{ subtitle }}
+                            
                         </h5>
                         <span class="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.8s">
                             {{ subtitle }}
@@ -42,7 +42,7 @@ export default {
     data() {
         return {
             title: 'Sobre mí',
-            subtitle: '',
+            subtitle: 'Sobre mí',
             text: '',
             image: 'assets/images/hero.png',
             url: ''

@@ -11,16 +11,16 @@
                             {{ title }}
                         </h2>
                         <h5 class="header_sub_title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">
-                            {{ subtitle }}
+                             
                         </h5>
                         <span class="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.8s">
-                            
+                            {{ subtitle }}
                         </span>
                         <p class="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1.1s">
                             {{ text }}
                         </p>
-                        <router-link class="main-btn-home-about mt-50" to="/contact">
-                            Contacto <i class="lni lni-chevron-right-circle"></i>
+                        <router-link class="main-btn-home-about mt-50" to="/projects">
+                            Proyectos <i class="lni lni-chevron-right-circle"></i>
                         </router-link>
                     </div> <!-- header hero content -->
                 </div>
