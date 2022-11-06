@@ -6,8 +6,8 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-6">
                         <div class="section_title text-center pb-30">
-                            <h5 class="sub_title">Experiencia</h5>
                             <h3 class="main_title">Experiencia Profesional</h3>
+                            <h5 class="sub_title">Mi experiencia laboral</h5>
                             <ul class="line">
                                 <li></li>
                                 <li></li>

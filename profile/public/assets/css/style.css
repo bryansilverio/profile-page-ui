@@ -173,20 +173,15 @@
  
 .company_name{
   color: #000;
+  padding: 0px 20px 0px;
+  font-size: 20px;
 }
 
 .company_date{
   color: #000;
+  padding: 0px 20px 0px;
+  font-style: italic;
 }
-
-.experience_content .company_name:hover{
-  color: #fff;
-}
-
-.experience_content .company_date:hover{
-  color: #fff;
-}
-
 
 /***
 SEPARADOR

@@ -11,7 +11,9 @@
                         <span>{{ v.number }}</span>
                     </div>
                     <div :class="'experience_content ' + getContent(i)">
-                        <h3 class="title">{{ v.position }}</h3>
+                        <h3 class="title">
+                            <i class="lni lni-briefcase"></i> {{ v.position }}
+                        </h3>
                         <div>
                             <table>
                                 <tr>
@@ -19,9 +21,13 @@
                                         <avatar :image="v.logo" :size="100" color="white"></avatar>
                                     </td>
                                     <td>
-                                        <span class="company_name" style="margin-right: 5px">{{ v.company }}</span>
+                                        <span class="company_name" style="margin-right: 5px">
+                                            <i class="lni lni-apartment"></i> {{ v.company }}
+                                        </span>
                                         <br>
-                                        <span class="company_date">{{ v.date }}</span>
+                                        <span class="company_date">
+                                            <i class="lni lni-calendar"></i> {{ v.date }}
+                                        </span>
                                     </td>
                                 </tr>
                             </table>
