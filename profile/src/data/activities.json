@@ -2,16 +2,81 @@
   {
     "title": "Frontend",
     "image": "assets/images/frontend.jpg",
-    "description": "<p>Desarrollo de frontend usando principalmente VueJs como framework aparte de html, css y javascript."
+    "description": "<p>Desarrollo de frontend usando principalmente VueJs como framework aparte de html, css y javascript, para crear interfaces graficas que seran usados por los usuarios finales operar su negocio.</p><p class='mt-3'>Las principales tecnologias para desarrollo frontend que me he centrado son:</p>",
+    "technologies": [
+      {
+        "name": "VueJs",
+        "icon": "assets/logos/technologies/vue-js-48.png"
+      },
+      {
+        "name": "Javascript",
+        "icon": "assets/logos/technologies/javascript-48.png"
+      },
+      {
+        "name": "CSS",
+        "icon": "assets/logos/technologies/css3-48.png"
+      },
+      {
+        "name": "HTML",
+        "icon": "assets/logos/technologies/html-5-48.png"
+      },
+      {
+        "name": "NPM",
+        "icon": "assets/logos/technologies/npm-48.png"
+      }
+    ]
   },
   {
     "title": "Backend",
     "image": "assets/images/api.jpg",
-    "description": "<p>Desarollo de backend usando principalmente C# (.NET Core) y Java (Spring)."
+    "description": "<p>Desarollo de backend usando principalmente C# (.NET Core) y Java (Spring), para crear la lógica de negocio de cada funcionalidad de la aplicación.</p><p class='mt-3'>Las principales tecnologias para desarrollo backend que me he centrado son:</p>",
+    "technologies": [
+      {
+        "name": "C#",
+        "icon": "assets/logos/technologies/c-sharp-48.png"
+      },
+      {
+        "name": "Visual Studio",
+        "icon": "assets/logos/technologies/visual-studio-48.png"
+      },
+      {
+        "name": "Java",
+        "icon": "assets/logos/technologies/java-48.png"
+      },
+      {
+        "name": "Spring",
+        "icon": "assets/logos/technologies/spring-logo-48.png"
+      }
+    ]
   },
   {
     "title": "APIs REST",
     "image": "assets/images/api.jpg",
-    "description": " <p>Diseño y desarrollo de microservicios basados en REST, buscando que el diseño de la API use los patrones de REST.</p>"
+    "description": " <p>Diseño y desarrollo de microservicios basados en REST, buscando que el diseño de la API use los patrones de REST.</p>",
+    "technologies": [
+      {
+        "name": "API REST",
+        "icon": "assets/logos/technologies/rest-api-48.png"
+      }
+    ]
+  },
+  {
+    "title": "DevTools",
+    "image": "assets/images/api.jpg",
+    "description": " <p>Ademas de las tecnologias usadas, también se usa herramientas que ayudan a proceso de desarrollo.</p><p>Las principales herramientas de desarrollo que he usado en los proyectos son:</p>",
+    "technologies": [
+      {
+        "name": "Jira",
+        "icon": "assets/logos/technologies/jira-48.png"
+      },
+      {
+        "name": "GIT",
+        "icon": "assets/logos/technologies/git-48.png"
+      },
+      {
+        "name": "Postman",
+        "icon": "assets/logos/technologies/postman-48.png"
+      }
+    ]
   }
 ]

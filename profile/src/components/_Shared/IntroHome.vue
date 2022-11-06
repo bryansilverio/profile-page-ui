@@ -18,10 +18,10 @@
                             {{ title }}
                         </h2>
                         <span class="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.8s">
-                            {{ subtitle }}
+                            {{ text }}
                         </span>
                         <p class="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1.1s">
-                            {{ text }}
+                             
                         </p>
                         <router-link class="main-btn-home-about mt-50" to="/about">
                             Sobre mí <i class="lni lni-chevron-right-circle"></i>
@@ -45,8 +45,8 @@ export default {
     data() {
         return {
             title: 'Bryan Silverio',
-            subtitle: 'Desarrollador de software',
-            text: 'Hola bienvenido a mi página',
+            subtitle: 'Hola, soy',
+            text: 'Desarrollador de software',
             image: 'assets/images/hero.png',
             url: ''
         };

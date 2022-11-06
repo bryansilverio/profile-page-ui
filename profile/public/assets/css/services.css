@@ -86,3 +86,27 @@
   .single_service:hover .service_content p {
     color: #fff;
   }
+
+ /***/
+ .image_technology_item img {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+img:hover {
+  opacity: 1;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.image_technology_item::after {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  opacity: 0.5;
+}
+
+.image_technology_item:hover::after {
+  pointer-events: none;
+  opacity: 1;
+}

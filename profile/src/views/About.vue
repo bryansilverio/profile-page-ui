@@ -8,7 +8,6 @@
                 <div class="row align-items-center justify-content-center">
                     <div class="col-lg-12">
                         <div class="section_title text-center pb-30">
-                            <h5 class="sub_title">Sobre mí</h5>
                             <h3 class="main_title">¿Quien soy?</h3>
                             <ul class="line">
                                 <li></li>
