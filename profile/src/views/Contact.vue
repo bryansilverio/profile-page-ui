@@ -2,36 +2,24 @@
 
     <div>
         <Preloader :show="showPreloader" />
-        <!--====== CALL TO ACTION PART START ======-->
-
-        <section id="contact" class="call_to_action_area">
+        <section id="work" class="work_experience_area pt-115">
             <div class="container">
-                <div class="call_to_action_wrapper wow fadeIn" data-wow-duration="1.3s" data-wow-delay="0.5s">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="call_to_action_box d-md-flex justify-content-between align-items-center">
-                                <div class="call_to_action_content">
-                                    <h3 class="action_title">Contacto</h3>
-                                    <ul class="line">
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                    </ul>
-                                    <p><i class="lni lni-envelope"></i> bryansilverio12@gmail.com</p>
-                                </div> <!-- call to action content -->
-
-                                <div class="call_to_action_btn">
-                                    <a href="mailto:bryansilverio12@gmail.com" rel="nofollow"
-                                        class="main-btn">Contactame</a>
-                                </div> <!-- call to action btn -->
-                            </div> <!-- call to action box -->
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="section_title text-center pb-30">
+                            <h3 class="main_title">Mi contacto</h3>
+                            <h5 class="sub_title">Métodos de contacto</h5>
+                            <ul class="line">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
                         </div>
-                    </div> <!-- row -->
-                </div> <!-- call to action wrapper -->
-            </div> <!-- container -->
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <!--====== CALL TO ACTION PART ENDS ======-->
     </div>
 </template>
 <script>
