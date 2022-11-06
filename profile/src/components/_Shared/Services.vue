@@ -7,7 +7,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="section_title text-center pb-30">
-                        <h3 class="main_title_service">Principales actividades</h3>
+                        <h3 class="main_title">Mis habilidades</h3>
                         <h5 class="sub_title_service">Dentro de las actividades en las que me he desarrollado son las
                             siguienes</h5>
                         <ul class="line">
@@ -19,12 +19,13 @@
                 </div>
             </div>
 
-            <div v-for="(v, i) in activities" :key="i">
-                <AboutInfo1 v-if="i % 2 == 0" :title="v.title" :description="v.description" :image="v.image"
-                    :technologies="v.technologies" />
-                <AboutInfo2 v-else :title="v.title" :description="v.description" :image="v.image"
-                    :technologies="v.technologies" />
+            <div class="row">
+                <div v-for="(v, i) in activities" :key="i" class="col-lg-4">
+                    <AboutInfo :title="v.title" :description="v.description" :image="v.image"
+                        :technologies="v.technologies" />
+                </div>
             </div>
+
 
             <!--
             <div class="row justify-content-center">
@@ -60,11 +61,10 @@
 </template>
 <script>
 import activities_data from '@/data/activities.json'
-import AboutInfo1 from '@/components/_Shared/AboutInfo1.vue'
-import AboutInfo2 from '@/components/_Shared/AboutInfo2.vue'
+import AboutInfo from '@/components/_Shared/AboutInfo.vue'
 export default {
     name: "Services",
-    components: { AboutInfo1, AboutInfo2 },
+    components: { AboutInfo },
     computed: {
         activities() {
             return activities_data

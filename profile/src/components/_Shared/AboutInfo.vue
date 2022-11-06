@@ -2,7 +2,14 @@
     <div>
         <div class="info-one info-one-border">
             <div class="row align-items-center">
-                <div class="col-lg-6 col-md-12 col-12">
+                <div class="col-lg-12 col-md-12 col-12">
+                    <h2 class="sub_title_activity_service">{{ title }}</h2>
+                    <div class="info-image wow fadeInRight" data-wow-delay=".5s"
+                        style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInRight;">
+                        <img class="ss1" :src="image" alt="#" style="border-radius: 50%;padding:50px">
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-12">
 
                     <div class="info-text wow fadeInLeft" data-wow-delay=".3s"
                         style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
@@ -11,10 +18,9 @@
                             <i class="lni lni-inbox"></i>
                         </div>
                         -->
-                        <h2 class="sub_title_activity_service">{{ title }}</h2>
                         <div class="text-description" v-html="description"></div>
                         <div class="image_technology_item">
-                            <img v-for="(v,i) in technologies" :key="i" :src="v.icon" alt=""/>
+                            <img v-for="(v, i) in technologies" :key="i" :src="v.icon" alt="" />
                         </div>
                         <!--
                         <div class="button">
@@ -23,12 +29,7 @@
                         -->
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-12 col-12">
-                    <div class="info-image wow fadeInRight" data-wow-delay=".5s"
-                        style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInRight;">
-                        <img class="ss1" :src="image" alt="#" style="border-radius: 50%;padding:50px">
-                    </div>
-                </div>
+
             </div>
         </div>
     </div>
@@ -49,7 +50,7 @@ export default {
             type: String,
             default: ''
         },
-        technologies:{
+        technologies: {
             type: Array
         }
     }
