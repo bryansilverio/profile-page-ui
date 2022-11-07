@@ -19,7 +19,7 @@
                 </div>
                 <div class="col-lg-12">
                     <div class="row">
-                        <div class="col-lg-8">
+                        <div class="col-lg-8 col-md-12 col-sm-12">
                             <h2 class="project_details_title"> {{ projectDetails.name }}</h2>
                             <ul class="project_details_items">
                                 <li><span class="font-weight-bold">Proyecto: </span>
@@ -43,6 +43,7 @@
                             <div class="project_details_description" v-html="projectDetails.description"> </div>
                         </div>
                         <div class="col-lg-4 col-md-12 col-sm-12" v-for="(p, i) in projectsRelationed" :key="i">
+                            <p>Proyectos relacionados a {{ projectDetails.company.name }}</p>
                             <div class="project_item" style="cursor:pointer" @click="goToProjectDetails(p.id)">
                                 <img class="card-img" :src="p.image" alt="Bologna">
                                 <div class="card-body">
@@ -117,16 +118,11 @@ export default {
                 e => e.company.id == this.projectDetails.company.id && e.id != this.projectDetails.id);
         },
         goToProjectDetails(id = '') {
-            this.$router.push('/projects/' + id).catch(error => {
-                if (
-                    error.name !== 'NavigationDuplicated' &&
-                    !error.message.includes('Avoided redundant navigation to current location')
-                ) {
-                    /* eslint-disable no-console */
-                    console.log(error)
-                    /* eslint-enable no-console */
-                }
-            })
+            let changeProject = this.projects.find(e => e.id == id);
+            if (changeProject) {
+                this.projectDetails = changeProject;
+                this.findProjectRelationed();
+            }
         },
     },
     created() {
