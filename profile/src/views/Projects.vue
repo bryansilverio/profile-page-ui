@@ -35,64 +35,38 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-lg-8 col-md-12 col-sm-12">
-                        <div class="row">
-                            <div class="col-lg-6 col-md-12 col-sm-12" v-for="(p, i) in projects" :key="i">
-                                <div class="project_item" style="cursor:pointer" @click="goToProjectDetails(p.id)">
-                                    <img class="card-img" :src="p.image" alt="Bologna">
-                                    <div class="card-img-overlay">
+                    <div class="col-lg-4 col-md-12 col-sm-12" v-for="(p, i) in projects" :key="i">
+                        <div class="project_item" style="cursor:pointer" @click="goToProjectDetails(p.id)">
+                            <img class="card-img" :src="p.image" alt="Bologna">
+                            <div class="card-img-overlay">
 
-                                    </div>
-                                    <div class="card-body">
-                                        <h3 class="title_project">{{ p.name }}</h3>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="title_project">{{ p.name }}</h3>
 
-                                        <p class="text-description">{{ p.type }}</p>
-                                        <template v-if="p.technologies.length">
-                                            <vue-badges v-for="(t, i) in p.technologies" :key="i" :badges="[[t.name]]">
-                                            </vue-badges>
-                                        </template>
-                                    </div>
-                                    <div
-                                        class="card-footer text-muted d-flex justify-content-between bg-transparent border-top-0">
-                                        <div class="views text-description">
-                                            <table>
-                                                <tr>
-                                                    <td>
-                                                        <avatar :image="p.company.logo" :size="50" color="white" />
-                                                    </td>
-                                                    <td>
-                                                        <span style="padding: 10px;">{{ p.company.name }}</span>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </div>
-                                    </div>
+                                <p class="text-description">{{ p.type }}</p>
+                                <template v-if="p.technologies.length">
+                                    <vue-badges v-for="(t, i) in p.technologies" :key="i" :badges="[[t.name]]">
+                                    </vue-badges>
+                                </template>
+                            </div>
+                            <div
+                                class="card-footer text-muted d-flex justify-content-between bg-transparent border-top-0">
+                                <div class="views text-description">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <avatar :image="p.company.logo" :size="50" color="white" />
+                                            </td>
+                                            <td>
+                                                <span style="padding: 10px;">{{ p.company.name }}</span>
+                                            </td>
+                                        </tr>
+                                    </table>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-lg-4 col-md-12 col-sm-12">
-                        <div class="project_list_companies" data-wow-delay=".3s"
-                            style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
-                            <div class="price_header">
-                                <h4 class="project_filter_title"><i class="lni lni-search-alt"></i> Filtro</h4>
-                            </div>
-                            <div class="price_body">
-                                <ul class="project_filter_list">
-                                    <li @click="selectProjectsByType('Todos', '')" style="cursor:pointer">
-                                        <i class="lni lni-checkmark"></i> Todos
-                                    </li>
-                                    <li v-for="(v, i) in workExperiences" :key="i" style="cursor:pointer"
-                                        @click="selectProjectsByType(v.company, v.logo)">
-                                        <i class="lni lni-checkmark"></i>
-                                        {{ v.company }}
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </section>

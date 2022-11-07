@@ -5,7 +5,11 @@
                 <div class="col-lg-12">
                     <div class="project_details_title text-center pb-30">
                         <h3 class="main_title">Detalle del proyecto</h3>
-                        <h5 class="sub_title">Proyecto</h5>
+                        <h5>
+                            <router-link class="sub_title" to="/projects">
+                                <i class="lni lni-chevron-left"></i> Regresar a proyectos
+                            </router-link>
+                        </h5>
                         <ul class="line">
                             <li></li>
                             <li></li>
@@ -16,18 +20,20 @@
                 <div class="col-lg-12">
                     <div class="row">
                         <div class="col-lg-9">
-                            <h2 class="project_details_title">{{ projectDetails.name }}</h2>
+                            <h2 class="project_details_title"> {{ projectDetails.name }}</h2>
                             <ul class="project_details_items">
-                                <li><span class="font-weight-bold">Proyecto: </span> {{ projectDetails.type }}</li>
-                                <li><span class="font-weight-bold">Periodo: </span> April 16, 2025</li>
-                                <li><span class="font-weight-bold">Empresa: </span> Events</li>
+                                <li><span class="font-weight-bold">Proyecto: </span>
+                                    {{ projectDetails.type }}
+                                </li>
+                                <li>
+                                    <span class="font-weight-bold">Empresa donde se desarrollo: </span>
+                                    {{ projectDetails.company.name }}
+                                </li>
                             </ul>
                             <template v-if="projectDetails.technologies">
                                 <div class="row">
                                     <div class="col-lg-12">
-                                        <span class="font-weight-bold">Tecnologias: </span>
-                                    </div>
-                                    <div class="col-lg-12">
+                                        <span class="font-weight-bold">Tecnologias usadas: </span>
                                         <vue-badges v-for="(t, i) in projectDetails.technologies" :key="i"
                                             :badges="[[t.name]]">
                                         </vue-badges>
@@ -57,7 +63,7 @@ export default {
                 type: '',
                 company: {
                     name: '',
-                    image: ''
+                    logo: ''
                 },
                 technologies: [],
                 description: ''
@@ -74,7 +80,7 @@ export default {
                     type: findProject.type,
                     company: {
                         name: findProject.company.name,
-                        image: findProject.company.image
+                        logo: findProject.company.logo
                     },
                     technologies: [],
                     description: findProject.description

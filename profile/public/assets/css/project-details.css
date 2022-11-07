@@ -3,6 +3,11 @@
   font-weight: 600;
   color: #fff;
 }
+
+.project_details_title .sub_title:hover {
+  color: #ff5c35;
+}
+
 @media (max-width: 767px) {
   .project_details_title .sub_title {
     font-size: 16px;
@@ -44,16 +49,15 @@
   color: #fff;
 }
 
-.project_details_description{
+.project_details_description {
   margin-top: 30px;
 }
 
-.project_details_description p{
+.project_details_description p {
   color: #fff;
 }
 
-.project_details_description ul li{
+.project_details_description ul li {
   list-style-type: circle;
   margin-right: 10px;
 }
- 
