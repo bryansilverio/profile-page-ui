@@ -5,7 +5,7 @@
                 <div class="col-lg-12">
                     <div class="project_details_title text-center pb-30">
                         <h3 class="main_title">Detalle del proyecto</h3>
-                        <h5 class="sub_title">Projecto</h5>
+                        <h5 class="sub_title">Proyecto</h5>
                         <ul class="line">
                             <li></li>
                             <li></li>
