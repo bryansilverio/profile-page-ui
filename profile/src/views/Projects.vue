@@ -117,7 +117,16 @@ export default {
             }
         },
         goToProjectDetails(id = '') {
-            this.$router.push('/projects/' + id);
+            this.$router.push('/projects/' + id).catch(error => {
+                if (
+                    error.name !== 'NavigationDuplicated' &&
+                    !error.message.includes('Avoided redundant navigation to current location')
+                ) {
+                    /* eslint-disable no-console */
+                    console.log(error)
+                    /* eslint-enable no-console */
+                }
+            })
         },
         getShowPreloader() {
             let thix = this

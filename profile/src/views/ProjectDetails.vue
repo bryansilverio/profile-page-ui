@@ -19,7 +19,7 @@
                 </div>
                 <div class="col-lg-12">
                     <div class="row">
-                        <div class="col-lg-9">
+                        <div class="col-lg-8">
                             <h2 class="project_details_title"> {{ projectDetails.name }}</h2>
                             <ul class="project_details_items">
                                 <li><span class="font-weight-bold">Proyecto: </span>
@@ -42,8 +42,19 @@
                             </template>
                             <div class="project_details_description" v-html="projectDetails.description"> </div>
                         </div>
-                        <div class="col-lg-3">
-
+                        <div class="col-lg-4 col-md-12 col-sm-12" v-for="(p, i) in projectsRelationed" :key="i">
+                            <div class="project_item" style="cursor:pointer" @click="goToProjectDetails(p.id)">
+                                <img class="card-img" :src="p.image" alt="Bologna">
+                                <div class="card-body">
+                                    <h3 class="title_project">{{ p.name }}</h3>
+                                </div>
+                                <div
+                                    class="card-footer text-muted d-flex justify-content-between bg-transparent border-top-0">
+                                    <div class="views text-description">
+                                        <span style="padding: 10px;">{{ p.company.name }}</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -62,13 +73,15 @@ export default {
                 name: '',
                 type: '',
                 company: {
+                    id: '',
                     name: '',
                     logo: ''
                 },
                 technologies: [],
                 description: ''
 
-            }
+            },
+            projectsRelationed: []
         }
     },
     methods: {
@@ -76,9 +89,11 @@ export default {
             let findProject = this.projects.find(x => x.id == id);
             if (findProject) {
                 this.projectDetails = {
+                    id: findProject.id,
                     name: findProject.name,
                     type: findProject.type,
                     company: {
+                        id: findProject.company.id,
                         name: findProject.company.name,
                         logo: findProject.company.logo
                     },
@@ -96,10 +111,27 @@ export default {
             else {
                 this.$route.push({ path: '/404' })
             }
-        }
+        },
+        findProjectRelationed() {
+            this.projectsRelationed = this.projects.filter(
+                e => e.company.id == this.projectDetails.company.id && e.id != this.projectDetails.id);
+        },
+        goToProjectDetails(id = '') {
+            this.$router.push('/projects/' + id).catch(error => {
+                if (
+                    error.name !== 'NavigationDuplicated' &&
+                    !error.message.includes('Avoided redundant navigation to current location')
+                ) {
+                    /* eslint-disable no-console */
+                    console.log(error)
+                    /* eslint-enable no-console */
+                }
+            })
+        },
     },
     created() {
         this.findProjectById(this.$route.params.id)
+        this.findProjectRelationed();
     }
 }
 </script>
