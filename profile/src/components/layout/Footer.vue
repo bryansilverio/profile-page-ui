@@ -43,7 +43,7 @@
 
             <div class="row">
                 <div class="col-lg-12">
-                    <p  style="align-items: center;" class="credit pt-45">Designed and Developed by <a href="" rel="nofollow"></a></p>
+                    <p  style="align-items: center;" class="credit pt-45">Designed and Developed <a href="" rel="nofollow"></a></p>
                 </div>
             </div>
 

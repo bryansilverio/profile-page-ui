@@ -91,6 +91,7 @@ export default {
         };
     },
     created() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
         this.getShowPreloader()
         this.selectProjectsByType(this.itemSelected.name, this.itemSelected.url);
     },
