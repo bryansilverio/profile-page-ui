@@ -43,6 +43,9 @@
   font-weight: 600;
   color: #ffffff;
 }
+.sub_title_footer:hover{
+  color: #ff5c35;
+}
 
 .content_footer{
   margin-top: 10px;

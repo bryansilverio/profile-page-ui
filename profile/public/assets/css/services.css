@@ -2,7 +2,27 @@
        04.SERVICE css 
 ===========================*/
 .services_area {
-  background-color: #f9f9f9;
+  background-color: #1d262d;
+  color: #fff;
+}
+
+.skills_section_title .skills_main_title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 20px;
+  color: #fff;
+}
+@media (max-width: 767px) {
+  .skills_section_title .skills_main_title {
+    font-size: 1.25rem;
+    color: #fff;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .skills_section_title .skills_main_title {
+    font-size: 1.25rem;
+    color: #fff;
+  }
 }
 
 .single_service {
@@ -91,6 +111,17 @@
 .image_technology_item img {
   opacity: 0.5;
   cursor: pointer;
+  width: 3%;
+  margin-right: 20px;
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .image_technology_item img {
+    opacity: 0.5;
+    cursor: pointer;
+    width: 10%;
+    margin-right: 20px;
+  }
 }
 
 img:hover {
@@ -111,27 +142,36 @@ img:hover {
   opacity: 1;
 }
 .info-one-border {
+  cursor: pointer;
   margin-top: 10px;
   border-radius: 5px;
-  padding: 30px;
-  background-color: #fff;
-  box-shadow: 0px 0px 10px 0px rgb(196 196 196 / 30%);
-}
-.info-one-border .sub_title_activity_service {
-  border-bottom: 3px solid #1d262d;
-  margin-top: 10px;
-  font-size: 20px;
+  padding: 15px;
+  background-color: #1d262d;
+  color: #fff;
+  /**box-shadow: 0px 0px 3px 0px rgb(196 196 196 / 30%);**/
+  /**border-bottom: 1px solid #fff;**/
 }
 .info-one-border:hover {
   background-color: #1d262d;
+  color: #fff;
   border-radius: 5px;
-  padding: 30px;
+  padding: 15px;
+  /**box-shadow: 0px 0px 10px 0px rgb(196 196 196 / 30%);**/
+}
+.info-one-border .sub_title_activity_service {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 10px;
 }
 .info-one-border:hover .sub_title_activity_service {
   color: #fff;
   margin-top: 10px;
-  border-bottom: 3px solid #fff;
   font-size: 20px;
+}
+.info-one-border .text-description p {
+  color: #fff;
+  font-size: 16px;
 }
 .info-one-border:hover .text-description p {
   color: #fff;

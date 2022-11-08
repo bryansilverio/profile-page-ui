@@ -1,9 +1,15 @@
 /*===========================
       01.COMMON css 
 ===========================*/
+/**
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800|Open+Sans:400,600,700&display=swap");
+*/
+@font-face {
+  font-family: Poppins;
+  src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: Poppins;
   font-weight: normal;
   font-style: normal;
   color: #646f87;

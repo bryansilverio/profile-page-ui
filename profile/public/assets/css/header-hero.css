@@ -3,9 +3,10 @@
   position: relative;
   z-index: 5;
   background-position: bottom center;
-  background-color: #f9f9f9;
+  background-color: #1d262d;
   overflow: hidden;
   padding-top: 70px;
+  color: #fff;
 }
 
 .header_social {

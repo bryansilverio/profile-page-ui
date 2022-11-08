@@ -1,10 +1,10 @@
 <template>
     <!--====== FOOTER PART START ======-->
 
-    <footer id="footer" class="footer_area gray-bg pt-30 pb-20 bg-footer">
+    <footer id="footer" class="footer_area gray-bg pt-30 pb-20 bg-footer" style="box-shadow: 0px 0px 5px 0px #ff5c35">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3">
+                <div class="col-lg-6">
                     <h5 class="sub_title_footer">Sobre mi</h5>
                     <p class="content_footer">
                         El motivo de este sitio crecer como profesional
@@ -22,11 +22,6 @@
                     </ul>
                 </div>
                 <div class="col-lg-3">
-                    <h5 class="sub_title_footer">Otros enlaces</h5>
-                    <a href="https://bssilverio.wordpress.com/" target="_blank" class="content_footer">Wordpress</a>
-                </div>
-                <div class="col-lg-3">
-                     
                     <div class="footer_content">
                         <h5 class="sub_title_footer">Contacto</h5>
                         <ul class="footer_social">
@@ -43,7 +38,8 @@
 
             <div class="row">
                 <div class="col-lg-12">
-                    <p  style="align-items: center;" class="credit pt-45">Designed and Developed <a href="" rel="nofollow"></a></p>
+                    <p style="align-items: center;" class="credit pt-45">Designed and Developed <a href=""
+                            rel="nofollow"></a></p>
                 </div>
             </div>
 

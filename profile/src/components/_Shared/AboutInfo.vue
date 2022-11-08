@@ -2,39 +2,33 @@
     <div>
         <div class="info-one info-one-border">
             <div class="row align-items-center">
-                <div class="col-lg-12 col-md-12 col-12">
-                    <h2 class="sub_title_activity_service">{{ title }}</h2>
-                    <div class="info-image wow fadeInRight" data-wow-delay=".5s"
-                        style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInRight;">
-                        <img class="ss1" :src="image" alt="#" style="border-radius: 50%;padding:50px">
+                <div class="col-lg-1 col-md-12 col-12">
+                    <i class="lni lni-code-alt" style="font-size:30px"></i>
+                </div>
+                <div class="col-lg-11 col-md-12 col-12">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-12">
+                            <h2 class="sub_title_activity_service">{{ title }}</h2>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-12">
+                            <div class="info-text wow fadeInLeft" data-wow-delay=".3s"
+                                style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                <div class="text-description" v-html="description"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-12">
+                            <div class="image_technology_item">
+                                <img v-for="(v, i) in technologies" :key="i" :src="v.icon" alt="" />
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-12 col-md-12 col-12">
-
-                    <div class="info-text wow fadeInLeft" data-wow-delay=".3s"
-                        style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
-                        <!--
-                        <div class="main-icon">
-                            <i class="lni lni-inbox"></i>
-                        </div>
-                        -->
-                        <div class="text-description" v-html="description"></div>
-                        <div class="image_technology_item">
-                            <img v-for="(v, i) in technologies" :key="i" :src="v.icon" alt="" />
-                        </div>
-                        <!--
-                        <div class="button">
-                            <a href="javascript:void(0)" class="btn">Get Started</a>
-                        </div>
-                        -->
-                    </div>
-                </div>
-
             </div>
         </div>
     </div>
 </template>
 <script>
+import technologies_data from '@/data/technologies.json'
 export default {
     name: 'AboutInfo1',
     props: {
@@ -52,6 +46,11 @@ export default {
         },
         technologies: {
             type: Array
+        }
+    },
+    computed: {
+        technologiesIcons() {
+            return technologies_data
         }
     }
 }

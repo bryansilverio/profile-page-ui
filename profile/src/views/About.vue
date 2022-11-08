@@ -3,65 +3,33 @@
     <!--====== ABOUT PART START ======-->
     <div>
         <Preloader :show="showPreloader" />
-        <section id="about" class="about_area pt-115 pb-120">
+        <section id="about" class="about_area pt-115 pb-10">
             <div class="container">
                 <div class="row align-items-center justify-content-center">
-                    <div class="col-lg-12">
-                        <div class="section_title text-center pb-30">
-                            <h3 class="main_title">¿Quien soy?</h3>
+                    <div class="col-lg-9">
+                        <div class="about_section_title text-left">
+                            <h3 class="about_main_title mt-10">Bryan Silverio</h3>
+                            <h5 style="color: #fff;">Desarrollador Web | Backend</h5>
                             <ul class="line">
                                 <li></li>
                                 <li></li>
                                 <li></li>
                             </ul>
                         </div> <!-- section title -->
+                        <div class="about_content mt-30" v-html="data.about"></div>
                     </div>
-                    <div class="col-lg-6 col-md-9">
-                        <div class="about_image mt-50 wow fadeInRightBig" data-wow-duration="1.3s"
-                            data-wow-delay="0.5s">
-                            <img src="assets/images/about_hero.png" alt="Hero">
-                            <div class="about_shape"></div>
-                        </div> <!-- about image -->
+                    <div class="col-lg-3 col-md-9">
+                        <div class="about_image">
+                            <img src="assets/images/about_hero.png" alt="Hero" style="width: 100%;border-radius:50%" />
+                        </div>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="about_content mt-45 wow fadeInLeftBig" data-wow-duration="1.3s"
-                            data-wow-delay="0.5s">
-                            <div v-html="data.about"></div>
-                        </div> <!-- about content -->
+                    <div class="col-lg-12 col-md-19">
+                        <div>
+                            <a class="about_social_network" :href="v.url" target="_blank" v-for="(v, i) in socialNetwork" :key="i">
+                                <i :class="v.icon"></i>
+                            </a>
+                        </div>
                     </div>
-                    <!--
-                    <div class="col-lg-6">
-                        <div class="section_title text-center pb-30">
-                            <h5 class="sub_title">Conocimientos</h5>
-                            <h3 class="main_title">Principales conocimientos</h3>
-                            <ul class="line">
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ul>
-                        </div>  
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="about_content mt-45 wow fadeInLeftBig" data-wow-duration="1.3s"
-                            data-wow-delay="0.5s">
-
-                            <div class="about_skills pt-15">
-                                <div class="skill_item mt-20" v-for="(v, i) in data.mainTechnologies" :key="i">
-                                    <div class="skill_header">
-                                        <h6 class="skill_title">{{ v.name }}</h6>
-                                        <div class="skill_percentage">
-                                            <p><span class="counter">{{ v.type }}</span></p>
-                                        </div>
-                                    </div>
-                                    <div class="skill_bar">
-                                        <div class="bar_inner">
-                                            <div class="bar progress_line" data-width="85"></div>
-                                        </div>
-                                    </div>
-                                </div>  
-                            </div> 
-                        </div>  
-                    </div>-->
                 </div> <!-- row -->
             </div> <!-- container -->
         </section>
@@ -72,6 +40,7 @@
     </div>
 </template>
 <script>
+import social_network_data from '@/data/social-network.json'
 import about_data from '@/data/about.json'
 import Services from '@/components/_Shared/Services.vue'
 import Preloader from "@/components/layout/Preloader.vue";
@@ -98,6 +67,9 @@ export default {
     computed: {
         data() {
             return about_data
+        },
+        socialNetwork() {
+            return social_network_data
         }
     }
 };

@@ -29,7 +29,7 @@
             </div> <!-- header navbar -->
 
             <IntroHome v-if="this.$route.name == 'home'" />
-            <AboutHome v-else-if="this.$route.name == 'about'" />
+            <!--<AboutHome v-else-if="this.$route.name == 'about'" />-->
             <WorkExperienceHome v-else-if="this.$route.name == 'work-experience'" />
             <ProjectHome v-else-if="this.$route.name == 'projects'" />
 
@@ -41,12 +41,12 @@
 </template>
 <script>
 import IntroHome from '@/components/_Shared/IntroHome.vue'
-import AboutHome from '@/components/_Shared/AboutHome.vue'
+//import AboutHome from '@/components/_Shared/AboutHome.vue'
 import WorkExperienceHome from '@/components/_Shared/WorkExperienceHome.vue'
 import ProjectHome from '@/components/_Shared/ProjectHome.vue'
 import Menu from '@/components/_Shared/Menu.vue'
 export default {
     name: "Header",
-    components: { IntroHome, Menu, AboutHome, WorkExperienceHome, ProjectHome }
+    components: { IntroHome, Menu, WorkExperienceHome, ProjectHome }
 };
 </script>

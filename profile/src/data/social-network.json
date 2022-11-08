@@ -1,17 +1,17 @@
 [
     {
         "name":"Wordpress",
-        "icon":"lni lni-wordpress",
+        "icon":"lni lni-wordpress-filled",
         "url":"https://bssilverio.wordpress.com/"
     },
     {
         "name":"Linkedin",
-        "icon":"lni lni-linkedin",
+        "icon":"lni lni-linkedin-original",
         "url":"https://www.linkedin.com/"
     },
     {
         "name":"GitHub",
-        "icon":"lni lni-github",
+        "icon":"lni lni-github-original",
         "url":"https://github.com/bsn12993"
     }
 ]
