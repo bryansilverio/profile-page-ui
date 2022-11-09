@@ -226,7 +226,7 @@
   margin-bottom:10px;
 }
 .project_item:hover {
-  background-color: #1d262d;
+  background-color: #202225;
   border-radius: 5px;
 }
 .project_item:hover .title_project {

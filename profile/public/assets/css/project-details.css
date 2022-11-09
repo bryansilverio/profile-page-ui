@@ -1,7 +1,7 @@
 .project_details_title .sub_title {
   font-size: 20px;
   font-weight: 600;
-  color: #1d262d;
+  color: #202225;
 }
 
 .project_details_title .sub_title:hover {
@@ -23,7 +23,7 @@
   font-size: 35px;
   font-weight: 600;
   margin-top: 20px;
-  color: #1d262d;
+  color: #202225;
 }
 @media (max-width: 767px) {
   .project_details_title .main_title {
@@ -38,7 +38,7 @@
 
 .project_details_title {
   font-size: 36px;
-  color: #1d262d;
+  color: #202225;
 }
 .project_details_items {
   margin-top: 25px;
@@ -46,7 +46,7 @@
 
 .project_details_area {
   background-color: #fff;
-  color: #1d262d;
+  color: #202225;
 }
 
 .project_details_description {
@@ -54,7 +54,7 @@
 }
 
 .project_details_description p {
-  color: #1d262d;
+  color: #202225;
 }
 
 .project_details_description ul li {

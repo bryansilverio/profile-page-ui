@@ -24,7 +24,7 @@
   top: 0;
   width: 2px;
   height: 100%;
-  background-color: #1d262d;
+  background-color: #202225;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .work_experience::before {
@@ -69,7 +69,7 @@
   }
 }
 .single_experience .experience_title p {
-  color: #1d262d;
+  color: #202225;
   font-size: 16px;
   font-weight: 600;
   font-family: "Open Sans", sans-serif;
@@ -111,10 +111,10 @@
   height: 55px;
   line-height: 51px;
   text-align: center;
-  border: 2px solid #1d262d;
+  border: 2px solid #202225;
   font-size: 20px;
   font-family: "Open Sans", sans-serif;
-  color: #1d262d;
+  color: #202225;
   border-radius: 50%;
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
@@ -158,11 +158,11 @@
   transition: all 0.3s ease-out 0s;
 }
 .single_experience:hover .experience_number span {
-  background-color: #1d262d;
+  background-color: #202225;
   color: #fff;
 }
 .single_experience:hover .experience_content {
-  background-color: #1d262d;
+  background-color: #202225;
 }
 .single_experience:hover .experience_content .title {
   color: #fff;

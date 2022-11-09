@@ -18,7 +18,10 @@
                         </div>
                         <div class="col-lg-12 col-md-12 col-12">
                             <div class="image_technology_item">
-                                <img v-for="(v, i) in technologies" :key="i" :src="v.icon" alt="" />
+                                <span class="badge" style="background-color: #3B3F45;margin: 5px;"
+                                    v-for="(v, i) in technologies" :key="i">
+                                    <img :src="v.icon" alt="" />
+                                </span>
                             </div>
                         </div>
                     </div>

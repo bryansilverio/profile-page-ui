@@ -2,7 +2,7 @@
        04.SERVICE css 
 ===========================*/
 .services_area {
-  background-color: #1d262d;
+  background-color: #202225;
   color: #fff;
 }
 
@@ -109,10 +109,10 @@
 
 /***/
 .image_technology_item img {
-  opacity: 0.5;
+  opacity: 1;
   cursor: pointer;
-  width: 3%;
-  margin-right: 20px;
+  width: 30%;
+  margin-right: 30px;
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -146,13 +146,13 @@ img:hover {
   margin-top: 10px;
   border-radius: 5px;
   padding: 15px;
-  background-color: #1d262d;
+  background-color: #202225;
   color: #fff;
   /**box-shadow: 0px 0px 3px 0px rgb(196 196 196 / 30%);**/
   /**border-bottom: 1px solid #fff;**/
 }
 .info-one-border:hover {
-  background-color: #1d262d;
+  background-color: #202225;
   color: #fff;
   border-radius: 5px;
   padding: 15px;
