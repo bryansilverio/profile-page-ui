@@ -5,28 +5,28 @@
                 <div class="single_experience d-lg-flex align-items-center flex-wrap wow fadeIn"
                     data-wow-duration="1.3s" data-wow-delay="0.2s"
                     style="visibility: visible; animation-duration: 1.3s; animation-delay: 0.2s; animation-name: fadeIn;">
-                    <div :class="'experience_title ' + getPosition(i)">
+                    <div :class="'experience_title text-lg-right'">
                     </div>
                     <div class="experience_number">
                         <span>{{ v.number }}</span>
                     </div>
-                    <div :class="'experience_content ' + getContent(i)">
-                        <h3 class="title">
-                            <i class="lni lni-briefcase"></i> {{ v.position }}
+                    <div :class="'experience_content '">
+                        <h3 class="title" style="color: #fff">
+                            <i class="lni lni-briefcase" style="color: #fff"></i> {{ v.position }}
                         </h3>
                         <div>
                             <table>
                                 <tr>
                                     <td rowspan="2">
-                                        <avatar :image="v.logo" :size="100" color="white"></avatar>
+                                        <avatar :image="v.logo" :size="50" color="white"></avatar>
                                     </td>
                                     <td>
-                                        <span class="company_name" style="margin-right: 5px">
-                                            <i class="lni lni-apartment"></i> {{ v.company }}
+                                        <span class="company_name" style="margin-right: 5px;color: #fff">
+                                            <i class="lni lni-apartment" style="color: #fff"></i> {{ v.company }}
                                         </span>
                                         <br>
-                                        <span class="company_date">
-                                            <i class="lni lni-calendar"></i> {{ v.date }}
+                                        <span class="company_date" style="color: #fff">
+                                            <i class="lni lni-calendar" style="color: #fff"></i> {{ v.date }}
                                         </span>
                                     </td>
                                 </tr>

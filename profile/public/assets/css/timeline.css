@@ -1,3 +1,7 @@
+.work_experience_area{
+  background-color: #202225;
+  color: #fff;
+}
 .work_experience {
   position: relative;
   margin-top: 30px;
@@ -15,7 +19,7 @@
 .work_experience::before {
   position: absolute;
   content: "";
-  left: 50%;
+  left: 5%;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -24,7 +28,7 @@
   top: 0;
   width: 2px;
   height: 100%;
-  background-color: #202225;
+  background-color: #ff5c35;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .work_experience::before {
@@ -47,7 +51,7 @@
   }
 }
 .single_experience .experience_title {
-  width: 46%;
+  width: 0%;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .single_experience .experience_title {
@@ -129,13 +133,15 @@
   box-shadow: 0px 0px 10px 0px rgba(196, 196, 196, 0.3);
   padding: 30px;
   border-radius: 10px;
-  background-color: #fff;
-  width: 46%;
+  background-color: #202225;
+  color: #fff;
+  width: 90%;
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
   -ms-transition: all 0.3s ease-out 0s;
   -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
+  margin-bottom: 25px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .single_experience .experience_content {
