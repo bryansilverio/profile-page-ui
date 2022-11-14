@@ -14,7 +14,9 @@
                     </div> <!-- header hero content -->
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-7">
-
+                    <div class="header_hero_image mt-50">
+                        <img :src="image" alt="hero" style="width: 100%;">
+                    </div>
                 </div>
             </div> <!-- row -->
         </div> <!-- container -->

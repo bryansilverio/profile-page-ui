@@ -1,5 +1,17 @@
 <template>
     <div>
+        <div class="single_service mt-30 wow fadeInUpBig" data-wow-duration="1.3s" data-wow-delay="0.2s">
+            <div class="service_icon text-center">
+                <i :class="image"></i>
+            </div>
+            <div class="service_content">
+                <h4 class="service_title"><a href="#">{{ title }}</a></h4>
+                <div class="text-description" v-html="description"></div>
+                <i v-for="(v, i) in technologies" :key="i" :class="v.icon"
+                    :style="'color: ' + v.color + ';margin: 5px;font-size:30px'"></i>
+            </div>
+        </div> <!-- single service -->
+        <!--
         <div class="info-one info-one-border">
             <div class="row align-items-center">
                 <div class="col-lg-1 col-md-12 col-12">
@@ -28,6 +40,7 @@
                 </div>
             </div>
         </div>
+        -->
     </div>
 </template>
 <script>

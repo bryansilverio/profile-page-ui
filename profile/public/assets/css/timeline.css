@@ -1,5 +1,5 @@
 .work_experience_area{
-  background-color: #202225;
+  background-color: #1F2235;
   color: #fff;
 }
 .work_experience {
@@ -73,7 +73,7 @@
   }
 }
 .single_experience .experience_title p {
-  color: #202225;
+  color: #1F2235;
   font-size: 16px;
   font-weight: 600;
   font-family: "Open Sans", sans-serif;
@@ -115,10 +115,10 @@
   height: 55px;
   line-height: 51px;
   text-align: center;
-  border: 2px solid #202225;
+  border: 2px solid #1F2235;
   font-size: 20px;
   font-family: "Open Sans", sans-serif;
-  color: #202225;
+  color: #1F2235;
   border-radius: 50%;
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
@@ -133,7 +133,7 @@
   box-shadow: 0px 0px 10px 0px rgba(196, 196, 196, 0.3);
   padding: 30px;
   border-radius: 10px;
-  background-color: #202225;
+  background-color: #1F2235;
   color: #fff;
   width: 90%;
   -webkit-transition: all 0.3s ease-out 0s;
@@ -164,11 +164,11 @@
   transition: all 0.3s ease-out 0s;
 }
 .single_experience:hover .experience_number span {
-  background-color: #202225;
+  background-color: #1F2235;
   color: #fff;
 }
 .single_experience:hover .experience_content {
-  background-color: #202225;
+  background-color: #1F2235;
 }
 .single_experience:hover .experience_content .title {
   color: #fff;

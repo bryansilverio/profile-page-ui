@@ -1,27 +1,27 @@
 [
-    {
-      "url": "/",
-      "name": "Inicio",
-      "isActive": "active"
-    },
-    {
-      "url": "/about",
-      "name": "Sobre mí",
-      "isActive": ""
-    },
-    {
-      "url": "/work-experience",
-      "name": "Experiencia",
-      "isActive": ""
-    },
-    {
-      "url": "/projects",
-      "name": "Proyectos",
-      "isActive": ""
-    },
-    {
-      "url": "/contact",
-      "name": "Contacto",
-      "isActive": ""
-    }
-  ]
+  {
+    "url": "#home",
+    "name": "Inicio",
+    "isActive": "active"
+  },
+  {
+    "url": "#about",
+    "name": "Sobre mí",
+    "isActive": ""
+  },
+  {
+    "url": "#work-experience",
+    "name": "Experiencia",
+    "isActive": ""
+  },
+  {
+    "url": "/projects",
+    "name": "Proyectos",
+    "isActive": ""
+  },
+  {
+    "url": "/contact",
+    "name": "Contacto",
+    "isActive": ""
+  }
+]

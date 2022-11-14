@@ -2,7 +2,7 @@
         03.ABOUT css 
 ===========================*/
 .about_area {
-  background-color: #202225;
+  background-color: #1F2235;
   color: #fff;
 }
 .about_image img {
@@ -157,16 +157,40 @@
   content: "";
   width: 7px;
   height: 18px;
-  background-color: #fff;
+  background-color: #000;
   border: 2px solid #293651;
   top: -5px;
   right: 0;
 }
-.about_social_network{
+.about_social_network {
   margin: 50px 10px;
   color: #fff;
   font-size: 30px;
 }
-.about_social_network:hover{
+.about_social_network:hover {
   color: #ff5c35;
+}
+
+.about_image {
+  width: 100%;
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0 5px 14px 0 rgb(0 0 0 / 6%);
+  background: #ffffff;
+}
+
+.btn_download_cv {
+  color: #fff;
+  font-size: 12px;
+  margin-top: 25px;
+  text-transform: capitalize;
+  padding: 15px 20px;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  border: 3px solid #f95353;
+  border-radius: 20px;
+  background: #f95353;
+  line-height: 10px;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out 0s;
 }

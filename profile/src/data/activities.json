@@ -1,81 +1,92 @@
 [
   {
     "title": "Frontend",
-    "image": "assets/images/frontend.jpg",
+    "image": "lni lni-code",
     "description": "<p>En el desarrollo frontend, en los proyectos en los que he participado las tecnologias que he utilizado son:</p>",
     "technologies": [
       {
         "name": "VueJs",
-        "icon": "assets/logos/technologies/vue-js-48.png"
+        "icon": "devicon-vuejs-plain colored"
+      },
+      {
+        "name": "Vuetify",
+        "icon": "devicon-vuetify-line colored"
       },
       {
         "name": "Javascript",
-        "icon": "assets/logos/technologies/javascript-48.png"
+        "icon": "devicon-javascript-plain colored"
       },
       {
         "name": "CSS",
-        "icon": "assets/logos/technologies/css3-48.png"
+        "icon": "devicon-css3-plain-wordmark colored"
       },
       {
         "name": "HTML",
-        "icon": "assets/logos/technologies/html-5-48.png"
-      },
-      {
-        "name": "NPM",
-        "icon": "assets/logos/technologies/npm-48.png"
+        "icon": "devicon-html5-plain-wordmark colored"
       }
     ]
   },
   {
     "title": "Backend",
-    "image": "assets/images/api.jpg",
+    "image": "lni lni-dev",
     "description": "<p>En el desarrollo backend en los proyectos en los que he participado las tecnologias que he utilizado son:</p>",
     "technologies": [
       {
         "name": "C#",
-        "icon": "assets/logos/technologies/c-sharp-48.png"
+        "icon": "devicon-csharp-plain colored"
       },
       {
-        "name": "Visual Studio",
-        "icon": "assets/logos/technologies/visual-studio-48.png"
+        "name": ".NET Core",
+        "icon": "devicon-dotnetcore-plain colored"
       },
       {
         "name": "Java",
-        "icon": "assets/logos/technologies/java-48.png"
+        "icon": "devicon-java-plain colored"
       },
       {
         "name": "Spring",
-        "icon": "assets/logos/technologies/spring-logo-48.png"
-      }
-    ]
-  },
-  {
-    "title": "APIs REST",
-    "image": "assets/images/api.jpg",
-    "description": "<p>En la parte del diseño y desarrollo de API, he usado el estilo arquitectonico REST, basado en recursos.</p>",
-    "technologies": [
+        "icon": "devicon-spring-plain colored"
+      },
       {
-        "name": "API REST",
-        "icon": "assets/logos/technologies/rest-api-48.png"
+        "name": "MySQL",
+        "icon": "devicon-mysql-plain colored"
+      },
+      {
+        "name": "SQL Server",
+        "icon": "devicon-microsoftsqlserver-plain colored"
+      },
+      {
+        "name": "Visual Studio",
+        "icon": "devicon-visualstudio-plain colored"
       }
     ]
   },
   {
     "title": "DevTools",
-    "image": "assets/images/api.jpg",
-    "description": "<p>Como completo en los proyectos he utilizado las siguientes herramientas de desarrollo:</p>",
+    "image": "fa-sharp fa-solid fa-code-fork",
+    "description": "<p>En la parte del diseño y desarrollo de API, he usado el estilo arquitectonico REST, basado en recursos.</p>",
     "technologies": [
       {
-        "name": "Jira",
-        "icon": "assets/logos/technologies/jira-48.png"
+        "name": "Bitbucket",
+        "icon": "lni lni-bitbucket",
+        "color": "#45a1e3"
       },
       {
         "name": "GIT",
-        "icon": "assets/logos/technologies/git-48.png"
+        "icon": "devicon-git-plain colored"
       },
       {
-        "name": "Postman",
-        "icon": "assets/logos/technologies/postman-48.png"
+        "name": "Jira",
+        "icon": "devicon-jira-plain colored"
+      },
+
+      {
+        "name": "Nuget",
+        "icon": "devicon-nuget-original colored"
+      },
+      {
+        "name": "SourceTree",
+        "icon": "devicon-sourcetree-original colored"
       }
     ]
   }

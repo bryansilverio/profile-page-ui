@@ -29,9 +29,9 @@
             </div> <!-- header navbar -->
 
             <IntroHome v-if="this.$route.name == 'home'" />
-            <!--<AboutHome v-else-if="this.$route.name == 'about'" />-->
-            <WorkExperienceHome v-else-if="this.$route.name == 'work-experience'" />
-            <ProjectHome v-else-if="this.$route.name == 'projects'" />
+            <About />
+            <Skills />
+            <WorkExperience />
 
         </section>
 
@@ -41,12 +41,13 @@
 </template>
 <script>
 import IntroHome from '@/components/_Shared/IntroHome.vue'
-//import AboutHome from '@/components/_Shared/AboutHome.vue'
-import WorkExperienceHome from '@/components/_Shared/WorkExperienceHome.vue'
-import ProjectHome from '@/components/_Shared/ProjectHome.vue'
+import About from '@/views/About.vue'
+import Skills from '@/views/Skills.vue'
+
+import WorkExperience from '@/views/WorkExperience.vue'
 import Menu from '@/components/_Shared/Menu.vue'
 export default {
     name: "Header",
-    components: { IntroHome, Menu, WorkExperienceHome, ProjectHome }
+    components: { IntroHome, About, Skills, Menu, WorkExperience }
 };
 </script>
