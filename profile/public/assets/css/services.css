@@ -2,7 +2,7 @@
        04.SERVICE css 
 ===========================*/
 .services_area {
-  background-color: #1F2235;
+  background-color: #1f2235;
   color: #fff;
 }
 
@@ -26,8 +26,9 @@
 }
 
 .single_service {
-  padding: 30px;
-  border-radius: 5px;
+  /*padding: 30px;*/
+  padding: 10px;
+  border-radius: 10px;
   -webkit-box-shadow: 0px 0px 10px 0px rgba(196, 196, 196, 0.3);
   -moz-box-shadow: 0px 0px 10px 0px rgba(196, 196, 196, 0.3);
   box-shadow: 0px 0px 10px 0px rgba(196, 196, 196, 0.3);
@@ -36,7 +37,7 @@
   -ms-transition: all 0.3s ease-out 0s;
   -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
-  background-color: #fff;
+  /*background-color: #fff;*/
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .single_service {
@@ -48,9 +49,10 @@
   height: 80px;
   line-height: 80px;
   text-align: center;
-  font-size: 46px;
-  background-color: #293651;
-  color: #fff;
+  /*font-size: 46px;*/
+  font-size: 80px;
+  /*background-color: #293651;*/
+  /*color: #fff;*/
   border-radius: 25px;
   border-bottom-right-radius: 0;
   -webkit-transition: all 0.3s ease-out 0s;
@@ -68,17 +70,20 @@
   }
 }
 .single_service .service_content {
-  margin-top: 25px;
+  margin-top: 0px;
 }
 .single_service .service_content .service_title a {
   font-size: 22px;
   font-weight: 600;
-  color: #293651;
+  color: #fff;
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
   -ms-transition: all 0.3s ease-out 0s;
   -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
+}
+.service_title a {
+  color: #fff;
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .single_service .service_content .service_title a {
@@ -146,13 +151,13 @@ img:hover {
   margin-top: 10px;
   border-radius: 5px;
   padding: 15px;
-  background-color: #1F2235;
+  background-color: #1f2235;
   color: #fff;
   /**box-shadow: 0px 0px 3px 0px rgb(196 196 196 / 30%);**/
   /**border-bottom: 1px solid #fff;**/
 }
 .info-one-border:hover {
-  background-color: #1F2235;
+  background-color: #1f2235;
   color: #fff;
   border-radius: 5px;
   padding: 15px;

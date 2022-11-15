@@ -1,11 +1,11 @@
 <template>
     <div>
         <Preloader :show="showPreloader" />
-        <section id="work-experience" class="work_experience_area pt-115">
+        <section id="work-experience" class="work_experience_area pt-50 pb-120">
             <div class="container">
-                <div class="row align-items-start justify-content-start">
-                    <div class="col-lg-6">
-                        <div class="about_section_title text-left">
+                <div class="row align-items-start justify-content-start pb-30">
+                    <div class="col-lg-12">
+                        <div class="about_section_title text-center">
                             <h3 class="about_main_title mt-10">Experiencia Profesional</h3>
                             <h5 class="sub_title"  style="color: #fff;">Mi experiencia laboral</h5>
                             <ul class="line">

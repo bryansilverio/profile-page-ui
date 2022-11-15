@@ -115,17 +115,17 @@
   height: 55px;
   line-height: 51px;
   text-align: center;
-  border: 2px solid #1F2235;
+  border: 2px solid #ff5c35; 
   font-size: 20px;
   font-family: "Open Sans", sans-serif;
-  color: #1F2235;
+  color: #fff;
   border-radius: 50%;
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
   -ms-transition: all 0.3s ease-out 0s;
   -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
-  background-color: #fff;
+  background-color: #1F2235;
 }
 .single_experience .experience_content {
   -webkit-box-shadow: 0px 0px 10px 0px rgba(196, 196, 196, 0.3);
@@ -164,7 +164,7 @@
   transition: all 0.3s ease-out 0s;
 }
 .single_experience:hover .experience_number span {
-  background-color: #1F2235;
+  background-color: #ff5c35;
   color: #fff;
 }
 .single_experience:hover .experience_content {

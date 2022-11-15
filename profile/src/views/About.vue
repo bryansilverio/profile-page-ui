@@ -5,6 +5,19 @@
         <Preloader :show="showPreloader" />
         <section id="about" class="about_area pt-115 pb-10">
             <div class="container">
+                <div class="row align-items-start justify-content-start mb-50">
+                    <div class="col-lg-12">
+                        <div class="about_section_title text-center">
+                            <h3 class="about_main_title mt-10">Sobre mí</h3>
+                            <h5 class="sub_title" style="color: #fff;"></h5>
+                            <ul class="line">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
                 <div class="row align-items-center justify-content-center">
                     <div class="col-lg-4 col-md-9">
                         <div class="row">

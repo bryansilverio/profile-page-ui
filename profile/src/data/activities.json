@@ -68,8 +68,7 @@
     "technologies": [
       {
         "name": "Bitbucket",
-        "icon": "lni lni-bitbucket",
-        "color": "#45a1e3"
+        "icon": "devicon-bitbucket-original colored"
       },
       {
         "name": "GIT",
