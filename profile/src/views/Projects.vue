@@ -1,7 +1,7 @@
 <template>
     <div>
         <Preloader :show="showPreloader" />
-        <section id="project" class="project_area pt-125">
+        <section id="project" class="project_area pt-50">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">

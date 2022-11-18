@@ -60,7 +60,7 @@
 }
 .project_area {
   padding-bottom: 150px;
-  background-color: #f9f9f9;
+  background-color: #1F2235;
 }
 .single_project {
   margin-top: 30px;
@@ -78,7 +78,7 @@
 .single_project .project_content .project_title a {
   font-size: 20px;
   font-weight: 600;
-  color: #293651;
+  color: #fff;
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
   -ms-transition: all 0.3s ease-out 0s;

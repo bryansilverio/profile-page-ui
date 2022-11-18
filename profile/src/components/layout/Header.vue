@@ -32,7 +32,7 @@
             <About />
             <Skills />
             <WorkExperience />
-
+            <Projects />
         </section>
 
         <!--====== HEADER PART ENDS ======-->
@@ -43,11 +43,11 @@
 import IntroHome from '@/components/_Shared/IntroHome.vue'
 import About from '@/views/About.vue'
 import Skills from '@/views/Skills.vue'
-
 import WorkExperience from '@/views/WorkExperience.vue'
+import Projects from '@/views/Projects.vue'
 import Menu from '@/components/_Shared/Menu.vue'
 export default {
     name: "Header",
-    components: { IntroHome, About, Skills, Menu, WorkExperience }
+    components: { IntroHome, About, Skills, Menu, WorkExperience, Projects }
 };
 </script>
