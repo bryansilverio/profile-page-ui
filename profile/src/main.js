@@ -6,6 +6,9 @@ import store from "./store";
 import vTitle from 'vuejs-title'
 Vue.use(vTitle)
 
+import VueCarousel from 'vue-carousel';
+Vue.use(VueCarousel);
+
 import VueBadges from 'vue-badges'
 Vue.use(VueBadges)
 

@@ -34,6 +34,7 @@
                     -->
                 </div>
 
+                <!--
                 <div class="row">
                     <div class="col-lg-4 col-md-12 col-sm-12" v-for="(p, i) in projects" :key="i">
                         <div class="project_item" style="cursor:pointer" @click="goToProjectDetails(p.id)">
@@ -68,6 +69,42 @@
                         </div>
                     </div>
                 </div>
+                -->
+
+                <carousel :per-page="3" :mouse-drag="false" :navigation-enabled="true">
+                    <slide v-for="(p, i) in projects" :key="i">
+                        <div class="project_item" style="cursor:pointer" @click="goToProjectDetails(p.id)">
+                            <img class="card-img" :src="p.image" alt="Bologna">
+                            <div class="card-img-overlay">
+
+                            </div>
+                            <div class="card-body">
+                                <h3 class="title_project">{{ p.name }}</h3>
+
+                                <p class="text-description">{{ p.type }}</p>
+                                <template v-if="p.technologies.length">
+                                    <vue-badges v-for="(t, i) in p.technologies" :key="i" :badges="[[t.name]]">
+                                    </vue-badges>
+                                </template>
+                            </div>
+                            <div
+                                class="card-footer text-muted d-flex justify-content-between bg-transparent border-top-0">
+                                <div class="views text-description">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <avatar :image="p.company.logo" :size="50" color="white" />
+                                            </td>
+                                            <td>
+                                                <span style="padding: 10px;">{{ p.company.name }}</span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </slide>
+                </carousel>
             </div>
         </section>
     </div>
