@@ -17,10 +17,10 @@
                     </div>
                 </div>
 
-                <carousel :per-page="3" :mouse-drag="false" :navigation-enabled="true" :autoplay="true" :loop="true">
+                <carousel :per-page="1" :mouse-drag="false" :navigation-enabled="true" :autoplay="true" :loop="true">
                     <slide v-for="(p, i) in projects" :key="i">
                         <div class="project_item" style="cursor:pointer" @click="goToProjectDetails(p.id)">
-                            <img class="card-img" :src="p.image" alt="Bologna">
+                            <!--<img class="card-img" :src="p.image" alt="Bologna">-->
                             <div class="card-img-overlay">
 
                             </div>

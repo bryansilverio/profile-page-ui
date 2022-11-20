@@ -2,7 +2,7 @@
 
     <!--====== ABOUT PART START ======-->
     <div>
-        <section id="about" class="about_area pt-50 pb-10">
+        <section id="about" class="about_area pt-50 pb-100">
             <div class="container">
                 <div class="row align-items-start justify-content-start mb-50">
                     <div class="col-lg-12">
