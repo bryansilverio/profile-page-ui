@@ -11,8 +11,8 @@
                         <span>{{ v.number }}</span>
                     </div>
                     <div :class="'experience_content '">
-                        <h3 class="title" style="color: #fff">
-                            <i class="lni lni-briefcase" style="color: #fff"></i> {{ v.position }}
+                        <h3 class="title" style="color: #000">
+                            <i class="lni lni-briefcase" style="color: #000"></i> {{ v.position }}
                         </h3>
                         <div>
                             <table>
@@ -21,12 +21,12 @@
                                         <avatar :image="v.logo" :size="50" color="white"></avatar>
                                     </td>
                                     <td>
-                                        <span class="company_name" style="margin-right: 5px;color: #fff">
-                                            <i class="lni lni-apartment" style="color: #fff"></i> {{ v.company }}
+                                        <span class="company_name" style="margin-right: 5px;color: #000">
+                                            <i class="lni lni-apartment" style="color: #000"></i> {{ v.company }}
                                         </span>
                                         <br>
-                                        <span class="company_date" style="color: #fff">
-                                            <i class="lni lni-calendar" style="color: #fff"></i> {{ v.date }}
+                                        <span class="company_date" style="color: #000">
+                                            <i class="lni lni-calendar" style="color: #000"></i> {{ v.date }}
                                         </span>
                                     </td>
                                 </tr>

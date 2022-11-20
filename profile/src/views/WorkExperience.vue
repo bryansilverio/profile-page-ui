@@ -1,13 +1,12 @@
 <template>
     <div>
-        <Preloader :show="showPreloader" />
         <section id="work-experience" class="work_experience_area pt-50 pb-120">
             <div class="container">
                 <div class="row align-items-start justify-content-start pb-30">
                     <div class="col-lg-12">
                         <div class="about_section_title text-center">
                             <h3 class="about_main_title mt-10">Experiencia Profesional</h3>
-                            <h5 class="sub_title"  style="color: #fff;">Mi experiencia laboral</h5>
+                            <h5 class="sub_title" style="color: #000;">Mi experiencia laboral</h5>
                             <ul class="line">
                                 <li></li>
                                 <li></li>
@@ -25,10 +24,9 @@
 <script>
 import work_experiences_data from '@/data/work-experiences.json'
 import WorkExperienceItem from '@/components/_Shared/WorkExperienceItem.vue'
-import Preloader from "@/components/layout/Preloader.vue";
 export default {
     name: "WorkExperience",
-    components: { WorkExperienceItem, Preloader },
+    components: { WorkExperienceItem },
     data() {
         return {
             showPreloader: true

@@ -1,13 +1,13 @@
 <template>
     <div>
-        <Preloader :show="showPreloader" />
+
         <section id="project" class="project_area pt-50">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="section_title text-center pb-30">
-                            <h3 class="main_title">Proyectos</h3>
-                            <h5 class="sub_title">Proyectos en que he participado</h5>
+                            <h3 class="main_title" style="color:#fff">Proyectos</h3>
+                            <h5 class="sub_title" style="color:#fff">Proyectos en que he participado</h5>
                             <ul class="line">
                                 <li></li>
                                 <li></li>
@@ -15,63 +15,9 @@
                             </ul>
                         </div>
                     </div>
-                    <!--
-                    <div class="col-sm-4">
-                        <div class="project_btn">
-                            <button class="main-btn main-btn-2 dropdown-toggle" data-toggle="dropdown">
-                                {{ itemSelected.name }}
-                                <span class="caret"></span>
-                            </button>
-                            <ul class="dropdown-menu" role="menu">
-                                <li style="cursor: pointer"><span>Todos</span></li>
-                                <li v-for="(v, i) in workExperiences" :key="i" style="cursor: pointer"
-                                    @click="selectProjectsByType(v.company, v.logo)">
-                                    <span>{{ v.company }}</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    -->
                 </div>
 
-                <!--
-                <div class="row">
-                    <div class="col-lg-4 col-md-12 col-sm-12" v-for="(p, i) in projects" :key="i">
-                        <div class="project_item" style="cursor:pointer" @click="goToProjectDetails(p.id)">
-                            <img class="card-img" :src="p.image" alt="Bologna">
-                            <div class="card-img-overlay">
-
-                            </div>
-                            <div class="card-body">
-                                <h3 class="title_project">{{ p.name }}</h3>
-
-                                <p class="text-description">{{ p.type }}</p>
-                                <template v-if="p.technologies.length">
-                                    <vue-badges v-for="(t, i) in p.technologies" :key="i" :badges="[[t.name]]">
-                                    </vue-badges>
-                                </template>
-                            </div>
-                            <div
-                                class="card-footer text-muted d-flex justify-content-between bg-transparent border-top-0">
-                                <div class="views text-description">
-                                    <table>
-                                        <tr>
-                                            <td>
-                                                <avatar :image="p.company.logo" :size="50" color="white" />
-                                            </td>
-                                            <td>
-                                                <span style="padding: 10px;">{{ p.company.name }}</span>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                -->
-
-                <carousel :per-page="3" :mouse-drag="false" :navigation-enabled="true">
+                <carousel :per-page="3" :mouse-drag="false" :navigation-enabled="true" :autoplay="true" :loop="true">
                     <slide v-for="(p, i) in projects" :key="i">
                         <div class="project_item" style="cursor:pointer" @click="goToProjectDetails(p.id)">
                             <img class="card-img" :src="p.image" alt="Bologna">
@@ -111,12 +57,11 @@
 </template>
 <script>
 import Avatar from "vue-avatar-component";
-import Preloader from "@/components/layout/Preloader.vue";
 import projects_data from "@/data/projects.json";
 import workExperiences_data from "@/data/work-experiences.json";
 export default {
     name: "Projects",
-    components: { Avatar, Preloader },
+    components: { Avatar },
     data() {
         return {
             itemSelected: {

@@ -2,8 +2,8 @@
         03.ABOUT css 
 ===========================*/
 .about_area {
-  background-color: #1F2235;
-  color: #fff;
+  background-color: #FFFFFF;
+  color: #000;
 }
 .about_image img {
   width: 100%;
@@ -28,18 +28,18 @@
   font-size: 36px;
   font-weight: 600;
   margin-top: 20px;
-  color: #fff;
+  color: #000;
 }
 @media (max-width: 767px) {
   .about_section_title .about_main_title {
     font-size: 22px;
-    color: #fff;
+    color: #000;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .about_section_title .about_main_title {
     font-size: 26px;
-    color: #fff;
+    color: #000;
   }
 }
 
@@ -108,7 +108,7 @@
 
 .about_content p {
   margin-top: 10px;
-  color: #fff;
+  color: #000;
   font-size: 16px;
 }
 
@@ -164,7 +164,7 @@
 }
 .about_social_network {
   margin: 50px 10px;
-  color: #fff;
+  color: #000;
   font-size: 30px;
 }
 .about_social_network:hover {

@@ -2,8 +2,7 @@
 
     <!--====== ABOUT PART START ======-->
     <div>
-        <Preloader :show="showPreloader" />
-        <section id="about" class="about_area pt-115 pb-10">
+        <section id="about" class="about_area pt-50 pb-10">
             <div class="container">
                 <div class="row align-items-start justify-content-start mb-50">
                     <div class="col-lg-12">
@@ -58,11 +57,9 @@
 <script>
 import social_network_data from '@/data/social-network.json'
 import about_data from '@/data/about.json'
-import Preloader from "@/components/layout/Preloader.vue";
 import activities_data from '@/data/activities.json'
 export default {
     name: "About",
-    components: { Preloader },
     data() {
         return {
             showPreloader: true

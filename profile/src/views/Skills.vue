@@ -1,12 +1,12 @@
 <template>
     <!--====== SERVICES PART START ======-->
 
-    <section id="services" class="services_area pt-120 pb-120">
+    <section id="services" class="services_area pt-50 pb-100">
         <div class="container">
             <div class="row align-items-start justify-content-start">
                 <div class="col-lg-12">
                     <div class="about_section_title pb-20 text-center">
-                        <h3 class="about_main_title">Mis conocimientos</h3>
+                        <h3 class="about_main_title" style="color:#fff">Mis conocimientos</h3>
                         <h5 style="color: #fff;">Backend | Frontend | API</h5>
                         <ul class="line">
                             <li></li>
@@ -16,25 +16,54 @@
                     </div>
                 </div>
             </div>
-            <div class="row" v-for="(v1, i1) in activities" :key="i1">
-                <div class="col-lg-12 col-sm-12 mt-30">
-                    <h4 class="service_title"><a href="#">{{ v1.title }}</a></h4>
-                </div>
-                <div class="col-lg-2 col-sm-2" v-for="(v, i) in v1.technologies" :key="i" style="cursor: pointer;">
-                    <div class="single_service mt-30 wow fadeInUpBig" data-wow-duration="1.3s" data-wow-delay="0.2s">
-                        <div class="service_icon text-center">
-                            <i :class="v.icon"></i>
-                        </div>
-                        <div class="service_content">
-                            <!--
-                            <h4 class="service_title"><a href="#">{{ v.name }}</a></h4>
-                            <div class="text-description" v-html="''"></div>
-                            -->
-                            <!--<i :class="v.icon" :style="'color: ' + v.color + ';margin: 5px;font-size:30px'"></i>-->
-                        </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="about_section_title pb-20 text-center">
+                        <h5 style="color: #fff;">Frontend</h5>
                     </div>
                 </div>
             </div>
+            <carousel :per-page="4" :mouse-drag="false" v-for="(v0, i0) in frontendSkills" :key="i0" class="pb-50"
+                :autoplay="true" :loop="true">
+                <slide v-for="(v1, i1) in v0.technologies" :key="i1">
+                    <div class="service_icon text-center">
+                        <i :class="v1.icon" style="font-size:80px"></i>
+                    </div>
+                </slide>
+            </carousel>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="about_section_title pb-20 text-center">
+                        <h5 style="color: #fff;">Backend</h5>
+                    </div>
+                </div>
+            </div>
+            <carousel :per-page="4" :mouse-drag="false" v-for="(v0, i0) in backendSkills" :key="i0" class="pb-50"
+                :autoplay="true" :loop="true">
+                <slide v-for="(v1, i1) in v0.technologies" :key="i1">
+                    <div class="service_icon text-center">
+                        <i :class="v1.icon" style="font-size:80px"></i>
+                    </div>
+                </slide>
+            </carousel>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="about_section_title pb-20 text-center">
+                        <h5 style="color: #fff;">DevTools</h5>
+                    </div>
+                </div>
+            </div>
+            <carousel :per-page="4" :mouse-drag="false" v-for="(v0, i0) in devtoolsSkills" :key="i0" :autoplay="true"
+                :loop="true">
+                <slide v-for="(v1, i1) in v0.technologies" :key="i1">
+                    <div class="service_icon text-center">
+                        <i :class="v1.icon" style="font-size:80px"></i>
+                    </div>
+                </slide>
+            </carousel>
         </div>
     </section>
 
@@ -47,8 +76,14 @@ export default {
     name: "Services",
     components: {},
     computed: {
-        activities() {
-            return activities_data
+        frontendSkills() {
+            return activities_data.filter(x => x.code == "FRONTEND")
+        },
+        backendSkills() {
+            return activities_data.filter(x => x.code == "BACKEND")
+        },
+        devtoolsSkills() {
+            return activities_data.filter(x => x.code == "DEVTOOLS")
         }
     }
 };

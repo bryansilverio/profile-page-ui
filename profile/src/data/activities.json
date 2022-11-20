@@ -1,5 +1,6 @@
 [
   {
+    "code":"FRONTEND",
     "title": "Frontend",
     "image": "lni lni-code",
     "description": "<p>En el desarrollo frontend, en los proyectos en los que he participado las tecnologias que he utilizado son:</p>",
@@ -27,6 +28,7 @@
     ]
   },
   {
+    "code":"BACKEND",
     "title": "Backend",
     "image": "lni lni-dev",
     "description": "<p>En el desarrollo backend en los proyectos en los que he participado las tecnologias que he utilizado son:</p>",
@@ -62,6 +64,7 @@
     ]
   },
   {
+    "code":"DEVTOOLS",
     "title": "DevTools",
     "image": "fa-sharp fa-solid fa-code-fork",
     "description": "<p>En la parte del diseño y desarrollo de API, he usado el estilo arquitectonico REST, basado en recursos.</p>",
