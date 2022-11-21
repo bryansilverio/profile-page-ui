@@ -19,10 +19,9 @@
 
                 <carousel :per-page="1" :mouse-drag="false" :navigation-enabled="true" :autoplay="true" :loop="true">
                     <slide v-for="(p, i) in projects" :key="i">
-                        <div class="project_item" style="cursor:pointer" @click="goToProjectDetails(p.id)">
-                            <!--<img class="card-img" :src="p.image" alt="Bologna">-->
-                            <div class="card-img-overlay">
 
+                        <div class="project_item" style="cursor:pointer" @click="goToProjectDetails(p.id)">
+                            <div class="card-img-overlay">
                             </div>
                             <div class="card-body">
                                 <h3 class="title_project">{{ p.name }}</h3>
