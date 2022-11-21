@@ -27,22 +27,8 @@ import WorkExperienceItem from '@/components/_Shared/WorkExperienceItem.vue'
 export default {
     name: "WorkExperience",
     components: { WorkExperienceItem },
-    data() {
-        return {
-            showPreloader: true
-        }
-    },
     created() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
-        this.getShowPreloader()
-    },
-    methods: {
-        getShowPreloader() {
-            let thix = this
-            setTimeout(function () {
-                thix.showPreloader = false
-            }, 1000);
-        }
     },
     computed: {
         workExperiences() {

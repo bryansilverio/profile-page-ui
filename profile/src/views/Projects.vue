@@ -1,7 +1,7 @@
 <template>
     <div>
 
-        <section id="project" class="project_area pt-50">
+        <section id="projects" class="project_area pt-50">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -68,14 +68,11 @@ export default {
                 name: "Todos",
                 url: "assets/logos/proyectosweb.png",
             },
-            projects: projects_data,
-            showPreloader: true
+            projects: projects_data
         };
     },
     created() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
-        this.getShowPreloader()
-        this.selectProjectsByType(this.itemSelected.name, this.itemSelected.url);
     },
     computed: {
         workExperiences() {
@@ -83,22 +80,6 @@ export default {
         },
     },
     methods: {
-        selectProjectsByType(value = "", url = "") {
-            this.itemSelected.name = value;
-            this.itemSelected.url = url;
-
-            if (this.itemSelected.name != "Todos") {
-                let projectsSelectd = [];
-                projects_data.forEach((element) => {
-                    if (element.company.name == value) {
-                        projectsSelectd.push(element);
-                    }
-                });
-                this.projects = projectsSelectd;
-            } else {
-                this.projects = projects_data;
-            }
-        },
         goToProjectDetails(id = '') {
             this.$router.push('/projects/' + id).catch(error => {
                 if (
@@ -110,12 +91,6 @@ export default {
                     /* eslint-enable no-console */
                 }
             })
-        },
-        getShowPreloader() {
-            let thix = this
-            setTimeout(function () {
-                thix.showPreloader = false
-            }, 1000);
         }
     },
 };
