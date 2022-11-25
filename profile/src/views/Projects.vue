@@ -17,7 +17,7 @@
                     </div>
                 </div>
 
-                <carousel :per-page="1" :mouse-drag="false" :navigation-enabled="true" :autoplay="true" :loop="true">
+                <carousel :per-page="1" :mouse-drag="false" :navigation-enabled="true" pagination-active-color="#ff5c35" pagination-color="#fff">
                     <slide v-for="(p, i) in projects" :key="i">
 
                         <div class="project_item" style="cursor:pointer" @click="goToProjectDetails(p.id)">
