@@ -20,40 +20,25 @@
 
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-8">
                         <p style="color:#fff">
-
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dictum, velit tempor dictum
-                            vehicula, ipsum velit sodales justo, in hendrerit nisi diam vitae tellus. Etiam nec eleifend
-                            lacus, nec rhoncus elit. Cras hendrerit lacus ut augue molestie tincidunt. Vestibulum non
-                            cursus nisl, sit amet efficitur nibh. Praesent fermentum, felis et rhoncus ullamcorper,
-                            magna mauris luctus odio, sit amet semper tortor ipsum et lectus. Ut facilisis malesuada
-                            magna in accumsan. Sed consectetur varius nisl, vitae rutrum diam cursus ut.
-
-                            Proin quis aliquet ex. Vivamus quis lectus in nulla pellentesque efficitur. Cras nulla
-                            felis, sodales vitae justo at, consequat malesuada tellus. Aliquam ac leo vitae nibh
-                            vestibulum iaculis. Nulla posuere blandit diam ac facilisis. Sed iaculis nibh vitae euismod
-                            porta. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-                            curae; Nunc ac felis non eros rutrum vestibulum.
-
-                            Proin sit amet feugiat mauris. Suspendisse potenti. Nulla mattis auctor aliquam. Vivamus
-                            sagittis neque nec condimentum fermentum. Class aptent taciti sociosqu ad litora torquent
-                            per conubia nostra, per inceptos himenaeos. Nullam aliquam, neque quis tempor maximus, nisi
-                            mauris posuere mi, ut facilisis leo mi eget est. Praesent commodo elit non vulputate auctor.
-
-                            Suspendisse congue tellus quis maximus laoreet. Vestibulum consequat felis nunc, at pulvinar
-                            nibh venenatis vel. Duis ut justo velit. Praesent quis felis augue. Integer viverra metus
-                            eget lectus facilisis facilisis. Fusce tristique, purus et porta varius, nulla sapien
-                            consequat lorem, sit amet molestie massa velit vitae neque. Donec at ipsum ut purus lacinia
-                            dignissim. Donec pellentesque condimentum quam et posuere. Vestibulum dignissim ultrices
-                            lorem, sit amet blandit est porta et. Vestibulum id vestibulum augue. Sed convallis congue
-                            erat, vitae egestas magna blandit ac. Maecenas eleifend sapien ac justo tincidunt eleifend.
-                            Nam et metus ligula. Aenean ac scelerisque eros. Cras pulvinar magna sed purus tempus
-                            mattis. Donec feugiat nunc nisi, et mollis tortor dapibus at.
-
+                            Los proyectos en los que he participado han consistido en la mayor parte y principalmente en
+                            desarrollo backend, complementandolo con frontend y diseño de base de datos.
+                        </p>
+                        <p style="color:#fff">
+                            Los proyectos han sido enfocados para plataforma web. En cada proyecto se usarón
+                            herramientas y tecnologías diferentes.
+                        </p>
+                        <br>
+                        <p style="color:#fff">
+                            Recientemente he participado y adentrado más al diseño y desarrollo de APIs orientados a
+                            microservicios, apliando los conceptos de RESTful para el servicio desde la face del diseño.
+                        </p>
+                        <p style="color:#fff">
+                            Estos servicios cuya finalizadad es que sean consumidos por las aplicaciones frontend.
                         </p>
                     </div>
-                    <div class="col-lg-6 text-center">
+                    <div class="col-lg-4 text-center">
                         <carousel :per-page="1" :mouse-drag="false" :navigation-enabled="true"
                             pagination-active-color="#ff5c35" pagination-color="#fff">
                             <slide v-for="(p, i) in projects" :key="i">

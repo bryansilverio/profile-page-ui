@@ -28,12 +28,15 @@
                 </div> <!-- container -->
             </div> <!-- header navbar -->
 
-            <IntroHome v-if="this.$route.name == 'home'" />
-            <About />
-            <Skills />
-            <WorkExperience />
-            <Projects />
-            <Contact />
+            <template v-if="this.$route.name == 'home'">
+                <IntroHome />
+                <About />
+                <Skills />
+                <WorkExperience />
+                <Projects />
+                <Contact />
+            </template>
+
         </section>
 
         <!--====== HEADER PART ENDS ======-->
