@@ -13,23 +13,28 @@
     "technologies": [
       {
         "name": "Java",
-        "type": "Backend"
+        "type": "Backend",
+        "icon": "devicon-java-plain colored"
       },
       {
         "name": "Quarkus",
-        "type": "Backend"
+        "type": "Backend",
+        "icon":""
       },
       {
         "name": "RAML",
-        "type": "Backend"
+        "type": "Backend",
+        "icon":""
       },
       {
         "name": "Git",
-        "type": "Devtools"
+        "type": "Devtools",
+        "icon": "devicon-git-plain colored"
       },
       {
         "name": "Jira",
-        "type": "Devtools"
+        "type": "Devtools",
+        "icon": "devicon-jira-plain colored"
       }
     ]
   },
@@ -47,7 +52,8 @@
     "technologies": [
       {
         "name": "Java",
-        "type": "Backend"
+        "type": "Backend",
+        "icon": "devicon-java-plain colored"
       },
       {
         "name": "Maven",
@@ -55,7 +61,8 @@
       },
       {
         "name": "Spring",
-        "type": "Backend"
+        "type": "Backend",
+        "icon": "devicon-spring-plain colored"
       },
       {
         "name": "RAML",
@@ -63,11 +70,13 @@
       },
       {
         "name": "Git",
-        "type": "Devtools"
+        "type": "Devtools",
+        "icon": "devicon-git-plain colored"
       },
       {
         "name": "Jira",
-        "type": "Devtools"
+        "type": "Devtools",
+        "icon": "devicon-jira-plain colored"
       }
     ]
   },
@@ -93,19 +102,23 @@
       },
       {
         "name": "CSS",
-        "type": "Frontend"
+        "type": "Frontend",
+        "icon": "devicon-css3-plain-wordmark colored"
       },
       {
         "name": "Javascript",
-        "type": "Frontend"
+        "type": "Frontend",
+        "icon": "devicon-javascript-plain colored"
       },
       {
         "name": "VueJS",
-        "type": "Frontend"
+        "type": "Frontend",
+        "icon": "devicon-vuejs-plain colored"
       },
       {
         "name": "MySQL",
-        "type": "Database"
+        "type": "Database",
+        "icon": "devicon-mysql-plain colored"
       }
     ]
   },
@@ -127,23 +140,28 @@
       },
       {
         "name": "CSS",
-        "type": "Frontend"
+        "type": "Frontend",
+        "icon": "devicon-css3-plain-wordmark colored"
       },
       {
         "name": "Javascript",
-        "type": "Frontend"
+        "type": "Frontend",
+        "icon": "devicon-javascript-plain colored"
       },
       {
         "name": "VueJS",
-        "type": "Frontend"
+        "type": "Frontend",
+        "icon": "devicon-vuejs-plain colored"
       },
       {
         "name": "Vuerfy",
-        "type": "Frontend"
+        "type": "Frontend",
+        "icon": "devicon-vuetify-line colored"
       },
       {
         "name": "Java",
-        "type": "Backend"
+        "type": "Backend",
+        "icon": "devicon-java-plain colored"
       }
     ]
   },
@@ -161,23 +179,28 @@
     "technologies": [
       {
         "name": "CSHARP",
-        "type": "Backend"
+        "type": "Backend",
+        "icon": "devicon-csharp-plain colored"
       },
       {
         "name": ".NET Framework",
-        "type": "Backend"
+        "type": "Backend",
+        "icon": "devicon-dot-net-plain-wordmark colored"
       },
       {
         "name": "CSS",
-        "type": "Frontend"
+        "type": "Frontend",
+        "icon": "devicon-css3-plain-wordmark colored"
       },
       {
         "name": "Javascript",
-        "type": "Frontend"
+        "type": "Frontend",
+        "icon": "devicon-javascript-plain colored"
       },
       {
         "name": "SQL",
-        "type": "Database"
+        "type": "Database",
+        "icon": "devicon-microsoftsqlserver-plain colored"
       }
     ]
   },
@@ -195,11 +218,13 @@
     "technologies": [
       {
         "name": "CSHARP",
-        "type": "Backend"
+        "type": "Backend",
+        "icon": "devicon-csharp-plain colored"
       },
       {
         "name": ".NET Framework",
-        "type": "Backend"
+        "type": "Backend",
+        "icon": "devicon-dot-net-plain-wordmark colored"
       },
       {
         "name": "DNN",
@@ -207,15 +232,18 @@
       },
       {
         "name": "CSS",
-        "type": "Frontend"
+        "type": "Frontend",
+        "icon": "devicon-css3-plain-wordmark colored"
       },
       {
         "name": "Javascript",
-        "type": "Frontend"
+        "type": "Frontend",
+        "icon": "devicon-javascript-plain colored"
       },
       {
         "name": "SQL",
-        "type": "Database"
+        "type": "Database",
+        "icon": "devicon-microsoftsqlserver-plain colored"
       }
     ]
   },
@@ -233,23 +261,28 @@
     "technologies": [
       {
         "name": "CSHARP",
-        "type": "Backend"
+        "type": "Backend",
+        "icon": "devicon-csharp-plain colored"
       },
       {
         "name": ".NET Framework",
-        "type": "Backend"
+        "type": "Backend",
+        "icon": "devicon-dot-net-plain-wordmark colored"
       },
       {
         "name": "CSS",
-        "type": "Frontend"
+        "type": "Frontend",
+        "icon": "devicon-css3-plain-wordmark colored"
       },
       {
         "name": "Javascript",
-        "type": "Frontend"
+        "type": "Frontend",
+        "icon": "devicon-javascript-plain colored"
       },
       {
         "name": "SQL",
-        "type": "Database"
+        "type": "Database",
+        "icon": "devicon-microsoftsqlserver-plain colored"
       }
     ]
   },
@@ -267,23 +300,28 @@
     "technologies": [
       {
         "name": "Java",
-        "type": "Backend"
+        "type": "Backend",
+        "icon": "devicon-java-plain colored"
       },
       {
         "name": "HTML",
-        "type": "Frontend"
+        "type": "Frontend",
+        "icon": "devicon-html5-plain-wordmark colored"
       },
       {
         "name": "CSS",
-        "type": "Frontend"
+        "type": "Frontend",
+        "icon": "devicon-css3-plain-wordmark colored"
       },
       {
         "name": "Javascript",
-        "type": "Frontend"
+        "type": "Frontend",
+        "icon": "devicon-javascript-plain colored"
       },
       {
         "name": "SQL",
-        "type": "Database"
+        "type": "Database",
+        "icon": "devicon-microsoftsqlserver-plain colored"
       }
     ]
   }
