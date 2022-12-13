@@ -39,38 +39,8 @@
                         </p>
                     </div>
                     <div class="col-lg-4 text-center">
-                        <carousel :per-page="1" :mouse-drag="false" :navigation-enabled="true"
-                            pagination-active-color="#ff5c35" pagination-color="#fff">
-                            <slide v-for="(p, i) in projects" :key="i">
-                                <div class="project_item" style="cursor:pointer" @click="goToProjectDetails(p.id)">
-                                    <img class="card-img-top" :src="p.image" alt="Card image cap">
-                                    <div class="card-body">
-
-                                        <h3 class="title_project">{{ p.name }}</h3>
-                                        <p class="text-description" style="color:#000">{{ p.type }}</p>
-                                        <div class="service_icon text-center mt-10">
-                                            <i v-for="(t, i) in p.technologies" :key="i" :class="t.icon"
-                                                style="font-size:20px;margin-right:15px"></i>
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="card-footer text-muted d-flex justify-content-between bg-transparent border-top-0">
-                                        <div class="views text-description">
-                                            <table>
-                                                <tr>
-                                                    <td>
-                                                        <avatar :image="p.company.logo" :size="50" color="white" />
-                                                    </td>
-                                                    <td>
-                                                        <span style="padding: 10px;">{{ p.company.name }}</span>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-                            </slide>
-                        </carousel>
+                        <ProjectsCarrusel :projects="projects" :navigationEnabled="true"
+                            @goToProjectDetails="goToProjectDetails" />
                     </div>
                 </div>
             </div>
@@ -78,42 +48,47 @@
     </div>
 </template>
 <script>
-import Avatar from "vue-avatar-component";
+import ProjectsCarrusel from "@/components/_Shared/ProjectsCarrusel.vue";
 import projects_data from "@/data/projects.json";
 import workExperiences_data from "@/data/work-experiences.json";
 export default {
     name: "Projects",
-    components: { Avatar },
-    data() {
-        return {
-            itemSelected: {
-                name: "Todos",
-                url: "assets/logos/proyectosweb.png",
-            },
-            projects: projects_data
-        };
-    },
+    components: { ProjectsCarrusel },
     created() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
+    },
+    methods: {
+        goToProjectDetails($id) {
+            if ($id != null) {
+                this.$router.push('/projects/' + $id).catch(error => {
+                    if (
+                        error.name !== 'NavigationDuplicated' &&
+                        !error.message.includes('Avoided redundant navigation to current location')
+                    ) {
+                        /* eslint-disable no-console */
+                        console.log(error)
+                        /* eslint-enable no-console */
+                    }
+                })
+            }
+            else {
+                this.$route.push({ path: '/404' })
+            }
+        }
     },
     computed: {
         workExperiences() {
             return workExperiences_data;
         },
-    },
-    methods: {
-        goToProjectDetails(id = '') {
-            this.$router.push('/projects/' + id).catch(error => {
-                if (
-                    error.name !== 'NavigationDuplicated' &&
-                    !error.message.includes('Avoided redundant navigation to current location')
-                ) {
-                    /* eslint-disable no-console */
-                    console.log(error)
-                    /* eslint-enable no-console */
-                }
-            })
+        projects() {
+            let thix = this
+            let collection = projects_data.map(function (el) {
+                el.image = thix.$url + '/' + el.image;
+                el.company.logo = thix.$url + '/' + el.company.logo
+                return el;
+            });
+            return collection
         }
-    },
+    }
 };
 </script>

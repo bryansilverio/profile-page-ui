@@ -14,6 +14,8 @@ Vue.use(VueBadges)
 
 Vue.config.productionTip = false;
 
+Vue.prototype.$url= window.location.origin;
+
 new Vue({
   router,
   store,

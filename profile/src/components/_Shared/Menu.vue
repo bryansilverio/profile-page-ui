@@ -8,7 +8,7 @@
     </ul>
   </div>
 </template>
-<script>
+<script lang="js">
 import menu_data from '@/data/menu.json'
 export default {
   name: "Menu",

@@ -10,7 +10,7 @@
     {
         "position": "Desarrollador Fullstack",
         "company": "Bitfx",
-        "logo":"assets/logos/bitfx.png",
+        "logo":"/assets/logos/bitfx.png",
         "date": "Agosto 2019 - Abril 2021",
         "number": "2019",
         "content": "<p>Participación en proyectos como fullstack, backend (PHP Laravel), Frontend (VueJS, Vuetify), base de datos (MySQL, Eloquent), control de versiones (GIT). </p>"
