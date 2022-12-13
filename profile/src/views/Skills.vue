@@ -1,69 +1,47 @@
 <template>
-    <!--====== SERVICES PART START ======-->
-
-    <section id="services" class="services_area pt-50 pb-50">
-        <div class="container">
-            <div class="row align-items-start justify-content-start">
-                <div class="col-lg-12">
-                    <div class="about_section_title pb-20 text-center">
-                        <h3 class="about_main_title" style="color:#fff">Mis conocimientos</h3>
-                        <h5 style="color: #fff;">Backend | Frontend | DevTools</h5>
-                        <ul class="line">
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </div>
+    <div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="text-center">
+                    <h4>Frontend</h4>
                 </div>
+                <carousel :per-page="1" :mouse-drag="false" v-for="(v0, i0) in frontendSkills" :key="i0" class="pb-50"
+                    :autoplay="true" :loop="true" pagination-active-color="#ff5c35" pagination-color="#fff">
+                    <slide v-for="(v1, i1) in v0.technologies" :key="i1">
+                        <div class="service_icon text-center">
+                            <i :class="v1.icon" style="font-size:80px"></i>
+                        </div>
+                    </slide>
+                </carousel>
             </div>
-
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="about_section_title pb-20 text-center">
-                        <h5 style="color: #fff;">Frontend</h5>
-                    </div>
-                    <carousel :per-page="1" :mouse-drag="false" v-for="(v0, i0) in frontendSkills" :key="i0"
-                        class="pb-50" :autoplay="true" :loop="true" pagination-active-color="#ff5c35"
-                        pagination-color="#fff">
-                        <slide v-for="(v1, i1) in v0.technologies" :key="i1">
-                            <div class="service_icon text-center">
-                                <i :class="v1.icon" style="font-size:80px"></i>
-                            </div>
-                        </slide>
-                    </carousel>
+            <div class="col-lg-4">
+                <div class="text-center">
+                    <h4>Backend</h4>
                 </div>
-                <div class="col-lg-4">
-                    <div class="about_section_title pb-20 text-center">
-                        <h5 style="color: #fff;">Backend</h5>
-                    </div>
-                    <carousel :per-page="1" :mouse-drag="false" v-for="(v0, i0) in backendSkills" :key="i0"
-                        class="pb-50" :autoplay="true" :loop="true" pagination-active-color="#ff5c35"
-                        pagination-color="#fff">
-                        <slide v-for="(v1, i1) in v0.technologies" :key="i1">
-                            <div class="service_icon text-center">
-                                <i :class="v1.icon" style="font-size:80px"></i>
-                            </div>
-                        </slide>
-                    </carousel>
+                <carousel :per-page="1" :mouse-drag="false" v-for="(v0, i0) in backendSkills" :key="i0" class="pb-50"
+                    :autoplay="true" :loop="true" pagination-active-color="#ff5c35" pagination-color="#fff">
+                    <slide v-for="(v1, i1) in v0.technologies" :key="i1">
+                        <div class="service_icon text-center">
+                            <i :class="v1.icon" style="font-size:80px"></i>
+                        </div>
+                    </slide>
+                </carousel>
+            </div>
+            <div class="col-lg-4">
+                <div class="text-center">
+                    <h4>DevTools</h4>
                 </div>
-                <div class="col-lg-4">
-                    <div class="about_section_title pb-20 text-center">
-                        <h5 style="color: #fff;">DevTools</h5>
-                    </div>
-                    <carousel :per-page="1" :mouse-drag="false" v-for="(v0, i0) in devtoolsSkills" :key="i0"
-                        :autoplay="true" :loop="true" pagination-active-color="#ff5c35" pagination-color="#fff">
-                        <slide v-for="(v1, i1) in v0.technologies" :key="i1">
-                            <div class="service_icon text-center">
-                                <i :class="v1.icon" style="font-size:80px"></i>
-                            </div>
-                        </slide>
-                    </carousel>
-                </div>
+                <carousel :per-page="1" :mouse-drag="false" v-for="(v0, i0) in devtoolsSkills" :key="i0"
+                    :autoplay="true" :loop="true" pagination-active-color="#ff5c35" pagination-color="#fff">
+                    <slide v-for="(v1, i1) in v0.technologies" :key="i1">
+                        <div class="service_icon text-center">
+                            <i :class="v1.icon" style="font-size:80px"></i>
+                        </div>
+                    </slide>
+                </carousel>
             </div>
         </div>
-    </section>
-
-    <!--====== SERVICES PART ENDS ======-->
+    </div>
 </template>
 <script>
 import activities_data from '@/data/activities.json'

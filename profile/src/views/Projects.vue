@@ -1,59 +1,54 @@
 <template>
     <div>
+        <div class="fh5co-narrow-content">
+            <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft">Proyectos</h2>
+            <div class="row animate-box" data-animate-effect="fadeInLeft">
+                <ProjectItem v-for="(v, i) in projects" :key="i" :project="v"
+                    class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 work-item" @goToProjectDetails="goToProjectDetails" />
+            </div>
+        </div>
 
-        <section id="projects" class="project_area pt-50">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section_title text-center pb-30">
-                            <h3 class="main_title" style="color:#fff">Proyectos</h3>
-                            <h5 class="sub_title" style="color:#fff">Proyectos en que he participado</h5>
-                            <ul class="line">
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ul>
+
+        <div class="fh5co-narrow-content">
+            <div class="row">
+                <div class="col-md-4 animate-box" data-animate-effect="fadeInLeft">
+                    <h1 class="fh5co-heading-colored">Start Your Project Now!</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 animate-box" data-animate-effect="fadeInLeft">
+                    <p class="fh5co-lead">Separated they live in Bookmarksgrove right at the coast of the Semantics, a
+                        large
+                        language ocean.</p>
+                    <p><a href="#" class="btn btn-primary btn-outline">Get Started</a></p>
+                </div>
+                <div class="col-md-7 col-md-push-1">
+                    <div class="row">
+                        <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+                            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost
+                                unorthographic life One day however a small line of blind text by the name of Lorem
+                                Ipsum
+                                decided to leave for the far World of Grammar.</p>
+                        </div>
+                        <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+                            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost
+                                unorthographic life One day however a small line of blind text by the name of Lorem
+                                Ipsum
+                                decided to leave for the far World of Grammar.</p>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8">
-                        <p style="color:#fff">
-                            Los proyectos en los que he participado han consistido en la mayor parte y principalmente en
-                            desarrollo backend, complementandolo con frontend y diseño de base de datos.
-                        </p>
-                        <p style="color:#fff">
-                            Los proyectos han sido enfocados para plataforma web. En cada proyecto se usarón
-                            herramientas y tecnologías diferentes.
-                        </p>
-                        <br>
-                        <p style="color:#fff">
-                            Recientemente he participado y adentrado más al diseño y desarrollo de APIs orientados a
-                            microservicios, apliando los conceptos de RESTful para el servicio desde la face del diseño.
-                        </p>
-                        <p style="color:#fff">
-                            Estos servicios cuya finalizadad es que sean consumidos por las aplicaciones frontend.
-                        </p>
-                    </div>
-                    <div class="col-lg-4 text-center">
-                        <ProjectsCarrusel :projects="projects" :navigationEnabled="true"
-                            @goToProjectDetails="goToProjectDetails" />
-                    </div>
-                </div>
-            </div>
-        </section>
+        </div>
     </div>
 </template>
 <script>
-import ProjectsCarrusel from "@/components/_Shared/ProjectsCarrusel.vue";
+import ProjectItem from "@/components/_Shared/ProjectItem.vue";
 import projects_data from "@/data/projects.json";
 import workExperiences_data from "@/data/work-experiences.json";
 export default {
     name: "Projects",
-    components: { ProjectsCarrusel },
+    components: { ProjectItem },
     created() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     },

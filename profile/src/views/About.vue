@@ -1,81 +1,215 @@
 <template>
-
-    <!--====== ABOUT PART START ======-->
     <div>
-        <section id="about" class="about_area pt-50 pb-100">
-            <div class="container">
-                <div class="row align-items-start justify-content-start mb-50">
-                    <div class="col-lg-12">
-                        <div class="about_section_title text-center">
-                            <h3 class="about_main_title mt-10">Sobre mí</h3>
-                            <h5 class="sub_title" style="color: #fff;"></h5>
-                            <ul class="line">
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ul>
+        <div class="fh5co-narrow-content">
+            <div class="row">
+                <div class="col-md-5">
+                    <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft">Sobre mí
+                    </h2>
+                    <p class="fh5co-lead animate-box" data-animate-effect="fadeInLeft">Bryan Silverio - Desarrollador
+                        Web</p>
+                    <p class="animate-box" data-animate-effect="fadeInLeft" v-html="data.about"></p>
+                </div>
+                <div class="col-md-6 col-md-push-1 animate-box" data-animate-effect="fadeInLeft">
+                    <img src="assets/images/img_1.jpg" alt="Free HTML5 Bootstrap Template" class="img-responsive">
+                </div>
+                <div class="col-md-12">
+                    <p class="animate-box" data-animate-effect="fadeInLeft" v-html="data.description"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="fh5co-narrow-content  animate-box" data-animate-effect="fadeInLeft">
+            <h2 class="fh5co-heading">Conocimientos</h2>
+            <div class="row">
+                <div class="col-md-12">
+                    <Skills />
+                </div>
+            </div>
+        </div>
+
+        <div class="fh5co-narrow-content  animate-box" data-animate-effect="fadeInLeft">
+            <h2 class="fh5co-heading">The Team</h2>
+
+            <div class="row">
+                <div class="col-md-4 fh5co-staff">
+                    <img src="assets/images/person3.jpg" alt="Free HTML5 Bootstrap Template" class="img-responsive">
+                    <h3>Athan Smith</h3>
+                    <h4>Co-Founder, CEO</h4>
+                    <p>Even the all-powerful Pointing has no control about the blind texts it is an almost
+                        unorthographic
+                        life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for
+                        the
+                        far World of Grammar.</p>
+                    <ul class="fh5co-social">
+                        <li><a href="#"><i class="icon-google"></i></a></li>
+                        <li><a href="#"><i class="icon-dribbble"></i></a></li>
+                        <li><a href="#"><i class="icon-twitter"></i></a></li>
+                        <li><a href="#"><i class="icon-facebook"></i></a></li>
+                        <li><a href="#"><i class="icon-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 fh5co-staff">
+                    <img src="assets/images/person2.jpg" alt="Free HTML5 Bootstrap Template" class="img-responsive">
+                    <h3>Nathalie Kosley</h3>
+                    <h4>Co-Founder, CTO</h4>
+                    <p>Even the all-powerful Pointing has no control about the blind texts it is an almost
+                        unorthographic
+                        life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for
+                        the
+                        far World of Grammar.</p>
+                    <ul class="fh5co-social">
+                        <li><a href="#"><i class="icon-google"></i></a></li>
+                        <li><a href="#"><i class="icon-dribbble"></i></a></li>
+                        <li><a href="#"><i class="icon-twitter"></i></a></li>
+                        <li><a href="#"><i class="icon-facebook"></i></a></li>
+                        <li><a href="#"><i class="icon-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 fh5co-staff">
+                    <img src="assets/images/person4.jpg" alt="Free HTML5 Bootstrap Template" class="img-responsive">
+                    <h3>Yanna Kuzuki</h3>
+                    <h4>Co-Founder, Principal</h4>
+                    <p>Even the all-powerful Pointing has no control about the blind texts it is an almost
+                        unorthographic
+                        life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for
+                        the
+                        far World of Grammar.</p>
+                    <ul class="fh5co-social">
+                        <li><a href="#"><i class="icon-google"></i></a></li>
+                        <li><a href="#"><i class="icon-dribbble"></i></a></li>
+                        <li><a href="#"><i class="icon-twitter"></i></a></li>
+                        <li><a href="#"><i class="icon-facebook"></i></a></li>
+                        <li><a href="#"><i class="icon-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="fh5co-counters" style="background-image: url(assets/images/hero.jpg);"
+            data-stellar-background-ratio="0.5" id="counter-animate">
+            <div class="fh5co-narrow-content animate-box">
+                <div class="row">
+                    <div class="col-md-4 text-center animate-box">
+                        <span class="fh5co-counter js-counter" data-from="0" data-to="67" data-speed="5000"
+                            data-refresh-interval="50"></span>
+                        <span class="fh5co-counter-label">Clients Worked With</span>
+                    </div>
+                    <div class="col-md-4 text-center animate-box">
+                        <span class="fh5co-counter js-counter" data-from="0" data-to="130" data-speed="5000"
+                            data-refresh-interval="50"></span>
+                        <span class="fh5co-counter-label">Completed Projects</span>
+                    </div>
+                    <div class="col-md-4 text-center animate-box">
+                        <span class="fh5co-counter js-counter" data-from="0" data-to="27232" data-speed="5000"
+                            data-refresh-interval="50"></span>
+                        <span class="fh5co-counter-label">Line of Codes</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="fh5co-narrow-content fh5co-border-bottom">
+            <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft">This Is What <span>We Love To
+                    Do</span>
+            </h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="fh5co-feature animate-box" data-animate-effect="fadeInLeft">
+                        <div class="fh5co-icon">
+                            <i class="icon-strategy"></i>
+                        </div>
+                        <div class="fh5co-text">
+                            <h3>Strategy</h3>
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                                there live the blind texts. </p>
                         </div>
                     </div>
                 </div>
-                <div class="row align-items-center justify-content-center">
-                    <div class="col-lg-4 col-md-9">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="about_image">
-                                    <img src="assets/images/about_hero.png" alt="Hero" class="about_image" />
-                                </div>
-                            </div>
-                            <div class="col-lg-12 text-center">
-                                <a class="about_social_network" :href="v.url" target="_blank"
-                                    v-for="(v, i) in socialNetwork" :key="i">
-                                    <i :class="v.icon"></i>
-                                </a>
-                            </div>
-                            <div class="col-lg-12 text-center">
-                                <a href="#" class="btn btn-default btn_download_cv">Download Cv</a>
-                            </div>
+                <div class="col-md-6">
+                    <div class="fh5co-feature animate-box" data-animate-effect="fadeInLeft">
+                        <div class="fh5co-icon">
+                            <i class="icon-telescope"></i>
+                        </div>
+                        <div class="fh5co-text">
+                            <h3>Explore</h3>
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                                there live the blind texts. </p>
                         </div>
                     </div>
-                    <div class="col-lg-8">
-                        <div class="about_section_title text-left">
-                            <h3 class="about_main_title mt-10">Bryan Silverio</h3>
-                            <h5 style="color: #fff;">Desarrollador Web | Backend</h5>
-                            <ul class="line">
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ul>
-                        </div> <!-- section title -->
-                        <div class="about_content mt-30" v-html="data.about"></div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="fh5co-feature animate-box" data-animate-effect="fadeInLeft">
+                        <div class="fh5co-icon">
+                            <i class="icon-circle-compass"></i>
+                        </div>
+                        <div class="fh5co-text">
+                            <h3>Direction</h3>
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                                there live the blind texts. </p>
+                        </div>
                     </div>
                 </div>
-            </div> <!-- container -->
-        </section>
-        <!--====== ABOUT PART ENDS ======-->
+                <div class="col-md-6">
+                    <div class="fh5co-feature animate-box" data-animate-effect="fadeInLeft">
+                        <div class="fh5co-icon">
+                            <i class="icon-tools-2"></i>
+                        </div>
+                        <div class="fh5co-text">
+                            <h3>Expertise</h3>
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                                there live the blind texts. </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="fh5co-narrow-content">
+            <div class="row">
+                <div class="col-md-4 animate-box" data-animate-effect="fadeInLeft">
+                    <h1 class="fh5co-heading-colored">Start Your Project Now!</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 animate-box" data-animate-effect="fadeInLeft">
+                    <p class="fh5co-lead">Separated they live in Bookmarksgrove right at the coast of the Semantics, a
+                        large
+                        language ocean.</p>
+                    <p><a href="#" class="btn btn-primary btn-outline">Get Started</a></p>
+                </div>
+                <div class="col-md-7 col-md-push-1">
+                    <div class="row">
+                        <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+                            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost
+                                unorthographic life One day however a small line of blind text by the name of Lorem
+                                Ipsum
+                                decided to leave for the far World of Grammar.</p>
+                        </div>
+                        <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+                            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost
+                                unorthographic life One day however a small line of blind text by the name of Lorem
+                                Ipsum
+                                decided to leave for the far World of Grammar.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 <script>
 import social_network_data from '@/data/social-network.json'
 import about_data from '@/data/about.json'
 import activities_data from '@/data/activities.json'
+import Skills from "@/views/Skills.vue"
 export default {
     name: "About",
-    data() {
-        return {
-            showPreloader: true
-        }
-    },
+    components: { Skills },
     created() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
-        this.getShowPreloader()
-    },
-    methods: {
-        getShowPreloader() {
-            let thix = this
-            setTimeout(function () {
-                thix.showPreloader = false
-            }, 1000);
-        }
     },
     computed: {
         data() {

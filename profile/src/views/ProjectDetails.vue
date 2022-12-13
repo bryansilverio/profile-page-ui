@@ -1,4 +1,51 @@
 <template>
+
+    <div class="fh5co-narrow-content">
+        <div class="row">
+
+            <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+                <figure class="text-center">
+                    <img :src="projectDetails.image" alt="Free HTML5 Bootstrap" class="img-responsive">
+                </figure>
+            </div>
+
+            <div class="col-md-8 col-md-offset-2 animate-box" data-animate-effect="fadeInLeft">
+
+                <div class="col-md-9 col-md-push-3">
+                    <h1>{{ projectDetails.name }}</h1>
+                    <small>{{ projectDetails.type }} / {{ projectDetails.company.name }}</small>
+                    <p v-html="projectDetails.description"></p>
+                </div>
+
+                <div class="col-md-3 col-md-pull-9 fh5co-services">
+                    <h3>Tecnologias</h3>
+                    <ul>
+                        <i v-for="(t, i) in projectDetails.technologies" :key="i" :class="t.icon"
+                            style="font-size:20px;margin-right:10px"></i>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row work-pagination animate-box" data-animate-effect="fadeInLeft">
+            <div class="col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0">
+
+                <div class="col-md-4 col-sm-4 col-xs-4 text-center">
+                    <a href="#"><i class="icon-long-arrow-left"></i> <span>Previous Project</span></a>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-4 text-center">
+                    <a href="#"><i class="icon-th-large"></i></a>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-4 text-center">
+                    <a href="#"><span>Next Project</span> <i class="icon-long-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--
     <section id="services" class="project_details_area pt-115 pb-120">
         <div class="container">
             <div class="row justify-content-center">
@@ -15,10 +62,10 @@
                             <li></li>
                             <li></li>
                         </ul>
-                    </div> <!-- section title -->
+                    </div> 
                 </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
+            </div> 
+        </div>
 
         <div class="container">
             <div class="row">
@@ -70,13 +117,14 @@
             </div>
         </div>
     </section>
+-->
 </template>
 <script>
-import ProjectsCarrusel from "@/components/_Shared/ProjectsCarrusel.vue";
+//import ProjectsCarrusel from "@/components/_Shared/ProjectItem.vue";
 import projects_data from "@/data/projects.json";
 export default {
     name: 'ProjectDetails',
-    components: { ProjectsCarrusel },
+    //components: { ProjectsCarrusel },
     data() {
         return {
             projectDetails: {},

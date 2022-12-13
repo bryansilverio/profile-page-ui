@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <!--====== Title ======-->
+    <title>Bryan Silverio - Sitio web</title>
+
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--====== Favicon Icon ======-->
+    <link
+      rel="shortcut icon"
+      href="<%= BASE_URL %>assets/images/favicon.png"
+      type="image/png"
+    />
+
+    <!--====== Slick CSS ======-->
+    <link rel="stylesheet" href="<%= BASE_URL %>assets/css/animate.css" />
+
+    <!--====== LineIcons CSS ======-->
+    <link rel="stylesheet" href="<%= BASE_URL %>assets/css/lineicons.css" />
+
+    <!--====== Bootstrap CSS ======-->
+    <link rel="stylesheet" href="<%= BASE_URL %>assets/css/bootstrap.min.css" />
+
+    <!--====== Default CSS ======-->
+    <link rel="stylesheet" href="<%= BASE_URL %>assets/css/default.css" />
+
+    <!--====== Style CSS ======-->
+    <link rel="stylesheet" href="<%= BASE_URL %>assets/css/style.css" />
+    <link rel="stylesheet" href="<%= BASE_URL %>assets/css/header.css" />
+    <link rel="stylesheet" href="<%= BASE_URL %>assets/css/header-hero.css" />
+    <link rel="stylesheet" href="<%= BASE_URL %>assets/css/about-me.css" />
+    <link rel="stylesheet" href="<%= BASE_URL %>assets/css/services.css" />
+    <link rel="stylesheet" href="<%= BASE_URL %>assets/css/footer.css" />
+    <link rel="stylesheet" href="<%= BASE_URL %>assets/css/common.css" />
+    <link rel="stylesheet" href="<%= BASE_URL %>assets/css/preloader.css" />
+    <link rel="stylesheet" href="<%= BASE_URL %>assets/css/timeline.css" />
+    <link rel="stylesheet" href="<%= BASE_URL %>assets/css/skill.css" />
+    <link rel="stylesheet" href="<%= BASE_URL %>assets/css/projects.css" />
+    <link rel="stylesheet" href="<%= BASE_URL %>assets/css/contact.css" />
+    <link
+      rel="stylesheet"
+      href="<%= BASE_URL %>assets/css/project-details.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
+
+    <style>
+      #btn-back-to-top {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <noscript>
+      <strong
+        >We're sorry but personal-website doesn't work properly without
+        JavaScript enabled. Please enable it to continue.</strong
+      >
+    </noscript>
+
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+
+    <!--
+  <section class="">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-">
+                  
+              </div>
+          </div>
+      </div>
+  </section>
+-->
+    <button
+      type="button"
+      class="btn btn-floating"
+      style="background-color: #ff5c35; color:#fff; border-radius:100px;"
+      id="btn-back-to-top"
+    >
+      <i class="lni lni-chevron-up"></i>
+    </button>
+    <!--====== PART ENDS ======-->
+
+    <!-- row -->
+
+    <!--====== Jquery js ======-->
+    <script src="<%= BASE_URL %>assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="<%= BASE_URL %>assets/js/vendor/modernizr-3.7.1.min.js"></script>
+
+    <!--====== Bootstrap js ======-->
+    <script src="<%= BASE_URL %>assets/js/popper.min.js"></script>
+    <script src="<%= BASE_URL %>assets/js/bootstrap.min.js"></script>
+
+    <!--====== Appear js ======-->
+    <script src="<%= BASE_URL %>assets/js/jquery.appear.min.js"></script>
+
+    <!--====== Scrolling Nav js ======-->
+    <script src="<%= BASE_URL %>assets/js/jquery.easing.min.js"></script>
+    <script src="<%= BASE_URL %>assets/js/scrolling-nav.js"></script>
+
+    <!--====== Main js ======-->
+    <script src="<%= BASE_URL %>assets/js/main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+      //Get the button
+      let mybutton = document.getElementById("btn-back-to-top");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      // When the user clicks on the button, scroll to the top of the document
+      mybutton.addEventListener("click", backToTop);
+
+      function backToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+  </body>
+</html>
