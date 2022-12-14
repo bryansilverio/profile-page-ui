@@ -1,13 +1,12 @@
 <template>
     <div>
-        <div class="fh5co-narrow-content">
+        <div class="fh5co-narrow-content  animate-box">
             <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft">Proyectos</h2>
-            <div class="row animate-box" data-animate-effect="fadeInLeft">
-                <ProjectItem v-for="(v, i) in projects" :key="i" :project="v"
-                    class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 work-item" @goToProjectDetails="goToProjectDetails" />
+            <div class="row">
+                <ProjectItem v-for="(v, i) in projects" :key="i" :project="v" cssClass="col-md-4 fh5co-staff"
+                    @goToProjectDetails="goToProjectDetails" />
             </div>
         </div>
-
 
         <div class="fh5co-narrow-content">
             <div class="row">

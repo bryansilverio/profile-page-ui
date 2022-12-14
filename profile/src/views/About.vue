@@ -3,14 +3,23 @@
         <div class="fh5co-narrow-content">
             <div class="row">
                 <div class="col-md-5">
-                    <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft">Sobre mí
+                    <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft">
+                        Sobre mí
                     </h2>
-                    <p class="fh5co-lead animate-box" data-animate-effect="fadeInLeft">Bryan Silverio - Desarrollador
-                        Web</p>
+                    <p class="fh5co-lead animate-box" data-animate-effect="fadeInLeft">
+                        Bryan Silverio - Desarrollador Web
+                    </p>
+                    <ul class="fh5co-social" style="text-align: start;">
+                        <li v-for="(v, i) in socialNetworkItems" :key="i" class="social-network-items text-center">
+                            <a :href="v.url" target="_blank">
+                                <i :class="v.icon"></i>
+                            </a>
+                        </li>
+                    </ul>
                     <p class="animate-box" data-animate-effect="fadeInLeft" v-html="data.about"></p>
                 </div>
                 <div class="col-md-6 col-md-push-1 animate-box" data-animate-effect="fadeInLeft">
-                    <img src="assets/images/img_1.jpg" alt="Free HTML5 Bootstrap Template" class="img-responsive">
+                    <img src="assets/images/about_hero.png" alt="about me" class="img-responsive" width="70%">
                 </div>
                 <div class="col-md-12">
                     <p class="animate-box" data-animate-effect="fadeInLeft" v-html="data.description"></p>
@@ -200,6 +209,15 @@
         </div>
     </div>
 </template>
+
+<style>
+.social-network-items {
+    display: inline-block;
+    margin-right: 15px;
+    font-size: x-large;
+}
+</style>
+
 <script>
 import social_network_data from '@/data/social-network.json'
 import about_data from '@/data/about.json'
@@ -215,7 +233,7 @@ export default {
         data() {
             return about_data
         },
-        socialNetwork() {
+        socialNetworkItems() {
             return social_network_data
         },
         activities() {
