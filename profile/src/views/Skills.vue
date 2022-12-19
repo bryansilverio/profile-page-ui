@@ -1,65 +1,22 @@
 <template>
-    <div>
-        <div class="row">
-            <div class="col-lg-4">
-                <div class="text-center">
-                    <h4>Frontend</h4>
-                </div>
-                <carousel :per-page="1" :mouse-drag="false" v-for="(v0, i0) in frontendSkills" :key="i0" class="pb-50"
-                    :autoplay="true" :loop="true" pagination-active-color="#ff5c35" pagination-color="#fff">
-                    <slide v-for="(v1, i1) in v0.technologies" :key="i1">
-                        <div class="service_icon text-center">
-                            <i :class="v1.icon" style="font-size:80px"></i>
-                        </div>
-                    </slide>
-                </carousel>
-            </div>
-            <div class="col-lg-4">
-                <div class="text-center">
-                    <h4>Backend</h4>
-                </div>
-                <carousel :per-page="1" :mouse-drag="false" v-for="(v0, i0) in backendSkills" :key="i0" class="pb-50"
-                    :autoplay="true" :loop="true" pagination-active-color="#ff5c35" pagination-color="#fff">
-                    <slide v-for="(v1, i1) in v0.technologies" :key="i1">
-                        <div class="service_icon text-center">
-                            <i :class="v1.icon" style="font-size:80px"></i>
-                        </div>
-                    </slide>
-                </carousel>
-            </div>
-            <div class="col-lg-4">
-                <div class="text-center">
-                    <h4>DevTools</h4>
-                </div>
-                <carousel :per-page="1" :mouse-drag="false" v-for="(v0, i0) in devtoolsSkills" :key="i0"
-                    :autoplay="true" :loop="true" pagination-active-color="#ff5c35" pagination-color="#fff">
-                    <slide v-for="(v1, i1) in v0.technologies" :key="i1">
-                        <div class="service_icon text-center">
-                            <i :class="v1.icon" style="font-size:80px"></i>
-                        </div>
-                    </slide>
-                </carousel>
-            </div>
+    <div class="col-md-12 animate-box mt-5" data-animate-effect="fadeInLeft">
+        <h1 class="fh5co-heading-colored">{{ title }}</h1>
+        <div class="service_icon">
+            <i v-for="(v, i) in items" :key="i" :class="v.icon" style="font-size:50px;margin-right: 15px;"></i>
         </div>
     </div>
 </template>
 <script>
-import activities_data from '@/data/activities.json'
-
 export default {
     name: "Services",
-    components: {},
-    computed: {
-        frontendSkills() {
-            return activities_data.filter(x => x.code == "FRONTEND")
+    props: {
+        items: {
+            type: Array
         },
-        backendSkills() {
-            return activities_data.filter(x => x.code == "BACKEND")
-        },
-        devtoolsSkills() {
-            return activities_data.filter(x => x.code == "DEVTOOLS")
+        title: {
+            type: String,
+            default: ""
         }
     }
 };
 </script>
-  

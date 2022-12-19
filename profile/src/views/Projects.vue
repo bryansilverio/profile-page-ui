@@ -75,13 +75,7 @@ export default {
             return workExperiences_data;
         },
         projects() {
-            let thix = this
-            let collection = projects_data.map(function (el) {
-                el.image = thix.$url + '/' + el.image;
-                el.company.logo = thix.$url + '/' + el.company.logo
-                return el;
-            });
-            return collection
+            return projects_data
         }
     }
 };

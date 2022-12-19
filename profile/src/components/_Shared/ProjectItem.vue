@@ -1,6 +1,6 @@
 <template>
     <div :class="cssClass" @click="onClickEvent(project.id)" style="cursor: pointer;">
-        <img :src="project.image" alt="Image project" class="img-responsive">
+        <img :src="setUrlBase(project.image)" alt="Image project" class="img-responsive">
         <h3>{{ project.name }}</h3>
         <h4>{{ project.company.name }}</h4>
         <p>{{ project.type }}</p>
@@ -28,6 +28,13 @@ export default {
     methods: {
         onClickEvent(id) {
             this.$emit('goToProjectDetails', id)
+        },
+        setUrlBase(image=''){
+            if(!image.includes(this.$url)){
+                return this.$url+'/'+image
+            }else{
+                return image
+            }
         }
     }
 }

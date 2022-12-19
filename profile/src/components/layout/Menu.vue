@@ -40,7 +40,7 @@
         </ul>
       </nav>
 
-      <div class="fh5co-footer">
+      <div class="fh5co-footer" style="bottom:0px">
         <p>
           <small style="color: #fff;">
             &copy; 2018 Nitro Free HTML5. All Rights Reserved.

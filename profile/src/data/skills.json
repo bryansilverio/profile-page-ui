@@ -1,0 +1,88 @@
+[
+  {
+    "name": "VueJs",
+    "icon": "devicon-vuejs-plain colored",
+    "type": "FRONTEND"
+  },
+  {
+    "name": "Vuetify",
+    "icon": "devicon-vuetify-line colored",
+    "type": "FRONTEND"
+  },
+  {
+    "name": "Javascript",
+    "icon": "devicon-javascript-plain colored",
+    "type": "FRONTEND"
+  },
+  {
+    "name": "CSS",
+    "icon": "devicon-css3-plain-wordmark colored",
+    "type": "FRONTEND"
+  },
+  {
+    "name": "HTML",
+    "icon": "devicon-html5-plain-wordmark colored",
+    "type": "FRONTEND"
+  },
+  {
+    "name": "C#",
+    "icon": "devicon-csharp-plain colored",
+    "type": "BACKEND"
+  },
+  {
+    "name": ".NET Core",
+    "icon": "devicon-dotnetcore-plain colored",
+    "type": "BACKEND"
+  },
+  {
+    "name": "Java",
+    "icon": "devicon-java-plain colored",
+    "type": "BACKEND"
+  },
+  {
+    "name": "Spring",
+    "icon": "devicon-spring-plain colored",
+    "type": "BACKEND"
+  },
+  {
+    "name": "MySQL",
+    "icon": "devicon-mysql-plain colored",
+    "type": "BACKEND"
+  },
+  {
+    "name": "SQL Server",
+    "icon": "devicon-microsoftsqlserver-plain colored",
+    "type": "BACKEND"
+  },
+  {
+    "name": "Visual Studio",
+    "icon": "devicon-visualstudio-plain colored",
+    "type": "BACKEND"
+  },
+  {
+    "name": "Bitbucket",
+    "icon": "devicon-bitbucket-original colored",
+    "type": "DEVTOOLS"
+  },
+  {
+    "name": "GIT",
+    "icon": "devicon-git-plain colored",
+    "type": "DEVTOOLS"
+  },
+  {
+    "name": "Jira",
+    "icon": "devicon-jira-plain colored",
+    "type": "DEVTOOLS"
+  },
+
+  {
+    "name": "Nuget",
+    "icon": "devicon-nuget-original colored",
+    "type": "DEVTOOLS"
+  },
+  {
+    "name": "SourceTree",
+    "icon": "devicon-sourcetree-original colored",
+    "type": "DEVTOOLS"
+  }
+]
