@@ -1,38 +1,40 @@
 <template>
-    <div :class="cssClass" @click="onClickEvent(project.id)" style="cursor: pointer;">
-        <img :src="setUrlBase(project.image)" alt="Image project" class="img-responsive">
-        <h3>{{ project.name }}</h3>
-        <h4>{{ project.company.name }}</h4>
-        <p>{{ project.type }}</p>
-        <ul class="fh5co-social">
-            <i v-for="(t, i) in project.technologies" :key="i" :class="t.icon" style="font-size:20px;margin-right:15px">
-            </i>
-        </ul>
-        <avatar :image="project.company.logo" :size="50" color="white" />
+
+
+    <div class="fh5co-flex-wrap">
+        <div class="fh5co-card animate-box" @click="onClickEvent(v.id)" style="cursor: pointer;" v-for="(v, i) in items"
+            :key="i" data-animate-effect="fadeInLeft">
+            <h5>{{ v.name }}</h5>
+            <h4>{{ v.company.name }}</h4>
+            <p>{{ v.type }}</p>
+            <small style="margin-top: -10px;">{{ v.date }}</small>
+            <p v-html="v.content"></p>
+            <ul class="fh5co-social">
+                <i v-for="(t, i) in v.technologies" :key="i" :class="t.icon" style="font-size:20px;margin-right:15px">
+                </i>
+            </ul>
+            <p><a href="#" class="btn btn-md btn-primary">Learn More</a></p>
+        </div>
     </div>
+
 </template>
 <script>
-import Avatar from "vue-avatar-component";
+
 export default {
     name: "ProjectItem",
-    components: { Avatar },
     props: {
-        project: {
-            type: Object
+        items: {
+            type: Array
         },
-        cssClass: {
-            type: String,
-            default: ""
-        }
     },
     methods: {
         onClickEvent(id) {
             this.$emit('goToProjectDetails', id)
         },
-        setUrlBase(image=''){
-            if(!image.includes(this.$url)){
-                return this.$url+'/'+image
-            }else{
+        setUrlBase(image = '') {
+            if (!image.includes(this.$url)) {
+                return this.$url + '/' + image
+            } else {
                 return image
             }
         }

@@ -1,7 +1,7 @@
 <template>
   <div>
     <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
-    <aside id="fh5co-aside" role="complementary" class="border js-fullheight bg-menu">
+    <aside id="fh5co-aside" role="complementary" class="border js-fullheight bg-menu" style="overflow: hidden;">
 
       <h1 id="fh5co-logo">
         <a href="index.html">
@@ -25,6 +25,16 @@
           <li :class="menuIsActive.about">
             <a @click="goToPage('/about')" style="color: #fff;cursor: pointer;">
               Sobre mi
+            </a>
+          </li>
+          <li :class="menuIsActive.skills">
+            <a @click="goToPage('/skills')" style="color: #fff;cursor: pointer;">
+              Conocimientos
+            </a>
+          </li>
+          <li :class="menuIsActive.projects">
+            <a @click="goToPage('/work-experience')" style="color: #fff;cursor: pointer;">
+              Experiencia
             </a>
           </li>
           <li :class="menuIsActive.projects">
@@ -68,7 +78,9 @@ export default {
       ISACTIVE: 'fh5co-active',
       menuIsActive: {
         home: '',
+        skills: '',
         projects: '',
+        workExperience: '',
         contact: '',
         about: ''
       }
@@ -82,7 +94,9 @@ export default {
 
       this.menuIsActive.home = ''
       this.menuIsActive.about = ''
+      this.menuIsActive.skills = ''
       this.menuIsActive.projects = ''
+      this.menuIsActive.workExperience = ''
       this.menuIsActive.contact = ''
 
       if (url == '/') {
@@ -90,6 +104,12 @@ export default {
       }
       else if (url == '/about') {
         this.menuIsActive.about = this.ISACTIVE
+      }
+      else if (url == '/skills') {
+        this.menuIsActive.skills = this.ISACTIVE
+      }
+      else if (url == '/work-experience') {
+        this.menuIsActive.workExperience = this.ISACTIVE
       }
       else if (url == '/projects') {
         this.menuIsActive.projects = this.ISACTIVE
