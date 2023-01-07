@@ -1,9 +1,8 @@
 <template>
     <div>
-
-        <div class="fh5co-cards">
+        <TitlePage title="Proyectos"/>
+        <div class="cards">
             <div class="fh5co-narrow-content">
-                <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft">Press Release</h2>
                 <ProjectItem :items="projects" @goToProjectDetails="goToProjectDetails" />
             </div>
         </div>
@@ -11,12 +10,13 @@
     </div>
 </template>
 <script>
+import TitlePage from '@/components/_Shared/TitlePage.vue'
 import ProjectItem from "@/components/_Shared/ProjectItem.vue";
 import projects_data from "@/data/projects.json";
 import workExperiences_data from "@/data/work-experiences.json";
 export default {
     name: "Projects",
-    components: { ProjectItem },
+    components: { TitlePage, ProjectItem },
     created() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     },

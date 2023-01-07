@@ -1,13 +1,6 @@
 @font-face {
-  font-family: "icomoon";
-  src: url("../fonts/icomoon/icomoon.eot?srf3rx");
-  src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix")
-      format("embedded-opentype"),
-    url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"),
-    url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"),
-    url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
-  font-weight: normal;
-  font-style: normal;
+  font-family: Poppins;
+  src: url(../fonts/Poppins/Poppins-Regular.ttf);
 }
 /* =======================================================
 *
@@ -16,11 +9,12 @@
 *
 * ======================================================= */
 body {
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: Poppins;
   font-weight: 300;
   font-size: 20px;
   line-height: 1.6;
-  color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  background-color: #44495D;
 }
 @media screen and (max-width: 992px) {
   body {
@@ -29,7 +23,7 @@ body {
 }
 
 a {
-  color: #da1212;
+  color: #F85934;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -37,7 +31,7 @@ a {
 a:hover,
 a:active,
 a:focus {
-  color: #da1212;
+  color: #F85934;
   outline: none;
 }
 
@@ -51,7 +45,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #000;
+  color: #fff;
   font-family: "Montserrat", Arial, sans-serif;
   font-weight: 700;
   margin: 0 0 30px 0;
@@ -65,17 +59,17 @@ figure {
 
 ::-webkit-selection {
   color: #fff;
-  background: #da1212;
+  background: #F85934;
 }
 
 ::-moz-selection {
   color: #fff;
-  background: #da1212;
+  background: #F85934;
 }
 
 ::selection {
   color: #fff;
-  background: #da1212;
+  background: #F85934;
 }
 
 #fh5co-page {
@@ -155,7 +149,7 @@ figure {
   bottom: 7px;
   left: 10px;
   right: 10px;
-  background-color: #da1212;
+  background-color: #F85934;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   -moz-transform: scaleX(0);
@@ -229,7 +223,7 @@ figure {
 #fh5co-aside .fh5co-footer ul li a:focus {
   text-decoration: none;
   outline: none;
-  color: #da1212;
+  color: #F85934;
 }
 
 #fh5co-main {
@@ -338,7 +332,7 @@ body.offcanvas .fh5co-nav-toggle {
   color: #000;
 }
 .work-pagination a:hover {
-  color: #da1212;
+  color: #F85934;
   text-decoration: none;
 }
 @media screen and (max-width: 480px) {
@@ -353,7 +347,7 @@ body.offcanvas .fh5co-nav-toggle {
 
 .fh5co-testimonial {
   padding: 3em 0;
-  background: #da1212;
+  background: #F85934;
 }
 @media screen and (max-width: 768px) {
   .fh5co-testimonial {
@@ -431,7 +425,7 @@ body.offcanvas .fh5co-nav-toggle {
 }
 
 .fh5co-heading-colored {
-  color: #da1212;
+  color: #F85934;
 }
 
 .fh5co-cards {
@@ -492,7 +486,7 @@ body.offcanvas .fh5co-nav-toggle {
 
 .fh5co-counter .fh5co-number {
   font-size: 100px;
-  color: #da1212;
+  color: #F85934;
   font-weight: 400;
   margin: 0;
   padding: 0;
@@ -562,14 +556,14 @@ body.offcanvas .fh5co-nav-toggle {
   }
 }
 .fh5co-social li a:hover {
-  color: #da1212;
+  color: #F85934;
 }
 .fh5co-social li a:hover,
 .fh5co-social li a:active,
 .fh5co-social li a:focus {
   outline: none;
   text-decoration: none;
-  color: #da1212;
+  color: #F85934;
 }
 
 #map {
@@ -599,7 +593,7 @@ body.offcanvas .fh5co-nav-toggle {
   margin-top: 5px;
 }
 .fh5co-feature .fh5co-icon i {
-  color: #da1212;
+  color: #F85934;
   font-size: 70px;
 }
 @media screen and (max-width: 1200px) {
@@ -608,7 +602,7 @@ body.offcanvas .fh5co-nav-toggle {
   }
 }
 .fh5co-feature.fh5co-feature-sm .fh5co-icon i {
-  color: #da1212;
+  color: #F85934;
   font-size: 28px;
 }
 @media screen and (max-width: 1200px) {
@@ -638,7 +632,7 @@ body.offcanvas .fh5co-nav-toggle {
 .fh5co-feature .fh5co-text h3 {
   font-weight: 300;
   margin-bottom: 20px;
-  color: rgba(0, 0, 0, 0.8);
+  color: #fff;
   font-size: 14px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -830,7 +824,7 @@ body.offcanvas .fh5co-nav-toggle {
 }
 .owl-theme .owl-dots .owl-dot span:hover {
   background: none;
-  border: 3px solid #da1212;
+  border: 3px solid #F85934;
 }
 
 .owl-theme .owl-dots .owl-dot.active span,
@@ -844,7 +838,7 @@ body.offcanvas .fh5co-nav-toggle {
   margin-right: 4px;
   margin-bottom: 4px;
   font-family: "Roboto", Arial, sans-serif;
-  font-size: 18px;
+  font-size: 12px;
   font-weight: 400;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
@@ -872,9 +866,9 @@ body.offcanvas .fh5co-nav-toggle {
 }
 
 .btn-primary {
-  background: #da1212;
+  background: #F85934;
   color: #fff;
-  border: 2px solid #da1212;
+  border: 2px solid #F85934;
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -884,13 +878,13 @@ body.offcanvas .fh5co-nav-toggle {
 }
 .btn-primary.btn-outline {
   background: transparent;
-  color: #da1212;
-  border: 2px solid #da1212;
+  color: #F85934;
+  border: 2px solid #F85934;
 }
 .btn-primary.btn-outline:hover,
 .btn-primary.btn-outline:focus,
 .btn-primary.btn-outline:active {
-  background: #da1212;
+  background: #F85934;
   color: #fff;
 }
 
@@ -1019,7 +1013,7 @@ body.offcanvas .fh5co-nav-toggle {
 .form-control:focus {
   outline: none;
   box-shadow: none;
-  border-color: #da1212;
+  border-color: #F85934;
 }
 
 #message {
@@ -1279,14 +1273,14 @@ Icons Title Page
   }
 }
 .fh5co-social-title-page li a:hover {
-  color: #da1212;
+  color: #F85934;
 }
 .fh5co-social-title-page li a:hover,
 .fh5co-social-title-page li a:active,
 .fh5co-social-title-page li a:focus {
   outline: none;
   text-decoration: none;
-  color: #da1212;
+  color: #F85934;
 }
 
 /**
@@ -1295,19 +1289,31 @@ WorkExperience
 
 /**Work Experience item**/
 .cards-experience-item {
-  background-color: #44495d;
+  /*background-color: #44495d;
   color: white;
   border-radius: 20px;
   height: 300px;
+    */
 }
-.cards-experience-item h4,
-h5 {
-  color: white;
+.cards-experience-item h5 {
+  font-size: larger;
 }
-.cards-experience-item h5{
+.cards-experience-item h5 {
+  /*
   margin-top: 20px;
+  */
 }
 .cards-experience-item h4,
-h5, small, p {
+h5,
+small,
+p {
+  /*
   margin: 15px;
+  */
+}
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #F85934;
 }

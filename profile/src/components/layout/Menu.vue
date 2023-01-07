@@ -4,8 +4,9 @@
     <aside id="fh5co-aside" role="complementary" class="border js-fullheight bg-menu" style="overflow: hidden;">
 
       <h1 id="fh5co-logo">
-        <a href="index.html">
-          <img src="assets/images/logo.png" alt="Free HTML5 Bootstrap Website Template">
+        <a href="/">
+          <img src="assets/images/testimonial_person2.jpg" width="150" style="border-radius: 100px;"
+            alt="Free HTML5 Bootstrap Website Template">
         </a>
       </h1>
       <h4 class="fh5co-heading-orange text-center" style="color: white;">Bryan Silverio</h4>

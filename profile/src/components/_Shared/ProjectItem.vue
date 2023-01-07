@@ -2,18 +2,31 @@
 
 
     <div class="fh5co-flex-wrap">
-        <div class="fh5co-card animate-box" @click="onClickEvent(v.id)" style="cursor: pointer;" v-for="(v, i) in items"
+        <div class="fh5co-feature animate-box cards-experience-item" style="cursor: pointer;" v-for="(v, i) in items"
             :key="i" data-animate-effect="fadeInLeft">
-            <h5>{{ v.name }}</h5>
-            <h4>{{ v.company.name }}</h4>
-            <p>{{ v.type }}</p>
-            <small style="margin-top: -10px;">{{ v.date }}</small>
-            <p v-html="v.content"></p>
-            <ul class="fh5co-social">
-                <i v-for="(t, i) in v.technologies" :key="i" :class="t.icon" style="font-size:20px;margin-right:15px">
-                </i>
-            </ul>
-            <p><a href="#" class="btn btn-md btn-primary">Learn More</a></p>
+
+            <div class="fh5co-text" style="float: none;">
+                <h3>{{ v.name }}</h3>
+                <span class="badge badge-pill badge-secondary" style="background-color: #448239;">
+                    {{ v.company.name }}
+                </span>
+                <span> / </span>
+                <span class="badge badge-pill badge-secondary" style="background-color: #448239;">
+                    {{ v.type }}
+                </span>
+                <p v-html="v.content"></p>
+                <ul class="fh5co-social">
+                    <i v-for="(t, i) in v.technologies" :key="i" :class="t.icon"
+                        style="font-size:30px;margin-right:15px">
+                    </i>
+                </ul>
+                <p>
+                    <button class="btn btn-md btn-primary" style="border-radius: 9999px;" @click="onClickEvent(v.id)">
+                        Learn More
+                    </button>
+                </p>
+                <hr class="nb nc nd am" aria-hidden="true">
+            </div>
         </div>
     </div>
 
