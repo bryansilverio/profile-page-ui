@@ -43,7 +43,10 @@
       "plugin:vue/essential",
       "eslint:recommended"
     ],
-    "rules": {},
+    "rules": {
+      "no-unused-vars": ["error", { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }],
+      "@typescript-eslint/no-unused-vars": "off"
+    },
     "parserOptions": {
       "parser": "babel-eslint"
     }

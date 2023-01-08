@@ -1,5 +1,8 @@
 <template>
     <div>
+
+        <Loader v-show="showLoader" />
+
         <div class="fh5co-testimonial">
             <div class="fh5co-narrow-content">
                 <div class="owl-carousel-fullwidth animate-box" data-animate-effect="fadeInLeft">
@@ -32,15 +35,21 @@
     </div>
 </template>
 <script>
+import Loader from '@/components/_Shared/Loader.vue'
 import HomeCardPageLink from '@/components/_Shared/HomeCardPageLink.vue'
 export default {
     name: "Home",
-    components: { HomeCardPageLink },
-    watch: {
-        $route() {
-
+    components: { Loader, HomeCardPageLink },
+    data() {
+        return {
+            showLoader: true
         }
+    },
+    created() {
+        let thix = this
+        setTimeout(function () {
+            thix.showLoader = false
+        }, 2000)
     }
 };
 </script>
-  

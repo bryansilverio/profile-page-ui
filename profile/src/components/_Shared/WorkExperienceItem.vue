@@ -11,13 +11,17 @@
                 <span class="badge badge-pill badge-secondary" style="background-color: #448239;">{{ v.company }}</span>
                 <span> / </span>
                 <span class="badge badge-pill badge-secondary" style="background-color: #448239;">{{ v.date }}</span>
-                <p v-html="v.content"></p>
-                <p><button class="btn btn-md btn-primary" style="border-radius: 9999px;">Learn More</button></p>
+                <div class="content" v-html="v.content"></div>
                 <hr class="nb nc nd am" aria-hidden="true">
             </div>
         </div>
     </div>
 </template>
+<style>
+.content p{
+    font-size: small;
+}
+</style>
 <script lang="js">
 export default {
     name: "WorkExperienceItem",
