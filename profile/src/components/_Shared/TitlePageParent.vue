@@ -1,6 +1,6 @@
 <template>
     <div class="title-page-parent">
-        <TitlePageLarge :title="title" :showLoader="showLoader" v-if="scrollValue < 200"
+        <TitlePageLarge :title="title" :showLoader="showLoader" v-if="scrollValue < 100"
             :scrollValue="scrollValue" />
         <TitlePageSmall :title="title" :showLoader="showLoader" v-else :scrollValue="scrollValue" />
     </div>

@@ -8,9 +8,9 @@
             </div>
             <div class="fh5co-text">
                 <h3>{{ v.position }}</h3>
-                <span class="badge badge-pill badge-secondary" style="background-color: #448239;">{{ v.company }}</span>
+                <span class="badge badge-pill badge-secondary">{{ v.company }}</span>
                 <span> / </span>
-                <span class="badge badge-pill badge-secondary" style="background-color: #448239;">{{ v.date }}</span>
+                <span class="badge badge-pill badge-secondary">{{ v.date }}</span>
                 <div class="content" v-html="v.content"></div>
                 <hr class="nb nc nd am" aria-hidden="true">
             </div>
@@ -18,7 +18,7 @@
     </div>
 </template>
 <style>
-.content p{
+.content p {
     font-size: small;
 }
 </style>
@@ -30,4 +30,3 @@ export default {
     }
 };
 </script>
-  

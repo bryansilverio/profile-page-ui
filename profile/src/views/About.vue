@@ -6,14 +6,17 @@
             <div class="row">
                 <div class="col-md-5">
                     <p class="fh5co-lead animate-box" data-animate-effect="fadeInLeft">
-                        Bryan Silverio - Desarrollador Web
+                        Bryan Silverio
+                    </p>
+                    <p>
+                        Desarrollador de software
                     </p>
                     <div class="animate-box about" data-animate-effect="fadeInLeft" v-html="data.about"></div>
                 </div>
                 <div class="col-md-6 col-md-push-1 animate-box" data-animate-effect="fadeInLeft">
                     <img src="assets/images/about_hero.png" alt="about me" class="img-responsive" width="50%" />
                 </div>
-                <div class="col-md-12">
+                <div class="col-md-12" style="margin-top: 20px;">
                     <div class="animate-box description" data-animate-effect="fadeInLeft" v-html="data.description">
                     </div>
                 </div>

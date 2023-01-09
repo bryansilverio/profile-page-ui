@@ -4,11 +4,16 @@
     <aside id="fh5co-aside" role="complementary" class="border js-fullheight bg-menu" style="overflow: hidden;">
 
       <h1 id="fh5co-logo">
-        <a href="/">
-          <img src="assets/images/testimonial_person2.jpg" width="150" style="border-radius: 100px;"
-            alt="Free HTML5 Bootstrap Website Template">
+        <a href="/" class="navbar-brand" style="display: inline-block;">
+          <span class="logo-name">B</span>
+          <span class="logo-lastname">Silverio</span>
+          <!--
+        <img src="assets/images/testimonial_person2.jpg" width="150" style="border-radius: 100px;"
+          alt="Free HTML5 Bootstrap Website Template">
+          -->
         </a>
       </h1>
+      <br>
       <h4 class="fh5co-heading-orange text-center" style="color: white;">Bryan Silverio</h4>
       <ul class="fh5co-social">
         <li v-for="(v, i) in socialNetworkItems" :key="i">
@@ -54,9 +59,8 @@
       <div class="fh5co-footer" style="bottom:0px">
         <p>
           <small style="color: #fff;">
-            &copy; 2018 Nitro Free HTML5. All Rights Reserved.
-            <span>Designed by <a href="http://freehtml5.co/" target="_blank">FreeHTML5.co</a> </span>
-            <span>Distributed by: <a href="https://themewagon.com/" target="_blank">ThemeWagon</a></span>
+            &copy;. All Rights Reserved.
+            <span>Designed by <a href="#" target="_blank">b</a> </span>
           </small>
         </p>
       </div>
@@ -66,7 +70,29 @@
 </template>
 <style>
 .bg-menu {
-  background-color: #293651;
+  /**background-color: #293651;**/
+  background-color: #202225;
+}
+
+.navbar-brand {
+  display: inline-block;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  line-height: inherit;
+  white-space: nowrap;
+}
+
+.logo-name {
+  font-size: 2rem;
+  color: #ff5c35;
+  font-weight: bold;
+}
+
+.logo-lastname {
+  font-size: 1.5rem;
+  color: #ff5c35;
 }
 </style>
 <script lang="js">
@@ -141,4 +167,3 @@ export default {
   }
 };
 </script>
-  

@@ -14,7 +14,8 @@ body {
   font-size: 20px;
   line-height: 1.6;
   color: #fff;
-  background-color: #44495d;
+  /**background-color: #44495d;**/
+  background-color: #202225;
 }
 @media screen and (max-width: 992px) {
   body {
