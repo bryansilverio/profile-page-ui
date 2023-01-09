@@ -1,7 +1,7 @@
 <template>
     <div>
         <Loader v-show="showLoader" />
-        <TitlePage title="Proyectos" :showLoader="showLoader" />
+        <TitlePageParent title="Proyectos" :showLoader="showLoader" />
         <div class="cards" :style="marginTopContentPage">
             <div class="fh5co-narrow-content">
                 <ProjectItem :items="projects" @goToProjectDetails="goToProjectDetails" />
@@ -13,13 +13,13 @@
 <script>
 import Loader from '@/components/_Shared/Loader.vue'
 import constants from '@/common/constants.js'
-import TitlePage from '@/components/_Shared/TitlePage.vue'
+import TitlePageParent from '@/components/_Shared/TitlePageParent.vue'
 import ProjectItem from "@/components/_Shared/ProjectItem.vue";
 import projects_data from "@/data/projects.json";
 import workExperiences_data from "@/data/work-experiences.json";
 export default {
     name: "Projects",
-    components: { TitlePage, ProjectItem, Loader },
+    components: { TitlePageParent, ProjectItem, Loader },
     data() {
         return {
             showLoader: true,

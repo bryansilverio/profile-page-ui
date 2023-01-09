@@ -1,7 +1,7 @@
 <template>
     <div>
         <Loader v-show="showLoader" />
-        <TitlePage title="Sobre mí" :showLoader="showLoader" />
+        <TitlePageParent title="Sobre mí" :showLoader="showLoader" />
         <div class="fh5co-narrow-content" :style="marginTopContentPage">
             <div class="row">
                 <div class="col-md-5">
@@ -35,11 +35,11 @@
 <script>
 import Loader from '@/components/_Shared/Loader.vue'
 import constants from '@/common/constants.js'
-import TitlePage from '@/components/_Shared/TitlePage.vue'
+import TitlePageParent from '@/components/_Shared/TitlePageParent.vue'
 import about_data from "@/data/about.json";
 export default {
     name: "About",
-    components: { TitlePage, Loader },
+    components: { TitlePageParent, Loader },
     data() {
         return {
             showLoader: true,

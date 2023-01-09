@@ -1,7 +1,7 @@
 <template>
     <div>
         <Loader v-show="showLoader" />
-        <TitlePage title="Conocimientos" :showLoader="showLoader" />
+        <TitlePageParent title="Conocimientos" :showLoader="showLoader" />
         <div class="fh5co-narrow-content  animate-box" data-animate-effect="fadeInLeft" :style="marginTopContentPage">
             <div class="row">
                 <div class="col-md-12 mt-10">
@@ -29,13 +29,13 @@
 <script>
 import Loader from '@/components/_Shared/Loader.vue'
 import constants from '@/common/constants.js'
-import TitlePage from '@/components/_Shared/TitlePage.vue'
+import TitlePageParent from '@/components/_Shared/TitlePageParent.vue'
 import social_network_data from "@/data/social-network.json";
 import skills_data from "@/data/skills.json";
 import Skillitem from "@/components/_Shared/SkillItem.vue";
 export default {
     name: "About",
-    components: { TitlePage, Skillitem, Loader },
+    components: { TitlePageParent, Skillitem, Loader },
     data() {
         return {
             showLoader: true,

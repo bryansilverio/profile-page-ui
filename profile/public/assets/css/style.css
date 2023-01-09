@@ -14,7 +14,7 @@ body {
   font-size: 20px;
   line-height: 1.6;
   color: #fff;
-  background-color: #44495D;
+  background-color: #44495d;
 }
 @media screen and (max-width: 992px) {
   body {
@@ -23,7 +23,7 @@ body {
 }
 
 a {
-  color: #F85934;
+  color: #FBD065;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -31,7 +31,7 @@ a {
 a:hover,
 a:active,
 a:focus {
-  color: #F85934;
+  color: #FBD065;
   outline: none;
 }
 
@@ -59,17 +59,17 @@ figure {
 
 ::-webkit-selection {
   color: #fff;
-  background: #F85934;
+  background: #FBD065;
 }
 
 ::-moz-selection {
   color: #fff;
-  background: #F85934;
+  background: #FBD065;
 }
 
 ::selection {
   color: #fff;
-  background: #F85934;
+  background: #FBD065;
 }
 
 #fh5co-page {
@@ -149,7 +149,7 @@ figure {
   bottom: 7px;
   left: 10px;
   right: 10px;
-  background-color: #F85934;
+  background-color: #FBD065;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   -moz-transform: scaleX(0);
@@ -223,7 +223,7 @@ figure {
 #fh5co-aside .fh5co-footer ul li a:focus {
   text-decoration: none;
   outline: none;
-  color: #F85934;
+  color: #FBD065;
 }
 
 #fh5co-main {
@@ -332,7 +332,7 @@ body.offcanvas .fh5co-nav-toggle {
   color: #fff;
 }
 .work-pagination a:hover {
-  color: #F85934;
+  color: #FBD065;
   text-decoration: none;
 }
 @media screen and (max-width: 480px) {
@@ -347,7 +347,7 @@ body.offcanvas .fh5co-nav-toggle {
 
 .fh5co-testimonial {
   padding: 3em 0;
-  background: #F85934;
+  background: #FBD065;
 }
 @media screen and (max-width: 768px) {
   .fh5co-testimonial {
@@ -425,7 +425,7 @@ body.offcanvas .fh5co-nav-toggle {
 }
 
 .fh5co-heading-colored {
-  color: #F85934;
+  color: #FBD065;
 }
 
 .fh5co-cards {
@@ -486,7 +486,7 @@ body.offcanvas .fh5co-nav-toggle {
 
 .fh5co-counter .fh5co-number {
   font-size: 100px;
-  color: #F85934;
+  color: #FBD065;
   font-weight: 400;
   margin: 0;
   padding: 0;
@@ -556,14 +556,14 @@ body.offcanvas .fh5co-nav-toggle {
   }
 }
 .fh5co-social li a:hover {
-  color: #F85934;
+  color: #FBD065;
 }
 .fh5co-social li a:hover,
 .fh5co-social li a:active,
 .fh5co-social li a:focus {
   outline: none;
   text-decoration: none;
-  color: #F85934;
+  color: #FBD065;
 }
 
 #map {
@@ -593,7 +593,7 @@ body.offcanvas .fh5co-nav-toggle {
   margin-top: 5px;
 }
 .fh5co-feature .fh5co-icon i {
-  color: #F85934;
+  color: #FBD065;
   font-size: 70px;
 }
 @media screen and (max-width: 1200px) {
@@ -602,7 +602,7 @@ body.offcanvas .fh5co-nav-toggle {
   }
 }
 .fh5co-feature.fh5co-feature-sm .fh5co-icon i {
-  color: #F85934;
+  color: #FBD065;
   font-size: 28px;
 }
 @media screen and (max-width: 1200px) {
@@ -824,7 +824,7 @@ body.offcanvas .fh5co-nav-toggle {
 }
 .owl-theme .owl-dots .owl-dot span:hover {
   background: none;
-  border: 3px solid #F85934;
+  border: 3px solid #FBD065;
 }
 
 .owl-theme .owl-dots .owl-dot.active span,
@@ -866,9 +866,9 @@ body.offcanvas .fh5co-nav-toggle {
 }
 
 .btn-primary {
-  background: #F85934;
+  background: #FBD065;
   color: #fff;
-  border: 2px solid #F85934;
+  border: 2px solid #FBD065;
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -878,13 +878,13 @@ body.offcanvas .fh5co-nav-toggle {
 }
 .btn-primary.btn-outline {
   background: transparent;
-  color: #F85934;
-  border: 2px solid #F85934;
+  color: #FBD065;
+  border: 2px solid #FBD065;
 }
 .btn-primary.btn-outline:hover,
 .btn-primary.btn-outline:focus,
 .btn-primary.btn-outline:active {
-  background: #F85934;
+  background: #FBD065;
   color: #fff;
 }
 
@@ -1013,7 +1013,7 @@ body.offcanvas .fh5co-nav-toggle {
 .form-control:focus {
   outline: none;
   box-shadow: none;
-  border-color: #F85934;
+  border-color: #FBD065;
 }
 
 #message {
@@ -1182,10 +1182,14 @@ body.offcanvas .fh5co-nav-toggle {
 /**
 Title
 **/
+.fh5co-card-title-page-small {
+  height: 150px;
+  background: #8f2c15;
+}
 
 .fh5co-card-title-page {
   height: 285px;
-  background: #44495d;
+  background: #8f2c15;
 }
 .fh5co-card-title-page .fh5co-narrow-content .owl-carousel-fullwidth h2 {
   color: white;
@@ -1274,16 +1278,15 @@ Icons Title Page
   }
 }
 .fh5co-social-title-page li a:hover {
-  color: #F85934;
+  color: #FBD065;
 }
 .fh5co-social-title-page li a:hover,
 .fh5co-social-title-page li a:active,
 .fh5co-social-title-page li a:focus {
   outline: none;
   text-decoration: none;
-  color: #F85934;
+  color: #FBD065;
 }
-
 
 /**
 WorkExperience
@@ -1317,7 +1320,5 @@ hr {
   margin-top: 20px;
   margin-bottom: 20px;
   border: 0;
-  border-top: 1px solid #F85934;
+  border-top: 1px solid #FBD065;
 }
-
-
