@@ -1,7 +1,8 @@
 <template>
     <div>
-        <TitlePage title="Proyectos"/>
-        <div class="cards">
+        <Loader v-show="showLoader" />
+        <TitlePage title="Proyectos" :showLoader="showLoader" />
+        <div class="cards" :style="marginTopContentPage">
             <div class="fh5co-narrow-content">
                 <ProjectItem :items="projects" @goToProjectDetails="goToProjectDetails" />
             </div>
@@ -10,15 +11,27 @@
     </div>
 </template>
 <script>
+import Loader from '@/components/_Shared/Loader.vue'
+import constants from '@/common/constants.js'
 import TitlePage from '@/components/_Shared/TitlePage.vue'
 import ProjectItem from "@/components/_Shared/ProjectItem.vue";
 import projects_data from "@/data/projects.json";
 import workExperiences_data from "@/data/work-experiences.json";
 export default {
     name: "Projects",
-    components: { TitlePage, ProjectItem },
+    components: { TitlePage, ProjectItem, Loader },
+    data() {
+        return {
+            showLoader: true,
+            marginTopContentPage: `margin-top:${constants.marginTopContentPage}`
+        }
+    },
     created() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
+        let thix = this
+        setTimeout(function () {
+            thix.showLoader = false
+        }, constants.timeOutOverlay)
     },
     methods: {
         goToProjectDetails($id) {

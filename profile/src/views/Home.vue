@@ -36,6 +36,7 @@
 </template>
 <script>
 import Loader from '@/components/_Shared/Loader.vue'
+import constants from '@/common/constants.js'
 import HomeCardPageLink from '@/components/_Shared/HomeCardPageLink.vue'
 export default {
     name: "Home",
@@ -49,7 +50,7 @@ export default {
         let thix = this
         setTimeout(function () {
             thix.showLoader = false
-        }, 2000)
+        }, constants.timeOutOverlay)
     }
 };
 </script>

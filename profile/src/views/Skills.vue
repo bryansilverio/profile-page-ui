@@ -1,7 +1,8 @@
 <template>
     <div>
-        <TitlePage title="Conocimientos" />
-        <div class="fh5co-narrow-content  animate-box" data-animate-effect="fadeInLeft">
+        <Loader v-show="showLoader" />
+        <TitlePage title="Conocimientos" :showLoader="showLoader" />
+        <div class="fh5co-narrow-content  animate-box" data-animate-effect="fadeInLeft" :style="marginTopContentPage">
             <div class="row">
                 <div class="col-md-12 mt-10">
                     <Skillitem :items="frontendSkills" title="Frontend" />
@@ -26,15 +27,27 @@
 </style>
 
 <script>
+import Loader from '@/components/_Shared/Loader.vue'
+import constants from '@/common/constants.js'
 import TitlePage from '@/components/_Shared/TitlePage.vue'
 import social_network_data from "@/data/social-network.json";
 import skills_data from "@/data/skills.json";
 import Skillitem from "@/components/_Shared/SkillItem.vue";
 export default {
     name: "About",
-    components: { TitlePage, Skillitem },
+    components: { TitlePage, Skillitem, Loader },
+    data() {
+        return {
+            showLoader: true,
+            marginTopContentPage: `margin-top:${constants.marginTopContentPage}`
+        }
+    },
     created() {
         window.scrollTo({ top: 0, behavior: "smooth" });
+        let thix = this
+        setTimeout(function () {
+            thix.showLoader = false
+        }, constants.timeOutOverlay)
     },
     computed: {
         socialNetworkItems() {

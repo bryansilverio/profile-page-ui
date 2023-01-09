@@ -1,5 +1,5 @@
 <template>
-    <div class="fh5co-card-title-page">
+    <div class="fh5co-card-title-page header-page" :style="styleObj">
         <div class="fh5co-narrow-content">
             <div class="owl-carousel-fullwidth animate-box" data-animate-effect="fadeInLeft">
                 <div class="row">
@@ -24,6 +24,9 @@
         </div>
     </div>
 </template>
+<style>
+
+</style>
 <script>
 import social_network_data from "@/data/social-network.json";
 export default {
@@ -32,11 +35,27 @@ export default {
         title: {
             type: String,
             default: ''
+        },
+        showLoader: {
+            type: Boolean,
+            default: true
         }
     },
     computed: {
         socialNetworkItems() {
             return social_network_data;
+        },
+        styleObj() {
+            return {
+                position: 'fixed',
+                top: '0',
+                width: '100%',
+                padding: '15px 20px',
+                backgroundColor: '#333',
+                fontSize: '20px',
+                color: '#FFFFFF',
+                zIndex: this.showLoader ? '0' : '99'
+            };
         }
     }
 }

@@ -1,7 +1,7 @@
 <template>
 
     <div class="fh5co-narrow-content">
-
+        <Loader v-show="showLoader" />
         <div class="row work-pagination animate-box" data-animate-effect="fadeInLeft">
             <div class="col-md-12 text-start">
                 <a @click="goToBack()"><i class="icon-long-arrow-left"></i> <span>Previous Project</span></a>
@@ -27,7 +27,8 @@
                 <div class="col-md-12 text-start">
                     <hr class="nb nc nd am" aria-hidden="true">
                     <h3>Tecnologias</h3>
-                    <p class="badge badge-pill badge-secondary" v-for="(t, i) in projectDetails.technologies" :key="i" style="font-size: small;">
+                    <p class="badge badge-pill badge-secondary" v-for="(t, i) in projectDetails.technologies" :key="i"
+                        style="font-size: small;">
                         <i :class="t.icon" style="font-size:20px;"></i> {{ t.name }} - {{ t.type }}
                     </p>
                 </div>
@@ -52,14 +53,17 @@
 }
 </style>
 <script>
-
+import Loader from '@/components/_Shared/Loader.vue'
+import constants from '@/common/constants.js'
 import projects_data from "@/data/projects.json";
 export default {
     name: 'ProjectDetails',
+    components: { Loader },
     data() {
         return {
             projectDetails: {},
-            projectsRelationed: []
+            projectsRelationed: [],
+            showLoader: true
         }
     },
     methods: {
@@ -101,6 +105,11 @@ export default {
         window.scrollTo({ top: 0, behavior: 'smooth' });
         this.findProjectById(this.$route.params.id)
         this.findProjectRelationed();
+
+        let thix = this
+        setTimeout(function () {
+            thix.showLoader = false
+        }, constants.timeOutOverlay)
     },
     computed: {
         projects() {
