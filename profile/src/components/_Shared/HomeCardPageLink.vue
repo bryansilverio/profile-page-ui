@@ -6,7 +6,7 @@
             </div>
             <div class="fh5co-text">
                 <h3>{{ title }}</h3>
-                <p>{{ description }}</p>
+                <p style="font-size: small;">{{ description }}</p>
                 <p>
                     <button class="btn btn-md btn-primary" style="border-radius: 9999px;" @click="$route.push({ path: url })">
                         Learn More

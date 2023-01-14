@@ -5,8 +5,10 @@
 
       <h1 id="fh5co-logo">
         <a href="/" class="navbar-brand" style="display: inline-block;">
+          <!--
           <span class="logo-name">B</span>
-          <span class="logo-lastname">Silverio</span>
+          <span class="logo-lastname">Silverio</span>{{ title }}
+          -->
           <!--
         <img src="assets/images/testimonial_person2.jpg" width="150" style="border-radius: 100px;"
           alt="Free HTML5 Bootstrap Website Template">
@@ -14,7 +16,7 @@
         </a>
       </h1>
       <br>
-      <h4 class="fh5co-heading-orange text-center" style="color: white;">Bryan Silverio</h4>
+      <h4 class="fh5co-heading-orange text-center" style="color: white;">{{ title }}</h4>
       <ul class="fh5co-social">
         <li v-for="(v, i) in socialNetworkItems" :key="i">
           <a :href="v.url" target="_blank">
@@ -25,32 +27,34 @@
 
       <nav id="fh5co-main-menu" role="navigation">
         <ul>
-          <li :class="menuIsActive.home">
-            <a @click="goToPage('/')" style="color: #fff;cursor: pointer;">Inicio</a>
+          <li :class="menu.home.isActive">
+            <a @click="goToPage('/')" style="color: #fff;cursor: pointer;">
+              {{ menu.home.name }}
+            </a>
           </li>
-          <li :class="menuIsActive.about">
+          <li :class="menu.about.isActive">
             <a @click="goToPage('/about')" style="color: #fff;cursor: pointer;">
-              Sobre mi
+              {{ menu.about.name }}
             </a>
           </li>
-          <li :class="menuIsActive.skills">
+          <li :class="menu.skills.isActive">
             <a @click="goToPage('/skills')" style="color: #fff;cursor: pointer;">
-              Conocimientos
+              {{ menu.skills.name }}
             </a>
           </li>
-          <li :class="menuIsActive.projects">
+          <li :class="menu.experience.isActive">
             <a @click="goToPage('/work-experience')" style="color: #fff;cursor: pointer;">
-              Experiencia
+              {{ menu.experience.name }}
             </a>
           </li>
-          <li :class="menuIsActive.projects">
+          <li :class="menu.projects.isActive">
             <a @click="goToPage('/projects')" style="color: #fff;cursor: pointer;">
-              Proyectos
+              {{ menu.projects.name }}
             </a>
           </li>
-          <li :class="menuIsActive.contact">
+          <li :class="menu.contact.isActive">
             <a @click="goToPage('/contact')" style="color: #fff;cursor: pointer;">
-              Contacto
+              {{ menu.contact.name }}
             </a>
           </li>
         </ul>
@@ -96,6 +100,7 @@
 }
 </style>
 <script lang="js">
+import VueI18n from '@/translation/i18n'
 import menu_data from '@/data/menu.json'
 import social_network_data from '@/data/social-network.json'
 export default {
@@ -103,13 +108,32 @@ export default {
   data() {
     return {
       ISACTIVE: 'fh5co-active',
-      menuIsActive: {
-        home: '',
-        skills: '',
-        projects: '',
-        workExperience: '',
-        contact: '',
-        about: ''
+      title: VueI18n.tc('title'),
+      menu: {
+        home: {
+          name: VueI18n.tc('menu.home'),
+          isActive: ''
+        },
+        about: {
+          name: VueI18n.tc('menu.aboutMe'),
+          isActive: ''
+        },
+        skills: {
+          name: VueI18n.tc('menu.skills'),
+          isActive: ''
+        },
+        projects: {
+          name: VueI18n.tc('menu.projects'),
+          isActive: ''
+        },
+        experience: {
+          name: VueI18n.tc('menu.experience'),
+          isActive: ''
+        },
+        contact: {
+          name: VueI18n.tc('menu.contact'),
+          isActive: ''
+        }
       }
     }
   },
@@ -119,30 +143,30 @@ export default {
   methods: {
     goToPage(url) {
 
-      this.menuIsActive.home = ''
-      this.menuIsActive.about = ''
-      this.menuIsActive.skills = ''
-      this.menuIsActive.projects = ''
-      this.menuIsActive.workExperience = ''
-      this.menuIsActive.contact = ''
+      this.menu.home.isActive = ''
+      this.menu.about.isActive = ''
+      this.menu.skills.isActive = ''
+      this.menu.projects.isActive = ''
+      this.menu.experience.isActive = ''
+      this.menu.contact.isActive = ''
 
       if (url == '/') {
-        this.menuIsActive.home = this.ISACTIVE
+        this.menu.home.isActive = this.ISACTIVE
       }
       else if (url == '/about') {
-        this.menuIsActive.about = this.ISACTIVE
+        this.menu.about.isActive = this.ISACTIVE
       }
       else if (url == '/skills') {
-        this.menuIsActive.skills = this.ISACTIVE
+        this.menu.skills.isActive = this.ISACTIVE
       }
       else if (url == '/work-experience') {
-        this.menuIsActive.workExperience = this.ISACTIVE
+        this.menu.experience.isActive = this.ISACTIVE
       }
       else if (url == '/projects') {
-        this.menuIsActive.projects = this.ISACTIVE
+        this.menu.projects.isActive = this.ISACTIVE
       }
       else if (url == '/contact') {
-        this.menuIsActive.contact = this.ISACTIVE
+        this.menu.contact.isActive = this.ISACTIVE
       }
 
       this.$router.push(url).catch(error => {

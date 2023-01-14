@@ -1,17 +1,41 @@
 {
-  "title":"Desarrollo web",
+  "title":"Bryan Silverio",
+  "profile":"Desarrollador de software",
   "menu": {
-    "about": {
-      "title": "Sobre mí",
-      "href": "#about"
+    "home":"Inicio",
+    "aboutMe":"Sobre mí",
+    "skills":"Conocimientos",
+    "experience":"Experiencia",
+    "projects":"Proyectos",
+    "contact":"Contacto"
+  },
+  "pages":{
+    "home":{
+      "sections":{
+        "about":{
+          "name":"Sobre mí",
+          "description":"Una breve descripción sobre mí y mi posición actual como desarrollador."
+        },
+        "skills":{
+          "name":"Conocimientos",
+          "description":""
+        },
+        "experience":{
+          "name":"Experiencia",
+          "description":""
+        },
+        "projects":{
+          "name":"Proyectos",
+          "description":""
+        },
+        "contact":{
+          "name":"Contacto",
+          "description":""
+        }
+      }
     },
-    "projects": {
-      "title": "Proyectos",
-      "href": "#portfolio"
-    },
-    "contact": {
-      "title": "Contacto",
-      "href": "#contact"
+    "about":{
+
     }
   }
 }

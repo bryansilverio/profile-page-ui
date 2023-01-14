@@ -23,18 +23,23 @@
                     Do</span>
             </h2>
             <div class="row">
-                <HomeCardPageLink title="Sobre mí" icon="icon-user" description="Sobre mí" url="about-me" />
-                <HomeCardPageLink title="Conocimientos" icon="icon-code" description="Conocimientos" url="skills" />
-                <HomeCardPageLink title="Experiencia" icon="icon-apartment" description="Experiencia"
-                    url="experience" />
-                <HomeCardPageLink title="Proyectos" icon="icon-briefcase" description="Proyectos" url="projects" />
-                <HomeCardPageLink title="Contacto" icon="icon-comments" description="Contacto" url="contact" />
+                <HomeCardPageLink :title="pages.about.name" icon="icon-user" :description="pages.about.description"
+                    url="about-me" />
+                <HomeCardPageLink :title="pages.skills.name" icon="icon-code" :description="pages.skills.description"
+                    url="skills" />
+                <HomeCardPageLink :title="pages.experience.name" icon="icon-apartment"
+                    :description="pages.experience.description" url="experience" />
+                <HomeCardPageLink :title="pages.projects.name" icon="icon-briefcase"
+                    :description="pages.projects.description" url="projects" />
+                <HomeCardPageLink :title="pages.contact.name" icon="icon-comments"
+                    description="pages.contact.description" url="contact" />
             </div>
         </div>
 
     </div>
 </template>
 <script>
+import VueI18n from '@/translation/i18n'
 import Loader from '@/components/_Shared/Loader.vue'
 import constants from '@/common/constants.js'
 import HomeCardPageLink from '@/components/_Shared/HomeCardPageLink.vue'
@@ -43,7 +48,29 @@ export default {
     components: { Loader, HomeCardPageLink },
     data() {
         return {
-            showLoader: true
+            showLoader: true,
+            pages: {
+                about: {
+                    name: VueI18n.tc('pages.home.sections.about.name'),
+                    description: VueI18n.tc('pages.home.sections.about.description')
+                },
+                skills: {
+                    name: VueI18n.tc('pages.home.sections.skills.name'),
+                    description: VueI18n.tc('pages.home.sections.skills.description')
+                },
+                experience: {
+                    name: VueI18n.tc('pages.home.sections.experience.name'),
+                    description: VueI18n.tc('pages.home.sections.experience.description')
+                },
+                projects: {
+                    name: VueI18n.tc('pages.home.sections.projects.name'),
+                    description: VueI18n.tc('pages.home.sections.projects.description')
+                },
+                contact: {
+                    name: VueI18n.tc('pages.home.sections.contact.name'),
+                    description: VueI18n.tc('pages.home.sections.contact.description')
+                }
+            }
         }
     },
     created() {

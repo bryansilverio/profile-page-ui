@@ -1,17 +1,41 @@
 {
-  "title":"Web development",
+  "title":"Bryan Silverio",
+  "profile":"Software developer",
   "menu": {
-    "about": {
-      "title": "About",
-      "href": "#about"
+    "home":"Home",
+    "aboutMe":"About me",
+    "skills":"Skills",
+    "experience":"Experience",
+    "projects":"Projects",
+    "contact":"Contact"
+  },
+  "pages":{
+    "home":{
+      "sections":{
+        "about":{
+          "name":"About me",
+          "description":"A short description about me and mi last position as software developer."
+        },
+        "skills":{
+          "name":"Skills",
+          "description":""
+        },
+        "experience":{
+          "name":"Experience",
+          "description":""
+        },
+        "projects":{
+          "name":"Projects",
+          "description":""
+        },
+        "contact":{
+          "name":"Contact",
+          "description":""
+        }
+      }
     },
-    "projects": {
-      "title": "Projects",
-      "href": "#portfolio"
-    },
-    "contact": {
-      "title": "Contact",
-      "href": "#contact"
+    "about":{
+
     }
   }
 }
