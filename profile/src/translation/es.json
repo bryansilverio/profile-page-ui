@@ -48,9 +48,10 @@
       "backend": "Backend",
       "devtools": "DevTools"
     },
-    "experience": {}
-  },
-  "projectDetails": {
-    "otherProjects": "Otros proyectos"
+    "experience": {},
+    "projectDetails": {
+      "otherProjects": "Otros proyectos",
+      "technologies":"Tecnologias"
+    }
   }
 }

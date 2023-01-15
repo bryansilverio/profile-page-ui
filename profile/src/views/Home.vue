@@ -19,8 +19,7 @@
         </div>
 
         <div class="fh5co-narrow-content">
-            <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft">Proyectos <span>We Love To
-                    Do</span>
+            <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft">Más <span>información</span>
             </h2>
             <div class="row">
                 <HomeCardPageLink :title="pages.about.name" icon="icon-user" :description="pages.about.description"

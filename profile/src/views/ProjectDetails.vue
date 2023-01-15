@@ -15,34 +15,25 @@
                 <hr class="nb nc nd am" aria-hidden="true">
                 <div class="col-md-12 text-start">
                     <h3>{{ projectDetails.name }}</h3>
-
+                    <h5>
+                        {{ $url+ '/' + projectDetails.company.logo }}
+                        <img :src="$url + '/' + projectDetails.company.logo" width="50px" alt=""
+                            style="border-radius: 100%;">
+                        {{ projectDetails.company.name }}
+                    </h5>
                     <figure class="text-start">
-                        <img :src="projectDetails.image" alt="Free HTML5 Bootstrap" class="img-responsive">
+                        <img :src="$url + '/' + projectDetails.image" alt="Free HTML5 Bootstrap" class="img-responsive">
                     </figure>
 
                     <small>{{ projectDetails.type }} / {{ projectDetails.company.name }}</small>
-                    <p class="project-description" v-html="projectDetails.description"></p>
+                    <p class="project-description" v-html="projectDetails.description.long"></p>
                 </div>
             </div>
             <div class="col-md-4 animate-box" data-animate-effect="fadeInLeft">
 
-                <div class="col-md-12 text-start">
-                    <hr class="nb nc nd am" aria-hidden="true">
-                    <h3>Tecnologias</h3>
-                    <p class="badge badge-pill badge-secondary" v-for="(t, i) in projectDetails.technologies" :key="i"
-                        style="font-size: small;">
-                        <i :class="t.icon" style="font-size:20px;"></i> {{ t.name }} - {{ t.type }}
-                    </p>
-                </div>
+                <TechnologiesUsedInProject :items="projectDetails.technologies" />
 
-                <div class="col-md-12 text-start">
-                    <hr class="nb nc nd am" aria-hidden="true">
-                    <h3>{{ txtOtherProjects }}</h3>
-                    <ul>
-                        <li @click="onClickToProjectById(v.id)" v-for="(v, i) in projectsRelationed" :key="i"
-                            class="item-other-project">{{ v.name }}</li>
-                    </ul>
-                </div>
+                <ProjectsRelationed :items="projectsRelationed" @onClickToProjectById="onClickToProjectById" />
 
             </div>
         </div>
@@ -58,25 +49,44 @@
 <script>
 import VueI18n from '@/translation/i18n'
 import Loader from '@/components/_Shared/Loader.vue'
+import ProjectsRelationed from '@/components/_Shared/ProjectsRelationed.vue'
+import TechnologiesUsedInProject from '@/components/_Shared/TechnologiesUsedInProject.vue'
 import constants from '@/common/constants.js'
 import projects_data from "@/data/projects.json";
 export default {
     name: 'ProjectDetails',
-    components: { Loader },
+    components: { Loader, ProjectsRelationed, TechnologiesUsedInProject },
     data() {
         return {
             projectDetails: {},
             projectsRelationed: [],
             showLoader: true,
             btnBackToProjects: VueI18n.tc('buttons.goToBack'),
-            txtOtherProjects: VueI18n.tc('pages.projectDetails.otherProjects')
+
         }
     },
     methods: {
         findProjectById(id = '') {
             let findProject = this.projects.find(x => x.id == id);
             if (findProject) {
-                this.projectDetails = findProject;
+                findProject.image = this.$url + '/' + findProject.image
+                findProject.company.logo = this.$url + '/' + findProject.company.logo
+                this.projectDetails = {
+                    id: findProject.id,
+                    name: findProject.name,
+                    type: findProject.type,
+                    image: this.$url + '/' + findProject.image,
+                    company: {
+                        id: findProject.company.id,
+                        logo: this.$url + '/' + findProject.company.logo,
+                        name: findProject.company.name
+                    },
+                    description: {
+                        short: findProject.description.short,
+                        long: findProject.description.long
+                    },
+                    technologies: findProject.technologies
+                }
             }
             else {
                 this.$route.push({ path: '/404' })
@@ -107,28 +117,26 @@ export default {
             this.$router.push('/projects')
         },
         onClickToProjectById(projectId) {
+            this.showLoader = true
             this.findProjectById(projectId)
+            this.onShowLoader()
+        },
+        onShowLoader() {
+            let thix = this
+            setTimeout(function () {
+                thix.showLoader = false
+            }, constants.timeOutOverlay)
         }
     },
     created() {
+        this.onShowLoader()
         window.scrollTo({ top: 0, behavior: 'smooth' });
         this.findProjectById(this.$route.params.id)
         this.findProjectRelationed();
-
-        let thix = this
-        setTimeout(function () {
-            thix.showLoader = false
-        }, constants.timeOutOverlay)
     },
     computed: {
         projects() {
-            let thix = this
-            let collection = projects_data.map(function (el) {
-                el.image = thix.$url + '/' + el.image;
-                el.company.logo = thix.$url + '/' + el.company.logo
-                return el;
-            });
-            return collection
+            return projects_data
         }
     }
 }

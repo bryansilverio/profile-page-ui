@@ -29,31 +29,37 @@
         <ul>
           <li :class="menu.home.isActive">
             <a @click="goToPage('/')" style="color: #fff;cursor: pointer;">
+              <span :class="menu.home.icon"></span>
               {{ menu.home.name }}
             </a>
           </li>
           <li :class="menu.about.isActive">
             <a @click="goToPage('/about')" style="color: #fff;cursor: pointer;">
+              <span :class="menu.about.icon"></span>
               {{ menu.about.name }}
             </a>
           </li>
           <li :class="menu.skills.isActive">
             <a @click="goToPage('/skills')" style="color: #fff;cursor: pointer;">
+              <span :class="menu.skills.icon"></span>
               {{ menu.skills.name }}
             </a>
           </li>
           <li :class="menu.experience.isActive">
             <a @click="goToPage('/work-experience')" style="color: #fff;cursor: pointer;">
+              <span :class="menu.experience.icon"></span>
               {{ menu.experience.name }}
             </a>
           </li>
           <li :class="menu.projects.isActive">
             <a @click="goToPage('/projects')" style="color: #fff;cursor: pointer;">
+              <span :class="menu.projects.icon"></span>
               {{ menu.projects.name }}
             </a>
           </li>
           <li :class="menu.contact.isActive">
             <a @click="goToPage('/contact')" style="color: #fff;cursor: pointer;">
+              <span :class="menu.contact.icon"></span>
               {{ menu.contact.name }}
             </a>
           </li>
@@ -112,26 +118,32 @@ export default {
       menu: {
         home: {
           name: VueI18n.tc('menu.home'),
+          icon: 'icon-home',
           isActive: ''
         },
         about: {
           name: VueI18n.tc('menu.aboutMe'),
+          icon: 'icon-user',
           isActive: ''
         },
         skills: {
           name: VueI18n.tc('menu.skills'),
+          icon: 'icon-code',
           isActive: ''
         },
         projects: {
           name: VueI18n.tc('menu.projects'),
+          icon: 'icon-screen',
           isActive: ''
         },
         experience: {
           name: VueI18n.tc('menu.experience'),
+          icon: 'icon-briefcase',
           isActive: ''
         },
         contact: {
           name: VueI18n.tc('menu.contact'),
+          icon: 'icon-envelope',
           isActive: ''
         }
       }

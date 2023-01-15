@@ -1,6 +1,4 @@
 <template>
-
-
     <div class="fh5co-flex-wrap">
         <div class="fh5co-feature animate-box cards-experience-item" style="cursor: pointer;" v-for="(v, i) in items"
             :key="i" data-animate-effect="fadeInLeft">
@@ -8,20 +6,22 @@
             <div class="fh5co-text" style="float: none;">
                 <h3 class="title-project">{{ v.name }}</h3>
                 <span class="badge badge-pill badge-secondary">
+                    <img :src="v.company.logo" width="20px" alt="" style="border-radius: 100%;">
                     {{ v.company.name }}
                 </span>
                 <span> / </span>
                 <span class="badge badge-pill badge-secondary">
                     {{ v.type }}
                 </span>
-                <p v-html="v.content"></p>
+                <br>
                 <span class="badge badge-pill badge-secondary">
                     <ul class="fh5co-social">
                         <i v-for="(t, i) in v.technologies" :key="i" :class="t.icon"
-                            style="font-size:30px;margin-right:15px">
+                            style="font-size:20px;margin-right:10px">
                         </i>
                     </ul>
                 </span>
+                <div class="description" style="font-size: small;" v-html="v.description.short"></div>
                 <p style="margin-top: 20px;">
                     <button class="btn btn-md btn-primary mt-5" style="border-radius: 9999px;"
                         @click="onClickEvent(v.id)">
@@ -38,6 +38,9 @@
 .title-project {
     color: #fbd065;
     font-weight: bolder;
+}
+.description p{
+    margin-top: 10px;
 }
 </style>
 <script>
