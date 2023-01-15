@@ -24,15 +24,15 @@
             </h2>
             <div class="row">
                 <HomeCardPageLink :title="pages.about.name" icon="icon-user" :description="pages.about.description"
-                    url="about-me" />
+                    url="about" />
                 <HomeCardPageLink :title="pages.skills.name" icon="icon-code" :description="pages.skills.description"
                     url="skills" />
                 <HomeCardPageLink :title="pages.experience.name" icon="icon-apartment"
-                    :description="pages.experience.description" url="experience" />
+                    :description="pages.experience.description" url="work-experience" />
                 <HomeCardPageLink :title="pages.projects.name" icon="icon-briefcase"
                     :description="pages.projects.description" url="projects" />
                 <HomeCardPageLink :title="pages.contact.name" icon="icon-comments"
-                    description="pages.contact.description" url="contact" />
+                    :description="pages.contact.description" url="contact" />
             </div>
         </div>
 

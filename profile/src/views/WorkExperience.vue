@@ -1,7 +1,7 @@
 <template>
     <div>
         <Loader v-show="showLoader" />
-        <TitlePageParent title="Experiencia" :showLoader="showLoader"/>
+        <TitlePageParent :title="title" :showLoader="showLoader" />
         <div class="cards" :style="marginTopContentPage">
             <div class="fh5co-narrow-content">
                 <WorkExperienceItem :items="workExperiences" />
@@ -10,6 +10,7 @@
     </div>
 </template>
 <script>
+import VueI18n from '@/translation/i18n'
 import Loader from '@/components/_Shared/Loader.vue'
 import constants from '@/common/constants.js'
 import TitlePageParent from '@/components/_Shared/TitlePageParent.vue'
@@ -21,7 +22,8 @@ export default {
     data() {
         return {
             showLoader: true,
-            marginTopContentPage: `margin-top:${constants.marginTopContentPage}`
+            marginTopContentPage: `margin-top:${constants.marginTopContentPage}`,
+            title: VueI18n.tc('pages.home.sections.experience.name')
         }
     },
     created() {

@@ -8,7 +8,7 @@
                 <h3>{{ title }}</h3>
                 <p style="font-size: small;">{{ description }}</p>
                 <p>
-                    <button class="btn btn-md btn-primary" style="border-radius: 9999px;" @click="$route.push({ path: url })">
+                    <button class="btn btn-md btn-primary" style="border-radius: 9999px;" @click="onClick(url)">
                         Learn More
                     </button>
                 </p>
@@ -36,6 +36,11 @@ export default {
         url: {
             type: String,
             default: ''
+        }
+    },
+    methods: {
+        onClick(url) {
+            this.$router.push(url)
         }
     }
 }

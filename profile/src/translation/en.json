@@ -1,6 +1,9 @@
 {
   "title":"Bryan Silverio",
   "profile":"Software developer",
+  "buttons":{
+    "goToBack":"Back to projects"
+  },
   "menu": {
     "home":"Home",
     "aboutMe":"About me",
@@ -35,7 +38,21 @@
       }
     },
     "about":{
-
+      "description":{
+        "short":"I´m Bryan Silverio, software developer.",
+        "long":"Inicie mi carrera profesional en 2016 en el desarrollo de web, he participado en diferentes empresas donde he trabajado en diferentes proyectos de diferentes sectores. Actualmente me encuentro laborando en BBVA como desarrollador Java orientado a diseño y desarrollo de microservicios basados en REST, lo que me ha permitido mejorar y fortalecer conocimientos y habilidades. Durante mi trayectoria me he centrado en el desarrollo backend principalmente, y recientemente me he estado orientado al diseño y desarrollo de microservicios basados en REST. Tambien cuanto con habilidades en desarrollo frontend, principalmente en VueJs, pero como comento, me he enfocado mas al backend. Constantemente continuo capacitandome, en temas de arquitectura de proyecto, ya que tengo interes en poder desarrollar habilidades para poder diseñar y construir proyectos mantenibles."
+      }
+    },
+    "skills":{
+      "frontend":"Frontend",
+      "backend":"Backend",
+      "devtools":"DevTools"
+    },
+    "experience":{
+      
+    },
+    "projectDetails":{
+      "otherProjects":"Others projects"
     }
   }
 }

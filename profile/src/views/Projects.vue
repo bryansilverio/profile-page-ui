@@ -1,7 +1,7 @@
 <template>
     <div>
         <Loader v-show="showLoader" />
-        <TitlePageParent title="Proyectos" :showLoader="showLoader" />
+        <TitlePageParent :title="title" :showLoader="showLoader" />
         <div class="cards" :style="marginTopContentPage">
             <div class="fh5co-narrow-content">
                 <ProjectItem :items="projects" @goToProjectDetails="goToProjectDetails" />
@@ -11,19 +11,20 @@
     </div>
 </template>
 <script>
+import VueI18n from '@/translation/i18n'
 import Loader from '@/components/_Shared/Loader.vue'
 import constants from '@/common/constants.js'
 import TitlePageParent from '@/components/_Shared/TitlePageParent.vue'
 import ProjectItem from "@/components/_Shared/ProjectItem.vue";
 import projects_data from "@/data/projects.json";
-import workExperiences_data from "@/data/work-experiences.json";
 export default {
     name: "Projects",
     components: { TitlePageParent, ProjectItem, Loader },
     data() {
         return {
             showLoader: true,
-            marginTopContentPage: `margin-top:${constants.marginTopContentPage}`
+            marginTopContentPage: `margin-top:${constants.marginTopContentPage}`,
+            title: VueI18n.tc('pages.home.sections.projects.name')
         }
     },
     created() {
@@ -53,9 +54,6 @@ export default {
         }
     },
     computed: {
-        workExperiences() {
-            return workExperiences_data;
-        },
         projects() {
             return projects_data
         }

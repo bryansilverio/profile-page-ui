@@ -4,7 +4,9 @@
         <Loader v-show="showLoader" />
         <div class="row work-pagination animate-box" data-animate-effect="fadeInLeft">
             <div class="col-md-12 text-start">
-                <a @click="goToBack()"><i class="icon-long-arrow-left"></i> <span>Previous Project</span></a>
+                <a @click="onClickToBack()"><i class="icon-long-arrow-left"></i> <span>{{
+                    btnBackToProjects
+                }}</span></a>
             </div>
         </div>
 
@@ -35,9 +37,10 @@
 
                 <div class="col-md-12 text-start">
                     <hr class="nb nc nd am" aria-hidden="true">
-                    <h3>Otros proyectos</h3>
+                    <h3>{{ txtOtherProjects }}</h3>
                     <ul>
-                        <li v-for="(v, i) in projectsRelationed" :key="i" class="item-other-project">{{ v.name }}</li>
+                        <li @click="onClickToProjectById(v.id)" v-for="(v, i) in projectsRelationed" :key="i"
+                            class="item-other-project">{{ v.name }}</li>
                     </ul>
                 </div>
 
@@ -53,6 +56,7 @@
 }
 </style>
 <script>
+import VueI18n from '@/translation/i18n'
 import Loader from '@/components/_Shared/Loader.vue'
 import constants from '@/common/constants.js'
 import projects_data from "@/data/projects.json";
@@ -63,7 +67,9 @@ export default {
         return {
             projectDetails: {},
             projectsRelationed: [],
-            showLoader: true
+            showLoader: true,
+            btnBackToProjects: VueI18n.tc('buttons.goToBack'),
+            txtOtherProjects: VueI18n.tc('pages.projectDetails.otherProjects')
         }
     },
     methods: {
@@ -97,8 +103,11 @@ export default {
                 this.findProjectRelationed();
             }
         },
-        goToBack() {
-            this.$route.push({ path: '/projects' })
+        onClickToBack() {
+            this.$router.push('/projects')
+        },
+        onClickToProjectById(projectId) {
+            this.findProjectById(projectId)
         }
     },
     created() {

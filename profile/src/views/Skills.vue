@@ -1,17 +1,17 @@
 <template>
     <div>
         <Loader v-show="showLoader" />
-        <TitlePageParent title="Conocimientos" :showLoader="showLoader" />
+        <TitlePageParent :title="title" :showLoader="showLoader" />
         <div class="fh5co-narrow-content  animate-box" data-animate-effect="fadeInLeft" :style="marginTopContentPage">
             <div class="row">
                 <div class="col-md-12 mt-10">
-                    <Skillitem :items="frontendSkills" title="Frontend" />
+                    <Skillitem :items="frontendSkills" :title="frontend" />
                 </div>
                 <div class="col-md-12 mt-10">
-                    <Skillitem :items="backendSkills" title="Backend" />
+                    <Skillitem :items="backendSkills" :title="backend" />
                 </div>
                 <div class="col-md-12 mt-10">
-                    <Skillitem :items="devtoolsSkills" title="DevTools" />
+                    <Skillitem :items="devtoolsSkills" :title="devtools" />
                 </div>
             </div>
         </div>
@@ -27,6 +27,7 @@
 </style>
 
 <script>
+import VueI18n from '@/translation/i18n'
 import Loader from '@/components/_Shared/Loader.vue'
 import constants from '@/common/constants.js'
 import TitlePageParent from '@/components/_Shared/TitlePageParent.vue'
@@ -39,7 +40,11 @@ export default {
     data() {
         return {
             showLoader: true,
-            marginTopContentPage: `margin-top:${constants.marginTopContentPage}`
+            marginTopContentPage: `margin-top:${constants.marginTopContentPage}`,
+            title: VueI18n.tc('pages.home.sections.skills.name'),
+            frontend: VueI18n.tc('pages.skills.frontend'),
+            backend: VueI18n.tc('pages.skills.backend'),
+            devtools: VueI18n.tc('pages.skills.devtools')
         }
     },
     created() {
