@@ -2,7 +2,7 @@
 
     <div class="fh5co-narrow-content">
         <Loader v-show="showLoader" />
-        <div class="row work-pagination animate-box" data-animate-effect="fadeInLeft">
+        <div class="row animate-box" data-animate-effect="fadeInLeft">
             <div class="col-md-12 text-start">
                 <a @click="onClickToBack()"><i class="icon-long-arrow-left"></i> <span>{{
                     btnBackToProjects

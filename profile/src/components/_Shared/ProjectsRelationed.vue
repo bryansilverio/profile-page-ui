@@ -1,23 +1,26 @@
 <template>
-    <div class="col-md-12 text-start">
+    <div class="col-md-12 text-start alert">
         <hr class="nb nc nd am" aria-hidden="true">
         <h3>{{ txtOtherProjects }}</h3>
         <ul class="technologies">
             <li style="cursor: pointer;" @click="onClickToProjectById(v.id)" v-for="(v, i) in items" :key="i"
-                class="item-other-project">{{
-    v.name
-                }}</li>
+                class="item-other-project">{{ v.name }}
+            </li>
         </ul>
     </div>
 </template>
 <style>
+.alert {
+    background-color: #FF4A57;
+}
+
 .technologies li {
     padding-left: 1ch;
 }
 
 .technologies li::marker {
     content: "=>";
-    color: #FBD065;
+    color: #1F2235;
 }
 </style>
 <script>

@@ -14,7 +14,6 @@
                             <img class="image-heading-small" src="assets/images/testimonial_person2.jpg"
                                 alt="Free HTML5 Bootstrap Template">
                         </figure>
-
                     </div>
                     <div class="col-md-3">
                         <ul class="fh5co-social-title-page social-heading-small" style="text-align: center;">
@@ -72,7 +71,7 @@ export default {
                 top: '0',
                 width: '100%',
                 padding: '15px 20px',
-                backgroundColor: '#FBD065',
+                backgroundColor: '#FF4A57',
                 fontSize: '20px',
                 color: '#FFFFFF',
                 zIndex: '99'

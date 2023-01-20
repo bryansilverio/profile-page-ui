@@ -54,7 +54,7 @@ export default {
                 top: '0',
                 width: '100%',
                 padding: '15px 20px',
-                backgroundColor: '#FBD065',
+                backgroundColor: '#FF4A57',
                 fontSize: '20px',
                 color: '#FFFFFF',
                 zIndex: this.showLoader ? '0' : '99'

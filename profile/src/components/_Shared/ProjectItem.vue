@@ -36,7 +36,7 @@
 </template>
 <style>
 .title-project {
-    color: #fbd065;
+    color: #FF4A57;
     font-weight: bolder;
 }
 .description p{
