@@ -1,5 +1,37 @@
 <template>
-    <div class="fh5co-flex-wrap">
+    <div class="row">
+
+        <div class="col-md-6 card-project-item" style="cursor: pointer;max-height: 480px;" v-for="(v, i) in items"
+            :key="i">
+            <div class="row">
+                <div class="col-md-2">
+                    <img :src="v.image" width="50px" alt="" style="border-radius: 100%;" class="img-responsive">
+                </div>
+                <div class="col-md-10">
+                    <h3 class="title-project">{{ v.name }}</h3>
+                </div>
+            </div>
+            <small>
+                <img :src="v.company.logo" width="20px" alt="" style="border-radius: 100%;">
+                <span style="font-size: small;"> {{ v.company.name }} </span>
+            </small>
+            <br>
+            <small>
+                <span style="font-size: small;">{{ v.type }}</span>
+            </small>
+            <p class="description" style="font-size: small;" v-html="v.description.short"></p>
+            <span>
+                <ul class="fh5co-social">
+                    <i v-for="(t, i) in v.technologies" :key="i" :class="t.icon"
+                        style="font-size:20px;margin-right:10px">
+                    </i>
+                </ul>
+            </span>
+            <button class="btn btn-md btn-primary mt-5" style="border-radius: 9999px;" @click="onClickEvent(v.id)">
+                Ver más
+            </button>
+        </div>
+        <!--
         <div class="fh5co-feature animate-box cards-experience-item" style="cursor: pointer;" v-for="(v, i) in items"
             :key="i" data-animate-effect="fadeInLeft">
 
@@ -31,6 +63,7 @@
                 <hr class="nb nc nd am" aria-hidden="true">
             </div>
         </div>
+        -->
     </div>
 
 </template>
@@ -39,8 +72,14 @@
     color: #FF4A57;
     font-weight: bolder;
 }
-.description p{
+
+.description p {
     margin-top: 10px;
+}
+
+.card-project-item {
+    box-shadow: 0 1px 30px rgb(255 255 255 / 20%);
+    padding: 15px 30px;
 }
 </style>
 <script>

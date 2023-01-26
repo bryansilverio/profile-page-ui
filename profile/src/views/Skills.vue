@@ -5,10 +5,10 @@
         <div class="fh5co-narrow-content  animate-box" data-animate-effect="fadeInLeft" :style="marginTopContentPage">
             <div class="row">
                 <div class="col-md-12 mt-10">
-                    <Skillitem :items="frontendSkills" :title="frontend" />
+                    <Skillitem :items="backendSkills" :title="backend" />
                 </div>
                 <div class="col-md-12 mt-10">
-                    <Skillitem :items="backendSkills" :title="backend" />
+                    <Skillitem :items="frontendSkills" :title="frontend" />
                 </div>
                 <div class="col-md-12 mt-10">
                     <Skillitem :items="devtoolsSkills" :title="devtools" />
