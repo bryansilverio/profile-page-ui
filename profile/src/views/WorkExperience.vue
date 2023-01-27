@@ -1,7 +1,7 @@
 <template>
     <div>
         <Loader v-show="showLoader" />
-        <TitlePageParent :title="title" :showLoader="showLoader" />
+        <TitlePageSmall :title="title" :showLoader="showLoader" />
         <div class="cards" :style="marginTopContentPage">
             <div class="fh5co-narrow-content">
                 <WorkExperienceItem :items="workExperiences" />
@@ -13,12 +13,12 @@
 import VueI18n from '@/translation/i18n'
 import Loader from '@/components/_Shared/Loader.vue'
 import constants from '@/common/constants.js'
-import TitlePageParent from '@/components/_Shared/TitlePageParent.vue'
+import TitlePageSmall from '@/components/_Shared/TitlePageSmall.vue'
 import work_experiences_data from '@/data/work-experiences.json'
 import WorkExperienceItem from '@/components/_Shared/WorkExperienceItem.vue'
 export default {
     name: "WorkExperience",
-    components: { TitlePageParent, WorkExperienceItem, Loader },
+    components: { TitlePageSmall, WorkExperienceItem, Loader },
     data() {
         return {
             showLoader: true,

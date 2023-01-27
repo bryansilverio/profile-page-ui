@@ -1,8 +1,7 @@
 <template>
     <div class="row">
 
-        <div class="col-md-6 card-project-item" style="cursor: pointer;max-height: 480px;" v-for="(v, i) in items"
-            :key="i">
+        <div class="col-md-6 card-project-item" style="max-height: 480px;" v-for="(v, i) in items" :key="i">
             <div class="row">
                 <div class="col-md-2">
                     <img :src="v.image" width="50px" alt="" style="border-radius: 100%;" class="img-responsive">
@@ -11,6 +10,7 @@
                     <h3 class="title-project">{{ v.name }}</h3>
                 </div>
             </div>
+            <hr>
             <small>
                 <img :src="v.company.logo" width="20px" alt="" style="border-radius: 100%;">
                 <span style="font-size: small;"> {{ v.company.name }} </span>
@@ -27,7 +27,8 @@
                     </i>
                 </ul>
             </span>
-            <button class="btn btn-md btn-primary mt-5" style="border-radius: 9999px;" @click="onClickEvent(v.id)">
+            <button class="btn btn-md btn-primary mt-5" style="cursor: pointer;border-radius: 9999px;"
+                @click="onClickEvent(v.id)">
                 Ver más
             </button>
         </div>

@@ -3,92 +3,62 @@
 
         <Loader v-show="showLoader" />
 
-        <div class="fh5co-testimonial">
+        <div class="fh5co-testimonial" style="background-color: #1F2235;">
             <div class="fh5co-narrow-content">
-                <div class="owl-carousel-fullwidth animate-box" data-animate-effect="fadeInLeft">
-                    <div class="item">
-                        <figure>
-                            <img src="assets/images/testimonial_person2.jpg" alt="Free HTML5 Bootstrap Template">
-                        </figure>
-                        <p class="text-center dev-name">
+                <div class="owl-carousel-fullwidth animate-box">
+                    <div class="col-md-6 col-sm-12 col-xs-12">
+                        <h1 class="dev-name" style="font-size: 50px;">
                             Bryan Silverio
-                        </p>
+                        </h1>
+                        <strong class="banner-name">Desarrollador de Software / Desarrollador Web</strong>
+                        <p style="font-size: small;margin-top: 20px;">I'm a Web Developer with extensive experience for
+                            over 5 years. My expertise is to create and
+                            Websites design, graphic design and many more...</p>
+                        <SocialNetworkItem classCss="fh5co-social" />
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-xs-12">
+                        <div class="item">
+                            <figure>
+                                <img src="assets/images/testimonial_person2.jpg" alt="">
+                            </figure>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-
-        <div class="fh5co-narrow-content">
-            <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft">Más <span>información</span>
-            </h2>
-            <div class="row">
-                <HomeCardPageLink :title="pages.about.name" icon="icon-user" :description="pages.about.description"
-                    url="about" />
-                <HomeCardPageLink :title="pages.skills.name" icon="icon-code" :description="pages.skills.description"
-                    url="skills" />
-                <HomeCardPageLink :title="pages.experience.name" icon="icon-apartment"
-                    :description="pages.experience.description" url="work-experience" />
-                <HomeCardPageLink :title="pages.projects.name" icon="icon-briefcase"
-                    :description="pages.projects.description" url="projects" />
-                <HomeCardPageLink :title="pages.contact.name" icon="icon-comments"
-                    :description="pages.contact.description" url="contact" />
             </div>
         </div>
 
     </div>
 </template>
 <style>
-.dev-name p{
-    transform: translate(-50%,-50%);
+.dev-name p {
+    transform: translate(-50%, -50%);
 }
-.dev-name p:nth-child(1){
+
+.dev-name p:nth-child(1) {
     color: transparent;
     -webkit-text-stroke: 2px #03a9f4;
 
 }
-.dev-name p:nth-child(2) {
-  color: #03a9f4;
-  animation: animate 4s ease-in-out infinite;
-}
-@keyframes animate {
-  0%,
-  100% {
-    clip-path: polygon(
-      0% 45%,
-      16% 44%,
-      33% 50%,
-      54% 60%,
-      70% 61%,
-      84% 59%,
-      100% 52%,
-      100% 100%,
-      0% 100%
-    );
-  }
 
-  50% {
-    clip-path: polygon(
-      0% 60%,
-      15% 65%,
-      34% 66%,
-      51% 62%,
-      67% 50%,
-      84% 45%,
-      100% 46%,
-      100% 100%,
-      0% 100%
-    );
-  }
+.dev-name p:nth-child(2) {
+    color: #03a9f4;
+    animation: animate 4s ease-in-out infinite;
+}
+
+.banner-name {
+    text-transform: uppercase;
+    color: #ff4a57;
+    font-size: 15px;
 }
 </style>
 <script>
 import VueI18n from '@/translation/i18n'
 import Loader from '@/components/_Shared/Loader.vue'
 import constants from '@/common/constants.js'
-import HomeCardPageLink from '@/components/_Shared/HomeCardPageLink.vue'
+import SocialNetworkItem from '@/components/_Shared/SocialNetworkItem.vue'
 export default {
     name: "Home",
-    components: { Loader, HomeCardPageLink },
+    components: { Loader, SocialNetworkItem },
     data() {
         return {
             showLoader: true,

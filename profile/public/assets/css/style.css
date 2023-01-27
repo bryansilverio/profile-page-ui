@@ -372,7 +372,8 @@ body.offcanvas .fh5co-nav-toggle {
 }
 .fh5co-testimonial .item figure img {
   max-width: inherit;
-  width: 90px;
+  /*width: 90px;*/
+  width: 100%;
   margin: 0 auto;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -1190,7 +1191,7 @@ Title
 }
 
 .fh5co-card-title-page {
-  height: 285px;
+  height: 200px;
   background: #8f2c15;
 }
 .fh5co-card-title-page .fh5co-narrow-content .owl-carousel-fullwidth h2 {

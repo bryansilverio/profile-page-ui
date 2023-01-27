@@ -1,7 +1,7 @@
 <template>
     <div>
         <Loader v-show="showLoader" />
-        <TitlePageParent :title="title" :showLoader="showLoader" />
+        <TitlePageSmall :title="title" :showLoader="showLoader" />
         <div class="fh5co-narrow-content" :style="marginTopContentPage">
             <div class="row">
                 <div class="col-md-5">
@@ -39,10 +39,10 @@
 import VueI18n from '@/translation/i18n'
 import Loader from '@/components/_Shared/Loader.vue'
 import constants from '@/common/constants.js'
-import TitlePageParent from '@/components/_Shared/TitlePageParent.vue'
+import TitlePageSmall from '@/components/_Shared/TitlePageSmall.vue'
 export default {
     name: "About",
-    components: { TitlePageParent, Loader },
+    components: { TitlePageSmall, Loader },
     data() {
         return {
             showLoader: true,

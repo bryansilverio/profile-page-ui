@@ -17,13 +17,7 @@
       </h1>
       <br>
       <h4 class="fh5co-heading-orange text-center" style="color: white;">{{ title }}</h4>
-      <ul class="fh5co-social">
-        <li v-for="(v, i) in socialNetworkItems" :key="i">
-          <a :href="v.url" target="_blank">
-            <i :class="v.icon" style="color: #fff;"></i>
-          </a>
-        </li>
-      </ul>
+      <SocialNetworkItem classCss="fh5co-social" />
 
       <nav id="fh5co-main-menu" role="navigation">
         <ul>
@@ -109,9 +103,10 @@
 <script lang="js">
 import VueI18n from '@/translation/i18n'
 import menu_data from '@/data/menu.json'
-import social_network_data from '@/data/social-network.json'
+import SocialNetworkItem from '@/components/_Shared/SocialNetworkItem.vue'
 export default {
   name: "Menu",
+  components: { SocialNetworkItem },
   data() {
     return {
       ISACTIVE: 'fh5co-active',
@@ -197,9 +192,6 @@ export default {
   computed: {
     menuItems() {
       return menu_data
-    },
-    socialNetworkItems() {
-      return social_network_data
     }
   }
 };

@@ -3,26 +3,15 @@
         <div class="fh5co-narrow-content">
             <div class="owl-carousel-fullwidth animate-box" data-animate-effect="fadeInLeft">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6 col-sm-12 col-xs-12">
                         <h5 class="fh5co-heading-small">
-                            {{ title }} 
-                            <button class="btn btn-md btn-primary" style="border-radius: 9999px;">Learn More</button> 
+                            {{ title }}
                         </h5>
                     </div>
-                    <div class="item col-md-3">
+                    <div class="item col-md-6 col-sm-12 col-xs-12">
                         <figure>
-                            <img class="image-heading-small" src="assets/images/testimonial_person2.jpg"
-                                alt="Free HTML5 Bootstrap Template">
+                            <img class="image-heading-small" src="assets/images/testimonial_person2.jpg" alt="">
                         </figure>
-                    </div>
-                    <div class="col-md-3">
-                        <ul class="fh5co-social-title-page social-heading-small" style="text-align: center;">
-                            <li v-for="(v, i) in socialNetworkItems" :key="i" class="social-network-items text-center">
-                                <a :href="v.url" target="_blank">
-                                    <i :class="v.icon" style="color: white"></i>
-                                </a>
-                            </li>
-                        </ul>
                     </div>
                 </div>
             </div>
@@ -30,9 +19,19 @@
     </div>
 </template>
 <style>
-.fh5co-heading-small {
-    margin-top: -50px;
+@media only screen and (min-width: 768px) {
+  .fh5co-heading-small {
     font-size: 25px;
+  }
+  .image-heading-small {
+    margin-top: -30px;
+    width: 60px;
+    margin-left: 205px;
+}
+}
+.fh5co-heading-small {
+    margin-top: -30px;
+    font-size: 50px;
     margin-bottom: 1em;
 }
 
@@ -40,7 +39,8 @@
     margin-top: -86px;
     width: 100px;
     border-radius: 100px;
-    text-align: center;
+    text-align: end;
+    margin-left: 160px;
 }
 
 .social-heading-small {
@@ -48,7 +48,6 @@
 }
 </style>
 <script>
-import social_network_data from "@/data/social-network.json";
 export default {
     name: 'TitlePageSmall',
     props: {
@@ -62,9 +61,6 @@ export default {
         }
     },
     computed: {
-        socialNetworkItems() {
-            return social_network_data;
-        },
         styleObj() {
             return {
                 position: 'fixed',
@@ -74,7 +70,7 @@ export default {
                 backgroundColor: '#FF4A57',
                 fontSize: '20px',
                 color: '#FFFFFF',
-                zIndex: '99'
+                zIndex: this.showLoader ? '0' : '99'
             };
         }
     }
