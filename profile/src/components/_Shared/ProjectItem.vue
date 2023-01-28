@@ -79,7 +79,8 @@
 }
 
 .card-project-item {
-    box-shadow: 0 1px 30px rgb(255 255 255 / 20%);
+    /*box-shadow: 0 1px 30px rgb(255 255 255 / 20%);*/
+    box-shadow: 0 1px 10px;
     padding: 15px 30px;
 }
 </style>

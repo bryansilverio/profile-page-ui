@@ -5,7 +5,7 @@
                 <div class="row">
                     <div class="col-md-6 col-sm-12 col-xs-12">
                         <h5 class="fh5co-heading-small">
-                            {{ title }}
+                            <i :class="icon" style="font-size: 50px;"></i> {{ title }}
                         </h5>
                     </div>
                     <div class="item col-md-6 col-sm-12 col-xs-12">
@@ -20,17 +20,19 @@
 </template>
 <style>
 @media only screen and (min-width: 768px) {
-  .fh5co-heading-small {
-    font-size: 25px;
-  }
-  .image-heading-small {
-    margin-top: -30px;
-    width: 60px;
-    margin-left: 205px;
+    .fh5co-heading-small {
+        font-size: 25px;
+    }
+
+    .image-heading-small {
+        margin-top: -30px;
+        width: 60px;
+        margin-left: 205px;
+    }
 }
-}
+
 .fh5co-heading-small {
-    margin-top: -30px;
+    margin-top: -60px;
     font-size: 50px;
     margin-bottom: 1em;
 }
@@ -58,6 +60,10 @@ export default {
         showLoader: {
             type: Boolean,
             default: true
+        },
+        icon: {
+            type: String,
+            default: ''
         }
     },
     computed: {

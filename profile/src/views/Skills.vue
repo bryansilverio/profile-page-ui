@@ -1,7 +1,7 @@
 <template>
     <div>
         <Loader v-show="showLoader" />
-        <TitlePageSmall :title="title" :showLoader="showLoader" />
+        <TitlePageSmall :title="title" :showLoader="showLoader" icon="icon-code" />
         <div class="fh5co-narrow-content  animate-box" data-animate-effect="fadeInLeft" :style="marginTopContentPage">
             <div class="row">
                 <div class="col-md-12 mt-10">

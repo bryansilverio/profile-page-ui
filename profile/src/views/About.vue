@@ -1,7 +1,7 @@
 <template>
     <div>
         <Loader v-show="showLoader" />
-        <TitlePageSmall :title="title" :showLoader="showLoader" />
+        <TitlePageSmall :title="title" :showLoader="showLoader" icon="icon-user" />
         <div class="fh5co-narrow-content" :style="marginTopContentPage">
             <div class="row">
                 <div class="col-md-5">
