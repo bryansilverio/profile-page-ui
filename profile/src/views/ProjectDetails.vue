@@ -4,7 +4,7 @@
         <Loader v-show="showLoader" />
         <div class="row animate-box" data-animate-effect="fadeInLeft">
             <div class="col-md-12 text-start">
-                <a @click="onClickToBack()"><i class="icon-long-arrow-left"></i> <span>{{
+                <a @click="onClickToBack()" style="cursor:pointer"><i class="icon-long-arrow-left"></i> <span>{{
                     btnBackToProjects
                 }}</span></a>
             </div>

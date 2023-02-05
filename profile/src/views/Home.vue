@@ -8,12 +8,10 @@
                 <div class="owl-carousel-fullwidth animate-box">
                     <div class="col-md-6 col-sm-12 col-xs-12">
                         <h1 class="dev-name" style="font-size: 50px;">
-                            Bryan Silverio
+                            {{ title }}
                         </h1>
-                        <strong class="banner-name">Desarrollador de Software / Desarrollador Web</strong>
-                        <p style="font-size: small;margin-top: 20px;">I'm a Web Developer with extensive experience for
-                            over 5 years. My expertise is to create and
-                            Websites design, graphic design and many more...</p>
+                        <strong class="banner-name">{{ profile }}</strong>
+                        <p style="font-size: small;margin-top: 20px;">{{ resume }}</p>
                         <SocialNetworkItem classCss="fh5co-social" />
                     </div>
                     <div class="col-md-6 col-sm-12 col-xs-12">
@@ -62,6 +60,9 @@ export default {
     data() {
         return {
             showLoader: true,
+            resume: VueI18n.tc('resume'),
+            profile: VueI18n.tc('profile'),
+            title: VueI18n.tc('title'),
             pages: {
                 about: {
                     name: VueI18n.tc('pages.home.sections.about.name'),

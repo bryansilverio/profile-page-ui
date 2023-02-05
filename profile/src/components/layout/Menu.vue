@@ -110,6 +110,7 @@ export default {
   data() {
     return {
       ISACTIVE: 'fh5co-active',
+      TOGGLE_IS_ACTIVE:'active',
       title: VueI18n.tc('title'),
       menu: {
         home: {
@@ -176,6 +177,7 @@ export default {
       else if (url == '/contact') {
         this.menu.contact.isActive = this.ISACTIVE
       }
+      
 
       this.$router.push(url).catch(error => {
         if (

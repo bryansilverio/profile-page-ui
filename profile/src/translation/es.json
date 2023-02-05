@@ -1,6 +1,7 @@
 {
   "title": "Bryan Silverio",
   "profile": "Desarrollador de software",
+  "resume": "Soy un Desarrollador de Software/ Desarrollador Web. Tengo experiencia en la creación de sitios web, diseño y desarrollo de APIs REST, desarrollo backend y más...",
   "buttons": {
     "goToBack": "Regresar a proyectos"
   },
@@ -49,9 +50,14 @@
       "devtools": "DevTools"
     },
     "experience": {},
+    "projects":{
+      "labelCompany":"Empresa",
+      "labelPosition":"Posición",
+      "seeMore":"Ver más"
+    },
     "projectDetails": {
       "otherProjects": "Otros proyectos",
-      "technologies":"Tecnologias usadas"
+      "technologies": "Tecnologias usadas"
     }
   }
 }
