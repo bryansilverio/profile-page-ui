@@ -2,12 +2,22 @@
     <div class="col-md-12 animate-box fh5co-text" data-animate-effect="fadeInLeft" style="margin-bottom: 50px;">
         <h3 class="fh5co-heading-colored">{{ title }}</h3>
         <div class="service_icon row">
-            <div v-for="(v, i) in items" :key="i" class="col-md-2" style="margin: 20px;">
+            <div v-for="(v, i) in items" :key="i" class="col-md-2 techitem" style="margin: 20px; cursor:pointer">
                 <i :class="v.icon" style="font-size:80px;margin: 15px;"></i>
             </div>
         </div>
     </div>
 </template>
+<style>
+.service_icon{
+    padding: 10px;
+}
+
+.techitem:hover{
+    background-color: #fff;
+    border-radius: 5%;
+}
+</style>
 <script>
 export default {
     name: "Skillsitems",

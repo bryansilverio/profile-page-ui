@@ -4,7 +4,7 @@
         <div class="col-md-12 card-project-item" style="max-height: 480px;margin-top: 20px;" v-for="(v, i) in items"
             :key="i">
             <div class="row card-project-header">
-                <div class="col-md-1" style="padding-top: 20px;">
+                <div class="col-md-1" style="padding-top: 20px;" v-show="false">
                     <img :src="v.image" width="50px" alt="" style="border-radius: 100%;" class="img-responsive">
                 </div>
                 <div class="col-md-11" style="padding-top: 20px;">
@@ -22,7 +22,7 @@
                     <p class="description" style="font-size: small;" v-html="v.description.short"></p>
                 </div>
                 <div class="col-md-12">
-                    <ul class="fh5co-social">
+                    <ul class="fh5co-social" style="text-align: start;">
                         <i v-for="(t, i) in v.technologies" :key="i" :class="t.icon"
                             style="font-size:20px;margin-right:10px">
                         </i>

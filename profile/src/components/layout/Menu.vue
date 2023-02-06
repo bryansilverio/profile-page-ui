@@ -1,6 +1,6 @@
 <template>
   <div>
-    <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
+    <a href="#" :class="'js-fh5co-nav-toggle fh5co-nav-toggle '+TOGGLE_IS_ACTIVE" @click="onToggle()"><i></i></a>
     <aside id="fh5co-aside" role="complementary" class="border js-fullheight bg-menu" style="overflow: hidden;">
 
       <h1 id="fh5co-logo">
@@ -110,7 +110,7 @@ export default {
   data() {
     return {
       ISACTIVE: 'fh5co-active',
-      TOGGLE_IS_ACTIVE:'active',
+      TOGGLE_IS_ACTIVE: 'active',
       title: VueI18n.tc('title'),
       menu: {
         home: {
@@ -177,7 +177,8 @@ export default {
       else if (url == '/contact') {
         this.menu.contact.isActive = this.ISACTIVE
       }
-      
+
+      this.onToggle()
 
       this.$router.push(url).catch(error => {
         if (
@@ -189,6 +190,14 @@ export default {
           /* eslint-enable no-console */
         }
       })
+    },
+    onToggle(){
+      if(this.TOGGLE_IS_ACTIVE){
+        this.TOGGLE_IS_ACTIVE=''
+      }
+      else{
+        this.TOGGLE_IS_ACTIVE='active'
+      }
     }
   },
   computed: {

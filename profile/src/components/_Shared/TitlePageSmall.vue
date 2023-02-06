@@ -5,7 +5,7 @@
                 <div class="row">
                     <div class="col-md-6 col-sm-12 col-xs-12">
                         <h5 class="fh5co-heading-small">
-                            <i :class="icon" style="font-size: 50px;"></i> {{ title }}
+                            <i :class="icon"></i> {{ title }}
                         </h5>
                     </div>
                     <div class="item col-md-6 col-sm-12 col-xs-12">
@@ -19,34 +19,42 @@
     </div>
 </template>
 <style>
-@media only screen and (min-width: 768px) {
-    .fh5co-heading-small {
-        font-size: 25px;
-    }
-
-    .image-heading-small {
-        margin-top: -30px;
-        width: 60px;
-        margin-left: 205px;
-    }
-}
-
 .fh5co-heading-small {
-    margin-top: -60px;
+    margin-top: -50px;
     font-size: 50px;
     margin-bottom: 1em;
 }
 
 .image-heading-small {
     margin-top: -86px;
-    width: 100px;
+    width: 70px;
     border-radius: 100px;
     text-align: end;
-    margin-left: 160px;
+    margin-left: 190px;
 }
 
 .social-heading-small {
     margin-top: -50px;
+}
+
+.fh5co-heading-small i {
+    font-size: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+    .fh5co-heading-small {
+        margin-top: -10px;
+        font-size: 23px;
+        margin-bottom: 1em;
+    }
+
+    .image-heading-small {
+        margin-top: -130px;
+    }
+
+    .fh5co-heading-small i {
+        font-size: 30px;
+    }
 }
 </style>
 <script>
