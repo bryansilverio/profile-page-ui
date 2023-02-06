@@ -1,7 +1,6 @@
 <template>
     <div class="col-md-12 text-start alert">
-        <hr class="nb nc nd am" aria-hidden="true">
-        <h3>{{ txtOtherProjects }}</h3>
+        <h4>{{ txtOtherProjects }}</h4>
         <ul class="technologies">
             <li style="cursor: pointer;" @click="onClickToProjectById(v.id)" v-for="(v, i) in items" :key="i"
                 class="item-other-project">{{ v.name }}

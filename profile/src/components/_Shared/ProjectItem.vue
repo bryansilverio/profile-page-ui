@@ -1,8 +1,8 @@
 <template>
     <div class="row">
 
-        <div class="col-md-12 card-project-item" style="max-height: 480px;margin-top: 20px;" v-for="(v, i) in items"
-            :key="i">
+        <div class="col-md-12 card-project-item zoom" style="max-height: 480px;margin-top: 20px;border-radius: 10px;"
+            v-for="(v, i) in items" :key="i">
             <div class="row card-project-header">
                 <div class="col-md-1" style="padding-top: 20px;" v-show="false">
                     <img :src="v.image" width="50px" alt="" style="border-radius: 100%;" class="img-responsive">
@@ -44,39 +44,6 @@
                 </div>
             </div>
         </div>
-        <!--
-        <div class="fh5co-feature animate-box cards-experience-item" style="cursor: pointer;" v-for="(v, i) in items"
-            :key="i" data-animate-effect="fadeInLeft">
-
-            <div class="fh5co-text" style="float: none;">
-                <h3 class="title-project">{{ v.name }}</h3>
-                <span class="badge badge-pill badge-secondary">
-                    <img :src="v.company.logo" width="20px" alt="" style="border-radius: 100%;">
-                    {{ v.company.name }}
-                </span>
-                <span> / </span>
-                <span class="badge badge-pill badge-secondary">
-                    {{ v.type }}
-                </span>
-                <br>
-                <span class="badge badge-pill badge-secondary">
-                    <ul class="fh5co-social">
-                        <i v-for="(t, i) in v.technologies" :key="i" :class="t.icon"
-                            style="font-size:20px;margin-right:10px">
-                        </i>
-                    </ul>
-                </span>
-                <div class="description" style="font-size: small;" v-html="v.description.short"></div>
-                <p style="margin-top: 20px;">
-                    <button class="btn btn-md btn-primary mt-5" style="border-radius: 9999px;"
-                        @click="onClickEvent(v.id)">
-                        Learn More
-                    </button>
-                </p>
-                <hr class="nb nc nd am" aria-hidden="true">
-            </div>
-        </div>
-        -->
     </div>
 
 </template>
@@ -92,6 +59,7 @@
     margin-left: -30px;
     margin-top: -15px;
     margin-bottom: -15px;
+    border-radius: 10px;
 }
 
 .description p {
@@ -102,6 +70,14 @@
     /*box-shadow: 0 1px 30px rgb(255 255 255 / 20%);*/
     box-shadow: 0 1px 10px;
     padding: 15px 30px;
+}
+
+.zoom {
+    transition: transform .2s;
+}
+
+.zoom:hover {
+    transform: scale(1.1);
 }
 </style>
 <script>

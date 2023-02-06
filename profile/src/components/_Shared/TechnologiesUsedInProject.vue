@@ -1,14 +1,17 @@
 <template>
     <div class="col-md-12 text-start alert">
-        <hr class="nb nc nd am" aria-hidden="true">
-        <h3>{{ txtTechnology }}</h3>
-        <p class="badge badge-pill badge-secondary" v-for="(t, i) in items" :key="i" style="font-size: small;">
-            <i :class="t.icon" style="font-size:20px;"></i> {{ t.name }} - {{ t.type }}
-        </p>
+        <h4>{{ txtTechnology }}</h4>
+        <div class="row">
+            <div class="col-md-12" v-for="(t, i) in items" :key="i">
+                <span class="badge badge-pill badge-secondary" style="font-size: small;">
+                    <i :class="t.icon" style="font-size:20px;"></i> {{ t.name }} - {{ t.type }}
+                </span>
+            </div>
+        </div>
     </div>
 </template>
 <style>
-.alert{
+.alert {
     background-color: #FF4A57;
 }
 </style>

@@ -14,27 +14,27 @@
             <div class="col-md-8 animate-box" data-animate-effect="fadeInLeft">
                 <hr class="nb nc nd am" aria-hidden="true">
                 <div class="col-md-12 text-start">
-                    <h3>{{ projectDetails.name }}</h3>
+                    <h3>
+                        {{ projectDetails.name }}
+                    </h3>
                     <h5>
-                        {{ $url+ '/' + projectDetails.company.logo }}
-                        <img :src="$url + '/' + projectDetails.company.logo" width="50px" alt=""
-                            style="border-radius: 100%;">
+                        <span style="font-weight: bold;color:#FF4A57">{{ company }}: </span>
                         {{ projectDetails.company.name }}
                     </h5>
-                    <figure class="text-start">
+                    <h5>
+                        <span style="font-weight: bold;color:#FF4A57">{{ position }}: </span>
+                        {{ projectDetails.type }}
+                    </h5>
+                    <figure class="text-start" v-show="false">
                         <img :src="$url + '/' + projectDetails.image" alt="Free HTML5 Bootstrap" class="img-responsive">
                     </figure>
-
-                    <small>{{ projectDetails.type }} / {{ projectDetails.company.name }}</small>
+                    <h5 style="font-weight: bold;color:#FF4A57">Descripción: </h5>
                     <p class="project-description" v-html="projectDetails.description.long"></p>
                 </div>
             </div>
             <div class="col-md-4 animate-box" data-animate-effect="fadeInLeft">
-
                 <TechnologiesUsedInProject :items="projectDetails.technologies" />
-
                 <ProjectsRelationed :items="projectsRelationed" @onClickToProjectById="onClickToProjectById" />
-
             </div>
         </div>
 
@@ -62,6 +62,8 @@ export default {
             projectsRelationed: [],
             showLoader: true,
             btnBackToProjects: VueI18n.tc('buttons.goToBack'),
+            company: VueI18n.tc('pages.projects.labelCompany'),
+            position: VueI18n.tc('pages.projects.labelPosition')
 
         }
     },
