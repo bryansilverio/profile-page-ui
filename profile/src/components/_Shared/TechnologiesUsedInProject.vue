@@ -12,7 +12,7 @@
 </template>
 <style>
 .alert {
-    background-color: #FF4A57;
+    background-color: #525FFF;
 }
 </style>
 <script>

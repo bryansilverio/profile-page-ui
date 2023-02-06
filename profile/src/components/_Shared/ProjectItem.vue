@@ -37,7 +37,7 @@
                     </small>
                 </div>
                 <div class="col-md-12" style="margin-top: 10px;">
-                    <button class="btn btn-md btn-primary mt-5" style="cursor: pointer;border-radius: 9999px;"
+                    <button class="btn btn-md btn-primary mt-5 btn-see-more" style="cursor: pointer;border-radius: 9999px;"
                         @click="onClickEvent(v.id)">
                         {{ seeMore }}
                     </button>
@@ -78,6 +78,13 @@
 
 .zoom:hover {
     transform: scale(1.1);
+}
+.btn-see-more{
+    background-color: #525FFF;
+    border-color: #525FFF;
+}
+.btn-see-more:hover{
+    background-color: #525FFF;
 }
 </style>
 <script>
