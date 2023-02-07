@@ -1,6 +1,6 @@
 <template>
   <div>
-    <a href="#" :class="'js-fh5co-nav-toggle fh5co-nav-toggle '+TOGGLE_IS_ACTIVE" @click="onToggle()"><i></i></a>
+    <a href="#" :class="'js-fh5co-nav-toggle fh5co-nav-toggle ' + TOGGLE_IS_ACTIVE" @click="onToggle()"><i></i></a>
     <aside id="fh5co-aside" role="complementary" class="border js-fullheight bg-menu" style="overflow: hidden;">
 
       <h1 id="fh5co-logo">
@@ -63,8 +63,7 @@
       <div class="fh5co-footer" style="bottom:0px">
         <p>
           <small style="color: #fff;">
-            &copy;. All Rights Reserved.
-            <span>Designed by <a href="#" target="_blank">b</a> </span>
+            &copy;. {{ new Date().getFullYear() }} <span>Bryan Silverio</span>
           </small>
         </p>
       </div>
@@ -191,12 +190,12 @@ export default {
         }
       })
     },
-    onToggle(){
-      if(this.TOGGLE_IS_ACTIVE){
-        this.TOGGLE_IS_ACTIVE=''
+    onToggle() {
+      if (this.TOGGLE_IS_ACTIVE) {
+        this.TOGGLE_IS_ACTIVE = ''
       }
-      else{
-        this.TOGGLE_IS_ACTIVE='active'
+      else {
+        this.TOGGLE_IS_ACTIVE = 'active'
       }
     }
   },

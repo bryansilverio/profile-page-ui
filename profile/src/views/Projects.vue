@@ -3,13 +3,20 @@
         <Loader v-show="showLoader" />
         <TitlePageSmall :title="title" :showLoader="showLoader" />
         <div class="cards" :style="marginTopContentPage">
-            <div class="fh5co-narrow-content">
+            <div class="project-content">
                 <ProjectItem :items="projects" @goToProjectDetails="goToProjectDetails" />
             </div>
         </div>
-
     </div>
 </template>
+<style>
+.project-content {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    padding: 4em 0;
+}
+</style>
 <script>
 import VueI18n from '@/translation/i18n'
 import Loader from '@/components/_Shared/Loader.vue'
