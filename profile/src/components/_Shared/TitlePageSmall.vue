@@ -20,7 +20,7 @@
 </template>
 <style>
 .fh5co-heading-small {
-    margin-top: -50px;
+    margin-top: -70px;
     font-size: 50px;
     margin-bottom: 1em;
 }
