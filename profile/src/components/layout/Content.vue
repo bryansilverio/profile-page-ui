@@ -1,5 +1,5 @@
 <template>
-  <div id="fh5co-main">
+  <div>
     <router-view />
   </div>
 </template>

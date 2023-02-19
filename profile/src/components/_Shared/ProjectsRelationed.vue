@@ -1,45 +1,24 @@
 <template>
-    <div class="col-md-12 text-start alert">
-        <h4>{{ txtOtherProjects }}</h4>
-        <ul class="technologies">
-            <li style="cursor: pointer;" @click="onClickToProjectById(v.id)" v-for="(v, i) in items" :key="i"
-                class="item-other-project">{{ v.name }}
-            </li>
-        </ul>
+	<div class="sidebar-box">
+      <h3 class="heading-sidebar">Recent Blog</h3>
+      <div class="block-21 mb-4 d-flex" v-for="(v,i) in projectsRelationed" :key="i" @click="onClickToProjectById(v.id)">
+        <a class="blog-img mr-4" style="background-image: url(images/image_1.jpg);"></a>
+        <div class="text">
+          <h3 class="heading"><a>{{v.name}}</a></h3>
+          <div class="meta">
+            <div><a href="#"><span class="icon-person">{{v.company.name}}</span> </a></div>
+          </div>
+        </div>
+      </div>
     </div>
 </template>
-<style>
-.alert {
-    background-color: #FF4A57;
-}
-
-.technologies li {
-    padding-left: 1ch;
-}
-
-.technologies li::marker {
-    content: "=>";
-    color: #1F2235;
-}
-</style>
 <script>
-import VueI18n from '@/translation/i18n'
-export default {
-    name: 'ProjectsRelationed',
-    data() {
-        return {
-            txtOtherProjects: VueI18n.tc('pages.projectDetails.otherProjects')
-        }
-    },
-    props: {
-        items: {
-            type: Array
-        }
-    },
-    methods: {
-        onClickToProjectById(id) {
-            this.$emit("onClickToProjectById", id)
-        }
-    }
+export default{
+	name:'ProjectsRelationed',
+	props:{
+		projectsRelationed:{
+			type: Array
+		}
+	}
 }
 </script>

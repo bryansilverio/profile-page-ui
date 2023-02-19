@@ -1,5 +1,5 @@
 <template>
-  <div id="fh5co-page">
+  <div>
     <Menu />
     <router-view />
   </div>
@@ -10,6 +10,9 @@
 import Menu from '@/components/layout/Menu.vue'
 export default {
   name: "App",
-  components: { Menu }
+  components: { Menu },
+  created(){
+  window.scrollTo({ top: 0, behavior: "smooth" });
+  }
 };
 </script>

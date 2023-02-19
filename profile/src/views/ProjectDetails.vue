@@ -1,66 +1,81 @@
 <template>
 
-    <div class="fh5co-narrow-content">
-        <Loader v-show="showLoader" />
-        <div class="row animate-box" data-animate-effect="fadeInLeft">
-            <div class="col-md-12 text-start">
-                <a @click="onClickToBack()" style="cursor:pointer"><i class="icon-long-arrow-left"></i> <span>{{
-                    btnBackToProjects
-                }}</span></a>
+    <div>
+        <section class="hero-wrap js-fullheight" style="background-image: url('assets/images/bg_1.jpg');" data-stellar-background-ratio="0.5">
+          <div class="container">
+            <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-center">
+              <div class="col-md-12 pb-5 mb-3 text-center" style="margin-top: 20%;">
+                <h2 class="mb-3 bread">{{projectDetails.name}}</h2>
+                <p class="breadcrumbs">
+                    <span class="mr-2">
+                        <a @click="onClickToBack('/')">
+                            Home <i class="ion-ios-arrow-forward"></i>
+                        </a>
+                    </span> 
+                    <span class="mr-2">
+                        <a @click="onClickToBack('/#projects-section')">
+                            Proyectos <i class="ion-ios-arrow-forward"></i>
+                        </a>
+                    </span> 
+                    <span>
+                        {{projectDetails.name}} <i class="ion-ios-arrow-forward"></i>
+                    </span>
+                </p>
+              </div>
             </div>
-        </div>
+          </div>
+        </section>
 
-        <div class="row">
-            <div class="col-md-8 animate-box" data-animate-effect="fadeInLeft">
-                <hr class="nb nc nd am" aria-hidden="true">
-                <div class="col-md-12 text-start">
-                    <h3>
-                        {{ projectDetails.name }}
-                    </h3>
-                    <h5>
-                        <span style="font-weight: bold;color:#FF4A57">{{ company }}: </span>
-                        {{ projectDetails.company.name }}
-                    </h5>
-                    <h5>
-                        <span style="font-weight: bold;color:#FF4A57">{{ position }}: </span>
-                        {{ projectDetails.type }}
-                    </h5>
-                    <figure class="text-start" v-show="false">
-                        <img :src="$url + '/' + projectDetails.image" alt="Free HTML5 Bootstrap" class="img-responsive">
-                    </figure>
-                    <h5 style="font-weight: bold;color:#FF4A57">Descripción: </h5>
-                    <p class="project-description" v-html="projectDetails.description.long"></p>
+        <section class="ftco-section">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 ">
+                <p v-html="projectDetails.description.long"></p>
+                <div class="tag-widget post-tag-container mb-5 mt-5">
+                  <div class="tagcloud">
+                    <a class="tag-cloud-link" v-for="(v,i) in projectDetails.technologies" :key="i">{{v.name}}</a>
+                  </div>
                 </div>
+                
+                <div class="about-author d-flex p-4 bg-dark">
+                  <div class="bio mr-5">
+                    <img src="images/person_1.jpg" alt="Image placeholder" class="img-fluid mb-4">
+                  </div>
+                  <div class="desc">
+                    <h3>Proyecto desarrollado en:</h3>
+                    <p>Empresa: {{projectDetails.company.name}}</p>
+                    <p>Área: {{projectDetails.area}}</p>
+                    <p>Posición: {{projectDetails.position}}</p>
+                    <template v-if="projectDetails.employeeType.id=='CONTRACTOR'">
+                        <p>Asignado a: {{projectDetails.employeeType.companyAssigned.name}}</p>
+                    </template>
+                  </div>
+                </div>
+
+              </div> <!-- .col-md-8 -->
+              
+              <ProjectItemSidebar 
+                :projectsRelationed="projectsRelationed"
+                @onClickToProjectById="onClickToProjectById" />
+
             </div>
-            <div class="col-md-4 animate-box" data-animate-effect="fadeInLeft">
-                <TechnologiesUsedInProject :items="projectDetails.technologies" />
-                <ProjectsRelationed :items="projectsRelationed" @onClickToProjectById="onClickToProjectById" />
-            </div>
-        </div>
+          </div>
+        </section> <!-- .section -->
 
     </div>
+   
 </template>
-<style>
-.project-description,
-.item-other-project {
-    font-size: small;
-}
-</style>
 <script>
 import VueI18n from '@/translation/i18n'
-import Loader from '@/components/_Shared/Loader.vue'
-import ProjectsRelationed from '@/components/_Shared/ProjectsRelationed.vue'
-import TechnologiesUsedInProject from '@/components/_Shared/TechnologiesUsedInProject.vue'
-import constants from '@/common/constants.js'
+import ProjectItemSidebar from '@/components/_Shared/ProjectItemSidebar.vue'
 import projects_data from "@/data/projects.json";
 export default {
     name: 'ProjectDetails',
-    components: { Loader, ProjectsRelationed, TechnologiesUsedInProject },
+    components: { ProjectItemSidebar },
     data() {
         return {
             projectDetails: {},
-            projectsRelationed: [],
-            showLoader: true,
+            projectsRelationed:[],
             btnBackToProjects: VueI18n.tc('buttons.goToBack'),
             company: VueI18n.tc('pages.projects.labelCompany'),
             position: VueI18n.tc('pages.projects.labelPosition')
@@ -73,68 +88,28 @@ export default {
             if (findProject) {
                 findProject.image = this.$url + '/' + findProject.image
                 findProject.company.logo = this.$url + '/' + findProject.company.logo
-                this.projectDetails = {
-                    id: findProject.id,
-                    name: findProject.name,
-                    type: findProject.type,
-                    image: this.$url + '/' + findProject.image,
-                    company: {
-                        id: findProject.company.id,
-                        logo: this.$url + '/' + findProject.company.logo,
-                        name: findProject.company.name
-                    },
-                    description: {
-                        short: findProject.description.short,
-                        long: findProject.description.long
-                    },
-                    technologies: findProject.technologies
-                }
+                this.projectDetails = findProject;
+                this.findProjectRelationed()
             }
             else {
                 this.$route.push({ path: '/404' })
             }
         },
+        onClickToBack($url) {
+            this.$router.push($url)
+        },
+        onClickToProjectById($id){
+            this.$router.push('/projects/'+$id)
+            this.findProjectById($id)
+        },
         findProjectRelationed() {
             this.projectsRelationed = this.projects.filter(
-                e => e.id != this.projectDetails.id);
+                e => e.id != this.projectId && e.company.id == this.projectDetails.company.id);
         },
-        goToProjectDetails(id = '') {
-            this.$router.push('/projects/' + id).catch(error => {
-                if (
-                    error.name !== 'NavigationDuplicated' &&
-                    !error.message.includes('Avoided redundant navigation to current location')
-                ) {
-                    /* eslint-disable no-console */
-                    console.log(error)
-                    /* eslint-enable no-console */
-                }
-            })
-            let changeProject = this.projects.find(e => e.id == id);
-            if (changeProject) {
-                this.projectDetails = changeProject;
-                this.findProjectRelationed();
-            }
-        },
-        onClickToBack() {
-            this.$router.push('/projects')
-        },
-        onClickToProjectById(projectId) {
-            this.showLoader = true
-            this.findProjectById(projectId)
-            this.onShowLoader()
-        },
-        onShowLoader() {
-            let thix = this
-            setTimeout(function () {
-                thix.showLoader = false
-            }, constants.timeOutOverlay)
-        }
     },
     created() {
-        this.onShowLoader()
         window.scrollTo({ top: 0, behavior: 'smooth' });
         this.findProjectById(this.$route.params.id)
-        this.findProjectRelationed();
     },
     computed: {
         projects() {

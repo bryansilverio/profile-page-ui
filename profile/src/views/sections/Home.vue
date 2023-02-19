@@ -1,0 +1,62 @@
+<template>
+    <section id="home-section" class="hero">
+        <div class="home-slider  owl-carousel">
+            <div class="slider-item ">
+                <div class="overlay"></div>
+                <div class="container">
+                    <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
+                        data-scrollax-parent="true">
+                        <div class="one-third js-fullheight order-md-last img"
+                            style="background-image:url(assets/images/bg_1.png);">
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="one-forth d-flex  align-items-center">
+                            <div class="text">
+                                <span class="subheading">Hello!</span>
+                                <h1 class="mb-4 mt-3">I'm <span>{{ title }}</span></h1>
+                                <h2 class="mb-4">{{ profile }}</h2>
+                                <p><a href="#" class="btn btn-primary py-3 px-4">Hire me</a> <a href="#"
+                                        class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+<script>
+import VueI18n from '@/translation/i18n'
+export default {
+    name: "Home",
+    data() {
+        return {
+            resume: VueI18n.tc('resume'),
+            profile: VueI18n.tc('profile'),
+            title: VueI18n.tc('title'),
+            pages: {
+                about: {
+                    name: VueI18n.tc('pages.home.sections.about.name'),
+                    description: VueI18n.tc('pages.home.sections.about.description')
+                },
+                skills: {
+                    name: VueI18n.tc('pages.home.sections.skills.name'),
+                    description: VueI18n.tc('pages.home.sections.skills.description')
+                },
+                experience: {
+                    name: VueI18n.tc('pages.home.sections.experience.name'),
+                    description: VueI18n.tc('pages.home.sections.experience.description')
+                },
+                projects: {
+                    name: VueI18n.tc('pages.home.sections.projects.name'),
+                    description: VueI18n.tc('pages.home.sections.projects.description')
+                },
+                contact: {
+                    name: VueI18n.tc('pages.home.sections.contact.name'),
+                    description: VueI18n.tc('pages.home.sections.contact.description')
+                }
+            }
+        }
+    }
+};
+</script>

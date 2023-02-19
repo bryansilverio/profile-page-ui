@@ -1,42 +1,22 @@
 <template>
-    <div class="col-md-12 animate-box fh5co-text" data-animate-effect="fadeInLeft" style="margin-bottom: 50px;">
-        <h3 class="fh5co-heading-colored">{{ title }}</h3>
-        <div class="service_icon row">
-            <div v-for="(v, i) in items" :key="i" class="col-md-2 techitem zoom" style="margin: 20px; cursor:pointer">
-                <i :class="v.icon" style="font-size:80px;margin: 15px;"></i>
+    <div class="col-md-4 text-center d-flex">
+        <a href="#" class="services-1">
+            <span class="icon">
+                <i :class="item.icon"></i>
+            </span>
+            <div class="desc">
+                <h3 class="mb-5">{{item.type}}</h3>
             </div>
-        </div>
+        </a>
     </div>
 </template>
-<style>
-.service_icon {
-    padding: 10px;
-}
-
-.techitem {
-    background-color: #fff;
-    border-radius: 5%;
-}
-
-.zoom {
-    transition: transform .2s;
-}
-
-.zoom:hover {
-    transform: scale(1.1);
-}
-</style>
 <script>
 export default {
     name: "Skillsitems",
     props: {
-        items: {
-            type: Array
+        item: {
+            type: Object
         },
-        title: {
-            type: String,
-            default: ""
-        }
     }
 };
 </script>
