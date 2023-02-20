@@ -1,5 +1,10 @@
 [
     {
+        "name":"Email",
+        "icon":"icon-paper-plane",
+        "url":"mailto:bryansilverio12@gmail.com"
+    },
+    {
         "name":"Wordpress",
         "icon":"icon-wordpress",
         "url":"https://bssilverio.wordpress.com/"

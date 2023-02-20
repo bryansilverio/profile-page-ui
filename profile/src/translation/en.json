@@ -13,6 +13,11 @@
     "projects": "Projects",
     "contact": "Contact"
   },
+  "common":{
+    "btnDownloadCV":"Download Cv",
+    "lbName":"Name",
+    "lbEmail":"Email"
+  },
   "pages": {
     "home": {
       "sections": {
@@ -22,19 +27,19 @@
         },
         "skills": {
           "name": "Skills",
-          "description": ""
+          "textSection":"Technologies and tools that I have used in the projects."
         },
         "experience": {
           "name": "Experience",
-          "description": ""
+          "textSection": "The companies where I have worked during my work experience."
         },
         "projects": {
           "name": "Projects",
-          "description": ""
+          "textSection": "The diferents projects and areas where I have participated in the companies where I have worked."
         },
         "contact": {
           "name": "Contact",
-          "description": ""
+          "textSection": "Contact"
         }
       }
     },

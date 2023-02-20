@@ -16,14 +16,18 @@
                     <h2 class="mb-4">{{title}}</h2>
                     <p v-for="(v,i) in listLongDescription" :key="i">{{v}}</p>
                     <ul class="about-info mt-4 px-md-0 px-2">
-                        <li class="d-flex"><span>Name:</span> <span>Bryan Silverio</span></li>
-                        <li class="d-flex"><span>Email:</span> <span>bryansilverio12@gmail.com</span></li>
+                        <li class="d-flex">
+                            <span>{{lbName}}:</span> <span>Bryan Silverio</span>
+                        </li>
+                        <li class="d-flex">
+                            <span>{{lbEmail}}:</span> <span>bryansilverio12@gmail.com</span>
+                        </li>
                     </ul>
                   </div>
                 </div>
               <div class="counter-wrap d-flex mt-md-3">
               <div class="text">
-                <p><a href="#" class="btn btn-primary py-3 px-3">Download CV</a></p>
+                <p><a href="#" class="btn btn-primary py-3 px-3">{{btnDownloadCv}}</a></p>
               </div>
               </div>
             </div>
@@ -42,8 +46,11 @@ export default {
             profile: VueI18n.tc('profile'),
             description: {
                 short: VueI18n.tc('pages.about.description.short'),
-                long: VueI18n.tc('pages.about.description.long')
+                long: VueI18n.tc('pages.about.description.long'),
             },
+            btnDownloadCv:VueI18n.tc('common.btnDownloadCV'),
+            lbName:VueI18n.tc('common.lbName'),
+            lbEmail:VueI18n.tc('common.lbEmail'),
             listLongDescription: []
         }
     },
