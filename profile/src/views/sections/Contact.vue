@@ -13,7 +13,7 @@
           <ContactItem v-for="(v,i) in contactDetails" :key="i" :item="v"/>
         </div>
 
-        <div class="row no-gutters block-9">
+        <div class="row no-gutters block-9" v-show="false">
           <div class="col-md-6 order-md-last d-flex">
             <form action="#" class="bg-light p-4 p-md-5 contact-form">
               <div class="form-group">

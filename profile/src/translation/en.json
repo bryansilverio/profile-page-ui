@@ -61,8 +61,20 @@
       "seeMore":"See more"
     },
     "projectDetails": {
-      "otherProjects": "Others projects",
-      "technologies": "Tecnologias"
+      "projectsRelationed": "Projects relationed",
+      "technologies": "Tecnologias",
+      "breadcrumbs":{
+        "home":"Home",
+        "projects":"Projects"
+      },
+      "aboutProject":{
+        "developedIn":"Project developed in",
+        "company":"Company",
+        "area":"Area",
+        "position":"Position",
+        "assignedTo":"Assigned to"
+      },
+      "companies":"Companies"
     }
   }
 }

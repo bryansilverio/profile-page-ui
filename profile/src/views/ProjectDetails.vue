@@ -7,14 +7,14 @@
               <div class="col-md-12 pb-5 mb-3 text-center" style="margin-top: 20%;">
                 <h2 class="mb-3 bread">{{projectDetails.name}}</h2>
                 <p class="breadcrumbs">
-                    <span class="mr-2">
+                    <span class="mr-2" style="cursor:pointer;">
                         <a @click="onClickToBack('/')">
-                            Home <i class="ion-ios-arrow-forward"></i>
+                            {{breadcrumbs.home}} <i class="ion-ios-arrow-forward"></i>
                         </a>
                     </span> 
-                    <span class="mr-2">
+                    <span class="mr-2" style="cursor:pointer;">
                         <a @click="onClickToBack('/#projects-section')">
-                            Proyectos <i class="ion-ios-arrow-forward"></i>
+                            {{breadcrumbs.projects}} <i class="ion-ios-arrow-forward"></i>
                         </a>
                     </span> 
                     <span>
@@ -37,18 +37,23 @@
                   </div>
                 </div>
                 
-                <div class="about-author d-flex p-4 bg-dark">
-                  <div class="bio mr-5">
+                <div class="about-author d-flex p-4">
+                  <div class="bio mr-5" v-show="false">
                     <img src="images/person_1.jpg" alt="Image placeholder" class="img-fluid mb-4">
                   </div>
                   <div class="desc">
-                    <h3>Proyecto desarrollado en:</h3>
-                    <p>Empresa: {{projectDetails.company.name}}</p>
-                    <p>Área: {{projectDetails.area}}</p>
-                    <p>Posición: {{projectDetails.position}}</p>
-                    <template v-if="projectDetails.employeeType.id=='CONTRACTOR'">
-                        <p>Asignado a: {{projectDetails.employeeType.companyAssigned.name}}</p>
-                    </template>
+                    <h3>{{aboutProject.developedIn}}:</h3>
+                    <p>
+                        <span>{{aboutProject.company}}: {{projectDetails.company.name}}</span>
+                        <br>
+                        <span>{{aboutProject.area}}: {{projectDetails.area}}</span>
+                        <br>
+                        <span>{{aboutProject.position}}: {{projectDetails.position}}</span>
+                        <br>
+                        <template v-if="projectDetails.employeeType.id=='CONTRACTOR'">
+                            <span>{{aboutProject.assignedTo}}: {{projectDetails.employeeType.companyAssigned.name}}</span>
+                        </template>
+                    </p>
                   </div>
                 </div>
 
@@ -65,6 +70,14 @@
     </div>
    
 </template>
+<style>
+    .about-author{
+        background-color: #36394A;
+    }
+    .slider-text .bread{
+        color: #FF474C;
+    }
+</style>
 <script>
 import VueI18n from '@/translation/i18n'
 import ProjectItemSidebar from '@/components/_Shared/ProjectItemSidebar.vue'
@@ -77,8 +90,17 @@ export default {
             projectDetails: {},
             projectsRelationed:[],
             btnBackToProjects: VueI18n.tc('buttons.goToBack'),
-            company: VueI18n.tc('pages.projects.labelCompany'),
-            position: VueI18n.tc('pages.projects.labelPosition')
+            breadcrumbs:{
+                home:VueI18n.tc('pages.projectDetails.breadcrumbs.home'),
+                projects:VueI18n.tc('pages.projectDetails.breadcrumbs.projects')
+            },
+            aboutProject:{
+                developedIn:VueI18n.tc('pages.projectDetails.aboutProject.developedIn'),
+                company:VueI18n.tc('pages.projectDetails.aboutProject.company'),
+                area:VueI18n.tc('pages.projectDetails.aboutProject.area'),
+                position:VueI18n.tc('pages.projectDetails.aboutProject.position'),
+                assignedTo:VueI18n.tc('pages.projectDetails.aboutProject.assignedTo')
+            }
 
         }
     },

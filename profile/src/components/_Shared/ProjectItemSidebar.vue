@@ -10,8 +10,8 @@
           </form>
         </div>
 
-        <div class="sidebar-box">
-            <h3 class="heading-sidebar">Empresas</h3>
+        <div class="sidebar-box sidebar-companies">
+            <h3 class="heading-sidebar">{{lbCompanies}}</h3>
             <ul class="categories">
                 <li v-for="(v,i) in companies" :key="i">
                     <a>{{v.company}} <span></span></a>
@@ -23,6 +23,11 @@
 
       </div>
 </template>
+<style>
+    .sidebar-companies{
+        background-color: #36394A;
+    }
+</style>
 <script>
 import VueI18n from '@/translation/i18n'
 import companies_data from '@/data/work-experiences.json'
@@ -30,9 +35,9 @@ import projectsRelationed from '@/components/_Shared/ProjectsRelationed.vue'
 export default {
     name: 'ProjectsRelationed',
     components:{projectsRelationed},
-    data() {
-        return {
-            txtOtherProjects: VueI18n.tc('pages.projectDetails.otherProjects')
+    data(){
+        return{
+            lbCompanies:VueI18n.tc('pages.projectDetails.companies')
         }
     },
     props:{

@@ -5,7 +5,7 @@
                 <span :class="item.icon"></span>
             </div>
             <h3 class="mb-4">{{item.name}}</h3>
-            <p>198 West 21th Street, Suite 721 New York NY 10016</p>
+            <p></p>
           </div>
       </div>
 </template>

@@ -12,11 +12,17 @@
                         </div>
                         <div class="one-forth d-flex  align-items-center">
                             <div class="text">
-                                <span class="subheading">Hello!</span>
-                                <h1 class="mb-4 mt-3">I'm <span>{{ title }}</span></h1>
+                                <span class="subheading"></span>
+                                <h1 class="mb-4 mt-3"><span>{{ title }}</span></h1>
                                 <h2 class="mb-4">{{ profile }}</h2>
-                                <p><a href="#" class="btn btn-primary py-3 px-4">Hire me</a> <a href="#"
-                                        class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+                                <p>
+                                    <a href="#contact-section" class="btn btn-primary py-3 px-4">
+                                        {{lbMyContacts}}
+                                    </a> 
+                                    <a href="#projects-section" class="btn btn-white btn-outline-white py-3 px-4">
+                                    {{lbMyProjects}}
+                                    </a>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -55,7 +61,9 @@ export default {
                     name: VueI18n.tc('pages.home.sections.contact.name'),
                     description: VueI18n.tc('pages.home.sections.contact.description')
                 }
-            }
+            },
+            lbMyProjects:VueI18n.tc('menu.projects'),
+            lbMyContacts:VueI18n.tc('menu.contact')
         }
     }
 };
