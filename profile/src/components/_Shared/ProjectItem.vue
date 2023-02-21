@@ -1,7 +1,7 @@
 <template>
     <div class="col-md-4 d-flex" @click="goToProjectDetails(item.id)" style="cursor: pointer;">
         <div class="blog-entry justify-content-end">
-          <a class="block-20" style="background-image: url('assets/images/image_1.jpg');">
+          <a class="block-20" :style="setImage(item.image)">
           </a>
           <div class="text mt-3 float-right d-block">
             <div class="d-flex align-items-center mb-3 meta margin-content">
@@ -41,6 +41,9 @@ export default {
         },
     },
     methods: {
+        setImage(url){
+            return "background-image: url("+url+");";
+        },
         goToProjectDetails($id) {
             if ($id != null) {
                 this.$router.push('/projects/' + $id).catch(error => {
