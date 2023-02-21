@@ -109,7 +109,7 @@
     "name": "Loop",
     "area":"Desarrollo",
     "position": "Desarrollo Web - Fullstack",
-    "image": "assets/projects/loop_project.png",
+    "image": "assets/projects/loop.jpg",
     "description": {
       "short": "<p>Proyecto enfocado a la administración, seguimiento, control de servicios ejecutivos de transporte el cual incluia dos apps, una enfocada para el cliente y la otra para el ejecutivo/chofer.</p>",
       "long": "<p>Loop es un proyecto en el cual participe el cual consiste en una aplicación que permite llevar el control, seguimiento y visibilidad de servicios de transporte ejecutivos a empresas,donde el cliente puede solicitar un servicio de translado a cualquier parte de México, por medio de una aplicación movil, y la operación se puede llevar desde la aplicación web y ademas se le da el seguimiento y se tiene la información en todo momento.El cual por cuestiones tecnicos se decidio migrar ya que la versión de la aplicación no era lo suficientemente escalable.Este proyecto en su versión anterior estaba desarrollado en la parte del C# MVC (.NET Framework) con Razor y SQL Server principalmente.</p><p>En la migración se desarrollo con PHP (Laravel), VueJS, MySQL, NodeJS principalmente e integración con Firebase.El proyecto se estructuro de la siguiente forma:</p><ul><li>Domain: Contenia las clases que representan las entidades de la aplicación.</li><li>Repositories: Contenia las clases que realizaban la conexión y operaciones de la base de datos usando el ORM Eloquent.</li><li>Services: Contenia las clases que contenian la lógica de negocio de cada feature. Implementan los repositorios.</li><li>Controllers: Contenia las clases que son el punto de entrada de las peticiones web.</li></ul>"
