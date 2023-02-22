@@ -1,7 +1,7 @@
 <template>
     <div class="col-lg-4 sidebar">
         
-        <div class="sidebar-box">
+        <div class="sidebar-box" v-show="false">
           <form action="#" class="search-form">
             <div class="form-group">
               <span class="icon icon-search"></span>
@@ -10,7 +10,7 @@
           </form>
         </div>
 
-        <div class="sidebar-box sidebar-companies">
+        <div class="sidebar-box sidebar-companies" v-show="false">
             <h3 class="heading-sidebar">{{lbCompanies}}</h3>
             <ul class="categories">
                 <li v-for="(v,i) in companies" :key="i">
@@ -19,7 +19,9 @@
             </ul>
         </div>
 
-        <projectsRelationed :projectsRelationed="projectsRelationed"/>
+        <projectsRelationed 
+            :projectsRelationed="projectsRelationed" 
+            @onClickToProjectById="onClickToProjectById"/>
 
       </div>
 </template>

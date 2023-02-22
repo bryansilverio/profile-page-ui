@@ -1,8 +1,10 @@
 <template>
 	<div class="sidebar-box sidebar-projects-relationed">
       <h3 class="heading-sidebar">{{lbProjectsRelationed}}</h3>
-      <div class="block-21 mb-4 d-flex" v-for="(v,i) in projectsRelationed" :key="i" @click="onClickToProjectById(v.id)">
-        <a v-show="false" class="blog-img mr-4" style="background-image: url(images/image_1.jpg);"></a>
+      <div class="block-21 mb-4 d-flex" 
+        v-for="(v,i) in projectsRelationed" :key="i" 
+        @click="onClickToProjectById(v.id)" style="cursor:pointer;">
+        <a class="blog-img mr-4" :style="setImage(v.image)"></a>
         <div class="text">
           <h3 class="heading"><a>{{v.name}}</a></h3>
           <div class="meta">
@@ -28,6 +30,14 @@ export default{
   data(){
     return {
        lbProjectsRelationed: VueI18n.tc('pages.projectDetails.projectsRelationed')
+    }
+  },
+  methods:{
+    setImage(url){
+      return "background-image: url("+url+");";
+    },
+    onClickToProjectById(id) {
+      this.$emit("onClickToProjectById", id)
     }
   },
 	props:{

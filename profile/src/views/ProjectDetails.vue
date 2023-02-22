@@ -1,7 +1,7 @@
 <template>
 
     <div>
-        <section class="hero-wrap js-fullheight" style="background-image: url('assets/images/bg_1.jpg');" data-stellar-background-ratio="0.5">
+        <section class="hero-wrap js-fullheight" style="background-image: url('/assets/images/bg-projects.jpg');" data-stellar-background-ratio="0.5">
           <div class="container">
             <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-center">
               <div class="col-md-12 pb-5 mb-3 text-center" style="margin-top: 20%;">
@@ -31,6 +31,7 @@
             <div class="row">
               <div class="col-lg-8 ">
                 <p v-html="projectDetails.description.long"></p>
+
                 <div class="tag-widget post-tag-container mb-5 mt-5">
                   <div class="tagcloud">
                     <a class="tag-cloud-link" v-for="(v,i) in projectDetails.technologies" :key="i">{{v.name}}</a>
@@ -38,8 +39,8 @@
                 </div>
                 
                 <div class="about-author d-flex p-4">
-                  <div class="bio mr-5" v-show="false">
-                    <img src="images/person_1.jpg" alt="Image placeholder" class="img-fluid mb-4">
+                  <div class="bio mr-5">
+                    <img :src="projectDetails.company.logo" alt="Image placeholder" class="img-fluid mb-4">
                   </div>
                   <div class="desc">
                     <h3>{{aboutProject.developedIn}}:</h3>
@@ -126,7 +127,7 @@ export default {
         },
         findProjectRelationed() {
             this.projectsRelationed = this.projects.filter(
-                e => e.id != this.projectId && e.company.id == this.projectDetails.company.id);
+                e => e.id != this.projectId);
         },
     },
     created() {
