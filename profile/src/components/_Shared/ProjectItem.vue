@@ -1,5 +1,5 @@
 <template>
-    <div class="col-md-4 d-flex" @click="goToProjectDetails(item.id)" style="cursor: pointer;">
+    <div class="col-md-4 d-flex project-item" @click="goToProjectDetails(item.id)" style="cursor: pointer;">
         <div class="blog-entry justify-content-end">
           <a class="block-20" :style="setImage(item.image)">
           </a>
@@ -22,6 +22,10 @@
     }
     .margin-content{
         margin: 30px;
+    }
+    .project-item:hover{
+        transform: scale(1.1);
+        transition: transform .2s;
     }
 </style>
 <script>

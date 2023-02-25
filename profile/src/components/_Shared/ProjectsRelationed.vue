@@ -1,7 +1,7 @@
 <template>
 	<div class="sidebar-box sidebar-projects-relationed">
       <h3 class="heading-sidebar">{{lbProjectsRelationed}}</h3>
-      <div class="block-21 mb-4 d-flex" 
+      <div class="block-21 mb-4 d-flex project-item" 
         v-for="(v,i) in projectsRelationed" :key="i" 
         @click="onClickToProjectById(v.id)" style="cursor:pointer;">
         <a class="blog-img mr-4" :style="setImage(v.image)"></a>
@@ -21,6 +21,10 @@
   }
   .block-21 .text .meta > div a{
     color: white;
+  }
+  .project-item:hover{
+    transform: scale(1.1);
+    transition: transform .2s;
   }
 </style>
 <script>
