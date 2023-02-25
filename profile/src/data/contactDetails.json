@@ -1,20 +1,24 @@
 [
     {
+        "id":"EMAIL",
         "name":"Email",
         "icon":"icon-paper-plane",
         "url":"mailto:bryansilverio12@gmail.com"
     },
     {
+        "id":"WORDPRESS",
         "name":"Wordpress",
         "icon":"icon-wordpress",
         "url":"https://bssilverio.wordpress.com/"
     },
     {
+        "id":"LINKEDIN",
         "name":"Linkedin",
         "icon":"icon-linkedin",
         "url":"https://www.linkedin.com/in/bryan-silverio-6b417098"
     },
     {
+        "id":"GITHUB",
         "name":"GitHub",
         "icon":"icon-github",
         "url":"https://github.com/bsn12993"
