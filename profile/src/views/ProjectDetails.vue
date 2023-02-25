@@ -123,7 +123,9 @@ export default {
         },
         onClickToProjectById($id){
             this.$router.push('/projects/'+$id)
-            this.findProjectById($id)
+            if(this.projectDetails.id!=this.$route.params.id){
+                this.findProjectById($id)
+            }
         },
         findProjectRelationed() {
             this.projectsRelationed = this.projects.filter(
