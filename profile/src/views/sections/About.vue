@@ -2,14 +2,14 @@
     <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
         <div class="container">
             <div class="row d-flex">
-                <div class="col-md-4 col-lg-5 d-flex">
+                <div class="col-md-4 col-lg-5 d-flex" v-show="false">
                     <div class="img-about img d-flex align-items-stretch">
                         <div class="overlay"></div>
                         <div class="img d-flex align-self-stretch align-items-center" style="background-image:url(assets/images/bg_1.png);">
                         </div>
                     </div>
                 </div>
-                <div class="col-md-8 col-lg-7 pl-lg-5 pb-5">
+                <div class="col-md-12 col-lg-12 pl-lg-5 pb-5">
                     <div class="row justify-content-start pb-3">
                   <div class="col-md-12 heading-section">
                     <h1 class="big">{{title}}</h1>

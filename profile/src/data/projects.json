@@ -7,7 +7,7 @@
     "image": "/assets/projects/api_mkt_project.png",
     "description": {
       "short": "<p>Área dentro de BBVA donde se diseña y desarrollan APIs que implementan como microservicios basados en REST para exponer funcionalidad bancaria a terceros.</p>",
-      "long": "<p>API Market es una área dentro de BBVA la cual se encarga de desarrollar APIs basados en REST para exponer funcionalidad del core bancario a terceros que puedan integrarlas en sus aplicaciones.</p><p>El proceso consiste en un inicio diseñar la API con un enfoque de negocio para los consumidores principalmente las aplicaciones frontend.</p><ul><li>Definir endpoint del recurso que sea autodescriptible</li><li>Definir datos de entrada y salida (request y response)</li><li>Definir método HTTP que corresponda con la operación de la API</li><li>Definir los códigos HTTP de respuestas del API</li><li>Definir los errores funcionales</li></ul>"
+      "long": "<p>API Market es una &aacute;rea dentro de BBVA la cual se encarga de desarrollar APIs basados en REST para exponer funcionalidad del core bancario a terceros que puedan integrarlas en sus aplicaciones.</p><p>El proceso consiste en un inicio dise&ntilde;ar la API con un enfoque de negocio para los consumidores principalmente las aplicaciones frontend.</p><h3><strong>Actividades</strong></h3><ul><li>Definir endpoint del recurso que sea autodescriptible.</li><li>Definir datos de entrada y salida (request y response).</li><li>Definir m&eacute;todo HTTP que corresponda con la operaci&oacute;n de la <strong><em>API REST</em></strong>.</li><li>Definir los c&oacute;digos HTTP de respuestas del API.</li><li>Definir los errores funcionales.</li><li>Creaci&oacute;n de la definici&oacute;n del API.</li><li>Construcci&oacute;n de Sanbox del API.</li><li>Construcci&oacute;n del servicio en Quarkus.</li></ul><h3><strong>APIs que se desarrollar&oacute;n</strong></h3><ul><li><em><strong>getCard</strong> </em>- Recuperar informaci&oacute;n de una tarjeta.</li><li><em><strong>listSecurityData</strong> </em>- Recuperar el CVV2 para realizar compras online.</li></ul>"
     },
     "employeeType":{
       "id":"CONTRACTOR",
@@ -52,13 +52,13 @@
   },
   {
     "id": "MOBILE-RETAIL-SERVICING",
-    "name": "BBVA - Mobile Retail Servicing",
+    "name": "Mobile Retail Servicing",
     "area":"Operaciones - Producción",
     "position": "Desarrollo de diseño y desarrollo de APIs",
     "image": "/assets/projects/app-BBVA.png",
     "description": {
       "short": "<p>Área dentro de BBVA donde se da el soporte y seguimiento a temas productivos relacionados a los microservicios que usa la App BBVA Mx.</p>",
-      "long": "<p>Mobile Retail Servicing es una área dentro de BBVA la cual se encarga de cuidar la producción de los servicios que son usados en la aplicación movil BBVA.Seguimientos de incidencias de microservicios ya existentes en producción, modificaciones de diseño y desarrollo de microservicios, revisión de cambios por temas de vulnerabilidades de seguridad en servicios.</p><p>Las principales actividades son: </p><ul><li>Analisar y revisar soluciones para corregir incidencias productivas en microservicios</li><li>Analisar y revisar soluciones para cubrir vulnerabilidades de seguridad en microservicios</li><li>Seguimiento y canalización de solicitudes de pruebas en aplicacion movil BBVA sobre cambios en microservicios</li><li>Llevar el control y seguimiento de las funcionalidades y microservicios que usa la aplicación BBVA</li></ul>"
+      "long": "<p>Mobile Retail Servicing es una &aacute;rea dentro de <span style='text-decoration: underline;'><em><strong>BBVA</strong> </em></span>la cual se encarga de cuidar la producci&oacute;n de los servicios que son usados en la <em><strong>aplicaci&oacute;n movil BBVA</strong></em>. Seguimientos de incidencias de microservicios ya existentes en producci&oacute;n, modificaciones de dise&ntilde;o y desarrollo de microservicios, revisi&oacute;n de cambios por temas de vulnerabilidades de seguridad en servicios.</p><h3><strong>Las principales actividades son:</strong></h3><ul><li>Analizar y revisar soluciones para corregir incidencias productivas en microservicios que cumplan con las pr&aacute;cticas y est&aacute;ndares establecidos en la parte del dise&ntilde;o de servicios REST.</li><li>Analizar y revisar soluciones para cubrir vulnerabilidades de seguridad en microservicios.</li><li>Seguimiento y canalizaci&oacute;n de solicitudes de pruebas en aplicacion movil BBVA sobre cambios en microservicios.</li><li>Llevar el control y seguimiento de las funcionalidades y microservicios que usa la aplicaci&oacute;n BBVA.</li></ul><h3><strong>Curso y Certificaci&oacute;nes</strong></h3><p>Para poder realizar estas actividades, realice los siguientes cursos/certificaciones:</p><ul><li><strong>Dise&ntilde;o de APIs</strong> - BBVA</li><li><strong>Desarrollo de APIs</strong> - BBVA</li><li><strong>Scrum Developer Professional Certificate (SDPC)</strong> - CertiProf</li><li><strong>API Specialized</strong> - BBVA</li></ul>"
     },
     "employeeType":{
       "id":"CONTRACTOR",
@@ -260,7 +260,7 @@
     "image": "/assets/images/work_2.jpg",
     "description": {
       "short": "<p>Proyecto enfocado a la migración del sitio corporativo de la empresa TasiSoftware.</p>",
-      "long": "<p>Portal Tasisoft2 es un proyecto el cual tuvo como objetivo crear una nueva versión del portal de la empresa.</p><p>Se realizo usando una herramienta llamada DNN (DotNetNuk) que es como un CMS pero para C#, y fue la base de esta versión y se crearón varios modulos y se instalaban sobre esta plataforma.</p><p>Modulos que se trabajarón fuerón:</p><ul><li>Registro de entrada y salida</li><li>Directorio</li><li>Solicitud de vacaciones</li></ul>"
+      "long": "<p>Portal Tasisoft2 es un proyecto en el cual tuvo como objetivo crear una nueva versi&oacute;n del portal de la empresa.</p><p>Se realizo usando una herramienta llamada <em><strong>DNN</strong> </em>(<em><strong>DotNetNuke</strong></em>), la cual es un <em><strong>CMS</strong> </em>pero para C# con <em><strong>.Net Framework</strong></em> que&nbsp;fue la base de esta versi&oacute;n y se crear&oacute;n varios modulos individuales.</p><h3><strong>Modulos que se trabajar&oacute;n fuer&oacute;n:</strong></h3><ul><li>Registro de entrada y salida.</li><li>Directorio.</li><li>Solicitud de vacaciones.</li></ul>"
     },
     "employeeType":{
       "id":"FULLTIME",
