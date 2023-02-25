@@ -127,7 +127,7 @@ export default {
         },
         findProjectRelationed() {
             this.projectsRelationed = this.projects.filter(
-                e => e.id != this.projectId);
+                e => e.id != this.projectDetails.id);
         },
     },
     created() {
