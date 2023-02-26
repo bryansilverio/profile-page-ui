@@ -10,13 +10,13 @@
             </div>
             <div class="row d-flex justify-content-start">
                 <div class="col-md-12">
-                    <p v-for="(v,i) in listLongDescription" :key="i">{{v}}</p>
+                    <p v-html="about.description"></p>
                 </div>
             </div>
-            <div class="counter-wrap d-flex mt-md-3 justify-content-center" v-show="false">
+            <div class="counter-wrap d-flex mt-md-3 justify-content-center">
                 <div class="text">
                     <p>
-                        <a href="#" class="btn btn-primary py-3 px-3">{{btnDownloadCv}}</a>
+                        <a href="#" class="btn btn-primary py-3 px-3" v-show="false">{{btnDownloadCv}}</a>
                     </p>
                 </div>
             </div>
@@ -25,6 +25,7 @@
 </template>
 <script>
 import VueI18n from '@/translation/i18n'
+import aboutData from "@/data/about.json";
 export default {
     name: "About",
     data() {
@@ -39,7 +40,6 @@ export default {
             btnDownloadCv:VueI18n.tc('common.btnDownloadCV'),
             lbName:VueI18n.tc('common.lbName'),
             lbEmail:VueI18n.tc('common.lbEmail'),
-            listLongDescription: []
         }
     },
     created() {
@@ -53,6 +53,11 @@ export default {
                 values = value.split(".");
             }
             return values
+        }
+    },
+    computed:{
+        about(){
+            return aboutData;
         }
     }
 };
