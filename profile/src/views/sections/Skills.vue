@@ -3,12 +3,12 @@
     <section class="ftco-section" id="skills-section">
         <div class="container">
             <div class="row justify-content-center py-5 mt-5">
-          <div class="col-md-12 heading-section text-center">
-            <h1 class="big big-2">{{title}}</h1>
-            <h2 class="mb-4">{{title}}</h2>
-            <p>{{textSection}}</p>
-          </div>
-        </div>
+              <div class="col-md-12 heading-section text-center">
+                <h1 class="big big-2">{{title}}</h1>
+                <h2 class="mb-4">{{title}}</h2>
+                <p>{{textSection}}</p>
+              </div>
+            </div>
             <div class="row">
                 <Skillitem v-for="(v,i) in frontendSkills" :key="i" :item="v"/>
                 <Skillitem v-for="(v,i) in backendSkills" :key="i" :item="v"/>

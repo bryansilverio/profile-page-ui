@@ -8,8 +8,10 @@
                 <p>{{textSection}}</p>
               </div>
             </div>
-            <div class="row d-flex">
-                <p v-for="(v,i) in listLongDescription" :key="i">{{v}}</p>
+            <div class="row d-flex justify-content-start">
+                <div class="col-md-12">
+                    <p v-for="(v,i) in listLongDescription" :key="i">{{v}}</p>
+                </div>
             </div>
             <div class="counter-wrap d-flex mt-md-3 justify-content-center" v-show="false">
                 <div class="text">
