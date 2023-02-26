@@ -1,24 +1,24 @@
 <template>
 
     <div>
-        <section class="hero-wrap js-fullheight" style="background-image: url('/assets/images/bg-projects.jpg');" data-stellar-background-ratio="0.5">
+        <section class="hero-wrap js-fullheight" style="background-image: url('/assets/images/workspace.jpg');" data-stellar-background-ratio="0.5">
           <div class="container">
             <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-center">
-              <div class="col-md-12 pb-5 mb-3 text-center" style="margin-top: 20%;">
+              <div class="col-md-12 pb-5 mb-3 text-center" style="margin-top: 10%;">
                 <h2 class="mb-3 bread">{{projectDetails.name}}</h2>
                 <p class="breadcrumbs">
                     <span class="mr-2" style="cursor:pointer;">
                         <a @click="onClickToBack('/')">
-                            {{breadcrumbs.home}} <i class="ion-ios-arrow-forward"></i>
+                            {{breadcrumbs.home}} >
                         </a>
                     </span> 
                     <span class="mr-2" style="cursor:pointer;">
                         <a @click="onClickToBack('/#projects-section')">
-                            {{breadcrumbs.projects}} <i class="ion-ios-arrow-forward"></i>
+                            {{breadcrumbs.projects}} >
                         </a>
                     </span> 
                     <span>
-                        {{projectDetails.name}} <i class="ion-ios-arrow-forward"></i>
+                        {{projectDetails.name}}
                     </span>
                 </p>
               </div>
@@ -30,11 +30,16 @@
           <div class="container">
             <div class="row">
               <div class="col-lg-8 ">
-                <p v-html="projectDetails.description.long"></p>
+                <div class="col-md-12 heading-section">
+                    <h1 class="big">{{projectDetails.name}}</h1>
+                    <h2 class="mb-4">{{projectDetails.name}}</h2>
+                  </div>
+
+                <p class="mt-5" v-html="projectDetails.description.long"></p>
 
                 <div class="tag-widget post-tag-container mb-5 mt-5">
                   <div class="tagcloud">
-                    <a class="tag-cloud-link" v-for="(v,i) in projectDetails.technologies" :key="i">{{v.name}}</a>
+                    <a class="tag-cloud-link technology-item" v-for="(v,i) in projectDetails.technologies" :key="i">{{v.name}}</a>
                   </div>
                 </div>
                 
@@ -77,6 +82,11 @@
     }
     .slider-text .bread{
         color: #FF474C;
+    }
+    .technology-item:hover{
+        background-color: #FF474C;
+        cursor: pointer;
+        font-weight: bold;
     }
 </style>
 <script>
