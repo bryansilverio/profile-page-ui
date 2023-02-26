@@ -257,7 +257,7 @@
     "name": "Portal Tasinet2",
     "area":"Desarrollo",
     "position": "Desarrollo Backend - .NET",
-    "image": "/assets/images/work_2.jpg",
+    "image": "/assets/projects/logo-tasinet.jpg",
     "description": {
       "short": "<p>Proyecto enfocado a la migración del sitio corporativo de la empresa TasiSoftware.</p>",
       "long": "<p>Portal Tasisoft2 es un proyecto en el cual tuvo como objetivo crear una nueva versi&oacute;n del portal de la empresa.</p><p>Se realizo usando una herramienta llamada <em><strong>DNN</strong> </em>(<em><strong>DotNetNuke</strong></em>), la cual es un <em><strong>CMS</strong> </em>pero para C# con <em><strong>.Net Framework</strong></em> que&nbsp;fue la base de esta versi&oacute;n y se crear&oacute;n varios modulos individuales.</p><h3><strong>Modulos que se trabajar&oacute;n fuer&oacute;n:</strong></h3><ul><li>Registro de entrada y salida.</li><li>Directorio.</li><li>Solicitud de vacaciones.</li></ul>"

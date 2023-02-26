@@ -65,21 +65,21 @@
 				</div>
 				<div class="col-md">
 					<div class="ftco-footer-widget mb-4">
-						<h2 class="ftco-heading-2">Have a Questions?</h2>
+						<h2 class="ftco-heading-2">Info</h2>
 						<div class="block-23 mb-3">
 							<ul>
-								<li>
+								<li v-show="false">
 									<span class="icon icon-map-marker"></span>
 									<span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span>
 								</li>
-								<li>
+								<li v-show="false">
 									<a href="#">
 										<span class="icon icon-phone"></span>
 										<span class="text">+2 392 3929 210</span>
 									</a>
 								</li>
 								<li>
-									<a href="#">
+									<a :href="'mailto:'+about.contactDetails.email">
 										<span class="icon icon-envelope"></span>
 										<span class="text">{{about.contactDetails.email}}</span>
 									</a>
