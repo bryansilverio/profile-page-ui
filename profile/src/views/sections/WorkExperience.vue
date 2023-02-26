@@ -13,7 +13,7 @@
                     <WorkExperienceItem :item="v"/>
                 </div>
             </div>
-            <div class="row justify-content-center mt-5">
+            <div class="row justify-content-center mt-5" v-show="false">
                 <div class="col-md-6 text-center">
                     <p><a href="#" class="btn btn-primary py-4 px-5">{{btnDownloadCv}}</a></p>
                 </div>

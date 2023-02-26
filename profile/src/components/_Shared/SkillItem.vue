@@ -1,12 +1,10 @@
 <template>
-    <div class="col-md-4 text-center d-flex">
+    <div class="col-md-3 text-center d-flex">
         <a href="#" class="services-1">
             <span class="icon">
-                <i :class="item.icon"></i>
+                <!--<i :class="item.icon"></i>-->
+                <img :src="item.icon" style="width:8.5rem;height: 8.5rem;">
             </span>
-            <div class="desc">
-                <h3 class="mb-5">{{item.type}}</h3>
-            </div>
         </a>
     </div>
 </template>

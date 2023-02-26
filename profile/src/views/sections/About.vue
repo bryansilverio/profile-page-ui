@@ -11,7 +11,7 @@
             <div class="row d-flex">
                 <p v-for="(v,i) in listLongDescription" :key="i">{{v}}</p>
             </div>
-            <div class="counter-wrap d-flex mt-md-3 justify-content-center">
+            <div class="counter-wrap d-flex mt-md-3 justify-content-center" v-show="false">
                 <div class="text">
                     <p>
                         <a href="#" class="btn btn-primary py-3 px-3">{{btnDownloadCv}}</a>

@@ -50,14 +50,14 @@
                   <div class="desc">
                     <h3>{{aboutProject.developedIn}}:</h3>
                     <p>
-                        <span>{{aboutProject.company}}: {{projectDetails.company.name}}</span>
+                        <span><strong>{{aboutProject.company}}:</strong> {{projectDetails.company.name}}</span>
                         <br>
-                        <span>{{aboutProject.area}}: {{projectDetails.area}}</span>
+                        <span><strong>{{aboutProject.area}}:</strong> {{projectDetails.area}}</span>
                         <br>
-                        <span>{{aboutProject.position}}: {{projectDetails.position}}</span>
+                        <span><strong>{{aboutProject.position}}:</strong> {{projectDetails.position}}</span>
                         <br>
                         <template v-if="projectDetails.employeeType.id=='CONTRACTOR'">
-                            <span>{{aboutProject.assignedTo}}: {{projectDetails.employeeType.companyAssigned.name}}</span>
+                            <span><strong>{{aboutProject.assignedTo}}:</strong> {{projectDetails.employeeType.companyAssigned.name}}</span>
                         </template>
                     </p>
                   </div>

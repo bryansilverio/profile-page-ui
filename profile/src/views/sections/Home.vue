@@ -23,6 +23,12 @@
                                     {{lbMyProjects}}
                                     </a>
                                 </p>
+                                <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                                    <li v-for="(v,i) in contactDetails" :key="i">
+                                        <a :href="v.url" target="_blank"><span :class="v.icon"></span>
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -33,6 +39,7 @@
 </template>
 <script>
 import VueI18n from '@/translation/i18n'
+import contactDetailsData from '@/data/contactDetails.json'
 export default {
     name: "Home",
     data() {
@@ -64,6 +71,11 @@ export default {
             },
             lbMyProjects:VueI18n.tc('menu.projects'),
             lbMyContacts:VueI18n.tc('menu.contact')
+        }
+    },
+    computed:{
+        contactDetails(){
+            return contactDetailsData
         }
     }
 };

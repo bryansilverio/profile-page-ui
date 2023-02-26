@@ -27,7 +27,7 @@
         },
         "skills": {
           "name": "Conocimientos",
-          "textSection":"Las tecnologías y herramientas que he usado en los proyectos."
+          "textSection":"Soy desarrollador de software enfocado principalmente al backend, he trabajado con C# .Net Framework, Java con Spring, SQL Server, MySQL y diseño y desarrollo de APIs REST. Sin embargo también he usado tecnologías para desarrollar frontend en algunos proyectos, principalmente VueJs, HTML, CSS, Javascript."
         },
         "experience": {
           "name": "Experiencia",
