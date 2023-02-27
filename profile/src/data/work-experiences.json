@@ -5,7 +5,7 @@
         "logo":"assets/logos/gonet.png",
         "date": "Mayo 2021 - Actualmente",
         "number": "2021",
-        "content": "<p>Participación en proyecto dentro de BBVA relacionado a la banca, desarrollo de APIs/microservicios usando Restful, usando Java, RAML para documentar APIs, Kanban (Jira).</p>"
+        "content": "<p>Participación en proyecto dentro de BBVA relacionado con la banca, desarrollo de APIs/microservicios usando Restful, usando Java, RAML para documentar APIs, Kanban (Jira).</p>"
     },
     {
         "position": "Desarrollador Fullstack",
@@ -29,7 +29,7 @@
         "logo":"assets/logos/dwsoftware.jfif",
         "date": "Agosto 2017 - Noviembre 2017",
         "number": "2017",
-        "content": "<p>Participación de proyecto (.NET Framework) relacionado a logística, Ryder y DHL, usando arquitectura SOA.</p>"
+        "content": "<p>Participación de proyecto (.NET Framework) relacionado con logística, Ryder y DHL, usando arquitectura SOA.</p>"
     },
     {
         "position": "Desarrollador Web",
