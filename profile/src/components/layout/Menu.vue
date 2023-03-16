@@ -11,32 +11,32 @@
         <ul class="navbar-nav nav ml-auto">
           <li class="nav-item menu-options">
             <a class="nav-link" @click="goToPage('#home-section')">
-              <span>{{ menu.home.name }}</span>
+              <span style="font-weight: bold;">{{ menu.home.name }}</span>
             </a>
           </li>
           <li class="nav-item menu-options">
             <a class="nav-link" @click="goToPage('#about-section')">
-              <span>{{ menu.about.name }}</span>
+              <span style="font-weight: bold;">{{ menu.about.name }}</span>
             </a>
           </li>
           <li class="nav-item menu-options">
             <a class="nav-link" @click="goToPage('#resume-section')">
-              <span>{{ menu.experience.name }}</span>
+              <span style="font-weight: bold;">{{ menu.experience.name }}</span>
             </a>
           </li>
           <li class="nav-item menu-options">
             <a class="nav-link" @click="goToPage('#skills-section')">
-              <span>{{ menu.skills.name }}</span>
+              <span style="font-weight: bold;">{{ menu.skills.name }}</span>
             </a>
           </li>
           <li class="nav-item menu-options">
             <a class="nav-link" @click="goToPage('#projects-section')">
-              <span>{{ menu.projects.name }}</span>
+              <span style="font-weight: bold;">{{ menu.projects.name }}</span>
             </a>
           </li>
           <li class="nav-item menu-options">
             <a class="nav-link" @click="goToPage('#contact-section')">
-              <span>{{ menu.contact.name }}</span>
+              <span style="font-weight: bold;">{{ menu.contact.name }}</span>
             </a>
           </li>
         </ul>
