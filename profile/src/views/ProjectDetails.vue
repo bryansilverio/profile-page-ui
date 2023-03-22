@@ -37,6 +37,8 @@
 
                 <p class="mt-5" v-html="projectDetails.description.long"></p>
 
+
+
                 <div class="tag-widget post-tag-container mb-5 mt-5">
                   <div class="tagcloud">
                     <a class="tag-cloud-link technology-item" v-for="(v,i) in projectDetails.technologies" :key="i">{{v.name}}</a>
@@ -66,7 +68,7 @@
               </div> <!-- .col-md-8 -->
               
               <ProjectItemSidebar 
-                :projectsRelationed="projectsRelationed"
+                :projectsRelationed="projects"
                 @onClickToProjectById="onClickToProjectById" />
 
             </div>
@@ -119,10 +121,7 @@ export default {
         findProjectById(id = '') {
             let findProject = this.projects.find(x => x.id == id);
             if (findProject) {
-                findProject.image = this.$url + '/' + findProject.image
-                findProject.company.logo = this.$url + '/' + findProject.company.logo
                 this.projectDetails = findProject;
-                this.findProjectRelationed()
             }
             else {
                 this.$route.push({ path: '/404' })
@@ -136,10 +135,6 @@ export default {
             if(this.projectDetails.id!=this.$route.params.id){
                 this.findProjectById($id)
             }
-        },
-        findProjectRelationed() {
-            this.projectsRelationed = this.projects.filter(
-                e => e.id != this.projectDetails.id);
         },
     },
     created() {

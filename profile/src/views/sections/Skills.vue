@@ -10,9 +10,9 @@
               </div>
             </div>
             <div class="row">
-                <Skillitem v-for="(v,i) in frontendSkills" :key="i" :item="v"/>
-                <Skillitem v-for="(v,i) in backendSkills" :key="i" :item="v"/>
-                <Skillitem v-for="(v,i) in devtoolsSkills" :key="i" :item="v"/>
+                <Skillitem v-for="(v,i) in frontendSkills" :key="i*2" :item="v"/>
+                <Skillitem v-for="(v,i) in backendSkills" :key="i*20" :item="v"/>
+                <Skillitem v-for="(v,i) in devtoolsSkills" :key="i*200" :item="v"/>
             </div>
         </div>
     </section>

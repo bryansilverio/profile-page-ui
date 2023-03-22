@@ -38,7 +38,7 @@ export default{
   },
   methods:{
     setImage(url){
-      return "background-image: url("+url+");";
+      return "background-image: url("+process.env.VUE_APP_BASE_URL+"/"+url+");";
     },
     onClickToProjectById(id) {
       this.$emit("onClickToProjectById", id)

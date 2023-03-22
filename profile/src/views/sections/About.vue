@@ -5,7 +5,7 @@
               <div class="col-md-7 heading-section text-center">
                 <h1 class="big big-2">{{title}}</h1>
                 <h2 class="mb-4">{{title}}</h2>
-                <p>{{textSection}}</p>
+                <!--<p>{{textSection}}</p>-->
               </div>
             </div>
             <div class="row d-flex justify-content-start">
