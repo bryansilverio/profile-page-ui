@@ -1,11 +1,7 @@
 <template>
     <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
         <div class="container">
-            <div class="row justify-content-center py-5 mt-5">
-              <div class="col-md-7 heading-section text-center">
-                <h1 class="mb-4 title-text-color-about-me">{{title}}</h1>
-              </div>
-            </div>
+            <SectionTitle :title="title"/>
             <div class="row d-flex justify-content-start">
                 <div class="col-md-12">
                     <p style="font-size: small;" v-html="about.description"></p>
@@ -21,18 +17,13 @@
         </div>
     </section>
 </template>
-<style>
-    .title-text-color-about-me{
-        color: #FF474C;
-        font-size: 4vw;
-        font-weight: 900;
-    }
-</style>
 <script>
 import VueI18n from '@/translation/i18n'
 import aboutData from "@/data/about.json";
+import SectionTitle from '@/components/_Shared/SectionTitle.vue'
 export default {
     name: "About",
+    components:{SectionTitle},
     data() {
         return {
             title: VueI18n.tc('pages.home.sections.about.name'),

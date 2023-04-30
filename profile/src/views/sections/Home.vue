@@ -13,19 +13,26 @@
                         <div class="one-forth d-flex  align-items-center">
                             <div class="text">
                                 <span class="subheading"></span>
-                                <h1 class="mb-4 mt-3"><span>{{ title }}</span></h1>
-                                <h2 class="mb-4">{{ profile }}</h2>
+                                <h1 class="mb-4 mt-3">
+                                    <span style="font-size:55px">{{ title }}</span>
+                                </h1>
+                                <h2 class="mb-4" style="font-size:20px">
+                                    {{ profile }}
+                                </h2>
                                 <p>
-                                    <a href="#contact-section" class="btn btn-primary py-3 px-4">
+                                    <a href="#contact-section" class="btn btn-primary">
                                         {{lbMyContacts}}
                                     </a> 
-                                    <a href="#projects-section" class="btn btn-white btn-outline-white py-3 px-4">
+                                    <a href="#projects-section" class="btn btn-white btn-outline-white">
                                     {{lbMyProjects}}
                                     </a>
                                 </p>
                                 <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
                                     <li v-for="(v,i) in contactDetails" :key="i">
-                                        <a :href="v.url" target="_blank"><span :class="v.icon"></span>
+                                        <a 
+                                            :href="v.url" 
+                                            target="_blank">
+                                            <span :class="v.icon" style="font-size:17px"></span>
                                         </a>
                                     </li>
                                 </ul>

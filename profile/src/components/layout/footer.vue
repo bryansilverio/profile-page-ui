@@ -5,10 +5,13 @@
 				<div class="col-md">
 					<div class="ftco-footer-widget mb-4">
 						<h2 class="ftco-heading-2">Sobre mí</h2>
-						<p>Mi nombre es Bryan Silverio, soy desarrollador de software.</p>
+						<p style="font-size: small;">
+							Mi nombre es Bryan Silverio, soy desarrollador de software.
+						</p>
 						<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
 							<li v-for="(v,i) in contactDetails" :key="i">
-								<a :href="v.url" target="_blank"><span :class="v.icon"></span>
+								<a :href="v.url" target="_blank">
+									<span :class="v.icon" style="font-size: 17px;"></span>
 								</a>
 							</li>
 						</ul>
@@ -20,32 +23,38 @@
 						<ul class="list-unstyled">
 							<li>
 								<a @click="goToPage('#home-section')">
-									<span class="icon-long-arrow-right mr-2"></span>{{menu.home.name}}
+									<span class="icon-long-arrow-right mr-2"></span>
+									<span style="font-size: small;">{{menu.home.name}}</span>
 								</a>
 							</li>
 							<li>
 								<a @click="goToPage('#about-section')">
-									<span class="icon-long-arrow-right mr-2"></span>{{menu.about.name}}
+									<span class="icon-long-arrow-right mr-2"></span>
+									<span style="font-size:small;">{{menu.about.name}}</span>
 								</a>
 							</li>
 							<li>
 								<a @click="goToPage('#resume-section')">
-									<span class="icon-long-arrow-right mr-2"></span>{{menu.experience.name}}
+									<span class="icon-long-arrow-right mr-2"></span>
+									<span style="font-size: small;">{{menu.experience.name}}</span>
 								</a>
 							</li>
 							<li>
 								<a @click="goToPage('#skills-section')">
-									<span class="icon-long-arrow-right mr-2"></span>{{menu.skills.name}}
+									<span class="icon-long-arrow-right mr-2"></span>
+									<span style="font-size:small;">{{menu.skills.name}}</span>
 								</a>
 							</li>
 							<li>
 								<a @click="goToPage('#projects-section')">
-									<span class="icon-long-arrow-right mr-2"></span>{{menu.projects.name}}
+									<span class="icon-long-arrow-right mr-2"></span>
+									<span style="font-size: small;">{{menu.projects.name}}</span>
 								</a>
 							</li>
 							<li>
 								<a @click="goToPage('#contact-section')">
-									<span class="icon-long-arrow-right mr-2"></span>{{menu.contact.name}}
+									<span class="icon-long-arrow-right mr-2"></span>
+									<span style="font-size:small;">{{menu.contact.name}}</span>
 								</a>
 							</li>
 						</ul>
@@ -57,7 +66,8 @@
 						<ul class="list-unstyled">
 							<li v-for="(v,i) in contactDetails" :key="i">
 								<a :href="v.url" target="_blank">
-									<span class="icon-long-arrow-right mr-2"></span>{{v.name}}
+									<span class="icon-long-arrow-right mr-2"></span>
+									<span style="font-size:small;">{{v.name}}</span>
 								</a>
 							</li>
 						</ul>
@@ -81,7 +91,9 @@
 								<li>
 									<a :href="'mailto:'+about.contactDetails.email">
 										<span class="icon icon-envelope"></span>
-										<span class="text">{{about.contactDetails.email}}</span>
+										<span class="text" style="font-size: small;">
+											{{about.contactDetails.email}}
+										</span>
 									</a>
 								</li>
 							</ul>

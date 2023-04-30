@@ -1,12 +1,7 @@
 <template>
     <section class="ftco-section ftco-no-pb" id="resume-section">
         <div class="container">
-            <div class="row justify-content-center py-5 mt-5">
-                <div class="col-md-10 heading-section text-center">
-                    <h1 class="mb-4 title-text-color-work-experience">{{title}}</h1>
-                    <p>{{textSection}}</p>
-                </div>
-            </div>
+            <SectionTitle :title="title" :textSection="textSection"/>
             <div class="row">
                 <!--------->
                 <div class="col-md-12">
@@ -54,19 +49,15 @@
   align-items: center;
   justify-content: center;
 }
-.title-text-color-work-experience{
-    color: #FF474C;
-    font-size: 4vw;
-    font-weight: 900;
-}
 </style>
 <script>
 import VueI18n from '@/translation/i18n'
 import work_experiences_data from '@/data/work-experiences.json'
 import WorkExperienceItem from '@/components/_Shared/WorkExperienceItem.vue'
+import SectionTitle from '@/components/_Shared/SectionTitle.vue'
 export default {
     name: "WorkExperience",
-    components: { WorkExperienceItem },
+    components: { WorkExperienceItem, SectionTitle },
     data() {
         return {
             title: VueI18n.tc('pages.home.sections.experience.name'),

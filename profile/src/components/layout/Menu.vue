@@ -20,13 +20,13 @@
             </a>
           </li>
           <li class="nav-item menu-options">
-            <a class="nav-link" @click="goToPage('#resume-section')">
-              <span style="font-weight: bold;">{{ menu.experience.name }}</span>
+            <a class="nav-link" @click="goToPage('#skills-section')">
+              <span style="font-weight: bold;">{{ menu.skills.name }}</span>
             </a>
           </li>
           <li class="nav-item menu-options">
-            <a class="nav-link" @click="goToPage('#skills-section')">
-              <span style="font-weight: bold;">{{ menu.skills.name }}</span>
+            <a class="nav-link" @click="goToPage('#resume-section')">
+              <span style="font-weight: bold;">{{ menu.experience.name }}</span>
             </a>
           </li>
           <li class="nav-item menu-options">
