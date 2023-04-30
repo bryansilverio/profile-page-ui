@@ -4,27 +4,43 @@
           <div class="container">
             <div class="row">
               <div class="col-lg-8">
+                <div class="col-md-12" style="margin-top: 100px;">
+                    <h5 style="font-weight:bold;">Detalle del proyecto</h5>
+                    <hr>
+                </div>
                 <div class="col-md-12 heading-section">
-                    <h1 class="big project-name" v-show="false">{{projectDetails.name}}</h1>
-                    <h2 class="mb-4 project-name">{{projectDetails.name}}</h2>
+                        <h1 class="big project-name" v-show="false">
+                            {{projectDetails.name}}
+                        </h1>
+                        <h2 class="mb-4 project-name">
+                            {{projectDetails.name}}
+                        </h2>
                 </div>
 
-                <div class="col-md-12 mt-5">
-                    <img 
-                        :src="projectDetails.company.logo" 
-                        style="border-radius: 50%;"
-                        width="50">
-                    <span style="font-weight: bold;">
-                        {{projectDetails.company.name}}
-                    </span>
-                    -
-                    <span style="font-style: italic;">{{projectDetails.employeeType.name}}</span>
-                    <template v-if="projectDetails.employeeType.id=='CONTRACTOR'">
-                        -
-                        <span style="font-style: italic;">
+                <div class="col-md-12 mt-5 alert" style="background-color: #36394A;">
+                    <p style="line-height: 50%;">
+                        <img 
+                            :src="projectDetails.company.logo" 
+                            style="border-radius: 50%;"
+                            width="50"
+                            height="50">
+                        <span style="font-weight: bold;">
+                            {{projectDetails.company.name}}
+                        </span>
+                    </p>
+                    <p style="line-height: 50%;">
+                        <span style="font-style: bold;">
+                            {{projectDetails.employeeType.name}}
+                        </span>
+                    </p>
+                    <p style="line-height: 50%;">
+                        <template v-if="projectDetails.employeeType.id=='CONTRACTOR'">
+                        <span style="font-style: bold;">
+                            Asignado a:
                             {{projectDetails.employeeType.companyAssigned.name}}
                         </span>
                     </template>
+                    </p>
                 </div>
 
                 <!-- Description-->
@@ -54,9 +70,20 @@
                     </ul>
                 </div>
 
+                <!-- Site -->
+                <div class="col-md-12 mt-5" v-if="projectDetails.urlSite">
+                    <h3>Sitio</h3>
+                    <a 
+                        :href="projectDetails.urlSite" 
+                        target="_blank" 
+                        class="btn btn-white btn-outline-white project-site-btn-block">
+                        {{projectDetails.name}}
+                    </a>
+                </div>
+
               </div> <!-- .col-md-8 -->
               
-              <div class="col-md-4">
+              <div class="col-md-4 mt-5">
                     <ProjectItemSidebar 
                     :projectsRelationed="projects"
                     @onClickToProjectById="onClickToProjectById" />
@@ -85,6 +112,16 @@
     }
     .projects-activities ul li::before {
         content: "📝 " 
+    }
+    hr {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border-top: 3px solid;
+        color: #FF474C;
+    }
+    .project-site-btn-block {
+        display: block;
+        width: 40%;
     }
 </style>
 <script>

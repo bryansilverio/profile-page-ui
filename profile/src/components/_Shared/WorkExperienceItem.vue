@@ -4,9 +4,11 @@
             <span class="timeline-icon">
                 <i class="icon-briefcase text-primary fa-sm fa-fw"></i>
             </span>
-              <h5 class="fw-bold" style="color: #FF474C;">{{item.position}} - {{item.company}}</h5>
-              <p class="text-muted mb-2 fw-bold">{{item.date}}</p>
-              <p class="text-muted" style="font-size: small;" v-html="item.content"></p>
+            <h5 class="fw-bold">
+                {{item.position}} - {{item.company}}
+            </h5>
+            <p class="text-muted mb-2 fw-bold">{{item.date}}</p>
+            <p class="text-muted" style="font-size: small;" v-html="item.content"></p>
         </div>
     </li>
     <!--

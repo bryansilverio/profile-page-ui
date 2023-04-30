@@ -1,5 +1,5 @@
 <template>
-    <div class="col-md-4 d-flex project-item" @click="goToProjectDetails(item.id)" style="cursor: pointer;">
+    <div class="col-md-4 d-flex project-item">
         <div class="blog-entry justify-content-end">
           <a class="block-20" :style="setImage(item.image)">
           </a>
@@ -9,7 +9,19 @@
                     {{item.name}}
                 </h5>
             </div>
-            <p class="margin-content" style="font-size: small;">{{item.description.short}}</p>
+            <div class="margin-content">
+                <p style="font-size: small;">
+                    {{item.description.short}}
+                </p>
+            </div>
+            <div class="clearfix">
+                <button 
+                    @click="goToProjectDetails(item.id)" 
+                    style="cursor: pointer;"
+                    class="btn btn-white btn-outline-white btn-block">
+                    Ver proyecto
+                </button>
+            </div>
           </div>
         </div>
       </div>

@@ -3,8 +3,7 @@
       <div class="container">
         <div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-7 heading-section text-center">
-            <h1 class="big big-2">{{title}}</h1>
-            <h2 class="mb-4">{{title}}</h2>
+            <h1 class="mb-4 title-text-color-contact">{{title}}</h1>
             <p>{{textSection}}</p>
           </div>
         </div>
@@ -42,6 +41,13 @@
       </div>
     </section>
 </template>
+<style>
+    .title-text-color-contact{
+        color: #FF474C;
+        font-size: 4vw;
+        font-weight: 900;
+    }
+</style>
 <script>
 import VueI18n from '@/translation/i18n'
 import ContactItem from '@/components/_Shared/ContactItem.vue'

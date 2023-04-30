@@ -1,17 +1,16 @@
 <template>
     <section class="ftco-section ftco-no-pb" id="resume-section">
         <div class="container">
-            <div class="row justify-content-center pb-5">
+            <div class="row justify-content-center py-5 mt-5">
                 <div class="col-md-10 heading-section text-center">
-                    <h1 class="big big-2">{{title}}</h1>
-                    <h2 class="mb-4">{{title}}</h2>
+                    <h1 class="mb-4 title-text-color-work-experience">{{title}}</h1>
                     <p>{{textSection}}</p>
                 </div>
             </div>
             <div class="row">
                 <!--------->
                 <div class="col-md-12">
-                    <section class="py-5">
+                    <section>
                       <ul class="timeline-with-icons">
                         <template v-for="(v,i) in workExperiences">
                             <WorkExperienceItem :item="v" :key="i"/>  
@@ -30,6 +29,7 @@
   position: relative;
   list-style: none;
   left: 30px;
+  font-size: x-large;
 }
 
 .timeline-with-icons .timeline-item {
@@ -53,6 +53,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.title-text-color-work-experience{
+    color: #FF474C;
+    font-size: 4vw;
+    font-weight: 900;
 }
 </style>
 <script>

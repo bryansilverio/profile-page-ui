@@ -1,16 +1,14 @@
 <template>
     <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
         <div class="container">
-            <div class="row justify-content-center mb-5 pb-5">
+            <div class="row justify-content-center py-5 mt-5">
               <div class="col-md-7 heading-section text-center">
-                <h1 class="big big-2">{{title}}</h1>
-                <h2 class="mb-4">{{title}}</h2>
-                <!--<p>{{textSection}}</p>-->
+                <h1 class="mb-4 title-text-color-about-me">{{title}}</h1>
               </div>
             </div>
             <div class="row d-flex justify-content-start">
                 <div class="col-md-12">
-                    <p v-html="about.description"></p>
+                    <p style="font-size: small;" v-html="about.description"></p>
                 </div>
             </div>
             <div class="counter-wrap d-flex mt-md-3 justify-content-center">
@@ -23,6 +21,13 @@
         </div>
     </section>
 </template>
+<style>
+    .title-text-color-about-me{
+        color: #FF474C;
+        font-size: 4vw;
+        font-weight: 900;
+    }
+</style>
 <script>
 import VueI18n from '@/translation/i18n'
 import aboutData from "@/data/about.json";

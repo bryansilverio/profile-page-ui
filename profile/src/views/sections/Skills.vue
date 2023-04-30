@@ -1,12 +1,10 @@
 <template>
-
     <section class="ftco-section" id="skills-section">
         <div class="container">
             <div class="row justify-content-center py-5 mt-5">
               <div class="col-md-12 heading-section text-center">
-                <h1 class="big big-2">{{title}}</h1>
-                <h2 class="mb-4">{{title}}</h2>
-                <p>{{textSection}}</p>
+                <h1 class="mb-4 title-text-color-skills">{{title}}</h1>
+                <p style="font-size:small;">{{textSection}}</p>
               </div>
             </div>
             <div class="row">
@@ -16,8 +14,14 @@
             </div>
         </div>
     </section>
-
 </template>
+<style>
+    .title-text-color-skills{
+        color: #FF474C;
+        font-size: 4vw;
+        font-weight: 900;
+    }
+</style>
 <script>
 import VueI18n from '@/translation/i18n'
 import skills_data from "@/data/skills.json";

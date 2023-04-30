@@ -5,6 +5,7 @@
     "area":"Diseño y Desarrollo",
     "position": "Desarrollo de diseño y desarrollo de APIs",
     "image": "assets/projects/api_mkt_project.png",
+    "urlSite":null,
     "description": {
       "short": "Área dentro de BBVA donde se diseña y desarrollan APIs que implementan como microservicios basados en REST para exponer funcionalidad bancaria a terceros.",
       "long": "API Market es una área dentro de BBVA la cual se encarga de desarrollar APIs basados en REST para exponer funcionalidad del core bancario a terceros que puedan integrarlas en sus aplicaciones. El proceso consiste en un inicio diseñar la API con un enfoque de negocio para los consumidores, principalmente las aplicaciones frontend."
@@ -46,7 +47,7 @@
     "company": {
       "id": "GONET",
       "name": "GoNet",
-      "logo": "assets/logos/gonet.png"
+      "logo": "/assets/logos/gonet.png"
     },
     "technologies": [
       {
@@ -82,6 +83,7 @@
     "area":"Operaciones - Producción",
     "position": "Desarrollo de diseño y desarrollo de APIs",
     "image": "assets/projects/app-BBVA.png",
+    "urlSite":null,
     "description": {
       "short": "Área dentro de BBVA donde se da el soporte y seguimiento a temas productivos relacionados con los microservicios que usa la App BBVA Mx.",
       "long": "Mobile Retail Servicing es una área dentro de BBVA la cual se encarga de cuidar la producción de los servicios que son usados en la aplicación móvil BBVA. Seguimientos de incidencias de microservicios ya existentes en producción, modificaciones de diseño y desarrollo de microservicios, revisión de cambios por temas de vulnerabilidades de seguridad en servicios."
@@ -150,6 +152,7 @@
     "area":"Desarrollo",
     "position": "Desarrollo Web - Fullstack",
     "image": "assets/projects/loop.jpg",
+    "urlSite":null,
     "description": {
       "short": "Proyecto enfocado a la administración, seguimiento, control de servicios ejecutivos de transporte, el cual incluía dos apps, una enfocada para el cliente y la otra para el ejecutivo/chofer.",
       "long": "Loop es un proyecto en el cual participe el cual consiste en una aplicación que permite llevar el control, seguimiento y visibilidad de servicios de transporte ejecutivos a empresas, donde el cliente puede solicitar un servicio de translado a cualquier parte de México, por medio de una aplicación movil, la operación se puede llevar desde la aplicación web y ademas se le da el seguimiento y se tiene la información en todo momento. El cual por cuestiones tecnicos se decidio migrar ya que la versión de la aplicación no era lo suficientemente escalable. Este proyecto en su versión anterior estaba desarrollado en la parte del C# MVC con .NET Framework y SQL Server principalmente."
@@ -217,6 +220,7 @@
     "area":"Desarrollo",
     "position": "Desarrollo Web - Frontend",
     "image": "assets/projects/BMW.png",
+    "urlSite":null,
     "description": {
       "short": "Proyecto enfocado para la digitalización del proceso de creación de instrucciones de seguridad de la planta de BMW de San Luis Potosí.",
       "long": "BMW safety es un proyecto en el que participe y el cual tenia como objetivo desarrollar una aplicación web para la Planta de San Luis Potosí de BMW para digitalizar y automatizar el proceso de creación instrucciones de seguridad para los diferentes edificios y áreas de la planta para el personal."
@@ -276,6 +280,7 @@
     "area":"Desarrollo",
     "position": "Desarrollo Fullstack - .NET",
     "image": "assets/projects/ieqsa.png",
+    "urlSite":"http://www.ieqsa.com.mx/",
     "description": {
       "short": "Proyecto enfocado al desarrollo de un sistema administrador y sitio web de la envasadora IEQSA.",
       "long": "IEQSA es un proyecto en el que participe, el cual consistia en desarrollar el sitio web de IEQSA (Industria Envasadora de Querétaro) y su administrador, donde se pudiera editar la información, imagenes y contenido en general desde el administrador."
@@ -334,6 +339,7 @@
     "area":"Desarrollo",
     "position": "Desarrollo Backend - .NET",
     "image": "assets/projects/logo-tasinet.jpg",
+    "urlSite":null,
     "description": {
       "short": "Proyecto enfocado a la migración del sitio corporativo de la empresa TasiSoftware.",
       "long": "Portal Tasisoft2 es un proyecto en el cual tuvo como objetivo crear una nueva versión del portal de la empresa."
@@ -390,6 +396,7 @@
     "area":"Desarrollo",
     "position": "Desarrollador Backend - .NET",
     "image": "assets/projects/ryder.jfif",
+    "urlSite":null,
     "description": {
       "short": "Proyecto orientado al seguimiento de los envíos por paquetería y una integración con Web Service SOAP de DHL. Integración con Servicios REST.",
       "long": "Ryder fue un proyecto en el que participe el cual consistia en una aplicación web que gestiona el tracking de los envios por paqueteria. Ryder es un empresa de paquetería y logística, que realiza envíos a diferentes lugares del país. Previamente ya exisitia una aplicación movil pero se necesitaba una versión web."
@@ -454,6 +461,7 @@
     "area":"Desarrollo",
     "position": "Desarrollo Web - Fullstack",
     "image": "assets/projects/rmka-logo-color.jpg",
+    "urlSite":null,
     "description": {
       "short": "Proyecto enfocado a la migración de sistema web de call center para administrar registros servicios para autos de agencias.",
       "long": "Remarkable fue uno de los primeros proyectos en el que participe el cual consistia en crear una aplicación web que permitiera mejorar la experiencia de usuario y mejorar la funcionalidad de la gestión de clientes de un call center, el cual ofrecia servicios de mantenimientos a las personas que sacaban autos de agencias. Anteriormente la operación era llevada por medio una macro en excel y se buscaba una migración a una aplicación web, mejorara la operación. La aplicación se desarrollo principalmente en Java, SQL Server, HTML, CSS, JavaScript, participe tanto en el desarrollo y en el diseño de la base de datos."
