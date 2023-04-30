@@ -5,12 +5,11 @@
           </a>
           <div class="text mt-3 float-right d-block">
             <div class="d-flex align-items-center mb-3 meta margin-content">
-                <p class="mb-0">
-                    <span class="mr-2">{{item.position}}</span>
-                </p>
+                <h5 class="mb-0 project-name">
+                    {{item.name}}
+                </h5>
             </div>
-            <h3 class="heading margin-content"><a>{{item.name}}</a></h3>
-            <p class="margin-content" v-html="item.description.short"></p>
+            <p class="margin-content" style="font-size: small;">{{item.description.short}}</p>
           </div>
         </div>
       </div>
@@ -20,12 +19,22 @@
         background: rgba(255, 255, 255, 0.1);
         border-radius: 5px;
     }
+    .project-name{
+        font-weight: 700;
+        font-size: 20px;
+        color: #FF474C;
+    }
     .margin-content{
-        margin: 30px;
+        margin: 20px;
+    }
+    .margin-content-button{
+        margin: 5px 20px 5px 20px;
+    }
+    .project-item{
+        border-radius: 10px;
     }
     .project-item:hover{
-        transform: scale(1.1);
-        transition: transform .2s;
+         
     }
 </style>
 <script>

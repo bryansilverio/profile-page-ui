@@ -3,7 +3,7 @@
         <span class="date">{{item.position}}</span>
         <h2>{{item.company}}</h2>
         <span class="position">{{item.date}}</span>
-        <p class="mt-4" v-html="item.content"></p>
+        <p class="mt-4" style="font-size: small;" v-html="item.content"></p>
     </div>
 </template>
 <script>

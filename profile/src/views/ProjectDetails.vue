@@ -1,75 +1,42 @@
 <template>
-
     <div>
-        <section class="hero-wrap js-fullheight" style="background-image: url('/assets/images/workspace.jpg');" data-stellar-background-ratio="0.5">
-          <div class="container">
-            <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-center">
-              <div class="col-md-12 pb-5 mb-3 text-center" style="margin-top: 10%;">
-                <h2 class="mb-3 bread">{{projectDetails.name}}</h2>
-                <p class="breadcrumbs">
-                    <span class="mr-2" style="cursor:pointer;">
-                        <a @click="onClickToBack('/')">
-                            {{breadcrumbs.home}} >
-                        </a>
-                    </span> 
-                    <span class="mr-2" style="cursor:pointer;">
-                        <a @click="onClickToBack('/#projects-section')">
-                            {{breadcrumbs.projects}} >
-                        </a>
-                    </span> 
-                    <span>
-                        {{projectDetails.name}}
-                    </span>
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
         <section class="ftco-section">
           <div class="container">
             <div class="row">
-              <div class="col-lg-8 ">
+              <div class="col-lg-8">
                 <div class="col-md-12 heading-section">
                     <h1 class="big">{{projectDetails.name}}</h1>
                     <h2 class="mb-4">{{projectDetails.name}}</h2>
                   </div>
 
-                <p class="mt-5" v-html="projectDetails.description.long"></p>
+                <!-- Description-->
+                <p class="mt-5">{{projectDetails.description.long}}</p>
 
-
-
-                <div class="tag-widget post-tag-container mb-5 mt-5">
-                  <div class="tagcloud">
-                    <a class="tag-cloud-link technology-item" v-for="(v,i) in projectDetails.technologies" :key="i">{{v.name}}</a>
-                  </div>
+                <!-- Technologies -->
+                <div class="tag-widget post-tag-container">
+                    <h2>Tecnologias</h2>
+                      <div class="tagcloud">
+                        <a class="tag-cloud-link technology-item" v-for="(v,i) in projectDetails.technologies" :key="i">{{v.name}}</a>
+                      </div>
                 </div>
-                
-                <div class="about-author d-flex p-4">
-                  <div class="bio mr-5">
-                    <img :src="projectDetails.company.logo" alt="Image placeholder" class="img-fluid mb-4">
-                  </div>
-                  <div class="desc">
-                    <h3>{{aboutProject.developedIn}}:</h3>
-                    <p>
-                        <span><strong>{{aboutProject.company}}:</strong> {{projectDetails.company.name}}</span>
-                        <br>
-                        <span><strong>{{aboutProject.area}}:</strong> {{projectDetails.area}}</span>
-                        <br>
-                        <span><strong>{{aboutProject.position}}:</strong> {{projectDetails.position}}</span>
-                        <br>
-                        <template v-if="projectDetails.employeeType.id=='CONTRACTOR'">
-                            <span><strong>{{aboutProject.assignedTo}}:</strong> {{projectDetails.employeeType.companyAssigned.name}}</span>
-                        </template>
-                    </p>
-                  </div>
+
+                 <!-- Activities -->
+                <div class="col-md-12">
+                    <h2>Actividades</h2>
+                    <ul>
+                        <li v-for="(v,i) in projectDetails.activities" :key="i">
+                            {{v.activity}}
+                        </li>
+                    </ul>
                 </div>
 
               </div> <!-- .col-md-8 -->
               
-              <ProjectItemSidebar 
-                :projectsRelationed="projects"
-                @onClickToProjectById="onClickToProjectById" />
+              <div class="col-md-4">
+                    <ProjectItemSidebar 
+                    :projectsRelationed="projects"
+                    @onClickToProjectById="onClickToProjectById" />
+              </div>
 
             </div>
           </div>

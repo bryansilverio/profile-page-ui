@@ -1,5 +1,5 @@
 <template>
-    <div class="col-lg-4 sidebar">
+    <div class="col-lg-12 sidebar">
         
         <div class="sidebar-box" v-show="false">
           <form action="#" class="search-form">

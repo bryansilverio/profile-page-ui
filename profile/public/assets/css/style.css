@@ -9298,7 +9298,7 @@ textarea.form-control {
   position: relative;
   display: block;
   width: 100%;
-  height: 350px; }
+  height: 200px; }
 
 .blog-entry {
   position: relative; }
@@ -9324,8 +9324,8 @@ textarea.form-control {
     margin-right: 5px;
     margin-bottom: 0;
     font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 2px; }
+    /*text-transform: uppercase;*/
+    /*letter-spacing: 2px;*/ }
     .blog-entry .meta span {
       color: #FF474C; }
     .blog-entry .meta a {
