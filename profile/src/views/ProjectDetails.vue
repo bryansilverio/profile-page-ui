@@ -5,26 +5,50 @@
             <div class="row">
               <div class="col-lg-8">
                 <div class="col-md-12 heading-section">
-                    <h1 class="big">{{projectDetails.name}}</h1>
-                    <h2 class="mb-4">{{projectDetails.name}}</h2>
-                  </div>
+                    <h1 class="big project-name" v-show="false">{{projectDetails.name}}</h1>
+                    <h2 class="mb-4 project-name">{{projectDetails.name}}</h2>
+                </div>
+
+                <div class="col-md-12 mt-5">
+                    <img 
+                        :src="projectDetails.company.logo" 
+                        style="border-radius: 50%;"
+                        width="50">
+                    <span style="font-weight: bold;">
+                        {{projectDetails.company.name}}
+                    </span>
+                    -
+                    <span style="font-style: italic;">{{projectDetails.employeeType.name}}</span>
+                    <template v-if="projectDetails.employeeType.id=='CONTRACTOR'">
+                        -
+                        <span style="font-style: italic;">
+                            {{projectDetails.employeeType.companyAssigned.name}}
+                        </span>
+                    </template>
+                </div>
 
                 <!-- Description-->
-                <p class="mt-5">{{projectDetails.description.long}}</p>
+                <div class="col-md-12 mt-5">
+                    <p class="project-text">{{projectDetails.description.long}}</p>
+                </div>
 
                 <!-- Technologies -->
-                <div class="tag-widget post-tag-container">
-                    <h2>Tecnologias</h2>
-                      <div class="tagcloud">
-                        <a class="tag-cloud-link technology-item" v-for="(v,i) in projectDetails.technologies" :key="i">{{v.name}}</a>
-                      </div>
+                <div class="col-md-12 mt-5">
+                    <div class="tag-widget post-tag-container">
+                        <h3>Tecnologías</h3>
+                          <div class="tagcloud">
+                            <a class="tag-cloud-link technology-item project-text" v-for="(v,i) in projectDetails.technologies" :key="i">{{v.name}}</a>
+                          </div>
+                    </div>
                 </div>
 
                  <!-- Activities -->
-                <div class="col-md-12">
-                    <h2>Actividades</h2>
-                    <ul>
-                        <li v-for="(v,i) in projectDetails.activities" :key="i">
+                <div class="col-md-12 mt-5 projects-activities">
+                    <h3>Actividades</h3>
+                    <ul class="list-unstyled">
+                        <li v-for="(v,i) in projectDetails.activities" 
+                            :key="i" 
+                            class="project-text">
                             {{v.activity}}
                         </li>
                     </ul>
@@ -43,19 +67,24 @@
         </section> <!-- .section -->
 
     </div>
-   
 </template>
 <style>
     .about-author{
         background-color: #36394A;
     }
-    .slider-text .bread{
+    .project-name{
         color: #FF474C;
     }
     .technology-item:hover{
         background-color: #FF474C;
         cursor: pointer;
         font-weight: bold;
+    }
+    .project-text{
+        font-size: small;
+    }
+    .projects-activities ul li::before {
+        content: "📝 " 
     }
 </style>
 <script>

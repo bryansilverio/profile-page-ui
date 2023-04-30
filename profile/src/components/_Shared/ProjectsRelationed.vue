@@ -6,10 +6,7 @@
         @click="onClickToProjectById(v.id)" style="cursor:pointer;">
         <a class="blog-img mr-4" :style="setImage(v.image)"></a>
         <div class="text">
-          <h3 class="heading"><a>{{v.name}}</a></h3>
-          <div class="meta">
-            <div><a href="#"><span class="icon-person">{{v.company.name}}</span> </a></div>
-          </div>
+          <h6 class="heading mt-3" style="font-size:small;"><a>{{v.name}}</a></h6>
         </div>
         <hr>
       </div>
@@ -38,7 +35,7 @@ export default{
   },
   methods:{
     setImage(url){
-      return "background-image: url("+process.env.VUE_APP_BASE_URL+"/"+url+");";
+      return "background-image: url("+process.env.VUE_APP_BASE_URL+"/"+url+");width:60px;height:60px;";
     },
     onClickToProjectById(id) {
       this.$emit("onClickToProjectById", id)
