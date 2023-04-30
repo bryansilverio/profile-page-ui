@@ -6,7 +6,7 @@
                 <div class="container">
                     <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
                         data-scrollax-parent="true">
-                        <div class="one-third js-fullheight order-md-last img"
+                        <div v-show="false" class="one-third js-fullheight order-md-last img"
                             style="background-image:url(assets/images/bg_1.png);">
                             <div class="overlay"></div>
                         </div>
