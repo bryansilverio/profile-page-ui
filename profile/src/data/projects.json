@@ -1,5 +1,74 @@
 [
   {
+    "id": "MOBILE-RETAIL-SERVICING",
+    "name": "Mobile Retail Servicing",
+    "area":"Operaciones - Producción",
+    "position": "Desarrollo de diseño y desarrollo de APIs",
+    "image": "assets/projects/app-BBVA.png",
+    "urlSite":null,
+    "description": {
+      "short": "Área dentro de BBVA donde se da el soporte y seguimiento a temas productivos relacionados con los microservicios que usa la App BBVA Mx.",
+      "long": "Mobile Retail Servicing es una área dentro de BBVA la cual se encarga de cuidar la producción de los servicios que son usados en la aplicación móvil BBVA. Seguimientos de incidencias de microservicios ya existentes en producción, modificaciones de diseño y desarrollo de microservicios, revisión de cambios por temas de vulnerabilidades de seguridad en servicios."
+    },
+    "activities":[
+      {
+        "activity":"Analizar y revisar soluciones para corregir incidencias productivas en microservicios que cumplan con las prácticas y estándares establecidos en la parte del diseño de servicios REST."
+      },
+      {
+        "activity":"Analizar y revisar soluciones para cubrir vulnerabilidades de seguridad en microservicios."
+      },
+      {
+        "activity":"Seguimiento y canalización de solicitudes de pruebas en aplicación móvil BBVA sobre cambios en microservicios."
+      },
+      {
+        "activity":"Llevar el control y seguimiento de las funcionalidades y microservicios que utiliza la aplicación BBVA."
+      }
+    ],
+    "employeeType":{
+      "id":"CONTRACTOR",
+      "name":"Contractor",
+      "companyAssigned":{
+        "id": "BBVA",
+        "name": "BBVA"
+      }
+    },
+    "company": {
+      "id": "GONET",
+      "name": "GoNet",
+      "logo": "/assets/logos/gonet.png"
+    },
+    "technologies": [
+      {
+        "name": "Java",
+        "type": "Backend",
+        "icon": "devicon-java-plain colored"
+      },
+      {
+        "name": "Maven",
+        "type": "Backend"
+      },
+      {
+        "name": "Spring",
+        "type": "Backend",
+        "icon": "devicon-spring-plain colored"
+      },
+      {
+        "name": "RAML",
+        "type": "Backend"
+      },
+      {
+        "name": "Git",
+        "type": "Devtools",
+        "icon": "devicon-git-plain colored"
+      },
+      {
+        "name": "Jira",
+        "type": "Devtools",
+        "icon": "devicon-jira-plain colored"
+      }
+    ]
+  },
+  {
     "id": "API-MARKET",
     "name": "API Market",
     "area":"Diseño y Desarrollo",
@@ -64,75 +133,6 @@
         "name": "RAML",
         "type": "Backend",
         "icon": ""
-      },
-      {
-        "name": "Git",
-        "type": "Devtools",
-        "icon": "devicon-git-plain colored"
-      },
-      {
-        "name": "Jira",
-        "type": "Devtools",
-        "icon": "devicon-jira-plain colored"
-      }
-    ]
-  },
-  {
-    "id": "MOBILE-RETAIL-SERVICING",
-    "name": "Mobile Retail Servicing",
-    "area":"Operaciones - Producción",
-    "position": "Desarrollo de diseño y desarrollo de APIs",
-    "image": "assets/projects/app-BBVA.png",
-    "urlSite":null,
-    "description": {
-      "short": "Área dentro de BBVA donde se da el soporte y seguimiento a temas productivos relacionados con los microservicios que usa la App BBVA Mx.",
-      "long": "Mobile Retail Servicing es una área dentro de BBVA la cual se encarga de cuidar la producción de los servicios que son usados en la aplicación móvil BBVA. Seguimientos de incidencias de microservicios ya existentes en producción, modificaciones de diseño y desarrollo de microservicios, revisión de cambios por temas de vulnerabilidades de seguridad en servicios."
-    },
-    "activities":[
-      {
-        "activity":"Analizar y revisar soluciones para corregir incidencias productivas en microservicios que cumplan con las prácticas y estándares establecidos en la parte del diseño de servicios REST."
-      },
-      {
-        "activity":"Analizar y revisar soluciones para cubrir vulnerabilidades de seguridad en microservicios."
-      },
-      {
-        "activity":"Seguimiento y canalización de solicitudes de pruebas en aplicación móvil BBVA sobre cambios en microservicios."
-      },
-      {
-        "activity":"Llevar el control y seguimiento de las funcionalidades y microservicios que utiliza la aplicación BBVA."
-      }
-    ],
-    "employeeType":{
-      "id":"CONTRACTOR",
-      "name":"Contractor",
-      "companyAssigned":{
-        "id": "BBVA",
-        "name": "BBVA"
-      }
-    },
-    "company": {
-      "id": "GONET",
-      "name": "GoNet",
-      "logo": "/assets/logos/gonet.png"
-    },
-    "technologies": [
-      {
-        "name": "Java",
-        "type": "Backend",
-        "icon": "devicon-java-plain colored"
-      },
-      {
-        "name": "Maven",
-        "type": "Backend"
-      },
-      {
-        "name": "Spring",
-        "type": "Backend",
-        "icon": "devicon-spring-plain colored"
-      },
-      {
-        "name": "RAML",
-        "type": "Backend"
       },
       {
         "name": "Git",

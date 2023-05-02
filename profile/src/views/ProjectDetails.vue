@@ -9,12 +9,12 @@
                     <hr>
                 </div>
                 <div class="col-md-12 heading-section">
-                        <h1 class="big project-name" v-show="false">
-                            {{projectDetails.name}}
-                        </h1>
-                        <h2 class="mb-4 project-name">
-                            {{projectDetails.name}}
-                        </h2>
+                    <h1 class="big project-name" v-show="false">
+                        {{projectDetails.name}}
+                    </h1>
+                    <h2 class="mb-4 project-name">
+                        {{projectDetails.name}}
+                    </h2>
                 </div>
 
                 <div class="col-md-12 mt-5 alert" style="background-color: #36394A;">
@@ -101,6 +101,7 @@
     }
     .project-name{
         color: #FF474C;
+        font-size: 15px;
     }
     .technology-item:hover{
         background-color: #FF474C;
