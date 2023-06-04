@@ -73,6 +73,8 @@
     <link rel="stylesheet" href="<%= BASE_URL %>assets/css/flaticon.css" />
     <link rel="stylesheet" href="<%= BASE_URL %>assets/css/icomoon.css" />
     <link rel="stylesheet" href="<%= BASE_URL %>assets/css/style.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
     <noscript>
@@ -125,8 +127,11 @@
 
     <script src="<%= BASE_URL %>assets/js/main.js"></script>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
     <script type="text/javascript">
       window.scrollTo({ top: 0, behavior: 'smooth' });
+      AOS.init();
     </script>
   </body>
 </html>

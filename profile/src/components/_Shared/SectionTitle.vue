@@ -6,7 +6,7 @@
 		<div class="col-md-10">
 			<hr>
 		</div>
-		<p style="font-size:small;">{{textSection}}</p>
+		<p style="font-size:22px;">{{textSection}}</p>
 	</div>
 </template>
 <style>

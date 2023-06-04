@@ -14,10 +14,19 @@
                             <div class="text">
                                 <span class="subheading"></span>
                                 <h1 class="mb-4 mt-3">
-                                    <span style="font-size:55px">{{ title }}</span>
+                                    <span 
+                                        style="font-size:55px" 
+                                        data-aos="fade-up"
+                                        data-aos-delay="800">
+                                        {{ title }}
+                                    </span>
                                 </h1>
-                                <h2 class="mb-4" style="font-size:20px">
-                                    {{ profile }}
+                                <h2 class="mb-4">
+                                    <span  
+                                        style="font-size:20px"
+                                        data-aos="fade-up">
+                                        {{ profile }}
+                                    </span>
                                 </h2>
                                 <p>
                                     <a href="#contact-section" class="btn btn-primary">

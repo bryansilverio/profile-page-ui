@@ -7,21 +7,13 @@
             <h5 class="fw-bold" style="font-size:20px">
                 {{item.position}} - {{item.company}}
             </h5>
-            <p class="text-muted mb-2 fw-bold" style="font-size:small;">
+            <p class="text-muted mb-2 fw-bold" style="font-size:18px;">
                 <i class="icon-calendar text-primary fa-sm fa-fw"></i>
                 {{item.date}}
             </p>
             <p class="text-muted" style="font-size: small;" v-html="item.content"></p>
         </div>
     </li>
-    <!--
-    <div class="resume-wrap">
-        <span class="date">{{item.position}}</span>
-        <h2>{{item.company}}</h2>
-        <span class="position">{{item.date}}</span>
-        <p class="mt-4" style="font-size: small;" v-html="item.content"></p>
-    </div>
-    -->
 </template>
 <script>
 import VueI18n from '@/translation/i18n'
