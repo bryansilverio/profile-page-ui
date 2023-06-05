@@ -63,7 +63,7 @@ export default {
     props: {
         item: {
             type: Object
-        },
+        }
     },
     methods: {
         setImage(url){

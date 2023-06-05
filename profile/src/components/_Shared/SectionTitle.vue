@@ -1,12 +1,12 @@
 <template>
 	<div class="row justify-content-center py-5 mt-5">
 		<div class="col-md-12 heading-section text-center">
-			<h1 class="mb-4 title-text-color">{{title}}</h1>
+			<h2 class="mb-4 title-text-color">{{title}}</h2>
 		</div>
 		<div class="col-md-10">
 			<hr>
 		</div>
-		<p style="font-size:22px;">{{textSection}}</p>
+		<p>{{textSection}}</p>
 	</div>
 </template>
 <style>
@@ -18,7 +18,7 @@
     }
     .title-text-color{
         color: #FF474C;
-        font-size: 3vw;
+        font-size: 3rem;
         font-weight: 900;
     }
 </style>

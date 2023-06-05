@@ -15,7 +15,7 @@
                                 <span class="subheading"></span>
                                 <h1 class="mb-4 mt-3">
                                     <span 
-                                        style="font-size:55px" 
+                                        style="font-size:4rem" 
                                         data-aos="fade-up"
                                         data-aos-delay="800">
                                         {{ title }}
@@ -23,7 +23,7 @@
                                 </h1>
                                 <h2 class="mb-4">
                                     <span  
-                                        style="font-size:20px"
+                                        style="font-size:2rem"
                                         data-aos="fade-up">
                                         {{ profile }}
                                     </span>

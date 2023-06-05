@@ -5,6 +5,7 @@
     "area":"Operaciones - Producción",
     "position": "Desarrollo de diseño y desarrollo de APIs",
     "image": "assets/projects/app-BBVA.png",
+    "projectType":"COMPANY_PROJECT",
     "urlSite":null,
     "description": {
       "short": "Área dentro de BBVA donde se da el soporte y seguimiento a temas productivos relacionados con los microservicios que usa la App BBVA Mx.",
@@ -74,6 +75,7 @@
     "area":"Diseño y Desarrollo",
     "position": "Desarrollo de diseño y desarrollo de APIs",
     "image": "assets/projects/api_mkt_project.png",
+    "projectType":"COMPANY_PROJECT",
     "urlSite":null,
     "description": {
       "short": "Área dentro de BBVA donde se diseña y desarrollan APIs que implementan como microservicios basados en REST para exponer funcionalidad bancaria a terceros.",
@@ -152,6 +154,7 @@
     "area":"Desarrollo",
     "position": "Desarrollo Web - Fullstack",
     "image": "assets/projects/loop.jpg",
+    "projectType":"COMPANY_PROJECT",
     "urlSite":null,
     "description": {
       "short": "Proyecto enfocado a la administración, seguimiento, control de servicios ejecutivos de transporte, el cual incluía dos apps, una enfocada para el cliente y la otra para el ejecutivo/chofer.",
@@ -220,6 +223,7 @@
     "area":"Desarrollo",
     "position": "Desarrollo Web - Frontend",
     "image": "assets/projects/BMW.png",
+    "projectType":"COMPANY_PROJECT",
     "urlSite":null,
     "description": {
       "short": "Proyecto enfocado para la digitalización del proceso de creación de instrucciones de seguridad de la planta de BMW de San Luis Potosí.",
@@ -280,6 +284,7 @@
     "area":"Desarrollo",
     "position": "Desarrollo Fullstack - .NET",
     "image": "assets/projects/ieqsa.png",
+    "projectType":"COMPANY_PROJECT",
     "urlSite":"http://www.ieqsa.com.mx/",
     "description": {
       "short": "Proyecto enfocado al desarrollo de un sistema administrador y sitio web de la envasadora IEQSA.",
@@ -339,6 +344,7 @@
     "area":"Desarrollo",
     "position": "Desarrollo Backend - .NET",
     "image": "assets/projects/logo-tasinet.jpg",
+    "projectType":"COMPANY_PROJECT",
     "urlSite":null,
     "description": {
       "short": "Proyecto enfocado a la migración del sitio corporativo de la empresa TasiSoftware.",
@@ -396,6 +402,7 @@
     "area":"Desarrollo",
     "position": "Desarrollador Backend - .NET",
     "image": "assets/projects/ryder.jfif",
+    "projectType":"COMPANY_PROJECT",
     "urlSite":null,
     "description": {
       "short": "Proyecto orientado al seguimiento de los envíos por paquetería y una integración con Web Service SOAP de DHL. Integración con Servicios REST.",
@@ -461,6 +468,7 @@
     "area":"Desarrollo",
     "position": "Desarrollo Web - Fullstack",
     "image": "assets/projects/rmka-logo-color.jpg",
+    "projectType":"COMPANY_PROJECT",
     "urlSite":null,
     "description": {
       "short": "Proyecto enfocado a la migración de sistema web de call center para administrar registros servicios para autos de agencias.",
@@ -508,6 +516,45 @@
         "name": "SQL",
         "type": "Database",
         "icon": "devicon-microsoftsqlserver-plain colored"
+      }
+    ]
+  },
+  {
+    "id": "API_LIBRARY_EXTENSIONS",
+    "name": "Api.Library.Extensions.Filters",
+    "area":"Desarrollo",
+    "position": "Desarrollo Personal",
+    "image": "assets/projects/proyecto_personal.jpg",
+    "projectType":"PERSONAL_PROJECT",
+    "urlSite":"https://gitlab.com/libraries-apps/api-library-extensions",
+    "description": {
+      "short": "Librería desarrollada para proyectos .NET Core C#, principalmente para APIs, que se usa para controlar las excepciones y que la API regrese una respuesta generica basada en la excepción que se use.",
+      "long": "Api.Library.Extensions.Filters es una librería desarrollada para proyectos .NET Core C#, principalmente para APIs, que se usa para controlar las excepciones y que la API regrese una respuesta generica basada en la excepción que se use."
+    },
+    "activities":[
+      {
+        "activity":""
+      }
+    ],
+    "employeeType":{
+      "id":"PERSONAL_PROJECT",
+      "name":"Proyecto Personal"
+    },
+    "company": {
+      "id": "PERSONAL_PROJECT",
+      "name": "Proyecto Personal",
+      "logo": "/assets/logos/personal.png"
+    },
+    "technologies": [
+       {
+        "name": "CSHARP",
+        "type": "Backend",
+        "icon": "devicon-csharp-plain colored"
+      },
+      {
+        "name": ".NET Framework",
+        "type": "Backend",
+        "icon": "devicon-dot-net-plain-wordmark colored"
       }
     ]
   }

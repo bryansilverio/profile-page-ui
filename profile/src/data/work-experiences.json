@@ -1,42 +1,47 @@
 [
     {
+        "id":"JAVA_DEVELOPER",
         "position": "Desarrollador Java",
         "company": "GoNet",
         "logo":"assets/logos/gonet.png",
         "date": "Mayo 2021 - Actualmente",
         "number": "2021",
-        "content": "<p>Participación en proyecto dentro de BBVA relacionado con la banca, desarrollo de APIs/microservicios usando Restful, usando Java, RAML para documentar APIs, Kanban (Jira).</p>"
+        "content": "Participación en proyecto dentro de BBVA relacionado con la banca, desarrollo de APIs/microservicios usando Restful, usando Java, RAML para documentar APIs, Kanban (Jira)."
     },
     {
+        "id":"FULLSTACK_DEVELOPER",
         "position": "Desarrollador Fullstack",
         "company": "Bitfx",
         "logo":"/assets/logos/bitfx.png",
         "date": "Agosto 2019 - Abril 2021",
         "number": "2019",
-        "content": "<p>Participación en proyectos como fullstack, backend (PHP Laravel), Frontend (VueJS, Vuetify), base de datos (MySQL, Eloquent), control de versiones (GIT). </p>"
+        "content": "Participación en proyectos como fullstack, backend (PHP Laravel), Frontend (VueJS, Vuetify), base de datos (MySQL, Eloquent), control de versiones (GIT)."
     },
     {
+        "id":".NET_DEVELOPER",
         "position": "Desarrollador .NET",
         "company": "Tasi Software",
         "logo":"assets/logos/tasisoftware.png",
         "date": "Enero 2018 - Agosto 2019",
         "number": "2018",
-        "content": "<p>Participación en proyectos (.NET Framework) y soporte a plataforma de reclutamiento.</p>"
+        "content": "Participación en proyectos (.NET Framework) y soporte a plataforma de reclutamiento."
     },
     {
-        "position": "Desarrollador .NET",
+        "id":"SOTWARE_DEVELOPER",
+        "position": "Desarrollador de Software",
         "company": "DW Software",
         "logo":"assets/logos/dwsoftware.jfif",
         "date": "Agosto 2017 - Noviembre 2017",
         "number": "2017",
-        "content": "<p>Participación de proyecto (.NET Framework) relacionado con logística, Ryder y DHL, usando arquitectura SOA.</p>"
+        "content": "Participación de proyecto (.NET Framework) relacionado con logística, Ryder y DHL, usando arquitectura SOA."
     },
     {
+        "id":"WEB_DEVELOPER",
         "position": "Desarrollador Web",
         "company": "IT Group",
         "logo":"assets/logos/itgroup.png",
         "date": "Agosto 2015 - Agosto 2017",
         "number": "2015",
-        "content": "<p>Participación de proyectos web como fullstack, backend (Java, .NET Framework), frontend (Javascript, Html), base de datos (SQL Server, MySQL), control de versiones (GIT).</p>"
+        "content": "Participación de proyectos web como fullstack, backend (Java, .NET Framework), frontend (Javascript, Html), base de datos (SQL Server, MySQL), control de versiones (GIT)."
     }
 ]

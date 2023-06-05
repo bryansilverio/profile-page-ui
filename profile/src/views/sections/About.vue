@@ -4,7 +4,7 @@
             <SectionTitle :title="title"/>
             <div class="row d-flex justify-content-start">
                 <div class="col-md-12">
-                    <p style="font-size: 22px;" v-html="about.description"></p>
+                    <p v-html="about.description"></p>
                 </div>
             </div>
             <div class="counter-wrap d-flex mt-md-3 justify-content-center">

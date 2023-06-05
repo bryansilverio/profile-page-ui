@@ -28,19 +28,6 @@
                             {{projectDetails.company.name}}
                         </span>
                     </p>
-                    <p style="line-height: 50%;">
-                        <span style="font-style: bold;">
-                            {{projectDetails.employeeType.name}}
-                        </span>
-                    </p>
-                    <p style="line-height: 50%;">
-                        <template v-if="projectDetails.employeeType.id=='CONTRACTOR'">
-                        <span style="font-style: bold;">
-                            Asignado a:
-                            {{projectDetails.employeeType.companyAssigned.name}}
-                        </span>
-                    </template>
-                    </p>
                 </div>
 
                 <!-- Description-->
