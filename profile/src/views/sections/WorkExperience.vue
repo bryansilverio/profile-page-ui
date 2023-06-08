@@ -5,20 +5,26 @@
             <div class="row">
                 <div class="col-md-12">
                     <section>
-                        <div class="slider">
-                            <button 
-                                v-for="(v,i) in items"
-                                :key="i"
-                                class="btn btn-outline-white" 
-                                :class="v.active?'btn-primary':'btn-white'"
-                                @click="onChangeItem(v)">
-                                {{v.position}}
-                            </button>
-                        </div>
-                        <div class="slides mt-5">
-                            <WorkExperienceItem 
-                                :items="items"  
-                                :divId="itemSelected?itemSelected.id:null"/>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="slider">
+                                    <button 
+                                        v-for="(v,i) in items"
+                                        :key="i"
+                                        class="btn btn-outline-white btn-block" 
+                                        :class="v.active?'btn-primary':'btn-white'"
+                                        @click="onChangeItem(v)">
+                                        {{v.position}}
+                                    </button>
+                            </div>
+                            </div>
+                            <div class="col-md-8">                         
+                                <div class="slides">
+                                    <WorkExperienceItem 
+                                        :items="items"  
+                                        :divId="itemSelected?itemSelected.id:null"/>
+                                </div>
+                            </div>
                         </div>
                     </section>
                 </div>
@@ -28,8 +34,13 @@
 </template>
 <style>
     .slider {
-      text-align: center;
-      overflow: hidden;
+        text-align: left;
+        overflow: hidden;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 100%;
+        min-height: 100vh;
     }
 
     .slider > a {
