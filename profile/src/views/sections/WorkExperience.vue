@@ -40,7 +40,6 @@
         align-items: flex-start;
         flex-direction: column;
         width: 100%;
-        min-height: 100vh;
     }
 
     .slider > a {
