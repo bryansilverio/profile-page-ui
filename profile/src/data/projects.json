@@ -526,7 +526,7 @@
     "position": "Desarrollo Personal",
     "image": "assets/projects/proyecto_personal.jpg",
     "projectType":"PERSONAL_PROJECT",
-    "urlSite":"https://gitlab.com/libraries-apps/api-library-extensions",
+    "urlSite":"https://www.nuget.org/packages/Api.Library.Extensions.Filters",
     "description": {
       "short": "Librería desarrollada para proyectos .NET Core C#, principalmente para APIs, que se usa para controlar las excepciones y que la API regrese una respuesta generica basada en la excepción que se use.",
       "long": "Api.Library.Extensions.Filters es una librería desarrollada para proyectos .NET Core C#, principalmente para APIs, que se usa para controlar las excepciones y que la API regrese una respuesta generica basada en la excepción que se use."
