@@ -7,9 +7,8 @@
                     <section>
                         <div class="row">
                             <div class="col-md-4">
-                                <div class="slider">
+                                <div class="slider" data-aos="fade-right">
                                     <button 
-                                        data-aos="zoom-in"
                                         v-for="(v,i) in items"
                                         :key="i"
                                         class="btn btn-outline-white btn-block" 
