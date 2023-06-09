@@ -1,9 +1,9 @@
 <template>
     <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
         <div class="container">
-            <SectionTitle :title="title"/>
+            <SectionTitle :title="title" data-aos="fade-right"/>
             <div class="row d-flex justify-content-start">
-                <div class="col-md-12">
+                <div class="col-md-12" data-aos="fade-right">
                     <p v-html="about.description"></p>
                 </div>
             </div>

@@ -1,11 +1,11 @@
 <template>
     <section class="ftco-section" id="projects-section">
       <div class="container">
-        <SectionTitle :title="title" :textSection="textSection"/>
+        <SectionTitle :title="title" :textSection="textSection" data-aos="fade-left"/>
         <div class="row">
             <div class="col-md-12">
                 <ul class="projects-ul">
-                    <li class="projects-li">
+                    <li class="projects-li" data-aos="zoom-in">
                         <button 
                             class="btn btn-outline-white btn-block"
                             :class="options.showAll?'btn-primary':'btn-white'"
@@ -13,7 +13,7 @@
                             Todos
                         </button>
                     </li>
-                    <li class="projects-li">
+                    <li class="projects-li" data-aos="zoom-in">
                         <button 
                             class="btn btn-outline-white btn-block"
                             :class="options.showCompanies?'btn-primary':'btn-white'"
@@ -21,7 +21,7 @@
                             Participación en empresas
                         </button>
                     </li>
-                    <li class="projects-li">
+                    <li class="projects-li" data-aos="zoom-in">
                         <button 
                             class="btn btn-outline-white btn-block"
                             :class="options.showPersonal?'btn-primary':'btn-white'"
@@ -34,7 +34,8 @@
         </div>
         <div class="row d-flex">
             <template v-if="items.length>0">
-                <ProjectItem 
+                <ProjectItem
+                    data-aos="zoom-in" 
                     v-for="(v,i) in items" 
                     :key="i" 
                     :item="v"/>

@@ -1,7 +1,7 @@
 <template>
     <section class="ftco-section ftco-no-pb" id="resume-section">
         <div class="container">
-            <SectionTitle :title="title" :textSection="textSection"/>
+            <SectionTitle :title="title" :textSection="textSection" data-aos="fade-right"/>
             <div class="row">
                 <div class="col-md-12">
                     <section>
@@ -9,6 +9,7 @@
                             <div class="col-md-4">
                                 <div class="slider">
                                     <button 
+                                        data-aos="zoom-in"
                                         v-for="(v,i) in items"
                                         :key="i"
                                         class="btn btn-outline-white btn-block" 
@@ -20,7 +21,8 @@
                             </div>
                             <div class="col-md-8">                         
                                 <div class="slides">
-                                    <WorkExperienceItem 
+                                    <WorkExperienceItem
+                                        data-aos="zoom-in" 
                                         :items="items"  
                                         :divId="itemSelected?itemSelected.id:null"/>
                                 </div>

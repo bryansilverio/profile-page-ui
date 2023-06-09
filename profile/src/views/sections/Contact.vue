@@ -1,9 +1,9 @@
 <template>
 <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
       <div class="container">
-        <SectionTitle :title="title"/>
+        <SectionTitle :title="title" data-aos="fade-right"/>
         <div class="row d-flex contact-info mb-5">
-          <ContactItem v-for="(v,i) in contactDetails" :key="i" :item="v"/>
+          <ContactItem v-for="(v,i) in contactDetails" :key="i" :item="v" data-aos="zoom-in"/>
         </div>
       </div>
     </section>

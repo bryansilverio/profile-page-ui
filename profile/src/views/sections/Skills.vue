@@ -1,9 +1,9 @@
 <template>
     <section class="ftco-section" id="skills-section">
         <div class="container">
-            <SectionTitle :title="title" :textSection="textSection"/>
+            <SectionTitle :title="title" :textSection="textSection" data-aos="fade-left"/>
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12" data-aos="fade-left">
                     <ul class="skills-ul">
                         <li class="skills-li">
                             <button 
@@ -46,33 +46,39 @@
                     <Skillitem 
                         v-for="(v,i) in frontendSkills" 
                         :key="i*2" 
-                        :item="v"/>
+                        :item="v"
+                        data-aos="zoom-in"/>
                     <Skillitem 
                         v-for="(v,i) in backendSkills" 
                         :key="i*20" 
-                        :item="v"/>
+                        :item="v"
+                        data-aos="zoom-in"/>
                     <Skillitem 
                         v-for="(v,i) in devtoolsSkills" 
                         :key="i*200" 
-                        :item="v"/>
+                        :item="v"
+                        data-aos="zoom-in"/>
                 </template>
                 <template v-else-if="options.showFrontend">
                     <Skillitem 
                         v-for="(v,i) in frontendSkills" 
                         :key="i*2" 
-                        :item="v"/>
+                        :item="v"
+                        data-aos="zoom-in"/>
                 </template>
                 <template v-else-if="options.showBackend">
                     <Skillitem 
                         v-for="(v,i) in backendSkills" 
                         :key="i*20" 
-                        :item="v"/>
+                        :item="v"
+                        data-aos="zoom-in"/>
                 </template>
                 <template v-else-if="options.showDevtools">
                     <Skillitem 
                         v-for="(v,i) in devtoolsSkills" 
                         :key="i*200" 
-                        :item="v"/>
+                        :item="v"
+                        data-aos="zoom-in"/>
                 </template>
             </div>
         </div>

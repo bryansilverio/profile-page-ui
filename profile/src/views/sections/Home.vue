@@ -16,17 +16,17 @@
                                 <h1 class="mb-4 mt-3">
                                     <span 
                                         style="font-size:4rem" 
-                                        data-aos="fade-up"
-                                        data-aos-delay="800">
+                                        data-aos="fade-down">
                                         {{ title }}
                                     </span>
                                 </h1>
                                 <h2 class="mb-4">
-                                    <span  
-                                        style="font-size:2rem"
-                                        data-aos="fade-up">
-                                        {{ profile }}
-                                    </span>
+                                    <div data-aos="fade-left">
+                                        <span  
+                                            style="font-size:2rem">
+                                            {{ profile }}
+                                        </span>
+                                    </div>
                                 </h2>
                                 <p>
                                     <a href="#contact-section" class="btn btn-primary">
