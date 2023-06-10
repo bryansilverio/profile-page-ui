@@ -3,74 +3,13 @@
         <section class="ftco-section">
           <div class="container">
             <div class="row">
-              <div class="col-lg-8">
-                <div class="col-md-12" style="margin-top: 100px;">
-                    <h5 style="font-weight:bold;">Detalle del proyecto</h5>
-                    <hr>
-                </div>
-                <div class="col-md-12 heading-section">
-                    <h1 class="big project-name" v-show="false">
-                        {{projectDetails.name}}
-                    </h1>
-                    <h2 class="mb-4 project-name">
-                        {{projectDetails.name}}
-                    </h2>
-                </div>
-
-                <div class="col-md-12 mt-5 alert" style="background-color: #36394A;">
-                    <p style="line-height: 50%;">
-                        <img 
-                            :src="projectDetails.company.logo" 
-                            style="border-radius: 50%;"
-                            width="50"
-                            height="50">
-                        <span style="font-weight: bold;">
-                            {{projectDetails.company.name}}
-                        </span>
-                    </p>
-                </div>
-
-                <!-- Description-->
-                <div class="col-md-12 mt-5">
-                    <p class="project-text">{{projectDetails.description.long}}</p>
-                </div>
-
-                <!-- Technologies -->
-                <div class="col-md-12 mt-5">
-                    <div class="tag-widget post-tag-container">
-                        <h3>Tecnologías</h3>
-                          <div class="tagcloud">
-                            <a class="tag-cloud-link technology-item project-text" v-for="(v,i) in projectDetails.technologies" :key="i">{{v.name}}</a>
-                          </div>
-                    </div>
-                </div>
-
-                 <!-- Activities -->
-                <div class="col-md-12 mt-5 projects-activities">
-                    <h3>Actividades</h3>
-                    <ul class="list-unstyled">
-                        <li v-for="(v,i) in projectDetails.activities" 
-                            :key="i" 
-                            class="project-text">
-                            {{v.activity}}
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Site -->
-                <div class="col-md-12 mt-5" v-if="projectDetails.urlSite">
-                    <h3>Sitio</h3>
-                    <a 
-                        :href="projectDetails.urlSite" 
-                        target="_blank" 
-                        class="btn btn-white btn-outline-white project-site-btn-block">
-                        {{projectDetails.name}}
-                    </a>
-                </div>
+              <div class="col-lg-12" style="margin-top: 100px;">
+                
+                <div v-html="htmlContent"></div>
 
               </div> <!-- .col-md-8 -->
               
-              <div class="col-md-4 mt-5">
+              <div class="col-md-4 mt-5" v-show="false">
                     <ProjectItemSidebar 
                     :projectsRelationed="projects"
                     @onClickToProjectById="onClickToProjectById" />
@@ -116,9 +55,11 @@
 import VueI18n from '@/translation/i18n'
 import ProjectItemSidebar from '@/components/_Shared/ProjectItemSidebar.vue'
 import projects_data from "@/data/projects.json";
+import findProjectDetailsService from "@/services/findProjectDetailsService.js"
 export default {
     name: 'ProjectDetails',
     components: { ProjectItemSidebar },
+    mixins:[findProjectDetailsService],
     data() {
         return {
             projectDetails: {},
@@ -161,6 +102,7 @@ export default {
     created() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
         this.findProjectById(this.$route.params.id)
+        this.getHtmlContent("/content/company-projects/"+this.$route.params.id+".md");
     },
     computed: {
         projects() {
