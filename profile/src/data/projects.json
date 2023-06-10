@@ -2,560 +2,129 @@
   {
     "id": "MOBILE-RETAIL-SERVICING",
     "name": "Mobile Retail Servicing",
-    "area":"Operaciones - Producción",
-    "position": "Desarrollo de diseño y desarrollo de APIs",
     "image": "assets/projects/app-BBVA.png",
-    "projectType":"COMPANY_PROJECT",
-    "urlSite":null,
     "description": {
-      "short": "Área dentro de BBVA donde se da el soporte y seguimiento a temas productivos relacionados con los microservicios que usa la App BBVA Mx.",
-      "long": "Mobile Retail Servicing es una área dentro de BBVA la cual se encarga de cuidar la producción de los servicios que son usados en la aplicación móvil BBVA. Seguimientos de incidencias de microservicios ya existentes en producción, modificaciones de diseño y desarrollo de microservicios, revisión de cambios por temas de vulnerabilidades de seguridad en servicios."
+      "short": "Área dentro de BBVA donde se da el soporte y seguimiento a temas productivos relacionados con los microservicios que usa la App BBVA Mx."
     },
-    "activities":[
-      {
-        "activity":"Analizar y revisar soluciones para corregir incidencias productivas en microservicios que cumplan con las prácticas y estándares establecidos en la parte del diseño de servicios REST."
-      },
-      {
-        "activity":"Analizar y revisar soluciones para cubrir vulnerabilidades de seguridad en microservicios."
-      },
-      {
-        "activity":"Seguimiento y canalización de solicitudes de pruebas en aplicación móvil BBVA sobre cambios en microservicios."
-      },
-      {
-        "activity":"Llevar el control y seguimiento de las funcionalidades y microservicios que utiliza la aplicación BBVA."
-      }
-    ],
-    "employeeType":{
-      "id":"CONTRACTOR",
-      "name":"Contractor",
-      "companyAssigned":{
-        "id": "BBVA",
-        "name": "BBVA"
-      }
-    },
+    "content":"/content/company-projects/MOBILE-RETAIL-SERVICING.md",
     "company": {
       "id": "GONET",
       "name": "GoNet",
       "logo": "/assets/logos/gonet.png"
-    },
-    "technologies": [
-      {
-        "name": "Java",
-        "type": "Backend",
-        "icon": "devicon-java-plain colored"
-      },
-      {
-        "name": "Maven",
-        "type": "Backend"
-      },
-      {
-        "name": "Spring",
-        "type": "Backend",
-        "icon": "devicon-spring-plain colored"
-      },
-      {
-        "name": "RAML",
-        "type": "Backend"
-      },
-      {
-        "name": "Git",
-        "type": "Devtools",
-        "icon": "devicon-git-plain colored"
-      },
-      {
-        "name": "Jira",
-        "type": "Devtools",
-        "icon": "devicon-jira-plain colored"
-      }
-    ]
+    }
   },
   {
     "id": "API-MARKET",
     "name": "API Market",
-    "area":"Diseño y Desarrollo",
-    "position": "Desarrollo de diseño y desarrollo de APIs",
     "image": "assets/projects/api_mkt_project.png",
-    "projectType":"COMPANY_PROJECT",
-    "urlSite":null,
     "description": {
-      "short": "Área dentro de BBVA donde se diseña y desarrollan APIs que implementan como microservicios basados en REST para exponer funcionalidad bancaria a terceros.",
-      "long": "API Market es una área dentro de BBVA la cual se encarga de desarrollar APIs basados en REST para exponer funcionalidad del core bancario a terceros que puedan integrarlas en sus aplicaciones. El proceso consiste en un inicio diseñar la API con un enfoque de negocio para los consumidores, principalmente las aplicaciones frontend."
+      "short": "Área dentro de BBVA donde se diseña y desarrollan APIs que implementan como microservicios basados en REST para exponer funcionalidad bancaria a terceros."
     },
-    "activities":[
-      {
-        "activity":"Definir endpoint del recurso que sea descriptivo."
-      },
-      {
-        "activity":"Definir datos de entrada y salida (request y response)."
-      },
-      {
-        "activity":"Definir método HTTP que corresponda con la operación de la API REST."
-      },
-      {
-        "activity":"Definir los códigos HTTP de respuestas del API."
-      },
-      {
-        "activity":"Definir los errores funcionales."
-      },
-      {
-        "activity":"Creación de la definición del API."
-      },
-      {
-        "activity":"Construcción de Sanbox del API."
-      },
-      {
-        "activity":"Construcción del servicio en Quarkus."
-      }
-    ],
-    "employeeType":{
-      "id":"CONTRACTOR",
-      "name":"Contractor",
-      "companyAssigned":{
-        "id": "BBVA",
-        "name": "BBVA"
-      }
-    },
+    "content":"/content/company-projects/API-MARKET.md",
     "company": {
       "id": "GONET",
       "name": "GoNet",
       "logo": "/assets/logos/gonet.png"
-    },
-    "technologies": [
-      {
-        "name": "Java",
-        "type": "Backend",
-        "icon": "devicon-java-plain colored"
-      },
-      {
-        "name": "Quarkus",
-        "type": "Backend",
-        "icon": ""
-      },
-      {
-        "name": "RAML",
-        "type": "Backend",
-        "icon": ""
-      },
-      {
-        "name": "Git",
-        "type": "Devtools",
-        "icon": "devicon-git-plain colored"
-      },
-      {
-        "name": "Jira",
-        "type": "Devtools",
-        "icon": "devicon-jira-plain colored"
-      }
-    ]
+    }
   },
   {
     "id": "LOOP",
     "name": "Loop",
-    "area":"Desarrollo",
-    "position": "Desarrollo Web - Fullstack",
     "image": "assets/projects/loop.jpg",
-    "projectType":"COMPANY_PROJECT",
-    "urlSite":null,
     "description": {
-      "short": "Proyecto enfocado a la administración, seguimiento, control de servicios ejecutivos de transporte, el cual incluía dos apps, una enfocada para el cliente y la otra para el ejecutivo/chofer.",
-      "long": "Loop es un proyecto en el cual participe el cual consiste en una aplicación que permite llevar el control, seguimiento y visibilidad de servicios de transporte ejecutivos a empresas, donde el cliente puede solicitar un servicio de translado a cualquier parte de México, por medio de una aplicación movil, la operación se puede llevar desde la aplicación web y ademas se le da el seguimiento y se tiene la información en todo momento. El cual por cuestiones tecnicos se decidio migrar ya que la versión de la aplicación no era lo suficientemente escalable. Este proyecto en su versión anterior estaba desarrollado en la parte del C# MVC con .NET Framework y SQL Server principalmente."
+      "short": "Proyecto enfocado a la administración, seguimiento, control de servicios ejecutivos de transporte, el cual incluía dos apps, una enfocada para el cliente y la otra para el ejecutivo/chofer."
     },
-    "activities":[
-      {
-        "activity":"Este proyecto en su versión anterior estaba desarrollado en la parte del C# MVC con .NET Framework y SQL Server principalmente."
-      },
-      {
-        "activity":"La migración se desarrollo con PHP (Laravel), VueJS, MySQL, NodeJS principalmente e integración con Firebase."
-      },
-      {
-        "activity":"Se implemento un servidor con NodeJS para poder interacturar con Firebase, ya que la aplicación durante el trayecto almacenaba la información en Firebase."
-      },
-      {
-        "activity":"Se desarrollo una API para realizar una conexión con un centro de pagos para pagar con tarjeta de credito/debito, desarrollada en C# con .Net Core."
-      },
-      {
-        "activity":"La base de datos se diseño y creo con MySQL."
-      }
-    ],
-    "employeeType":{
-      "id":"FULLTIME",
-      "name":"Tiempo completo"
-    },
+    "content":"/content/company-projects/LOOP.md",
     "company": {
       "id": "BITFX",
       "name": "Bitfx",
       "logo": "/assets/logos/bitfx.png"
-    },
-    "technologies": [
-      {
-        "name": "PHP",
-        "type": "Backend"
-      },
-      {
-        "name": "Laravel",
-        "type": "Backend"
-      },
-      {
-        "name": "CSS",
-        "type": "Frontend",
-        "icon": "devicon-css3-plain-wordmark colored"
-      },
-      {
-        "name": "Javascript",
-        "type": "Frontend",
-        "icon": "devicon-javascript-plain colored"
-      },
-      {
-        "name": "VueJS",
-        "type": "Frontend",
-        "icon": "devicon-vuejs-plain colored"
-      },
-      {
-        "name": "MySQL",
-        "type": "Database",
-        "icon": "devicon-mysql-plain colored"
-      }
-    ]
+    }
   },
   {
     "id": "BMW-SAFETY",
     "name": "BMW Safety",
-    "area":"Desarrollo",
-    "position": "Desarrollo Web - Frontend",
     "image": "assets/projects/BMW.png",
-    "projectType":"COMPANY_PROJECT",
-    "urlSite":null,
     "description": {
       "short": "Proyecto enfocado para la digitalización del proceso de creación de instrucciones de seguridad de la planta de BMW de San Luis Potosí.",
       "long": "BMW safety es un proyecto en el que participe y el cual tenia como objetivo desarrollar una aplicación web para la Planta de San Luis Potosí de BMW para digitalizar y automatizar el proceso de creación instrucciones de seguridad para los diferentes edificios y áreas de la planta para el personal."
     },
-    "activities":[
-      {
-        "activity":"Frontal el estaría disponible para que los usuarios hicieran uso de el para llevar a cabo los procesos de creación de instrucciones de seguridad. El frontend fue desarrollado principalmente en VueJS y Vuetify, ademas de integración se consumo de APIs REST."
-      },
-      {
-        "activity":"El backed consistia de servicios REST los cuales eran consumidos por el Frontend. Los servicios REST fueron desarrollados en Java y como motor de base de datos PostgresSQL."
-      }
-    ],
-    "employeeType":{
-      "id":"FULLTIME",
-      "name":"Tiempo completo"
-    },
+    "content":"/content/company-projects/BMW-SAFETY.md",
     "company": {
       "id": "BITFX",
       "name": "Bitfx",
       "logo": "/assets/logos/bitfx.png"
-    },
-    "technologies": [
-      {
-        "name": "Laravel",
-        "type": "Backend"
-      },
-      {
-        "name": "CSS",
-        "type": "Frontend",
-        "icon": "devicon-css3-plain-wordmark colored"
-      },
-      {
-        "name": "Javascript",
-        "type": "Frontend",
-        "icon": "devicon-javascript-plain colored"
-      },
-      {
-        "name": "VueJS",
-        "type": "Frontend",
-        "icon": "devicon-vuejs-plain colored"
-      },
-      {
-        "name": "Vuerfy",
-        "type": "Frontend",
-        "icon": "devicon-vuetify-line colored"
-      },
-      {
-        "name": "Java",
-        "type": "Backend",
-        "icon": "devicon-java-plain colored"
-      }
-    ]
+    }
   },
   {
     "id": "IEQSA",
     "name": "IEQSA",
-    "area":"Desarrollo",
-    "position": "Desarrollo Fullstack - .NET",
     "image": "assets/projects/ieqsa.png",
-    "projectType":"COMPANY_PROJECT",
-    "urlSite":"http://www.ieqsa.com.mx/",
     "description": {
-      "short": "Proyecto enfocado al desarrollo de un sistema administrador y sitio web de la envasadora IEQSA.",
-      "long": "IEQSA es un proyecto en el que participe, el cual consistia en desarrollar el sitio web de IEQSA (Industria Envasadora de Querétaro) y su administrador, donde se pudiera editar la información, imagenes y contenido en general desde el administrador."
+      "short": "Proyecto enfocado al desarrollo de un sistema administrador y sitio web de la envasadora IEQSA."
     },
-    "activities":[
-      {
-        "activity":"El proyecto se desarrollo en C# con .NET Framework, usando vistas Razor y SQL Server ademas de HTML, CSS y JavaScript."
-      },
-      {
-        "activity":"El cual se podía acceder por medio de credenciales (usuario y contraseña) y donde se registraba, editaba la información que el sitio web se visualizaría. El acceso a este Admin interno, es decir no estaba expuesto a la red publica."
-      },
-      {
-        "activity":"Sitio publicado al publico para ser consultado por las personas para ver la información de los productos así como vacantes entre otra información."
-      }
-    ],
-    "employeeType":{
-      "id":"FULLTIME",
-      "name":"Tiempo completo"
-    },
+    "content":"/content/company-projects/IEQSA.md",
     "company": {
       "id": "TASISOFTWARE",
       "name": "Tasi Software",
       "logo": "/assets/logos/tasisoftware.png"
-    },
-    "technologies": [
-      {
-        "name": "CSHARP",
-        "type": "Backend",
-        "icon": "devicon-csharp-plain colored"
-      },
-      {
-        "name": ".NET Framework",
-        "type": "Backend",
-        "icon": "devicon-dot-net-plain-wordmark colored"
-      },
-      {
-        "name": "CSS",
-        "type": "Frontend",
-        "icon": "devicon-css3-plain-wordmark colored"
-      },
-      {
-        "name": "Javascript",
-        "type": "Frontend",
-        "icon": "devicon-javascript-plain colored"
-      },
-      {
-        "name": "SQL",
-        "type": "Database",
-        "icon": "devicon-microsoftsqlserver-plain colored"
-      }
-    ]
+    }
   },
   {
     "id": "PORTAL-TASINET2",
     "name": "Portal Tasinet2",
-    "area":"Desarrollo",
-    "position": "Desarrollo Backend - .NET",
     "image": "assets/projects/logo-tasinet.jpg",
-    "projectType":"COMPANY_PROJECT",
-    "urlSite":null,
     "description": {
-      "short": "Proyecto enfocado a la migración del sitio corporativo de la empresa TasiSoftware.",
-      "long": "Portal Tasisoft2 es un proyecto en el cual tuvo como objetivo crear una nueva versión del portal de la empresa."
+      "short": "Proyecto enfocado a la migración del sitio corporativo de la empresa TasiSoftware."
     },
-    "activities":[
-      {
-        "activity":"Se realizo usando una herramienta llamada DNN (DotNetNuke), la cual es un CMS pero para C# con .Net Framework que fue la base de esta versión y se crearón varios modulos individuales."
-      }
-    ],
-    "employeeType":{
-      "id":"FULLTIME",
-      "name":"Tiempo completo"
-    },
+    "content":"/content/company-projects/PORTAL-TASINET2.md",
     "company": {
       "id": "TASISOFTWARE",
       "name": "TasiSoftware",
       "logo": "/assets/logos/tasisoftware.png"
-    },
-    "technologies": [
-      {
-        "name": "CSHARP",
-        "type": "Backend",
-        "icon": "devicon-csharp-plain colored"
-      },
-      {
-        "name": ".NET Framework",
-        "type": "Backend",
-        "icon": "devicon-dot-net-plain-wordmark colored"
-      },
-      {
-        "name": "DNN",
-        "type": "Backend"
-      },
-      {
-        "name": "CSS",
-        "type": "Frontend",
-        "icon": "devicon-css3-plain-wordmark colored"
-      },
-      {
-        "name": "Javascript",
-        "type": "Frontend",
-        "icon": "devicon-javascript-plain colored"
-      },
-      {
-        "name": "SQL",
-        "type": "Database",
-        "icon": "devicon-microsoftsqlserver-plain colored"
-      }
-    ]
+    }
   },
   {
     "id": "RYDER",
     "name": "Ryder",
-    "area":"Desarrollo",
-    "position": "Desarrollador Backend - .NET",
     "image": "assets/projects/ryder.jfif",
-    "projectType":"COMPANY_PROJECT",
-    "urlSite":null,
     "description": {
-      "short": "Proyecto orientado al seguimiento de los envíos por paquetería y una integración con Web Service SOAP de DHL. Integración con Servicios REST.",
-      "long": "Ryder fue un proyecto en el que participe el cual consistia en una aplicación web que gestiona el tracking de los envios por paqueteria. Ryder es un empresa de paquetería y logística, que realiza envíos a diferentes lugares del país. Previamente ya exisitia una aplicación movil pero se necesitaba una versión web."
+      "short": "Proyecto orientado al seguimiento de los envíos por paquetería y una integración con Web Service SOAP de DHL. Integración con Servicios REST."
     },
-    "activities":[
-      {
-        "activity":"Principalmente se tenia que realizar una conexión al WS SOAP de DHL, ya que Ryder dentro de su operación existia una alternativa en la cual podria hacer uso de un tercero para realizar el envio de sus productos, y en este caso el tercero era DHL, por lo cual se tenia que obtener la información del viaje de DHL y mostrarlo en el sitio web de Ryder."
-      },
-      {
-        "activity":"Lo principal para la integración de este WS DHL y Ryder, era hacer match entre los estatus de ambas paqueterias, ademas de identifcar que datos del XML de respuesta eran necesario obtener para mostrarlo en el sitio web de Ryder."
-      },
-      {
-        "activity":"La integración del WS SOAP de DHL se realizo como proyecto Biblioteca de Clases (Classs Library), esto con el objetivo de generar una libreria para integrarla al proyecto principal de Ryder."
-      },
-      {
-        "activity":"Era un proyecto que usaba la Arquitectura Orientada a Servicios (SOA)."
-      },
-      {
-        "activity":"Se desarrollo en C# con .NET Framework, HTML, CSS y JavaScript, principalmente se trabajo en el backend para realizar las conexiones a los WS, ya que el frontend ya estaba construido en la mayor parte."
-      }
-    ],
-    "employeeType":{
-      "id":"FULLTIME",
-      "name":"Tiempo completo"
-    },
+    "content":"/content/company-projects/RYDER.md",
     "company": {
       "id": "DWSOFTWARE",
       "name": "DW Software",
       "logo": "/assets/logos/dwsoftware.jfif"
-    },
-    "technologies": [
-      {
-        "name": "CSHARP",
-        "type": "Backend",
-        "icon": "devicon-csharp-plain colored"
-      },
-      {
-        "name": ".NET Framework",
-        "type": "Backend",
-        "icon": "devicon-dot-net-plain-wordmark colored"
-      },
-      {
-        "name": "CSS",
-        "type": "Frontend",
-        "icon": "devicon-css3-plain-wordmark colored"
-      },
-      {
-        "name": "Javascript",
-        "type": "Frontend",
-        "icon": "devicon-javascript-plain colored"
-      },
-      {
-        "name": "SQL",
-        "type": "Database",
-        "icon": "devicon-microsoftsqlserver-plain colored"
-      }
-    ]
+    }
   },
   {
     "id": "RMK",
     "name": "Remarkable",
-    "area":"Desarrollo",
-    "position": "Desarrollo Web - Fullstack",
     "image": "assets/projects/rmka-logo-color.jpg",
-    "projectType":"COMPANY_PROJECT",
-    "urlSite":null,
     "description": {
-      "short": "Proyecto enfocado a la migración de sistema web de call center para administrar registros servicios para autos de agencias.",
-      "long": "Remarkable fue uno de los primeros proyectos en el que participe el cual consistia en crear una aplicación web que permitiera mejorar la experiencia de usuario y mejorar la funcionalidad de la gestión de clientes de un call center, el cual ofrecia servicios de mantenimientos a las personas que sacaban autos de agencias. Anteriormente la operación era llevada por medio una macro en excel y se buscaba una migración a una aplicación web, mejorara la operación. La aplicación se desarrollo principalmente en Java, SQL Server, HTML, CSS, JavaScript, participe tanto en el desarrollo y en el diseño de la base de datos."
+      "short": "Proyecto enfocado a la migración de sistema web de call center para administrar registros servicios para autos de agencias."
     },
-    "activities":[
-      {
-        "activity":"Fue una aplicación Java core, es decir no se uso un framework, en donde las peticiones del front al backend eran por medio de Servlet mapeados en el web.xml."
-      },
-      {
-        "activity":"El diseño y construcción de la base de datos fue en SQL Server, esto para realizar una base de datos relacional."
-      }
-    ],
-    "employeeType":{
-      "id":"FULLTIME",
-      "name":"Tiempo completo"
-    },
+    "content":"/content/company-projects/RMK.md",
     "company": {
       "id": "ITGROUP",
       "name": "IT Group",
       "logo": "/assets/logos/itgroup.png"
-    },
-    "technologies": [
-      {
-        "name": "Java",
-        "type": "Backend",
-        "icon": "devicon-java-plain colored"
-      },
-      {
-        "name": "HTML",
-        "type": "Frontend",
-        "icon": "devicon-html5-plain-wordmark colored"
-      },
-      {
-        "name": "CSS",
-        "type": "Frontend",
-        "icon": "devicon-css3-plain-wordmark colored"
-      },
-      {
-        "name": "Javascript",
-        "type": "Frontend",
-        "icon": "devicon-javascript-plain colored"
-      },
-      {
-        "name": "SQL",
-        "type": "Database",
-        "icon": "devicon-microsoftsqlserver-plain colored"
-      }
-    ]
+    }
   },
   {
     "id": "API_LIBRARY_EXTENSIONS",
     "name": "Api.Library.Extensions.Filters",
-    "area":"Desarrollo",
-    "position": "Desarrollo Personal",
     "image": "assets/projects/proyecto_personal.jpg",
-    "projectType":"PERSONAL_PROJECT",
-    "urlSite":"https://www.nuget.org/packages/Api.Library.Extensions.Filters",
     "description": {
-      "short": "Librería desarrollada para proyectos .NET Core C#, principalmente para APIs, que se usa para controlar las excepciones y que la API regrese una respuesta generica basada en la excepción que se use.",
-      "long": "Api.Library.Extensions.Filters es una librería desarrollada para proyectos .NET Core C#, principalmente para APIs, que se usa para controlar las excepciones y que la API regrese una respuesta generica basada en la excepción que se use."
+      "short": "Librería desarrollada para proyectos .NET Core C#, principalmente para APIs, que se usa para controlar las excepciones y que la API regrese una respuesta generica basada en la excepción que se use."
     },
-    "activities":[
-      {
-        "activity":""
-      }
-    ],
-    "employeeType":{
-      "id":"PERSONAL_PROJECT",
-      "name":"Proyecto Personal"
-    },
+    "content":"/content/company-projects/API_LIBRARY_EXTENSIONS.md",
+    
     "company": {
       "id": "PERSONAL_PROJECT",
       "name": "Proyecto Personal",
       "logo": "/assets/logos/personal.png"
-    },
-    "technologies": [
-       {
-        "name": "CSHARP",
-        "type": "Backend",
-        "icon": "devicon-csharp-plain colored"
-      },
-      {
-        "name": ".NET Framework",
-        "type": "Backend",
-        "icon": "devicon-dot-net-plain-wordmark colored"
-      }
-    ]
+    }
   }
 ]

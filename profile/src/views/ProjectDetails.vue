@@ -9,7 +9,7 @@
 
               </div> <!-- .col-md-8 -->
               
-              <div class="col-md-4 mt-5" v-show="false">
+              <div class="col-md-12 mt-5">
                     <ProjectItemSidebar 
                     :projectsRelationed="projects"
                     @onClickToProjectById="onClickToProjectById" />
@@ -84,6 +84,7 @@ export default {
             let findProject = this.projects.find(x => x.id == id);
             if (findProject) {
                 this.projectDetails = findProject;
+                this.getHtmlContent(this.projectDetails.content);
             }
             else {
                 this.$route.push({ path: '/404' })
@@ -97,12 +98,12 @@ export default {
             if(this.projectDetails.id!=this.$route.params.id){
                 this.findProjectById($id)
             }
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         },
     },
     created() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
         this.findProjectById(this.$route.params.id)
-        this.getHtmlContent("/content/company-projects/"+this.$route.params.id+".md");
     },
     computed: {
         projects() {

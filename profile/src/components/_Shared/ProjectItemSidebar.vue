@@ -1,23 +1,5 @@
 <template>
     <div class="col-lg-12 sidebar">
-        
-        <div class="sidebar-box" v-show="false">
-          <form action="#" class="search-form">
-            <div class="form-group">
-              <span class="icon icon-search"></span>
-              <input type="text" class="form-control" placeholder="Type a keyword and hit enter">
-            </div>
-          </form>
-        </div>
-
-        <div class="sidebar-box sidebar-companies" v-show="false">
-            <h3 class="heading-sidebar">{{lbCompanies}}</h3>
-            <ul class="categories">
-                <li v-for="(v,i) in companies" :key="i">
-                    <a>{{v.company}} <span></span></a>
-                </li>
-            </ul>
-        </div>
 
         <projectsRelationed 
             :projectsRelationed="projectsRelationed" 
