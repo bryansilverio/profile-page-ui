@@ -5,11 +5,11 @@
             <div class="row">
               <div class="col-lg-12" style="margin-top: 100px;">
                 
-                <div v-html="htmlContent"></div>
+                <div data-aos="fade-right" v-html="htmlContent"></div>
 
               </div> <!-- .col-md-8 -->
               
-              <div class="col-md-12 mt-5">
+              <div class="col-md-12 mt-5" data-aos="fade-right">
                     <ProjectItemSidebar 
                     :projectsRelationed="projects"
                     @onClickToProjectById="onClickToProjectById" />

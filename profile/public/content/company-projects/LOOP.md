@@ -19,6 +19,9 @@ Este proyecto en su versión anterior estaba desarrollado en la parte del C# MVC
 - 📝 Se desarrollo una API para realizar una conexión con un centro de pagos para pagar con tarjeta de credito/debito, desarrollada en C# con .Net Core.
 - 📝 La base de datos se diseño y creo con MySQL.
 
+### Flujo del Proyecto
+![Proyecto IEQSA!](../assets/images/projects/loop.drawio.png)
+
 ### Tecnologías usadas
 
 ##### **Frontend**

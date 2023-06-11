@@ -16,6 +16,10 @@ IEQSA es un proyecto en el que participe, el cual consistia en desarrollar el si
 - 📝 El cual se podía acceder por medio de credenciales (usuario y contraseña) y donde se registraba, editaba la información que el sitio web se visualizaría. El acceso a este Admin interno, es decir no estaba expuesto a la red publica.
 - 📝 Sitio publicado al publico para ser consultado por las personas para ver la información de los productos así como vacantes entre otra información.
 
+
+### Flujo del Proyecto
+![Proyecto IEQSA!](../assets/images/projects/ieqsa.drawio.png)
+
 ### Enlaces
 [Sitio](https://www.ieqsa.com.mx/).
 
