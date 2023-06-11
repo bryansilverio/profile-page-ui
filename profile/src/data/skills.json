@@ -1,97 +1,97 @@
 [
   {
     "name": "VueJs",
-    "icon": "/assets/logos/technologies/vue_logo.png",
+    "icon": "/assets/images/tech-skills/vue_logo.png",
     "type": "FRONTEND"
   },
   {
     "name": "Vuetify",
-    "icon": "/assets/logos/technologies/Vuetify.png",
+    "icon": "/assets/images/tech-skills/Vuetify.png",
     "type": "FRONTEND"
   },
   {
     "name": "Javascript",
-    "icon": "/assets/logos/technologies/Js.png",
+    "icon": "/assets/images/tech-skills/Js.png",
     "type": "FRONTEND"
   },
   {
     "name": "CSS",
-    "icon": "/assets/logos/technologies/css_logo.png",
+    "icon": "/assets/images/tech-skills/css_logo.png",
     "type": "FRONTEND"
   },
   {
     "name": "HTML",
-    "icon": "/assets/logos/technologies/html_logo.png",
+    "icon": "/assets/images/tech-skills/html_logo.png",
     "type": "FRONTEND"
   },
   {
     "name": "C#",
-    "icon": "/assets/logos/technologies/csharp.png",
+    "icon": "/assets/images/tech-skills/csharp.png",
     "type": "BACKEND"
   },
   {
     "name": ".NET Core",
-    "icon": "/assets/logos/technologies/net_core_logo.png",
+    "icon": "/assets/images/tech-skills/net_core_logo.png",
     "type": "BACKEND"
   },
   {
     "name": "Java",
-    "icon": "/assets/logos/technologies/java_logo.png",
+    "icon": "/assets/images/tech-skills/java_logo.png",
     "type": "BACKEND"
   },
   {
     "name": "Spring",
-    "icon": "/assets/logos/technologies/spring.png",
+    "icon": "/assets/images/tech-skills/spring.png",
     "type": "BACKEND"
   },
   {
     "name": "Maven",
-    "icon": "/assets/logos/technologies/maven.png",
+    "icon": "/assets/images/tech-skills/maven.png",
     "type": "BACKEND"
   },
   {
     "name": "MySQL",
-    "icon": "/assets/logos/technologies/mysql.png",
+    "icon": "/assets/images/tech-skills/mysql.png",
     "type": "BACKEND"
   },
   {
     "name": "SQL Server",
-    "icon": "/assets/logos/technologies/sql_server.png",
+    "icon": "/assets/images/tech-skills/sql_server.png",
     "type": "BACKEND"
   },
   {
     "name": "Visual Studio",
-    "icon": "/assets/logos/technologies/visualstudio.png",
+    "icon": "/assets/images/tech-skills/visualstudio.png",
     "type": "BACKEND"
   },
   {
     "name": "Bitbucket",
-    "icon": "/assets/logos/technologies/bitbucket.png",
+    "icon": "/assets/images/tech-skills/bitbucket.png",
     "type": "DEVTOOLS"
   },
   {
     "name": "GIT",
-    "icon": "/assets/logos/technologies/git.png",
+    "icon": "/assets/images/tech-skills/git.png",
     "type": "DEVTOOLS"
   },
   {
     "name": "Jira",
-    "icon": "/assets/logos/technologies/jira_logo.png",
+    "icon": "/assets/images/tech-skills/jira_logo.png",
     "type": "DEVTOOLS"
   },
   {
     "name": "Nuget",
-    "icon": "/assets/logos/technologies/nuget.png",
+    "icon": "/assets/images/tech-skills/nuget.png",
     "type": "DEVTOOLS"
   },
   {
     "name": "RAML",
-    "icon": "/assets/logos/technologies/raml.png",
+    "icon": "/assets/images/tech-skills/raml.png",
     "type": "DEVTOOLS"
   },
   {
     "name": "APIs REST",
-    "icon": "/assets/logos/technologies/rest.png",
+    "icon": "/assets/images/tech-skills/rest.png",
     "type": "DEVTOOLS"
   }
 ]

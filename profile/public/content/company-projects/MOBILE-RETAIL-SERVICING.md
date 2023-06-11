@@ -1,9 +1,12 @@
-# <font color="#FF474C">**Área Retail Mobile**</font>
+<img src="../assets/images/projects/app-BBVA.png" width="200" height="200">
 
-**`2021`** |
+# <font color="#FF474C">**Área Retail Mobile**</font> 
+
+<img src="../assets/images/company-logos/gonet.png" width="30" height="30">
 **`GoNet`** |
 **`Asignado a BBVA`** |
-**`Desarrollador Java`** 
+**`Desarrollador Java`** |
+**`2021`**
 
 Mobile Retail Servicing es una área dentro de BBVA la cual se encarga de cuidar la producción de los servicios que son usados en la aplicación móvil BBVA. Seguimientos de incidencias de microservicios ya existentes en producción, modificaciones de diseño y desarrollo de microservicios, revisión de cambios por temas de vulnerabilidades de seguridad en servicios.
 

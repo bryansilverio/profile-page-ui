@@ -1,8 +1,12 @@
-# <font color="#FF474C">**Proyecto Tasinet2**</font>
+<img src="../assets/images/projects/ieqsa.png" width="200" height="200">
 
-**`2018`** |
+# <font color="#FF474C">**Proyecto IEQSA**</font>
+
+<img src="../assets/images/company-logos/tasisoftware.png" width="30" height="30">
 **`TasiSoftware`** |
-**`Desarrollador .NET`** 
+**`Desarrollador .NET`** |
+**`IT Group`** |
+**`2018`**
 
 IEQSA es un proyecto en el que participe, el cual consistia en desarrollar el sitio web de IEQSA (Industria Envasadora de Querétaro) y su administrador, donde se pudiera editar la información, imagenes y contenido en general desde el administrador.
 

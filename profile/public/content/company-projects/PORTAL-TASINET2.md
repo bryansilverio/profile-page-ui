@@ -1,8 +1,11 @@
+<img src="../assets/images/projects/logo-tasinet.jpg" width="200" height="200">
+
 # <font color="#FF474C">**Proyecto Tasinet2**</font>
 
-**`2018`** |
+<img src="../assets/images/company-logos/tasisoftware.png" width="30" height="30">
 **`TasiSoftware`** |
-**`Desarrollador .NET`** 
+**`Desarrollador .NET`** |
+**`2018`**
 
 Portal Tasisoft2 es un proyecto en el cual tuvo como objetivo crear una nueva versión del portal de la empresa.
 

@@ -1,8 +1,11 @@
+<img src="../assets/images/projects/BMW.png" width="200" height="200">
+
 # <font color="#FF474C">**Proyecto BWM Safety**</font>
 
-**`2020`** |
+<img src="../assets/images/company-logos/bitfx.png" width="30" height="30">
 **`Bitfx`** |
-**`Desarrollador FullStack`** 
+**`Desarrollador FullStack`** |
+**`2020`**
 
 BMW safety es un proyecto en el que participe y el cual tenia como objetivo desarrollar una aplicación web para la Planta de San Luis Potosí de BMW para digitalizar y automatizar el proceso de creación instrucciones de seguridad para los diferentes edificios y áreas de la planta para el personal.
 

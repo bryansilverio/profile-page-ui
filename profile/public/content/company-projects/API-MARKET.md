@@ -1,9 +1,12 @@
+<img src="../assets/images/projects/api_mkt_project.png" width="200" height="200">
+
 # <font color="#FF474C">**Área API Market**</font>
 
-**`2021`** |
+<img src="../assets/images/company-logos/gonet.png" width="30" height="30">
 **`GoNet`** |
 **`Asignado a BBVA`** |
-**`Desarrollador Java`** 
+**`Desarrollador Java`** |
+**`2021`**
 
 API Market es una área dentro de BBVA la cual se encarga de desarrollar APIs basados en REST para exponer funcionalidad del core bancario a terceros que puedan integrarlas en sus aplicaciones. El proceso consiste en un inicio diseñar la API con un enfoque de negocio para los consumidores, principalmente las aplicaciones frontend.
 

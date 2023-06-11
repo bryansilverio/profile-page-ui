@@ -1,10 +1,25 @@
+<img src="../assets/images/projects/proyecto_personal.jpg" width="200" height="200">
+
 # <font color="#FF474C">**Librería api-library-extensions**</font>
 
-**`2021`** |
+<img src="..//assets/images/company-logos/personal.png" width="30" height="30">
 **`Personal`** |
-**`Personal`** 
+**`Personal`** |
+**`2021`**
 
 Api.Library.Extensions.Filters es una librería desarrollada para proyectos .NET Core C#, principalmente para APIs, que se usa para controlar las excepciones y que la API regrese una respuesta generica basada en la excepción que se use.
+
+Las excepciones definidas son:
+- **FunctionalException**
+	- FunctionalErrorResponse
+	- MandatoryParametersMissingErrorResponse 
+- **SystemTechnicalErrorException** 
+	- SystemTechnicalErrorResponse 
+- **DatabaseConnectionErrorException**
+	- DatabaseConnectionErrorResponse 
+- **Exception** 
+	- DatabaseConnectionErrorResponse 
+
 
 ### Actividades
 

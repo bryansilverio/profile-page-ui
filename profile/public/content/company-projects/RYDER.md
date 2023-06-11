@@ -1,8 +1,11 @@
+<img src="../assets/images/projects/ryder.jfif" width="200" height="200">
+
 # <font color="#FF474C">**Proyecto Ryder**</font>
 
-**`2017`** |
+<img src="../assets/images/company-logos/dwsoftware.jfif" width="30" height="30">
 **`DW Software`** |
-**`Desarrollador de Software`** 
+**`Desarrollador de Software`** |
+**`2017`**
 
 Ryder fue un proyecto en el que participe el cual consistia en una aplicación web que gestiona el tracking de los envios por paqueteria. 
 Ryder es un empresa de paquetería y logística, que realiza envíos a diferentes lugares del país. Previamente ya exisitia una aplicación movil pero se necesitaba una versión web.

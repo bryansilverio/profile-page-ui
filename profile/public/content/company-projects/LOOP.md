@@ -1,8 +1,11 @@
+<img src="../assets/images/projects/loop.jpg" width="200" height="200">
+
 # <font color="#FF474C">**Proyecto LOOP**</font>
 
-**`2019`** |
+<img src="../assets/images/company-logos/bitfx.png" width="30" height="30">
 **`Bitfx`** |
-**`Desarrollador FullStack`** 
+**`Desarrollador FullStack`** |
+**`2019`**
 
 Loop es un proyecto en el cual participe el cual consiste en una aplicación que permite llevar el control, seguimiento y visibilidad de servicios de transporte ejecutivos a empresas, donde el cliente puede solicitar un servicio de translado a cualquier parte de México, por medio de una aplicación movil, la operación se puede llevar desde la aplicación web y ademas se le da el seguimiento y se tiene la información en todo momento. 
 El cual por cuestiones tecnicos se decidio migrar ya que la versión de la aplicación no era lo suficientemente escalable. 
