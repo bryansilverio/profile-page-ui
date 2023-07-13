@@ -10,13 +10,17 @@
 Ryder fue un proyecto en el que participe el cual consistia en una aplicación web que gestiona el tracking de los envios por paqueteria. 
 Ryder es un empresa de paquetería y logística, que realiza envíos a diferentes lugares del país. Previamente ya exisitia una aplicación movil pero se necesitaba una versión web.
 
-### Actividades
+### 🏆 Logros
 
-- 📝 Principalmente se tenia que realizar una conexión al WS SOAP de DHL, ya que Ryder dentro de su operación existia una alternativa en la cual podria hacer uso de un tercero para realizar el envio de sus productos, y en este caso el tercero era DHL, por lo cual se tenia que obtener la información del viaje de DHL y mostrarlo en el sitio web de Ryder.
-- 📝 Lo principal para la integración de este WS DHL y Ryder, era hacer match entre los estatus de ambas paqueterias, ademas de identifcar que datos del XML de respuesta eran necesario obtener para mostrarlo en el sitio web de Ryder.
-- 📝 La integración del WS SOAP de DHL se realizo como proyecto Biblioteca de Clases (Classs Library), esto con el objetivo de generar una libreria para integrarla al proyecto principal de Ryder.
-- 📝 Era un proyecto que usaba la Arquitectura Orientada a Servicios (SOA).
-- 📝 Se desarrollo en C# con .NET Framework, HTML, CSS y JavaScript, principalmente se trabajo en el backend para realizar las conexiones a los WS, ya que el frontend ya estaba construido en la mayor parte.
+- Se logro integrar el Web Service de DHL en el sistema Ryder, el cual era una parte importante en este proyecto, ya que se necesitaba conocer la ubicación y rastreo de los paquetes que viajaban por paquetería DHL y que se visualizarán en el sistema Ryder, además de empatar la información del Web Service y lo que se quería mostrar en el sistema.
+
+### 📝 Actividades
+
+- Principalmente se tenia que realizar una conexión al WS SOAP de DHL, ya que Ryder dentro de su operación existia una alternativa en la cual podria hacer uso de un tercero para realizar el envio de sus productos, y en este caso el tercero era DHL, por lo cual se tenia que obtener la información del viaje de DHL y mostrarlo en el sitio web de Ryder.
+- Lo principal para la integración de este WS DHL y Ryder, era hacer match entre los estatus de ambas paqueterias, ademas de identifcar que datos del XML de respuesta eran necesario obtener para mostrarlo en el sitio web de Ryder.
+- La integración del WS SOAP de DHL se realizo como proyecto Biblioteca de Clases (Classs Library), esto con el objetivo de generar una libreria para integrarla al proyecto principal de Ryder.
+- Era un proyecto que usaba la Arquitectura Orientada a Servicios (SOA).
+- Se desarrollo en C# con .NET Framework, HTML, CSS y JavaScript, principalmente se trabajo en el backend para realizar las conexiones a los WS, ya que el frontend ya estaba construido en la mayor parte.
 
 ### Tecnologías usadas
 

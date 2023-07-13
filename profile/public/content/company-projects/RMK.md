@@ -10,10 +10,11 @@
 Remarkable fue uno de los primeros proyectos en el que participe el cual consistia en crear una aplicación web que permitiera mejorar la experiencia de usuario y mejorar la funcionalidad de la gestión de clientes de un call center, el cual ofrecia servicios de mantenimientos a las personas que sacaban autos de agencias. Anteriormente la operación era llevada por medio una macro en excel y se buscaba una migración a una aplicación web, mejorara la operación. 
 La aplicación se desarrollo principalmente en Java, SQL Server, HTML, CSS, JavaScript, participe tanto en el desarrollo y en el diseño de la base de datos.
 
-### Actividades
 
-- 📝 Fue una aplicación Java core, es decir no se uso un framework, en donde las peticiones del front al backend eran por medio de Servlet mapeados en el web.xml.
-- 📝 El diseño y construcción de la base de datos fue en SQL Server, esto para realizar una base de datos relacional.
+### 📝 Actividades
+
+- Fue una aplicación Java core, es decir no se uso un framework, en donde las peticiones del front al backend eran por medio de Servlet mapeados en el web.xml.
+- El diseño y construcción de la base de datos fue en SQL Server, esto para realizar una base de datos relacional.
 
 ### Tecnologías usadas
 

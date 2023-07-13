@@ -11,16 +11,21 @@ Loop es un proyecto en el cual participe el cual consiste en una aplicación que
 El cual por cuestiones tecnicos se decidio migrar ya que la versión de la aplicación no era lo suficientemente escalable. 
 Este proyecto en su versión anterior estaba desarrollado en la parte del C# MVC con **.NET Framework** y **SQL Server** principalmente.
 
-### Actividades
+### 🏆 Logros
 
-- 📝 Este proyecto en su versión anterior estaba desarrollado en la parte del C# MVC con .NET Framework y SQL Server principalmente.
-- 📝 La migración se desarrollo con PHP (Laravel), VueJS, MySQL, NodeJS principalmente e integración con Firebase.
-- 📝 Se implemento un servidor con NodeJS para poder interacturar con Firebase, ya que la aplicación durante el trayecto almacenaba la información en Firebase.
-- 📝 Se desarrollo una API para realizar una conexión con un centro de pagos para pagar con tarjeta de credito/debito, desarrollada en C# con .Net Core.
-- 📝 La base de datos se diseño y creo con MySQL.
+- Esta aplicación le permitio a la empresa tener un mejor control y tracking de los servicios de transportes ejecutivo que operán.
+
+
+### 📝 Actividades
+
+- Este proyecto en su versión anterior estaba desarrollado en la parte del C# MVC con .NET Framework y SQL Server principalmente.
+- La migración se desarrollo con PHP (Laravel), VueJS, MySQL, NodeJS principalmente e integración con Firebase.
+- Se implemento un servidor con NodeJS para poder interacturar con Firebase, ya que la aplicación durante el trayecto almacenaba la información en Firebase.
+- Se desarrollo una API para realizar una conexión con un centro de pagos para pagar con tarjeta de credito/debito, desarrollada en C# con .Net Core.
+- La base de datos se diseño y creo con MySQL.
 
 ### Flujo del Proyecto
-![Proyecto IEQSA!](../assets/images/projects/loop.drawio.png)
+<img src="../assets/images/projects/loop.drawio.png" width="800" height="400"/>
 
 ### Tecnologías usadas
 

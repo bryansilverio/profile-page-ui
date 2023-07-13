@@ -9,9 +9,14 @@
 
 Portal Tasisoft2 es un proyecto en el cual tuvo como objetivo crear una nueva versión del portal de la empresa.
 
-### Actividades
+### 🏆 Logros
 
-- 📝 Se realizo usando una herramienta llamada DNN (DotNetNuke), la cual es un CMS pero para C# con .Net Framework que fue la base de esta versión y se crearón varios modulos individuales.
+- Este proyecto remplazo la versión anterior de la plataforma, y permitio incluir nuevas funcionalidades que la versión anterior no contaba, como por ejemplo, registro de entrada y salida, solicitud de vacaciones, entre otros.
+
+
+### 📝 Actividades
+
+- Se realizo usando una herramienta llamada DNN (DotNetNuke), la cual es un CMS pero para C# con .Net Framework que fue la base de esta versión y se crearón varios modulos individuales.
 
 ### Tecnologías usadas
 

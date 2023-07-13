@@ -10,16 +10,17 @@
 
 API Market es una área dentro de BBVA la cual se encarga de desarrollar APIs basados en REST para exponer funcionalidad del core bancario a terceros que puedan integrarlas en sus aplicaciones. El proceso consiste en un inicio diseñar la API con un enfoque de negocio para los consumidores, principalmente las aplicaciones frontend.
 
-### Actividades
 
-- 📝 Definir endpoint del recurso que sea descriptivo.
-- 📝 Definir datos de entrada y salida (request y response).
-- 📝 Definir método HTTP que corresponda con la operación de la API REST.
-- 📝 Definir los códigos HTTP de respuestas del API.
-- 📝 Definir los errores funcionales.
-- 📝 Creación de la definición del API.
-- 📝 Construcción de Sanbox del API.
-- 📝 Construcción del servicio en Quarkus.
+### 📝 Actividades
+
+- Definir endpoint del recurso que sea descriptivo.
+- Definir datos de entrada y salida (request y response).
+- Definir método HTTP que corresponda con la operación de la API REST.
+- Definir los códigos HTTP de respuestas del API.
+- Definir los errores funcionales.
+- Creación de la definición del API.
+- Construcción de Sanbox del API.
+- Construcción del servicio en Quarkus.
 
 ### Tecnologías usadas
 

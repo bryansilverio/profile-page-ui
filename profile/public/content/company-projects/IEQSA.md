@@ -10,15 +10,19 @@
 
 IEQSA es un proyecto en el que participe, el cual consistia en desarrollar el sitio web de IEQSA (Industria Envasadora de Querétaro) y su administrador, donde se pudiera editar la información, imagenes y contenido en general desde el administrador.
 
-### Actividades
+### 🏆 Logros
+- La nueva aplicación que permitio al negocio administrar su propia información de forma mas comoda desde su administrador. 
+- Permitio ofrecer un nuevo sitio web al publico en general para conocer sobre sus productos ademas de promover sus propias vacantes.
 
-- 📝 El proyecto se desarrollo en C# con .NET Framework, usando vistas Razor y SQL Server ademas de HTML, CSS y JavaScript.
-- 📝 El cual se podía acceder por medio de credenciales (usuario y contraseña) y donde se registraba, editaba la información que el sitio web se visualizaría. El acceso a este Admin interno, es decir no estaba expuesto a la red publica.
-- 📝 Sitio publicado al publico para ser consultado por las personas para ver la información de los productos así como vacantes entre otra información.
+### 📝 Actividades
+
+- El proyecto se desarrollo en C# con .NET Framework, usando vistas Razor y SQL Server ademas de HTML, CSS y JavaScript.
+- El cual se podía acceder por medio de credenciales (usuario y contraseña) y donde se registraba, editaba la información que el sitio web se visualizaría. El acceso a este Admin interno, es decir no estaba expuesto a la red publica.
+- Sitio publicado al publico para ser consultado por las personas para ver la información de los productos así como vacantes entre otra información.
 
 
 ### Flujo del Proyecto
-![Proyecto IEQSA!](../assets/images/projects/ieqsa.drawio.png)
+<img src="../assets/images/projects/ieqsa.drawio.png" width="800" height="300"/>
 
 ### Enlaces
 [Sitio](https://www.ieqsa.com.mx/).

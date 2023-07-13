@@ -10,12 +10,12 @@
 
 Mobile Retail Servicing es una área dentro de BBVA la cual se encarga de cuidar la producción de los servicios que son usados en la aplicación móvil BBVA. Seguimientos de incidencias de microservicios ya existentes en producción, modificaciones de diseño y desarrollo de microservicios, revisión de cambios por temas de vulnerabilidades de seguridad en servicios.
 
-### Actividades
+### 📝 Actividades
 
-- 📝 Analizar y revisar soluciones para corregir incidencias productivas en microservicios que cumplan con las prácticas y estándares establecidos en la parte del diseño de servicios REST.
-- 📝 Analizar y revisar soluciones para cubrir vulnerabilidades de seguridad en microservicios.
-- 📝 Seguimiento y canalización de solicitudes de pruebas en aplicación móvil BBVA sobre cambios en microservicios.
-- 📝 Llevar el control y seguimiento de las funcionalidades y microservicios que utiliza la aplicación BBVA.
+- Analizar y revisar soluciones para corregir incidencias productivas en microservicios que cumplan con las prácticas y estándares establecidos en la parte del diseño de servicios REST.
+- Analizar y revisar soluciones para cubrir vulnerabilidades de seguridad en microservicios.
+- Seguimiento y canalización de solicitudes de pruebas en aplicación móvil BBVA sobre cambios en microservicios.
+- Llevar el control y seguimiento de las funcionalidades y microservicios que utiliza la aplicación BBVA.
 
 ### Tecnologías usadas
 

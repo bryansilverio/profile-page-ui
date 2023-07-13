@@ -21,9 +21,9 @@ Las excepciones definidas son:
 	- DatabaseConnectionErrorResponse 
 
 
-### Actividades
+### 📝 Actividades
 
-- 📝 Identificar las respuestas en común que una Api puede dar como respuesta y definir una estructura de salida estandar para cualquier respuesta 400.
+- Identificar las respuestas en común que una Api puede dar como respuesta y definir una estructura de salida estandar para cualquier respuesta 400.
 
 ### Enlaces
 Enlace a [Nuget](https://www.nuget.org/packages/Api.Library.Extensions.Filters).
