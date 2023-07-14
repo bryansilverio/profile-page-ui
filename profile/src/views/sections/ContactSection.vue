@@ -11,11 +11,12 @@
 <script>
 import VueI18n from '@/translation/i18n'
 import ContactItem from '@/components/_Shared/ContactItem.vue'
-import contactDetailData from '@/data/contactDetails.json'
+import listContactServices from "@/services/listContactServices.js";
 import SectionTitle from '@/components/_Shared/SectionTitle.vue'
 export default {
     name: "ContactSection",
     components:{ContactItem, SectionTitle},
+    mixins:[listContactServices],
     data(){
       return{
         title: VueI18n.tc('pages.home.sections.contact.name'),
@@ -27,7 +28,7 @@ export default {
     },
     computed:{
       contactDetails(){
-        return contactDetailData
+        return this.listContactServices();
       }
     }
 };

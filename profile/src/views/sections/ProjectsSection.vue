@@ -54,11 +54,12 @@
 <script>
 import VueI18n from '@/translation/i18n'
 import ProjectItem from "@/components/_Shared/ProjectItem.vue";
-import projects_data from "@/data/projects.json";
+import listProjectsServices from "@/services/listProjectsServices.js";
 import SectionTitle from '@/components/_Shared/SectionTitle.vue'
 export default {
     name: "ProjectsSection",
     components: { ProjectItem, SectionTitle },
+    mixins:[listProjectsServices],
     data() {
         return {
             title: VueI18n.tc('pages.home.sections.projects.name'),
@@ -84,11 +85,7 @@ export default {
     },
     computed: {
         projects() {
-            let elements = [];
-            for (var i = 0; i < 3; i++) {
-                elements[i]=projects_data[i]
-            }
-            return elements;
+            return this.listLastProjectsServices(3);
         }
     }
 };

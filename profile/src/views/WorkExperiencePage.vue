@@ -149,20 +149,16 @@
 }
 </style>
 <script type="text/javascript">
-import work_experiences_data from '@/data/work-experiences.json'
+import listWorkExperiencesServices from "@/services/listWorkExperiencesServices.js"
 export default{
   name:'WorkExperiencePage',
-  data(){
-    return {
-
-    }
-  },
+  mixins:[listWorkExperiencesServices],
   created() {
       window.scrollTo({ top: 0, behavior: 'smooth' });
   },
   computed: {
       workexperiences() {
-          return work_experiences_data;
+          return this.listWorkExperienceServices();
       }
   }
 }

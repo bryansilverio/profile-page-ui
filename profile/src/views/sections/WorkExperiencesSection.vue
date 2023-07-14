@@ -53,12 +53,13 @@
 </style>
 <script>
 import VueI18n from '@/translation/i18n'
-import work_experiences_data from '@/data/work-experiences.json'
+import listWorkExperiencesServices from "@/services/listWorkExperiencesServices.js"
 import WorkExperienceItem from '@/components/_Shared/WorkExperienceItem.vue'
 import SectionTitle from '@/components/_Shared/SectionTitle.vue'
 export default {
     name: "WorkExperiencesSection",
     components: { WorkExperienceItem, SectionTitle },
+    mixins:[listWorkExperiencesServices],
     data() {
         return {
             title: VueI18n.tc('pages.home.sections.experience.name'),
@@ -84,7 +85,7 @@ export default {
         listWorkExperiences() {
             this.items=[]
             let index=0;
-            work_experiences_data.forEach(x=>{
+            this.listWorkExperienceServices().forEach(x=>{
                 let itemsAux={
                     id: x.id,
                     position: x.position,

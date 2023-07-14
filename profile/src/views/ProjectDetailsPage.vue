@@ -3,22 +3,17 @@
         <section class="ftco-section">
           <div class="container">
             <div class="row">
-              <div class="col-lg-12" style="margin-top: 100px;">
-                
+              <div class="col-lg-12" style="margin-top: 100px;">             
                 <div data-aos="fade-right" v-html="htmlContent"></div>
-
-              </div> <!-- .col-md-8 -->
-              
+              </div> <!-- .col-md-8 -->           
               <div class="col-md-12 mt-5" data-aos="fade-right">
                     <ProjectItemSidebar 
                     :projectsRelationed="projects"
                     @onClickToProjectById="onClickToProjectById" />
               </div>
-
             </div>
           </div>
         </section> <!-- .section -->
-
     </div>
 </template>
 <style>
@@ -54,12 +49,12 @@
 <script>
 import VueI18n from '@/translation/i18n'
 import ProjectItemSidebar from '@/components/_Shared/ProjectItemSidebar.vue'
-import projects_data from "@/data/projects.json";
+import listProjectsServices from "@/services/listProjectsServices.js"
 import findProjectDetailsService from "@/services/findProjectDetailsService.js"
 export default {
     name: 'ProjectDetailsPage',
     components: { ProjectItemSidebar },
-    mixins:[findProjectDetailsService],
+    mixins:[findProjectDetailsService, listProjectsServices],
     data() {
         return {
             projectDetails: {},
@@ -76,12 +71,11 @@ export default {
                 position:VueI18n.tc('pages.projectDetails.aboutProject.position'),
                 assignedTo:VueI18n.tc('pages.projectDetails.aboutProject.assignedTo')
             }
-
         }
     },
     methods: {
         findProjectById(id = '') {
-            let findProject = this.projects.find(x => x.id == id);
+            let findProject = this.findProjectsByIdServices(id);
             if (findProject) {
                 this.projectDetails = findProject;
                 this.getHtmlContent(this.projectDetails.content);
@@ -104,11 +98,6 @@ export default {
     created() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
         this.findProjectById(this.$route.params.id)
-    },
-    computed: {
-        projects() {
-            return projects_data
-        }
     }
 }
 </script>

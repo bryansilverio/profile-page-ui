@@ -103,10 +103,11 @@
 <script>
 import VueI18n from '@/translation/i18n'
 import ProjectItem from "@/components/_Shared/ProjectItem.vue";
-import projects_data from "@/data/projects.json";
+import listProjectsServices from "@/services/listProjectsServices.js";
 export default {
     name: "ProjectsPage",
     components: { ProjectItem },
+    mixins:[listProjectsServices],
     data() {
         return {
             title: VueI18n.tc('pages.home.sections.projects.name'),
@@ -141,29 +142,24 @@ export default {
                     thix.options.showAll=true;
                     thix.options.showCompanies=false;
                     thix.options.showPersonal=false;
-                    thix.items=thix.projects;
+                    thix.items=thix.listProjectsServices();
                     return;
                 }
                 if(value==thix.OPTIONS_VALUES.COMPANY_PROJECT){
                     thix.options.showAll=false;
                     thix.options.showCompanies=true;
                     thix.options.showPersonal=false;
-                    thix.items=thix.projects.filter(x=>x.projectType==thix.OPTIONS_VALUES.COMPANY_PROJECT);
+                    thix.items=thix.listProjectsByProjectType(thix.OPTIONS_VALUES.COMPANY_PROJECT);
                     return;
                 }
                 if(value==thix.OPTIONS_VALUES.PERSONAL_PROJECT){
                     thix.options.showAll=false;
                     thix.options.showCompanies=false;
                     thix.options.showPersonal=true;
-                    thix.items=thix.projects.filter(x=>x.projectType==thix.OPTIONS_VALUES.PERSONAL_PROJECT);
+                    thix.items=thix.listProjectsByProjectType(thix.OPTIONS_VALUES.PERSONAL_PROJECT);
                     return;
                 }
             },500);
-        }
-    },
-    computed: {
-        projects() {
-            return projects_data
         }
     }
 };

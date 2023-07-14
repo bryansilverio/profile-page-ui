@@ -41,7 +41,6 @@
                 </div>
             </div>
             <div class="row">
-
                 <template v-if="options.showAll">
                     <Skillitem 
                         v-for="(v,i) in frontendSkills" 
@@ -98,12 +97,13 @@
 </style>
 <script>
 import VueI18n from '@/translation/i18n'
-import skills_data from "@/data/skills.json";
+import listSkillsServices from "@/services/listSkillsServices.js"
 import Skillitem from "@/components/_Shared/SkillItem.vue";
 import SectionTitle from '@/components/_Shared/SectionTitle.vue'
 export default {
     name: "SkillsSection",
     components: {Skillitem, SectionTitle },
+    mixins:[listSkillsServices],
     data() {
         return {
             title: VueI18n.tc('pages.home.sections.skills.name'),
@@ -164,13 +164,13 @@ export default {
     },
     computed: {
         frontendSkills() {
-            return skills_data.filter((x) => x.type == "FRONTEND");
+            return this.listSkillsServices(this.OPTIONS_VALUES.FRONTEND);
         },
         backendSkills() {
-            return skills_data.filter((x) => x.type == "BACKEND");
+            return this.listSkillsServices(this.OPTIONS_VALUES.BACKEND);
         },
         devtoolsSkills() {
-            return skills_data.filter((x) => x.type == "DEVTOOLS");
+            return this.listSkillsServices(this.OPTIONS_VALUES.DEVTOOLS);
         },
     },
 };
