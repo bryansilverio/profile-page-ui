@@ -2,49 +2,28 @@
     <section class="ftco-section" id="projects-section">
       <div class="container">
         <SectionTitle :title="title" :textSection="textSection" data-aos="fade-left"/>
-        <div class="row">
-            <div class="col-md-12">
-                <ul class="projects-ul">
-                    <li class="projects-li" data-aos="zoom-in">
-                        <button 
-                            class="btn btn-outline-white btn-block"
-                            :class="options.showAll?'btn-primary':'btn-white'"
-                            @click="onChangeOption(OPTIONS_VALUES.ALL)">
-                            Todos
-                        </button>
-                    </li>
-                    <li class="projects-li" data-aos="zoom-in">
-                        <button 
-                            class="btn btn-outline-white btn-block"
-                            :class="options.showCompanies?'btn-primary':'btn-white'"
-                            @click="onChangeOption(OPTIONS_VALUES.COMPANY_PROJECT)">
-                            Participación en empresas
-                        </button>
-                    </li>
-                    <li class="projects-li" data-aos="zoom-in">
-                        <button 
-                            class="btn btn-outline-white btn-block"
-                            :class="options.showPersonal?'btn-primary':'btn-white'"
-                            @click="onChangeOption(OPTIONS_VALUES.PERSONAL_PROJECT)">
-                            Personales
-                        </button>
-                    </li>
-                </ul>
-            </div>
-        </div>
         <div class="row d-flex">
-            <template v-if="items.length>0">
+            <template v-if="projects.length>0">
                 <ProjectItem
                     data-aos="zoom-in" 
-                    v-for="(v,i) in items" 
+                    v-for="(v,i) in projects" 
                     :key="i" 
-                    :item="v"/>
+                    :item="v"
+                    bgColor="#36394A"
+                    :showButtonDetails="false"/>
             </template>
             <template v-else>
                 <div class="row justify-content-center" style="text-align: center;">
                     <p>Aún no hay proyectos</p>
                 </div>
             </template>
+        </div>
+        <div class="row d-flex">
+            <div class="col-md-12 flexbox-align">
+                <button class="btn btn-primary" @click="goToAllProjects()">
+                    Ver todos los proyectos
+                </button>
+            </div>
         </div>
       </div>
     </section>
@@ -60,6 +39,17 @@
       display: inline-block;
       text-align: center;
     }
+    #projects-section{
+        /*background-color: #FFF;*/
+    }
+    .flexbox-align {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100px;
+      width: 200px;
+      color: #333;
+    }
 </style>
 <script>
 import VueI18n from '@/translation/i18n'
@@ -73,55 +63,32 @@ export default {
         return {
             title: VueI18n.tc('pages.home.sections.projects.name'),
             textSection: VueI18n.tc('pages.home.sections.projects.textSection'),
-            OPTIONS_VALUES:{
-                ALL:"ALL",
-                COMPANY_PROJECT:"COMPANY_PROJECT",
-                PERSONAL_PROJECT:"PERSONAL_PROJECT"
-            },
-            options:{
-                showAll:false,
-                showCompanies:false,
-                showPersonal:false
-            },
-            items:[]
         }
     },
     created() {
-        this.onChangeOption(this.OPTIONS_VALUES.ALL);
         window.scrollTo({ top: 0, behavior: 'smooth' });
     },
     methods:{
-        onChangeOption(value='ALL'){
-            this.options.showAll=false;
-            this.options.showCompanies=false;
-            this.options.showPersonal=false;
-             
-            if(value==this.OPTIONS_VALUES.ALL){
-                this.options.showAll=true;
-                this.options.showCompanies=false;
-                this.options.showPersonal=false;
-                this.items=this.projects;
-                return;
-            }
-            if(value==this.OPTIONS_VALUES.COMPANY_PROJECT){
-                this.options.showAll=false;
-                this.options.showCompanies=true;
-                this.options.showPersonal=false;
-                this.items=this.projects.filter(x=>x.projectType==this.OPTIONS_VALUES.COMPANY_PROJECT);
-                return;
-            }
-            if(value==this.OPTIONS_VALUES.PERSONAL_PROJECT){
-                this.options.showAll=false;
-                this.options.showCompanies=false;
-                this.options.showPersonal=true;
-                this.items=this.projects.filter(x=>x.projectType==this.OPTIONS_VALUES.PERSONAL_PROJECT);
-                return;
-            }
+        goToAllProjects(){
+            this.$router.push('/projects').catch(error => {
+                if (
+                    error.name !== 'NavigationDuplicated' &&
+                    !error.message.includes('Avoided redundant navigation to current location')
+                ) {
+                    /* eslint-disable no-console */
+                    console.log(error)
+                    /* eslint-enable no-console */
+                }
+            });
         }
     },
     computed: {
         projects() {
-            return projects_data
+            let elements = [];
+            for (var i = 0; i < 3; i++) {
+                elements[i]=projects_data[i]
+            }
+            return elements;
         }
     }
 };

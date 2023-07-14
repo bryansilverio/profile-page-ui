@@ -1,7 +1,8 @@
 <template>
     <div class="col-md-4 d-flex project-item">
-        <div class="blog-entry justify-content-end">
-          <a class="block-20" :style="setImage(item.image)">
+        <div class="blog-entry justify-content-end" 
+            :style="'background-color:'+bgColor+';border-color:'+bgColor">
+          <a class="block-20" :style="setImage(item.image)+'cursor: pointer'">
           </a>
           <div class="text mt-3 float-right d-block">
             <div class="d-flex align-items-center mb-3 meta margin-content">
@@ -14,7 +15,7 @@
                     {{item.description.short}}
                 </p>
             </div>
-            <div class="clearfix">
+            <div class="clearfix" v-if="showButtonDetails">
                 <button 
                     @click="goToProjectDetails(item.id)" 
                     style="cursor: pointer;"
@@ -28,7 +29,6 @@
 </template>
 <style>
     .blog-entry{
-        background: rgba(255, 255, 255, 0.1);
         border-radius: 5px;
     }
     .project-name{
@@ -45,9 +45,6 @@
     .project-item{
         border-radius: 10px;
     }
-    .project-item:hover{
-         
-    }
 </style>
 <script>
 import VueI18n from '@/translation/i18n'
@@ -63,6 +60,14 @@ export default {
     props: {
         item: {
             type: Object
+        },
+        bgColor:{
+            type: String,
+            default:"rgba(255, 255, 255, 0.1)"
+        },
+        showButtonDetails:{
+            type: Boolean,
+            default:false
         }
     },
     methods: {
