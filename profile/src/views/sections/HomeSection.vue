@@ -32,7 +32,7 @@
                                     <a href="#contact-section" class="btn btn-primary">
                                         {{lbMyContacts}}
                                     </a> 
-                                    <a href="#projects-section" class="btn btn-white btn-outline-white">
+                                    <a href="/projects" class="btn btn-white btn-outline-white">
                                     {{lbMyProjects}}
                                     </a>
                                 </p>
