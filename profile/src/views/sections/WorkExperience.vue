@@ -14,7 +14,7 @@
                                         class="btn btn-outline-white btn-block" 
                                         :class="v.active?'btn-primary':'btn-white'"
                                         @click="onChangeItem(v)">
-                                        {{v.position}}
+                                        {{v.company}}
                                     </button>
                             </div>
                             </div>

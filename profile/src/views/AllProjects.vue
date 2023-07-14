@@ -7,7 +7,7 @@
                     <span 
                         class="title-text-color" 
                         style="font-size:3rem" 
-                        data-aos="fade-down">
+                        data-aos="fade-left">
                         {{ 'Proyectos' }}
                     </span>
                 </h3>
@@ -15,7 +15,7 @@
             <div class="col-md-10">
                 <hr>
             </div>
-            <p>En esta sección se muestrán los proyectos en los que he participado dentro de las empresas en las que he elaborado, además de proyectos personales.
+            <p data-aos="fade-left">En esta sección se muestrán los proyectos en los que he participado dentro de las empresas en las que he elaborado, además de proyectos personales.
             </p>
         </div>
         <div class="row">
