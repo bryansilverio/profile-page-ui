@@ -4,7 +4,7 @@
             <SectionTitle :title="title" data-aos="fade-right"/>
             <div class="row d-flex justify-content-start">
                 <div class="col-md-12" data-aos="fade-right">
-                    <p v-html="about.description"></p>
+                    <p v-for="(v,i) in aboutDescription" :key="i">{{v}}</p>
                 </div>
             </div>
             <div class="counter-wrap d-flex mt-md-3 justify-content-center">
@@ -36,11 +36,12 @@ export default {
             btnDownloadCv:VueI18n.tc('common.btnDownloadCV'),
             lbName:VueI18n.tc('common.lbName'),
             lbEmail:VueI18n.tc('common.lbEmail'),
+            aboutDescription:[]
         }
     },
     created() {
         window.scrollTo({ top: 0, behavior: "smooth" });
-        this.listLongDescription = this.splitPhrasesDescriptions(this.description.long)
+        this.aboutDescription = this.splitPhrasesDescriptions(aboutData.description)
     },
     methods: {
         splitPhrasesDescriptions(value) {
@@ -49,11 +50,6 @@ export default {
                 values = value.split(".");
             }
             return values
-        }
-    },
-    computed:{
-        about(){
-            return aboutData;
         }
     }
 };

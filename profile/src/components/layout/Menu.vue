@@ -10,31 +10,26 @@
       <div class="collapse navbar-collapse" id="ftco-nav">
         <ul class="navbar-nav nav ml-auto">
           <li class="nav-item menu-options">
-            <a class="nav-link" @click="goToPage('#home-section')">
+            <a class="nav-link" @click="goToPage('/')">
               <span style="font-weight: bold;">{{ menu.home.name }}</span>
             </a>
           </li>
           <li class="nav-item menu-options">
-            <a class="nav-link" @click="goToPage('#about-section')">
+            <a class="nav-link" @click="goToPage('/about-me')">
               <span style="font-weight: bold;">{{ menu.about.name }}</span>
             </a>
           </li>
           <li class="nav-item menu-options">
-            <a class="nav-link" @click="goToPage('#skills-section')">
-              <span style="font-weight: bold;">{{ menu.skills.name }}</span>
-            </a>
-          </li>
-          <li class="nav-item menu-options">
-            <a class="nav-link" @click="goToPage('#resume-section')">
+            <a class="nav-link" @click="goToPage('/work-experiences')">
               <span style="font-weight: bold;">{{ menu.experience.name }}</span>
             </a>
           </li>
           <li class="nav-item menu-options">
-            <a class="nav-link" @click="goToPage('#projects-section')">
+            <a class="nav-link" @click="goToPage('/projects')">
               <span style="font-weight: bold;">{{ menu.projects.name }}</span>
             </a>
           </li>
-          <li class="nav-item menu-options">
+          <li class="nav-item menu-options" v-show="false">
             <a class="nav-link" @click="goToPage('#contact-section')">
               <span style="font-weight: bold;">{{ menu.contact.name }}</span>
             </a>
@@ -92,12 +87,11 @@ export default {
     }
   },
   methods: {
+    goToSection(url) {
+      window.location.href=url;
+    },
     goToPage(url) {
-      if(this.$route.path=='/'){
-        window.location.href=url;
-      }else{
-        this.$router.push('/')
-      }
+      this.$router.push(url);
     }
   }
 };

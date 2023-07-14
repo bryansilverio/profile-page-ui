@@ -1,8 +1,12 @@
-import skills_data from "@/data/skills.json";
+import skillsData from "@/data/skills.json";
 export default {
 	methods: {
 		listSkillsServices(type = '') {
-			let result = skills_data.filter((x) => x.type == type);
+			let result = skillsData.filter((x) => x.type == type);
+			return result;
+		},
+		listPrincipalSkillsServices(principal = ''){
+			let result = skillsData.filter((x) => x.principal == principal);
 			return result;
 		}
 	}

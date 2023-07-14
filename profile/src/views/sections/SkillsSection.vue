@@ -3,98 +3,22 @@
         <div class="container">
             <SectionTitle :title="title" :textSection="textSection" data-aos="fade-left"/>
             <div class="row">
-                <div class="col-md-12" data-aos="fade-left">
-                    <ul class="skills-ul">
-                        <li class="skills-li">
-                            <button 
-                                class="btn btn-outline-white btn-block"
-                                :class="options.showAll?'btn-primary':'btn-white'"
-                                @click="onChangeOption(OPTIONS_VALUES.ALL)">
-                                Todos
-                            </button>
-                        </li>
-                        <li class="skills-li">
-                            <button 
-                                class="btn btn-outline-white btn-block"
-                                :class="options.showFrontend?'btn-primary':'btn-white'"
-                                @click="onChangeOption(OPTIONS_VALUES.FRONTEND)">
-                                Frontend
-                            </button>
-                        </li>
-                        <li class="skills-li">
-                            <button 
-                                class="btn btn-outline-white btn-block"
-                                :class="options.showBackend?'btn-primary':'btn-white'"
-                                @click="onChangeOption(OPTIONS_VALUES.BACKEND)">
-                                Backend
-                            </button>
-                        </li>
-                        <li class="skills-li">
-                            <button 
-                                class="btn btn-outline-white btn-block"
-                                :class="options.showDevtools?'btn-primary':'btn-white'"
-                                @click="onChangeOption(OPTIONS_VALUES.DEVTOOLS)">
-                                Devtools
-                            </button>
-                        </li>
-                    </ul>
-                </div>
+                <Skillitem 
+                    v-for="(v,i) in listSkills" 
+                    :key="i*2" 
+                    :item="v"
+                    data-aos="zoom-in"/>
             </div>
-            <div class="row">
-                <template v-if="options.showAll">
-                    <Skillitem 
-                        v-for="(v,i) in frontendSkills" 
-                        :key="i*2" 
-                        :item="v"
-                        data-aos="zoom-in"/>
-                    <Skillitem 
-                        v-for="(v,i) in backendSkills" 
-                        :key="i*20" 
-                        :item="v"
-                        data-aos="zoom-in"/>
-                    <Skillitem 
-                        v-for="(v,i) in devtoolsSkills" 
-                        :key="i*200" 
-                        :item="v"
-                        data-aos="zoom-in"/>
-                </template>
-                <template v-else-if="options.showFrontend">
-                    <Skillitem 
-                        v-for="(v,i) in frontendSkills" 
-                        :key="i*2" 
-                        :item="v"
-                        data-aos="zoom-in"/>
-                </template>
-                <template v-else-if="options.showBackend">
-                    <Skillitem 
-                        v-for="(v,i) in backendSkills" 
-                        :key="i*20" 
-                        :item="v"
-                        data-aos="zoom-in"/>
-                </template>
-                <template v-else-if="options.showDevtools">
-                    <Skillitem 
-                        v-for="(v,i) in devtoolsSkills" 
-                        :key="i*200" 
-                        :item="v"
-                        data-aos="zoom-in"/>
-                </template>
+            <div class="row d-flex">
+                <div class="col-md-12 flexbox-align">
+                    <button class="btn btn-primary" @click="goToSkillsPage()">
+                        Ver todos los conocimientos
+                    </button>
+                </div>
             </div>
         </div>
     </section>
 </template>
-<style type="text/css">
-    .skills-ul {
-      display: flex;
-      flex-direction: row;
-    }
-
-    .skills-li {
-      flex: 1;
-      display: inline-block;
-      text-align: center;
-    }
-</style>
 <script>
 import VueI18n from '@/translation/i18n'
 import listSkillsServices from "@/services/listSkillsServices.js"
@@ -111,67 +35,32 @@ export default {
             frontend: VueI18n.tc('pages.skills.frontend'),
             backend: VueI18n.tc('pages.skills.backend'),
             devtools: VueI18n.tc('pages.skills.devtools'),
-            options:{
-                showAll:false,
-                showFrontend:false,
-                showBackend:false,
-                showDevtools:false
-            },
-            OPTIONS_VALUES:{
-                ALL:"ALL",
-                FRONTEND:"FRONTEND",
-                BACKEND:"BACKEND",
-                DEVTOOLS:"DEVTOOLS"
-            }
-        }
-    },
-    methods:{
-        onChangeOption(value='ALL'){
-            this.options.showAll=false;
-            this.options.showFrontend=false;
-            this.options.showBackend=false;
-            this.options.showDevtools=false;
-             
-            if(value==this.OPTIONS_VALUES.ALL){
-                this.options.showAll=true;
-                this.options.showFrontend=false;
-                this.options.showBackend=false;
-                this.options.showDevtools=false;
-            }
-            if(value==this.OPTIONS_VALUES.FRONTEND){
-                this.options.showAll=false;
-                this.options.showFrontend=true;
-                this.options.showBackend=false;
-                this.options.showDevtools=false;
-            }
-            if(value==this.OPTIONS_VALUES.BACKEND){
-                this.options.showAll=false;
-                this.options.showFrontend=false;
-                this.options.showBackend=true;
-                this.options.showDevtools=false;
-            }
-            if(value==this.OPTIONS_VALUES.DEVTOOLS){
-                this.options.showAll=false;
-                this.options.showFrontend=false;
-                this.options.showBackend=false;
-                this.options.showDevtools=true;
+            PRINCIPAL_VALUES:{
+                PRINCIPAL: "PRINCIPAL"
             }
         }
     },
     created() {
-        this.onChangeOption(this.OPTIONS_VALUES.ALL);
         window.scrollTo({ top: 0, behavior: "smooth" });
     },
+    methods:{
+        goToSkillsPage(){
+            this.$router.push('/about-me').catch(error => {
+                if (
+                    error.name !== 'NavigationDuplicated' &&
+                    !error.message.includes('Avoided redundant navigation to current location')
+                ) {
+                    /* eslint-disable no-console */
+                    console.log(error)
+                    /* eslint-enable no-console */
+                }
+            });
+        }
+    },
     computed: {
-        frontendSkills() {
-            return this.listSkillsServices(this.OPTIONS_VALUES.FRONTEND);
-        },
-        backendSkills() {
-            return this.listSkillsServices(this.OPTIONS_VALUES.BACKEND);
-        },
-        devtoolsSkills() {
-            return this.listSkillsServices(this.OPTIONS_VALUES.DEVTOOLS);
-        },
+        listSkills() {
+            return this.listPrincipalSkillsServices(this.PRINCIPAL_VALUES.PRINCIPAL);
+        }
     },
 };
 </script>

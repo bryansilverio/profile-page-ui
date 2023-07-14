@@ -1,7 +1,7 @@
 <template>
     <a class="col-md-6 col-lg-3 d-flex contact-item" :href="item.url" target="_blank">
         <div class="align-self-stretch box p-4 text-center">
-            <div class="icon d-flex align-items-center justify-content-center">
+            <div class="icon d-flex align-items-center justify-content-center flexbox-align">
                 <span :class="item.icon"></span>
             </div>
             <h3 class="mb-4"></h3>
@@ -10,6 +10,14 @@
   </a>
 </template>
 <style>
+    .flexbox-align {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100px;
+      width: 200px;
+      color: #333;
+    }
     .contact-item:hover{
         transform: scale(1.1);
         transition: transform .2s;
