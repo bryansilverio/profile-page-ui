@@ -3,31 +3,32 @@
         <div class="container">
             <SectionTitle :title="title" :textSection="textSection" data-aos="fade-right"/>
             <div class="row">
-                <div class="col-md-12">
-                    <section>
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="slider" data-aos="fade-right">
-                                    <button 
-                                        v-for="(v,i) in items"
-                                        :key="i"
-                                        class="btn btn-outline-white btn-block" 
-                                        :class="v.active?'btn-primary':'btn-white'"
-                                        @click="onChangeItem(v)">
-                                        {{v.company}}
-                                    </button>
-                            </div>
-                            </div>
-                            <div class="col-md-8">                         
-                                <div class="slides">
-                                    <WorkExperienceItem
-                                        data-aos="zoom-in" 
-                                        :items="items"  
-                                        :divId="itemSelected?itemSelected.id:null"/>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
+                <div class="col-md-4">
+                    <div class="slider" data-aos="fade-right">
+                        <button 
+                            v-for="(v,i) in items"
+                            :key="i"
+                            class="btn btn-outline-white btn-block" 
+                            :class="v.active?'btn-primary':'btn-white'"
+                            @click="onChangeItem(v)">
+                            {{v.company}}
+                        </button>
+                </div>
+                </div>
+                <div class="col-md-8">                         
+                    <div class="slides">
+                        <WorkExperienceItem
+                            data-aos="zoom-in" 
+                            :items="items"  
+                            :divId="itemSelected?itemSelected.id:null"/>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex">
+                <div class="col-md-12 flexbox-align">
+                    <button class="btn btn-primary" @click="goToWorExperiencePage()">
+                        Ver todas las experiencias
+                    </button>
                 </div>
             </div>
         </div>
@@ -105,6 +106,18 @@ export default {
                 activeAux=true
             }
             return activeAux
+        },
+        goToWorExperiencePage(){
+            this.$router.push('/work-experiences').catch(error => {
+                if (
+                    error.name !== 'NavigationDuplicated' &&
+                    !error.message.includes('Avoided redundant navigation to current location')
+                ) {
+                    /* eslint-disable no-console */
+                    console.log(error)
+                    /* eslint-enable no-console */
+                }
+            });
         }
     },
     created() {
