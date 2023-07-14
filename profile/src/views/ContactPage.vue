@@ -58,14 +58,11 @@
     }
 </style>
 <script type="text/javascript">
-import VueI18n from '@/translation/i18n'
 import listContactServices from "@/services/listContactServices.js";
-import ContactItem from '@/components/_Shared/ContactItem.vue'
 
 export default{
     name:'ContactPage',
     mixins:[listContactServices],
-    components:{ContactItem},
     data(){
         return{
             
