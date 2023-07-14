@@ -57,7 +57,7 @@ import work_experiences_data from '@/data/work-experiences.json'
 import WorkExperienceItem from '@/components/_Shared/WorkExperienceItem.vue'
 import SectionTitle from '@/components/_Shared/SectionTitle.vue'
 export default {
-    name: "WorkExperience",
+    name: "WorkExperiencesSection",
     components: { WorkExperienceItem, SectionTitle },
     data() {
         return {

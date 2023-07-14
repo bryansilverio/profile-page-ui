@@ -57,7 +57,7 @@
 import VueI18n from '@/translation/i18n'
 import contactDetailsData from '@/data/contactDetails.json'
 export default {
-    name: "Home",
+    name: "HomeSection",
     data() {
         return {
             resume: VueI18n.tc('resume'),

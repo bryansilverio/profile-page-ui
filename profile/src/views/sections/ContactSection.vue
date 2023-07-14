@@ -14,7 +14,7 @@ import ContactItem from '@/components/_Shared/ContactItem.vue'
 import contactDetailData from '@/data/contactDetails.json'
 import SectionTitle from '@/components/_Shared/SectionTitle.vue'
 export default {
-    name: "Contact",
+    name: "ContactSection",
     components:{ContactItem, SectionTitle},
     data(){
       return{

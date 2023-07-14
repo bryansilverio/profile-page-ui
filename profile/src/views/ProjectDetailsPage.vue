@@ -57,7 +57,7 @@ import ProjectItemSidebar from '@/components/_Shared/ProjectItemSidebar.vue'
 import projects_data from "@/data/projects.json";
 import findProjectDetailsService from "@/services/findProjectDetailsService.js"
 export default {
-    name: 'ProjectDetails',
+    name: 'ProjectDetailsPage',
     components: { ProjectItemSidebar },
     mixins:[findProjectDetailsService],
     data() {

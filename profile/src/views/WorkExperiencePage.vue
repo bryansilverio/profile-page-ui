@@ -33,26 +33,6 @@
           </ul>
         </div>
       </div>
-      <!--
-      <div class="row d-flex" v-show="false">
-        <template v-if="items.length>0">
-          <ProjectItem
-            data-aos="zoom-in" 
-            v-for="(v,i) in items" 
-            :key="i" 
-            :item="v"
-            bgColor="#36394A"
-            :showButtonDetails="true"/>
-        </template>
-        <template v-else>
-          <div class="col-md-12 flexbox-align">
-            <span>
-              Cargando los proyectos...
-            </span>
-          </div>
-        </template>
-      </div>
-      -->
     </div>
   </section>
 </template>

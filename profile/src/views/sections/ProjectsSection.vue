@@ -57,7 +57,7 @@ import ProjectItem from "@/components/_Shared/ProjectItem.vue";
 import projects_data from "@/data/projects.json";
 import SectionTitle from '@/components/_Shared/SectionTitle.vue'
 export default {
-    name: "Projects",
+    name: "ProjectsSection",
     components: { ProjectItem, SectionTitle },
     data() {
         return {

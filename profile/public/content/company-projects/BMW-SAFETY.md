@@ -10,6 +10,7 @@
 BMW safety es un proyecto en el que participe y el cual tenia como objetivo desarrollar una aplicación web para la Planta de San Luis Potosí de BMW para digitalizar y automatizar el proceso de creación instrucciones de seguridad para los diferentes edificios y áreas de la planta para el personal.
 
 ### 🏆 Logros
+
 - La aplicación permitio a la planta de BMW, digitalizar sus instrucciones de seguridad y reducir tiempo y esfuerzo manual la creación de cada una de estas instrucciones.
 
 ### 📝 Actividades

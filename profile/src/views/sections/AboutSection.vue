@@ -22,7 +22,7 @@ import VueI18n from '@/translation/i18n'
 import aboutData from "@/data/about.json";
 import SectionTitle from '@/components/_Shared/SectionTitle.vue'
 export default {
-    name: "About",
+    name: "AboutSection",
     components:{SectionTitle},
     data() {
         return {

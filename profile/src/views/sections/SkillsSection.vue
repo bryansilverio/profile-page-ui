@@ -102,7 +102,7 @@ import skills_data from "@/data/skills.json";
 import Skillitem from "@/components/_Shared/SkillItem.vue";
 import SectionTitle from '@/components/_Shared/SectionTitle.vue'
 export default {
-    name: "About",
+    name: "SkillsSection",
     components: {Skillitem, SectionTitle },
     data() {
         return {

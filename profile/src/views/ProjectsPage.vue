@@ -105,7 +105,7 @@ import VueI18n from '@/translation/i18n'
 import ProjectItem from "@/components/_Shared/ProjectItem.vue";
 import projects_data from "@/data/projects.json";
 export default {
-    name: "Projects",
+    name: "ProjectsPage",
     components: { ProjectItem },
     data() {
         return {
