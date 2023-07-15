@@ -5,8 +5,8 @@
                 <div class="overlay"></div>
                 <div class="container">
                     <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end">
-                        <div class="one-third js-fullheight order-md-last img"
-                            style="background-image:url(assets/images/background/intro.png);">
+                        <div class="one-third js-fullheight order-md-last img">
+                            <img src="assets/images/background/intro.png">
                             <div class="overlay"></div>
                         </div>
                         <div class="one-forth d-flex  align-items-center">

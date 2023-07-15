@@ -20,13 +20,19 @@
       </div>
       <div class="row">
         <div class="col-md-12">
-          <ul class="timeline" style="list-style: none;" v-for="(v,i) in workexperiences" :key="i">
-            <li class="timeline-event">
+          <ul class="timeline" style="list-style: none;">
+            <li class="timeline-event" data-aos="fade-left" v-for="(v,i) in workexperiences" :key="i">
               <label class="timeline-event-icon"></label>
               <div class="timeline-event-copy">
                 <p class="timeline-event-thumbnail">{{v.date}}</p>
                 <h3>{{v.position}}</h3>
-                <h4>{{v.company}}</h4>
+                <h4>
+                  <img 
+                    :src="v.logo" 
+                    width="50"
+                    style="border-radius: 50px">
+                  {{v.company}} - <a :href="v.link" target="_blank">Sitio Web</a>
+                </h4>
                 <p><strong>{{v.company}}: {{v.position}}</strong><br>{{v.content}}</p>
               </div>
             </li>
@@ -38,7 +44,6 @@
 </template>
 <style type="text/css">
 	body {
-		font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 		font-size: 1em;
 		font-weight: 300;
 		line-height: 1.5;

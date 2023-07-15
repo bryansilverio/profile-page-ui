@@ -11,22 +11,22 @@
         <ul class="navbar-nav nav ml-auto">
           <li class="nav-item menu-options">
             <a class="nav-link" @click="goToPage('/')">
-              <span style="font-weight: bold;">{{ menu.home.name }}</span>
+              <span style="font-weight: bold;"><i class="icon-home"></i> {{ menu.home.name }}</span>
             </a>
           </li>
           <li class="nav-item menu-options">
             <a class="nav-link" @click="goToPage('/about-me')">
-              <span style="font-weight: bold;">{{ menu.about.name }}</span>
+              <span style="font-weight: bold;"><i class="icon-user"></i> {{ menu.about.name }}</span>
             </a>
           </li>
           <li class="nav-item menu-options">
             <a class="nav-link" @click="goToPage('/work-experiences')">
-              <span style="font-weight: bold;">{{ menu.experience.name }}</span>
+              <span style="font-weight: bold;"><i class="icon-briefcase"></i> {{ menu.experience.name }}</span>
             </a>
           </li>
           <li class="nav-item menu-options">
             <a class="nav-link" @click="goToPage('/projects')">
-              <span style="font-weight: bold;">{{ menu.projects.name }}</span>
+              <span style="font-weight: bold;"><i class="icon-code"></i> {{ menu.projects.name }}</span>
             </a>
           </li>
           <li class="nav-item menu-options" v-show="false">
