@@ -27,7 +27,7 @@
             <div class="row d-flex">
                 <div class="col-md-12 flexbox-align">
                     <button class="btn btn-primary" @click="goToWorExperiencePage()">
-                        Ver todas las experiencias
+                        Ver todas las experiencias &#10140;
                     </button>
                 </div>
             </div>

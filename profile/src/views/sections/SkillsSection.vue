@@ -12,7 +12,7 @@
             <div class="row d-flex">
                 <div class="col-md-12 flexbox-align">
                     <button class="btn btn-primary" @click="goToSkillsPage()">
-                        Ver todos los conocimientos
+                        Ver todos los conocimientos &#10140;
                     </button>
                 </div>
             </div>
