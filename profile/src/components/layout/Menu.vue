@@ -4,7 +4,7 @@
       <a class="navbar-brand" href="/"><span style="color:#FF474C">B</span>Silverio</a>
       <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
         data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="oi oi-menu"></span> Menu
+        <span class="icon-reorder"></span> Menu
       </button>
 
       <div class="collapse navbar-collapse" id="ftco-nav">
