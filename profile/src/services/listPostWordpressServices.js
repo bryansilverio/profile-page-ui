@@ -6,7 +6,12 @@ export default {
 			postDetail:{
 				title:"",
 				content:"",
-				modified:""
+				date:"",
+				thumbnails:{
+					thumbnail:"",
+					medium:"",
+					large:""
+				}
 			}
 		}
 	},
@@ -23,9 +28,9 @@ export default {
 			.then(json=>{
 				this.postDetail.title=json.title;
 				this.postDetail.content=json.content;
-				this.postDetail.modified=json.modified
+				this.postDetail.date=json.date;
 			})
 			.catch(error=>alert(error));
-		},
+		}
 	}
 };

@@ -5,7 +5,17 @@
             <div class="row">
                 <div class="col-md-12 mb-5 resume-wrap" v-for="(v,i) in posts" :key="i" style="background-color: #36394A;">
                     <h6 style="font-weight: bold;" v-html="v.title"></h6>
-                    <span><i class="icon-calendar text-primary fa-sm fa-fw"></i> {{new Date(v.modified).toLocaleString()}}</span>
+                    <span>
+                        <i class="icon-calendar text-primary fa-sm fa-fw"></i> 
+                        {{new Date(v.modified).toLocaleString()}}
+                    </span>
+                     <a 
+                        :href="v.URL"
+                        target="_blank" 
+                        style="cursor: pointer;"
+                        class="btn btn-primary btn-outline-white">
+                        Ver post
+                    </a>
                 </div>
             </div>
             <div class="row d-flex">
