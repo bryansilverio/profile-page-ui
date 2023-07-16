@@ -114,6 +114,30 @@
                     data-aos="zoom-in"/>
             </template>
         </div>
+        <div class="row">
+            <div class="col-lg-12" style="margin-top: 100px;">
+                <h3 class="mb-4 mt-3">
+                    <span 
+                        class="title-text-color" 
+                        style="font-size:3rem" 
+                        data-aos="fade-left">
+                        {{ 'Certificaciones' }}
+                    </span>
+                </h3>
+            </div>
+            <div class="col-md-10">
+                <hr>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-start">
+            <div class="col-md-12" data-aos="fade-right">
+                <div v-for="(v,i) in certifications" :key="i" style="margin-bottom: 15px">
+                    <h4><i class="icon-trophy"></i> {{v.name}}</h4>
+                    <p>{{v.description}} - <b>{{v.certifyingCompany.name}}</b></p>
+                    <a :href="v.url" target="_blank"><i class="icon-external-link"></i> Certificado</a>
+                </div>
+            </div>
+        </div>
       </div>
     </section>
 </template>
@@ -152,12 +176,13 @@
 import aboutData from "@/data/about.json";
 import VueI18n from '@/translation/i18n'
 import listSkillsServices from "@/services/listSkillsServices.js"
+import listCertificationsServices from "@/services/listCertificationsServices.js"
 import Skillitem from "@/components/_Shared/SkillItem.vue";
 
 export default{
     name:'AboutMePage',
     components:{Skillitem},
-    mixins:[listSkillsServices],
+    mixins:[listSkillsServices, listCertificationsServices],
     data(){
         return{
             aboutDescription:[],
@@ -235,6 +260,9 @@ export default{
         devtoolsSkills() {
             return this.listSkillsServices(this.OPTIONS_VALUES.DEVTOOLS);
         },
+        certifications(){
+            return this.listCertificationsServices();
+        }
     }
 }
 

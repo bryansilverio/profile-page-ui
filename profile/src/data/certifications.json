@@ -1,0 +1,22 @@
+[
+    {
+        "id":"SDPC",
+        "name":"Scrum Developer Professional Certificate SDPC",
+        "description":"Certificación de Scrum Developer Professional Certificate SDPC",
+        "certifyingCompany":{
+            "name":"CertiProf",
+            "url":""
+        },
+        "url":"https://drive.google.com/open?id=1axfDRHqIT3rJ5V-nyRwpVpOHgBuHlbrW&usp=drive_fs"
+    },
+    {
+        "id":"ASO_DESIGN",
+        "name":"ASO-Diseñador",
+        "description":"Curso de Diseño ASO para diseñar APIs REST",
+        "certifyingCompany":{
+            "name":"Netec",
+            "url":""
+        },
+        "url":"https://drive.google.com/open?id=1F2MWEVPgIGpG_X1Q9XLC9nsM4waCqdjc&usp=drive_fs"
+    }
+]
