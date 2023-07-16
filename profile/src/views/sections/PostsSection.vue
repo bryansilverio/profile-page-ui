@@ -30,6 +30,13 @@
                     </div>
                 </div>
             </div>
+            <div class="row d-flex">
+                <div class="col-md-12 flexbox-align">
+                    <button class="btn btn-primary" @click="goToPosts()">
+                        Ver todos los posts &#10140;
+                    </button>
+                </div>
+            </div>
         </div>
     </section>
 </template>
@@ -51,6 +58,18 @@ export default {
     methods:{
         goToPostDetail(id=0){
             this.$router.push('/posts/'+id).catch(error => {
+                if (
+                    error.name !== 'NavigationDuplicated' &&
+                    !error.message.includes('Avoided redundant navigation to current location')
+                ) {
+                    /* eslint-disable no-console */
+                    console.log(error)
+                    /* eslint-enable no-console */
+                }
+            });
+        },
+        goToPosts(){
+            this.$router.push('/posts').catch(error => {
                 if (
                     error.name !== 'NavigationDuplicated' &&
                     !error.message.includes('Avoided redundant navigation to current location')

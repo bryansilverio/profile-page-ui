@@ -22,6 +22,7 @@
         <div class="row">
           <div class="col-lg-12" style="margin-top: 100px;"> 
             <h4 v-html="postDetail.title"></h4>
+            <small style="font-weight: 500;">{{new Date(postDetail.modified).toLocaleString()}}</small>
           </div>          
           <div class="col-md-12 mt-5" data-aos="fade-right">
             <div v-html="postDetail.content"></div>

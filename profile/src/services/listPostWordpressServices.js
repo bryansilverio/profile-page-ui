@@ -5,7 +5,8 @@ export default {
 			posts:[],
 			postDetail:{
 				title:"",
-				content:""
+				content:"",
+				modified:""
 			}
 		}
 	},
@@ -22,6 +23,7 @@ export default {
 			.then(json=>{
 				this.postDetail.title=json.title;
 				this.postDetail.content=json.content;
+				this.postDetail.modified=json.modified
 			})
 			.catch(error=>alert(error));
 		},
