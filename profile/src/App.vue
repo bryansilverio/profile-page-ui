@@ -8,8 +8,8 @@
 </template>
 
 <script>
-import Menu from '@/components/layout/Menu.vue'
-import Footer from '@/components/layout/footer.vue'
+import Menu from '@/layout/Menu.vue'
+import Footer from '@/layout/footer.vue'
 export default {
   name: "App",
   components: { Menu,Footer },
