@@ -99,7 +99,7 @@ export default {
     },
     created() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
-        this.executeFindProjectById(this.$route.params.id)
+        this.findProjectById(this.$route.params.id)
     },
     computed:{
         projects(){
