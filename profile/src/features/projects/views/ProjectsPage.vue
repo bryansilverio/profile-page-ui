@@ -1,23 +1,9 @@
 <template>
     <section class="ftco-section" id="projects-section">
       <div class="container">
-        <div class="row">
-            <div class="col-lg-12" style="margin-top: 100px;">
-                <h3 class="mb-4 mt-3">
-                    <span 
-                        class="title-text-color" 
-                        style="font-size:3rem" 
-                        data-aos="fade-left">
-                        {{ 'Proyectos' }}
-                    </span>
-                </h3>
-            </div>
-            <div class="col-md-10">
-                <hr>
-            </div>
-            <p data-aos="fade-left">En esta sección se muestrán los proyectos en los que he participado dentro de las empresas en las que he elaborado, además de proyectos personales.
-            </p>
-        </div>
+        <HeaderPageTitle 
+            title="Proyectos"
+            description="En esta sección se muestrán los proyectos en los que he participado dentro de las empresas en las que he elaborado, además de proyectos personales."/>
         <div class="row">
             <div class="col-md-12">
                 <ul class="projects-ul">
@@ -105,9 +91,11 @@ import VueI18n from '@/translation/i18n'
 import ProjectItem from "@/components/shared/ProjectItem.vue";
 import listProjectsService from "@/features/projects/services/listProjectsService.js";
 import listProjectsServicesByTypeService from "@/features/projects/services/listProjectsServicesByTypeService.js";
+
+import HeaderPageTitle from '@/components/shared/HeaderPageTitle.vue'
 export default {
     name: "ProjectsPage",
-    components: { ProjectItem },
+    components: { ProjectItem, HeaderPageTitle },
     mixins:[listProjectsService, listProjectsServicesByTypeService],
     data() {
         return {

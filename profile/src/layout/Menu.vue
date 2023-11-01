@@ -35,8 +35,8 @@
             </a>
           </li>
           <li class="nav-item menu-options" v-show="false">
-            <a class="nav-link" @click="goToPage('#contact-section')">
-              <span style="font-weight: bold;">{{ menu.contact.name }}</span>
+            <a class="nav-link" @click="goToPage('/contact')">
+              <span style="font-weight: bold;"><i class="icon-envelope"></i> {{ menu.contact.name }}</span>
             </a>
           </li>
         </ul>

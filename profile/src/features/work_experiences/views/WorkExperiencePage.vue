@@ -1,23 +1,9 @@
 <template>
 	<section class="ftco-section" id="projects-section">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-12" style="margin-top: 100px;">
-          <h3 class="mb-4 mt-3">
-            <span
-              class="title-text-color"
-              style="font-size:3rem"
-              data-aos="fade-left">
-              {{ 'Experiencia Laboral' }}
-          </span>
-          </h3>
-        </div>
-        <div class="col-md-10">
-          <hr>
-        </div>
-        <p data-aos="fade-left">En esta sección se muestrán los proyectos en los que he participado dentro de las empresas en las que he elaborado, además de proyectos personales.
-        </p>
-      </div>
+      <HeaderPageTitle 
+        title="Experiencia Laboral" 
+        description="En esta sección se muestrán los proyectos en los que he participado dentro de las empresas en las que he elaborado, además de proyectos personales."/>
       <div class="row">
         <div class="col-md-12">
           <ul class="timeline" style="list-style: none;">
@@ -155,8 +141,11 @@
 </style>
 <script type="text/javascript">
 import listWorkExperiencesService from "@/features/work_experiences/services/listWorkExperiencesService.js"
+
+import HeaderPageTitle from '@/components/shared/HeaderPageTitle.vue'
 export default{
   name:'WorkExperiencePage',
+  components:{HeaderPageTitle},
   mixins:[listWorkExperiencesService],
   created() {
       window.scrollTo({ top: 0, behavior: 'smooth' });

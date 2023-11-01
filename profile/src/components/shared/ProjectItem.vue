@@ -1,7 +1,7 @@
 <template>
     <div class="col-md-4 d-flex project-item">
         <div class="blog-entry justify-content-end" 
-            :style="'background-color:'+bgColor+';border-color:'+bgColor">
+            :style="'background-color:'+bgColor+';'">
           <a class="block-20" :style="setImage(item.image)+'cursor: pointer'">
           </a>
           <div class="text mt-3 float-right d-block">
@@ -44,6 +44,10 @@
     }
     .project-item{
         border-radius: 10px;
+    }
+    .project-item:hover .project-name{
+        cursor: pointer;
+        font-size: 22px;
     }
 </style>
 <script>
