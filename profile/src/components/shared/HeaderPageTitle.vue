@@ -20,20 +20,20 @@
 	export default{
     name:'HeaderPageTitle',
     props:{
-    	title:{
-    		type: String
-    	},
-    	imageBackground:{
-    		type: String
-    	},
-    	description:{
-    		type: String
-    	}
+        title:{
+            type: String
+        },
+        imageBackground:{
+            type: String
+        },
+        description:{
+            type: String
+        }
     },
     methods:{
-    	setImageBackground(image){
-    		return "background-image: url("+image+");";
-    	}
+        setImageBackground(image){
+            return "background-image: url("+image+");";
+        }
     }
 }
 </script>
