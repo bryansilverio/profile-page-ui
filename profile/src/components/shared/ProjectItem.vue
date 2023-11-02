@@ -47,7 +47,6 @@
     }
     .project-item:hover .project-name{
         cursor: pointer;
-        font-size: 22px;
     }
 </style>
 <script>
