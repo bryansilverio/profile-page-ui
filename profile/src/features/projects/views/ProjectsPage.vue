@@ -36,7 +36,7 @@
         </div>
         <div class="row d-flex">
             <template v-if="items.length>0">
-                <ProjectItem
+                <ProjectItemProjectPage
                     data-aos="zoom-in" 
                     v-for="(v,i) in items" 
                     :key="i" 
@@ -85,17 +85,22 @@
       width: 200px;
       font-weight: 900;
     }
+    @media (max-width: 767.98px){
+        .projects-ul {
+            display: inline-grid;
+        }
+    }
 </style>
 <script>
 import VueI18n from '@/translation/i18n'
-import ProjectItem from "@/components/shared/ProjectItem.vue";
+import ProjectItemProjectPage from "@/components/shared/ProjectItemProjectPage.vue";
 import listProjectsService from "@/features/projects/services/listProjectsService.js";
 import listProjectsServicesByTypeService from "@/features/projects/services/listProjectsServicesByTypeService.js";
 
 import HeaderPageTitle from '@/components/shared/HeaderPageTitle.vue'
 export default {
     name: "ProjectsPage",
-    components: { ProjectItem, HeaderPageTitle },
+    components: { ProjectItemProjectPage, HeaderPageTitle },
     mixins:[listProjectsService, listProjectsServicesByTypeService],
     data() {
         return {

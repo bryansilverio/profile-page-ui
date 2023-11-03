@@ -3,17 +3,20 @@
         <section class="ftco-section">
           <div class="container">
             <div class="row">
-              <div class="col-lg-12" style="margin-top: 100px;">             
-                <div data-aos="fade-right" v-html="htmlContent"></div>
-              </div> <!-- .col-md-8 -->           
-              <div class="col-md-12 mt-5" data-aos="fade-right">
-                    <ProjectItemSidebar 
-                    :projectsRelationed="projects"
-                    @onClickToProjectById="onClickToProjectById" />
-              </div>
+                <div class="col-lg-12" style="margin-top: 100px;"> 
+                    <div style="float: right;">
+                        <button
+                            @click="onClickToBack('/projects')"
+                            style="cursor: pointer;"
+                            class="btn btn-primary btn-outline-white margin-content">
+                            &#129044; Regresar a proyectos
+                        </button> 
+                    </div>
+                    <div data-aos="fade-right" v-html="htmlContent" class="mt-5"></div>
+                </div>
             </div>
           </div>
-        </section> <!-- .section -->
+        </section>
     </div>
 </template>
 <style>
@@ -48,14 +51,12 @@
 </style>
 <script>
 import VueI18n from '@/translation/i18n'
-import ProjectItemSidebar from '@/components/shared/ProjectItemSidebar.vue'
 import listProjectsService from "@/features/project_details/services/listProjectsService.js"
 import findProjectByIdService from "@/features/project_details/services/findProjectByIdService.js"
 import loadProjectDetailContentService from "@/features/project_details/services/loadProjectDetailContentService.js"
 
 export default {
     name: 'ProjectDetailsPage',
-    components: { ProjectItemSidebar },
     mixins:[findProjectByIdService, listProjectsService, loadProjectDetailContentService],
     data() {
         return {
@@ -88,14 +89,7 @@ export default {
         },
         onClickToBack($url) {
             this.$router.push($url)
-        },
-        onClickToProjectById($id){
-            this.$router.push('/projects/'+$id)
-            if(this.projectDetails.id!=this.$route.params.id){
-                this.executeFindProjectById($id)
-            }
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        },
+        }
     },
     created() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
