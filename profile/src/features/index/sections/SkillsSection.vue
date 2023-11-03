@@ -7,7 +7,8 @@
                     v-for="(v,i) in listSkills" 
                     :key="i*2" 
                     :item="v"
-                    data-aos="zoom-in"/>
+                    data-aos="zoom-in"
+                    :styleCss="'width:5.5rem;height: 5.5rem;'"/>
             </div>
             <div class="row d-flex">
                 <div class="col-md-12 flexbox-align">

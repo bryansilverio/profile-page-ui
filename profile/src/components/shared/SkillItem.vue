@@ -1,9 +1,8 @@
 <template>
     <div class="col-md-2 text-center d-flex">
-        <a class="services-1">
+        <a class=""> <!-- services-1 -->
             <span class="icon">
-                <!--<i :class="item.icon"></i>-->
-                <img :src="item.icon" style="width:5.5rem;height: 5.5rem;">
+                <img :src="item.icon" :style="styleCss">
             </span>
         </a>
     </div>
@@ -15,6 +14,9 @@ export default {
         item: {
             type: Object
         },
+        styleCss:{
+            type: String
+        }
     }
 };
 </script>

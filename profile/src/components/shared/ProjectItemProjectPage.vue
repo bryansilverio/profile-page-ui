@@ -2,8 +2,8 @@
     <div class="col-md-12 project-item">
         <div class="blog-entry justify-content-end" :style="'background-color:'+bgColor+';'">
             <div class="row">
-                <div class="col-md-6">
-                    <div class="text mt-3 float-right d-block">
+                <div class="col-md-8">
+                    <div class="text mt-3 float-right d-block" data-aos="fade-right">
                         <div class="d-flex align-items-center mb-3 meta margin-content">
                             <h1 class="mb-0 project-name">
                             {{item.name}}
@@ -18,18 +18,34 @@
                                 &nbsp;&nbsp;<strong>{{item.company.name }}</strong>
                         </div>
                         <div class="margin-content">
-                            <div 
-                                data-aos="fade-right" 
-                                v-html="getHtmlContent(item.content)" 
-                                class="mt-5"
+                            <p class="mt-5"
                                 style="font-size: small;">
+                                {{item.description.long}}
+                            </p>
+                        </div>
+                        <div class="margin-content">
+                            <div class="row">
+                                <Skillitem 
+                                    v-for="(v,i) in item.technologies" 
+                                    :key="i*200" 
+                                    :item="v"
+                                    data-aos="zoom-in"
+                                    :styleCss="'width:2.5rem;height: 2.5rem;'"/>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <img :src="setImage(item.image)" 
-                    style="width: 75%;margin: 10%;">
+                        style="width: 75%;margin: 10%;">
+                    <a
+                        v-if="item.url" 
+                        :href="item.url"
+                        style="margin-left: 10%;"
+                        target="_blank">
+                        Visitar el sitio
+                    </a>
+                     
                     <div class="clearfix" v-if="showButtonDetails" v-show="false">
                         <button 
                             @click="goToProjectDetails(item.id)" 
@@ -64,11 +80,11 @@
 </style>
 <script>
 import VueI18n from '@/translation/i18n'
-import loadProjectDetailContentService from "@/features/projects/services/loadProjectDetailContentService.js"
+import Skillitem from "@/components/shared/SkillItem.vue";
 
 export default {
     name: "ProjectItem",
-    mixins:[loadProjectDetailContentService],
+    components:{ Skillitem },
     data() {
         return {
             company: VueI18n.tc('pages.projects.labelCompany'),

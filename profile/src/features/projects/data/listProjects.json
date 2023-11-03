@@ -5,14 +5,57 @@
     "name": "Mobile Retail Servicing",
     "image": "assets/images/projects/app-BBVA.png",
     "description": {
-      "short": "Área dentro de BBVA donde se da el soporte y seguimiento a temas productivos relacionados con los microservicios que usa la App BBVA Mx."
+      "short": "Área dentro de BBVA donde se da el soporte y seguimiento a temas productivos relacionados con los microservicios que usa la App BBVA Mx.",
+      "long":"Mobile Retail Servicing es una área dentro de BBVA la cual se encarga de cuidar la producción de los servicios que son usados en la aplicación móvil BBVA. Seguimientos de incidencias de microservicios ya existentes en producción, modificaciones de diseño y desarrollo de microservicios, revisión de cambios por temas de vulnerabilidades de seguridad en servicios."
     },
-    "content":"/content/company-projects/MOBILE-RETAIL-SERVICING.md",
     "company": {
       "id": "GONET",
       "name": "GoNet",
       "logo": "/assets/images/company-logos/gonet.png"
-    }
+    },
+    "url":"",
+    "technologies":[
+      {
+        "name": "Java",
+        "icon": "/assets/images/tech-skills/java_logo.png",
+        "type": "BACKEND"
+      },
+      {
+        "name": "Maven",
+        "icon": "/assets/images/tech-skills/maven.png",
+        "type": "BACKEND"
+      },
+      {
+        "name": "Spring",
+        "icon": "/assets/images/tech-skills/spring.png",
+        "type": "BACKEND"
+      },
+      {
+        "name": "GIT",
+        "icon": "/assets/images/tech-skills/git.png",
+        "type": "DEVTOOLS"
+      },
+      {
+        "name": "Bitbucket",
+        "icon": "/assets/images/tech-skills/bitbucket.png",
+        "type": "DEVTOOLS"
+      },
+      {
+        "name": "Jira",
+        "icon": "/assets/images/tech-skills/jira_logo.png",
+        "type": "DEVTOOLS"
+      },
+      {
+        "name": "RAML",
+        "icon": "/assets/images/tech-skills/raml.png",
+        "type": "DEVTOOLS"
+      },
+      {
+        "name": "APIs REST",
+        "icon": "/assets/images/tech-skills/rest.png",
+        "type": "DEVTOOLS"
+      }
+    ]
   },
   {
     "id": "API-MARKET",
@@ -20,14 +63,52 @@
     "name": "API Market",
     "image": "assets/images/projects/api_mkt_project.png",
     "description": {
-      "short": "Área dentro de BBVA donde se diseña y desarrollan APIs que implementan como microservicios basados en REST para exponer funcionalidad bancaria a terceros."
+      "short": "Área dentro de BBVA donde se diseña y desarrollan APIs que implementan como microservicios basados en REST para exponer funcionalidad bancaria a terceros.",
+      "long":"API Market es una área dentro de BBVA la cual se encarga de desarrollar APIs basados en REST para exponer funcionalidad del core bancario a terceros que puedan integrarlas en sus aplicaciones. El proceso consiste en un inicio diseñar la API con un enfoque de negocio para los consumidores, principalmente las aplicaciones frontend."
     },
-    "content":"/content/company-projects/API-MARKET.md",
     "company": {
       "id": "GONET",
       "name": "GoNet",
       "logo": "/assets/images/company-logos/gonet.png"
-    }
+    },
+    "url":"",
+    "technologies":[
+      {
+        "name": "Java",
+        "icon": "/assets/images/tech-skills/java_logo.png",
+        "type": "BACKEND"
+      },
+      {
+        "name": "Maven",
+        "icon": "/assets/images/tech-skills/maven.png",
+        "type": "BACKEND"
+      },
+      {
+        "name": "GIT",
+        "icon": "/assets/images/tech-skills/git.png",
+        "type": "DEVTOOLS"
+      },
+      {
+        "name": "Bitbucket",
+        "icon": "/assets/images/tech-skills/bitbucket.png",
+        "type": "DEVTOOLS"
+      },
+      {
+        "name": "Jira",
+        "icon": "/assets/images/tech-skills/jira_logo.png",
+        "type": "DEVTOOLS"
+      },
+      {
+        "name": "RAML",
+        "icon": "/assets/images/tech-skills/raml.png",
+        "type": "DEVTOOLS"
+      },
+      {
+        "name": "APIs REST",
+        "icon": "/assets/images/tech-skills/rest.png",
+        "type": "DEVTOOLS"
+      }
+    ]
   },
   {
     "id": "LOOP",
@@ -35,14 +116,52 @@
     "name": "Loop",
     "image": "assets/images/projects/loop.jpg",
     "description": {
-      "short": "Proyecto enfocado a la administración, seguimiento, control de servicios ejecutivos de transporte, el cual incluía dos apps, una enfocada para el cliente y la otra para el ejecutivo/chofer."
+      "short": "Proyecto enfocado a la administración, seguimiento, control de servicios ejecutivos de transporte, el cual incluía dos apps, una enfocada para el cliente y la otra para el ejecutivo/chofer.",
+      "long":"Loop es un proyecto en el cual participe el cual consiste en una aplicación que permite llevar el control, seguimiento y visibilidad de servicios de transporte ejecutivos a empresas, donde el cliente puede solicitar un servicio de translado a cualquier parte de México, por medio de una aplicación movil, la operación se puede llevar desde la aplicación web y ademas se le da el seguimiento y se tiene la información en todo momento. El cual por cuestiones tecnicos se decidio migrar ya que la versión de la aplicación no era lo suficientemente escalable. Este proyecto en su versión anterior estaba desarrollado en la parte del C# MVC con .NET Framework** y **SQL Server principalmente."
     },
-    "content":"/content/company-projects/LOOP.md",
     "company": {
       "id": "BITFX",
       "name": "Bitfx",
       "logo": "/assets/images/company-logos/bitfx.png"
-    }
+    },
+    "url":"https://admin.e-loop.net/",
+    "technologies":[
+      {
+        "name": "VueJs",
+        "icon": "/assets/images/tech-skills/vue_logo.png",
+        "type": "FRONTEND"
+      },
+      {
+        "name": "Javascript",
+        "icon": "/assets/images/tech-skills/Js.png",
+        "type": "FRONTEND"
+      },
+      {
+        "name": "CSS",
+        "icon": "/assets/images/tech-skills/css_logo.png",
+        "type": "FRONTEND"
+      },
+      {
+        "name": "HTML",
+        "icon": "/assets/images/tech-skills/html_logo.png",
+        "type": "FRONTEND"
+      },
+      {
+        "name": "MySQL",
+        "icon": "/assets/images/tech-skills/mysql.png",
+        "type": "BACKEND"
+      },
+      {
+        "name": "C#",
+        "icon": "/assets/images/tech-skills/csharp.png",
+        "type": "BACKEND"
+      },
+      {
+        "name": "GIT",
+        "icon": "/assets/images/tech-skills/git.png",
+        "type": "DEVTOOLS"
+      }
+    ]
   },
   {
     "id": "BMW-SAFETY",
@@ -53,12 +172,44 @@
       "short": "Proyecto enfocado para la digitalización del proceso de creación de instrucciones de seguridad de la planta de BMW de San Luis Potosí.",
       "long": "BMW safety es un proyecto en el que participe y el cual tenia como objetivo desarrollar una aplicación web para la Planta de San Luis Potosí de BMW para digitalizar y automatizar el proceso de creación instrucciones de seguridad para los diferentes edificios y áreas de la planta para el personal."
     },
-    "content":"/content/company-projects/BMW-SAFETY.md",
     "company": {
       "id": "BITFX",
       "name": "Bitfx",
       "logo": "/assets/images/company-logos/bitfx.png"
-    }
+    },
+    "url":"",
+    "technologies":[
+      {
+        "name": "VueJs",
+        "icon": "/assets/images/tech-skills/vue_logo.png",
+        "type": "FRONTEND"
+      },
+      {
+        "name": "Vuetify",
+        "icon": "/assets/images/tech-skills/Vuetify.png",
+        "type": "FRONTEND"
+      },
+      {
+        "name": "Javascript",
+        "icon": "/assets/images/tech-skills/Js.png",
+        "type": "FRONTEND"
+      },
+      {
+        "name": "CSS",
+        "icon": "/assets/images/tech-skills/css_logo.png",
+        "type": "FRONTEND"
+      },
+      {
+        "name": "HTML",
+        "icon": "/assets/images/tech-skills/html_logo.png",
+        "type": "FRONTEND"
+      },
+      {
+        "name": "GIT",
+        "icon": "/assets/images/tech-skills/git.png",
+        "type": "DEVTOOLS"
+      }
+    ]
   },
   {
     "id": "IEQSA",
@@ -66,14 +217,52 @@
     "name": "IEQSA",
     "image": "assets/images/projects/ieqsa.png",
     "description": {
-      "short": "Proyecto enfocado al desarrollo de un sistema administrador y sitio web de la envasadora IEQSA."
+      "short": "Proyecto enfocado al desarrollo de un sistema administrador y sitio web de la envasadora IEQSA.",
+      "long":"IEQSA es un proyecto en el que participe, el cual consistia en desarrollar el sitio web de IEQSA (Industria Envasadora de Querétaro) y su administrador, donde se pudiera editar la información, imagenes y contenido en general desde el administrador."
     },
-    "content":"/content/company-projects/IEQSA.md",
     "company": {
       "id": "TASISOFTWARE",
       "name": "Tasi Software",
       "logo": "/assets/images/company-logos/tasisoftware.png"
-    }
+    },
+    "url":"https://www.ieqsa.com.mx/",
+    "technologies":[
+      {
+        "name": "Javascript",
+        "icon": "/assets/images/tech-skills/Js.png",
+        "type": "FRONTEND"
+      },
+      {
+        "name": "CSS",
+        "icon": "/assets/images/tech-skills/css_logo.png",
+        "type": "FRONTEND"
+      },
+      {
+        "name": "HTML",
+        "icon": "/assets/images/tech-skills/html_logo.png",
+        "type": "FRONTEND"
+      },
+      {
+        "name": "C#",
+        "icon": "/assets/images/tech-skills/csharp.png",
+        "type": "BACKEND"
+      },
+      {
+        "name": ".NET Core",
+        "icon": "/assets/images/tech-skills/net_core_logo.png",
+        "type": "BACKEND"
+      },
+      {
+        "name": "SQL Server",
+        "icon": "/assets/images/tech-skills/sql_server.png",
+        "type": "BACKEND"
+      },
+      {
+        "name": "GIT",
+        "icon": "/assets/images/tech-skills/git.png",
+        "type": "DEVTOOLS"
+      }
+    ]
   },
   {
     "id": "PORTAL-TASINET2",
@@ -81,14 +270,42 @@
     "name": "Portal Tasinet2",
     "image": "assets/images/projects/logo-tasinet.jpg",
     "description": {
-      "short": "Proyecto enfocado a la migración del sitio corporativo de la empresa TasiSoftware."
+      "short": "Proyecto enfocado a la migración del sitio corporativo de la empresa TasiSoftware.",
+      "long":"Portal Tasisoft2 es un proyecto en el cual tuvo como objetivo crear una nueva versión del portal de la empresa."
     },
-    "content":"/content/company-projects/PORTAL-TASINET2.md",
     "company": {
       "id": "TASISOFTWARE",
       "name": "TasiSoftware",
       "logo": "/assets/images/company-logos/tasisoftware.png"
-    }
+    },
+    "url":"",
+    "technologies":[
+      {
+        "name": "Javascript",
+        "icon": "/assets/images/tech-skills/Js.png",
+        "type": "FRONTEND"
+      },
+      {
+        "name": "CSS",
+        "icon": "/assets/images/tech-skills/css_logo.png",
+        "type": "FRONTEND"
+      },
+      {
+        "name": "HTML",
+        "icon": "/assets/images/tech-skills/html_logo.png",
+        "type": "FRONTEND"
+      },
+      {
+        "name": "C#",
+        "icon": "/assets/images/tech-skills/csharp.png",
+        "type": "BACKEND"
+      },
+      {
+        "name": "SQL Server",
+        "icon": "/assets/images/tech-skills/sql_server.png",
+        "type": "BACKEND"
+      }
+    ]
   },
   {
     "id": "RYDER",
@@ -96,14 +313,47 @@
     "name": "Ryder",
     "image": "assets/images/projects/ryder.jfif",
     "description": {
-      "short": "Proyecto orientado al seguimiento de los envíos por paquetería y una integración con Web Service SOAP de DHL. Integración con Servicios REST."
+      "short": "Proyecto orientado al seguimiento de los envíos por paquetería y una integración con Web Service SOAP de DHL. Integración con Servicios REST.",
+      "long":"Ryder fue un proyecto en el que participe el cual consistia en una aplicación web que gestiona el tracking de los envios por paqueteria. Ryder es un empresa de paquetería y logística, que realiza envíos a diferentes lugares del país. Previamente ya exisitia una aplicación movil pero se necesitaba una versión web."
     },
-    "content":"/content/company-projects/RYDER.md",
     "company": {
       "id": "DWSOFTWARE",
       "name": "DW Software",
       "logo": "/assets/images/company-logos/dwsoftware.jfif"
-    }
+    },
+    "url":"",
+    "technologies":[
+      {
+        "name": "Javascript",
+        "icon": "/assets/images/tech-skills/Js.png",
+        "type": "FRONTEND"
+      },
+      {
+        "name": "CSS",
+        "icon": "/assets/images/tech-skills/css_logo.png",
+        "type": "FRONTEND"
+      },
+      {
+        "name": "HTML",
+        "icon": "/assets/images/tech-skills/html_logo.png",
+        "type": "FRONTEND"
+      },
+      {
+        "name": "C#",
+        "icon": "/assets/images/tech-skills/csharp.png",
+        "type": "BACKEND"
+      },
+      {
+        "name": "SQL Server",
+        "icon": "/assets/images/tech-skills/sql_server.png",
+        "type": "BACKEND"
+      },
+      {
+        "name": "GIT",
+        "icon": "/assets/images/tech-skills/git.png",
+        "type": "DEVTOOLS"
+      }
+    ]
   },
   {
     "id": "RMK",
@@ -111,14 +361,42 @@
     "name": "Remarkable",
     "image": "assets/images/projects/rmka-logo-color.jpg",
     "description": {
-      "short": "Proyecto enfocado a la migración de sistema web de call center para administrar registros servicios para autos de agencias."
+      "short": "Proyecto enfocado a la migración de sistema web de call center para administrar registros servicios para autos de agencias.",
+      "long":"Remarkable fue uno de los primeros proyectos en el que participe el cual consistia en crear una aplicación web que permitiera mejorar la experiencia de usuario y mejorar la funcionalidad de la gestión de clientes de un call center, el cual ofrecia servicios de mantenimientos a las personas que sacaban autos de agencias. Anteriormente la operación era llevada por medio una macro en excel y se buscaba una migración a una aplicación web, mejorara la operación. La aplicación se desarrollo principalmente en Java, SQL Server, HTML, CSS, JavaScript, participe tanto en el desarrollo y en el diseño de la base de datos."
     },
-    "content":"/content/company-projects/RMK.md",
     "company": {
       "id": "ITGROUP",
       "name": "IT Group",
       "logo": "/assets/images/company-logos/itgroup.png"
-    }
+    },
+    "url":"",
+    "technologies":[
+      {
+        "name": "Javascript",
+        "icon": "/assets/images/tech-skills/Js.png",
+        "type": "FRONTEND"
+      },
+      {
+        "name": "CSS",
+        "icon": "/assets/images/tech-skills/css_logo.png",
+        "type": "FRONTEND"
+      },
+      {
+        "name": "HTML",
+        "icon": "/assets/images/tech-skills/html_logo.png",
+        "type": "FRONTEND"
+      },
+      {
+        "name": "Java",
+        "icon": "/assets/images/tech-skills/java_logo.png",
+        "type": "BACKEND"
+      },
+       {
+        "name": "SQL Server",
+        "icon": "/assets/images/tech-skills/sql_server.png",
+        "type": "BACKEND"
+      }
+    ]
   },
   {
     "id": "API_LIBRARY_EXTENSIONS",
@@ -126,14 +404,31 @@
     "name": "Api.Library.Extensions.Filters",
     "image": "assets/images/projects/proyecto_personal.jpg",
     "description": {
-      "short": "Librería desarrollada para proyectos .NET Core C#, principalmente para APIs, que se usa para controlar las excepciones y que la API regrese una respuesta generica basada en la excepción que se use."
+      "short": "Librería desarrollada para proyectos .NET Core C#, principalmente para APIs, que se usa para controlar las excepciones y que la API regrese una respuesta generica basada en la excepción que se use.",
+      "long":"Api.Library.Extensions.Filters es una librería desarrollada para proyectos .NET Core C#, principalmente para APIs, que se usa para controlar las excepciones y que la API regrese una respuesta generica basada en la excepción que se use."
     },
-    "content":"/content/company-projects/API_LIBRARY_EXTENSIONS.md",
-    
     "company": {
       "id": "PERSONAL_PROJECT",
       "name": "Proyecto Personal",
       "logo": "/assets/images/company-logos/personal.png"
-    }
+    },
+    "url":"https://www.nuget.org/packages/Api.Library.Extensions.Filters",
+    "technologies":[
+       {
+        "name": "C#",
+        "icon": "/assets/images/tech-skills/csharp.png",
+        "type": "BACKEND"
+      },
+      {
+        "name": ".NET Core",
+        "icon": "/assets/images/tech-skills/net_core_logo.png",
+        "type": "BACKEND"
+      },
+      {
+        "name": "GIT",
+        "icon": "/assets/images/tech-skills/git.png",
+        "type": "DEVTOOLS"
+      }
+    ]
   }
 ]
