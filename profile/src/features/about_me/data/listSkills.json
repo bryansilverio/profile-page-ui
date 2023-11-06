@@ -60,6 +60,12 @@
     "principal": "PRINCIPAL"
   },
   {
+    "name": "PHP",
+    "icon": "/assets/images/tech-skills/php.png",
+    "type": "BACKEND",
+    "principal": "PRINCIPAL"
+  },
+  {
     "name": "MySQL",
     "icon": "/assets/images/tech-skills/mysql.png",
     "type": "BACKEND",

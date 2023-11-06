@@ -66,38 +66,44 @@
                     v-for="(v,i) in frontendSkills" 
                     :key="i*2" 
                     :item="v"
-                    data-aos="zoom-in"/>
+                    data-aos="zoom-in"
+                    :styleCss="'width:5.5rem;height: 5.5rem;'"/>
                 <Skillitem 
                     v-for="(v,i) in backendSkills" 
                     :key="i*20" 
                     :item="v"
-                    data-aos="zoom-in"/>
+                    data-aos="zoom-in"
+                    :styleCss="'width:5.5rem;height: 5.5rem;'"/>
                 <Skillitem 
                     v-for="(v,i) in devtoolsSkills" 
                     :key="i*200" 
                     :item="v"
-                    data-aos="zoom-in"/>
+                    data-aos="zoom-in"
+                    :styleCss="'width:5.5rem;height: 5.5rem;'"/>
             </template>
             <template v-else-if="options.showFrontend">
                 <Skillitem 
                     v-for="(v,i) in frontendSkills" 
                     :key="i*2" 
                     :item="v"
-                    data-aos="zoom-in"/>
+                    data-aos="zoom-in"
+                    :styleCss="'width:5.5rem;height: 5.5rem;'"/>
             </template>
             <template v-else-if="options.showBackend">
                 <Skillitem 
                     v-for="(v,i) in backendSkills" 
                     :key="i*20" 
                     :item="v"
-                    data-aos="zoom-in"/>
+                    data-aos="zoom-in"
+                    :styleCss="'width:5.5rem;height: 5.5rem;'"/>
             </template>
             <template v-else-if="options.showDevtools">
                 <Skillitem 
                     v-for="(v,i) in devtoolsSkills" 
                     :key="i*200" 
                     :item="v"
-                    data-aos="zoom-in"/>
+                    data-aos="zoom-in"
+                    :styleCss="'width:5.5rem;height: 5.5rem;'"/>
             </template>
         </div>
         <div class="row">

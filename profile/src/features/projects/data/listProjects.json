@@ -127,6 +127,26 @@
     "url":"https://admin.e-loop.net/",
     "technologies":[
       {
+        "name": "PHP",
+        "icon": "/assets/images/tech-skills/php.png",
+        "type": "BACKEND"
+      },
+      {
+        "name": "Laravel",
+        "icon": "/assets/images/tech-skills/laravel.png",
+        "type": "BACKEND"
+      },
+      {
+        "name": "NodeJS",
+        "icon": "/assets/images/tech-skills/nodejs.png",
+        "type": "BACKEND"
+      },
+      {
+        "name": "Firebase",
+        "icon": "/assets/images/tech-skills/firebase.png",
+        "type": "BACKEND"
+      },
+      {
         "name": "VueJs",
         "icon": "/assets/images/tech-skills/vue_logo.png",
         "type": "FRONTEND"
