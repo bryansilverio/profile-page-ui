@@ -1,7 +1,5 @@
-import Vue from 'vue'
-import VueI18n from 'vue-i18n'
-
-Vue.use(VueI18n)
+import { createApp } from 'vue'
+import { createI18n } from 'vue-i18n'
 
 function loadLocaleMessages () {
   const locales = require.context('./', true, /[A-Za-z0-9-_,\s]+\.json$/i)
@@ -16,8 +14,9 @@ function loadLocaleMessages () {
   return messages
 }
 
-export default new VueI18n({
+const i18n = createI18n({
   locale: process.env.VUE_APP_I18N_LOCALE || 'es',
   fallbackLocale: process.env.VUE_APP_I18N_FALLBACK_LOCALE || 'es',
   messages: loadLocaleMessages()
 })
+createApp.use(i18n)
