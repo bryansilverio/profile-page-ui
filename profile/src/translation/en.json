@@ -1,80 +1,20 @@
 {
-  "name": "Bryan Silverio",
-  "profile": "Software developer",
-  "resume": "I'm a Software Developer/Web Developer. I have experience to create websites, APIs REST design and development, backend developer and more...",
-  "buttons": {
-    "goToBack": "Back to projects"
-  },
+  "name": "Hi, I'm Bryan Silverio",
+  "position": "Software developer.",
+  "fromLocation": "From Quéretaro, Mx.",
+  "brief": "Especializado en crear aplicaciones únicas.",
   "menu": {
-    "home": "Home",
-    "aboutMe": "About me",
-    "skills": "Skills",
     "experience": "Experience",
     "projects": "Projects",
+    "aboutMe": "About me",
     "contact": "Contact"
   },
-  "common":{
-    "btnDownloadCV":"Download Cv",
-    "lbName":"Name",
-    "lbEmail":"Email"
+  "sections": {
+    "experience": "Work experience"
   },
-  "pages": {
-    "home": {
-      "sections": {
-        "about": {
-          "name": "About me",
-          "description": "A short description about me and mi last position as software developer."
-        },
-        "skills": {
-          "name": "Skills",
-          "textSection":"Technologies and tools that I have used in the projects."
-        },
-        "experience": {
-          "name": "Experience",
-          "textSection": "The companies where I have worked during my work experience."
-        },
-        "projects": {
-          "name": "Projects",
-          "textSection": "The last projects and areas where I have participated in the companies where I have worked."
-        },
-        "contact": {
-          "name": "Contact",
-          "textSection": "Contact"
-        }
-      }
-    },
-    "about": {
-      "description": {
-        "short": "I´m Bryan Silverio, software developer.",
-        "long": "Inicie mi carrera profesional en 2016 en el desarrollo de web, he participado en diferentes empresas donde he trabajado en diferentes proyectos de diferentes sectores. Actualmente me encuentro laborando en BBVA como desarrollador Java orientado a diseño y desarrollo de microservicios basados en REST, lo que me ha permitido mejorar y fortalecer conocimientos y habilidades. Durante mi trayectoria me he centrado en el desarrollo backend principalmente, y recientemente me he estado orientado al diseño y desarrollo de microservicios basados en REST. Tambien cuanto con habilidades en desarrollo frontend, principalmente en VueJs, pero como comento, me he enfocado mas al backend. Constantemente continuo capacitandome, en temas de arquitectura de proyecto, ya que tengo interes en poder desarrollar habilidades para poder diseñar y construir proyectos mantenibles."
-      }
-    },
-    "skills": {
-      "frontend": "Frontend",
-      "backend": "Backend",
-      "devtools": "DevTools"
-    },
-    "experience": {},
-    "projects":{
-      "labelCompany":"Company",
-      "labelPosition":"Position",
-      "seeMore":"See more"
-    },
-    "projectDetails": {
-      "projectsRelationed": "Projects relationed",
-      "technologies": "Tecnologias",
-      "breadcrumbs":{
-        "home":"Home",
-        "projects":"Projects"
-      },
-      "aboutProject":{
-        "developedIn":"Project developed in",
-        "company":"Company",
-        "area":"Area",
-        "position":"Position",
-        "assignedTo":"Assigned to"
-      },
-      "companies":"Companies"
-    }
+  "aboutMe":"Desarrollador de software especializado en backend, microservicios",
+  "buttons":{
+    "next":"See more..."
   }
+
 }

@@ -1,23 +1,16 @@
 <template>
   <section id="proyectos" data-section="proyectos" class="section undefined w-full mx-auto lg:w-[740px] pb-24">
-    <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center title-section-color"> 
-      <svg class="size-7"
-        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
-        stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-        <path d="M7 8l-4 4l4 4"></path>
-        <path d="M17 8l4 4l-4 4"></path>
-        <path d="M14 4l-4 16"></path>
-      </svg>
+    <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center title-section-color">
+      <CodeIcon />
       Proyectos
     </h2>
-    <article>
-      <h3 class="text-2xl font-semibold text-yellow-200 mb-2">SVGL - A beautiful library with SVG logos</h3>
-      <p class="text-lg mb-4 text-pretty">Created from scratch with Next.js and Tailwind CSS. It's a library with SVG
-        logos from the most popular brands. Optimized for SEO and performance.</p>
+    <article v-for="(v, i) in projects" :Key="i">
+      <h3 class="text-2xl font-semibold text-yellow-200 mb-2">{{ v.name }}</h3>
+      <p class="text-lg mb-4 text-pretty text-gray-200">{{ v.description }}</p>
       <ul class="flex gap-x-2 flex-row mb-2">
-        <li><span class="flex gap-x-2 rounded-full text-xs bg-black text-white py-1 px-2"><svg class="size-4"
-              xmlns="http://www.w3.org/2000/svg" width="256" height="256" preserveAspectRatio="xMidYMid"
+        <li>
+          <span class="flex gap-x-2 rounded-full text-xs bg-black text-white py-1 px-2">
+            <svg class="size-4" xmlns="http://www.w3.org/2000/svg" width="256" height="256" preserveAspectRatio="xMidYMid"
               viewBox="0 0 256 256">
               <defs>
                 <linearGradient id="c" x1="55.633%" x2="83.228%" y1="56.385%" y2="96.08%">
@@ -40,9 +33,12 @@
                 </path>
                 <path fill="url(#d)" d="M163.556 76.8h17.067v102.4h-17.067z"></path>
               </g>
-            </svg>Next.js</span></li>
-        <li><span class="flex gap-x-2 rounded-full text-xs bg-[#003159] text-white py-1 px-2"><svg class="size-4"
-              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 54 33">
+            </svg>Next.js
+          </span>
+        </li>
+        <li>
+          <span class="flex gap-x-2 rounded-full text-xs bg-[#003159] text-white py-1 px-2">
+            <svg class="size-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 54 33">
               <g clip-path="url(#a)">
                 <path fill="#38bdf8" fill-rule="evenodd"
                   d="M27 0c-7.2 0-11.7 3.6-13.5 10.8 2.7-3.6 5.85-4.95 9.45-4.05 2.054.513 3.522 2.004 5.147 3.653C30.744 13.09 33.808 16.2 40.5 16.2c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C36.756 3.11 33.692 0 27 0zM13.5 16.2C6.3 16.2 1.8 19.8 0 27c2.7-3.6 5.85-4.95 9.45-4.05 2.054.514 3.522 2.004 5.147 3.653C17.244 29.29 20.308 32.4 27 32.4c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C23.256 19.31 20.192 16.2 13.5 16.2z"
@@ -53,14 +49,31 @@
                   <path fill="#fff" d="M0 0h54v32.4H0z"></path>
                 </clipPath>
               </defs>
-            </svg>Tailwind CSS</span></li>
-      </ul><img loading="lazy" class="rounded shadow-2xl shadow-white/10 aspect-video" src="/projects/svgl.webp"
-        alt="Captura de pantalla del proyecto /projects/svgl.webp">
+            </svg>Tailwind CSS
+          </span>
+        </li>
+      </ul>
+      <NextButton :text="'Saber más...'" :url="v.url" />
     </article>
   </section>
 </template>
 <script>
+import NextButton from '@/components/NextButton.vue';
+import CodeIcon from '@/components/icons/CodeIcon.vue';
+import listProjectsService from '@/services/projects/listProjectsService';
 export default {
   name: "Projects",
+  components: {
+    NextButton,
+    CodeIcon
+  },
+  mixins: [
+    listProjectsService
+  ],
+  computed: {
+    projects() {
+      return this.executelistProjects();
+    }
+  }
 };
 </script>

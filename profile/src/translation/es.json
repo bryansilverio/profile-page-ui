@@ -1,80 +1,19 @@
 {
-  "name": "Bryan Silverio",
-  "profile": "Desarrollador de software",
-  "resume": "Soy un Desarrollador de Software/ Desarrollador Web. Tengo experiencia en la creación de sitios web, diseño y desarrollo de APIs REST, desarrollo backend y más...",
-  "buttons": {
-    "goToBack": "Regresar a proyectos"
-  },
+  "name": "Hola, soy Bryan Silverio",
+  "position": "Desarrollador de software",
+  "fromLocation": "De Quéretaro, Mx.",
+  "brief": "Especializado en crear aplicaciones únicas.",
   "menu": {
-    "home": "Inicio",
-    "aboutMe": "Sobre mí",
-    "skills": "Conocimientos",
     "experience": "Experiencia",
     "projects": "Proyectos",
+    "aboutMe": "Sobre mí",
     "contact": "Contacto"
   },
-  "common":{
-    "btnDownloadCV":"Descargar Cv",
-    "lbName":"Nombre",
-    "lbEmail":"Correo"
+  "sections": {
+    "experience": "Experiencia Laboral"
   },
-  "pages": {
-    "home": {
-      "sections": {
-        "about": {
-          "name": "Sobre mí",
-          "description": "Una breve descripción sobre mí y mi posición actual como desarrollador."
-        },
-        "skills": {
-          "name": "Conocimientos",
-          "textSection":"Soy desarrollador de software enfocado principalmente al backend, he trabajado con C# .Net Framework, Java con Spring, SQL Server, MySQL y diseño y desarrollo de APIs REST. Sin embargo también he usado tecnologías para desarrollar frontend en algunos proyectos, principalmente VueJs, HTML, CSS, Javascript."
-        },
-        "experience": {
-          "name": "Experiencia",
-          "textSection": "Las empresas donde he trabajado durante mi experiencia laboral."
-        },
-        "projects": {
-          "name": "Proyectos",
-          "textSection": "Los ultimos proyectos y áreas donde he participado en las empresas donde he trabajado."
-        },
-        "contact": {
-          "name": "Contacto",
-          "textSection": "Contacto"
-        }
-      }
-    },
-    "about": {
-      "description": {
-        "short": "Mi nombre es Bryan Silverio, soy desarrollador de software.",
-        "long": "Inicie mi carrera profesional en 2016 en el desarrollo de web, he participado en diferentes empresas donde he trabajado en diferentes proyectos de diferentes sectores. Actualmente me encuentro laborando en BBVA como desarrollador Java orientado a diseño y desarrollo de microservicios basados en REST, lo que me ha permitido mejorar y fortalecer conocimientos y habilidades. Durante mi trayectoria me he centrado en el desarrollo backend principalmente, y recientemente me he estado orientado al diseño y desarrollo de microservicios basados en REST. Tambien cuanto con habilidades en desarrollo frontend, principalmente en VueJs, pero como comento, me he enfocado mas al backend. Constantemente continuo capacitandome, en temas de arquitectura de proyecto, ya que tengo interes en poder desarrollar habilidades para poder diseñar y construir proyectos mantenibles."
-      }
-    },
-    "skills": {
-      "frontend": "Frontend",
-      "backend": "Backend",
-      "devtools": "DevTools"
-    },
-    "experience": {},
-    "projects":{
-      "labelCompany":"Empresa",
-      "labelPosition":"Posición",
-      "seeMore":"Ver más"
-    },
-    "projectDetails": {
-      "projectsRelationed": "Otros proyectos",
-      "technologies": "Tecnologias usadas",
-      "breadcrumbs":{
-        "home":"Inicio",
-        "projects":"Proyectos"
-      },
-      "aboutProject":{
-        "developedIn":"Proyecto desarrollado en",
-        "company":"Empresa",
-        "area":"Área",
-        "position":"Posición",
-        "assignedTo":"Asignado a"
-      },
-      "companies":"Empresas"
-    }
+  "aboutMe":"Desarrollador de software especializado en backend, microservicios",
+  "buttons":{
+    "next":"Saber más..."
   }
 }
