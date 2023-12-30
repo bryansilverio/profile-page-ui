@@ -1,8 +1,3 @@
-@config "./tailwindcss-config.js";
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 *,
 :before,
@@ -987,3 +982,5 @@ body {
 .title-section-color {
     color: #FF474C;
 }
+
+ 
