@@ -4,6 +4,7 @@
   "fromLocation": "De Quéretaro, Mx.",
   "brief": "Especializado en crear aplicaciones únicas.",
   "menu": {
+    "home":"Inicio",
     "experience": "Experiencia",
     "projects": "Proyectos",
     "aboutMe": "Sobre mí",
