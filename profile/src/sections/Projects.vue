@@ -1,5 +1,6 @@
 <template>
-  <section id="proyectos" data-section="proyectos" class="section undefined w-full mx-auto lg:w-[740px] pb-24">
+  <section id="proyectos" data-section="proyectos" class="section undefined w-full mx-auto lg:w-[740px] pb-24"
+    data-aos="fade-right">
     <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center title-section-color">
       <CodeIcon />
       Proyectos

@@ -1,5 +1,5 @@
 <template>
-    <nav class="flex gap-4 mt-8 flex-wrap">>
+    <nav class="flex gap-4 mt-8 flex-wrap sm-flex-display md-flex-display">
         <a v-for="(v, i) in socialNetworks" :key="i"
             class="bg-blue-900 border border-white/10 text-white rounded-full flex justify-center items-center gap-x-2 py-1 px-2 md:py-2 md:px-4 text-xs md:text-base transition hover:scale-110 hover:bg-white/10"
             :href="v.url" target="_blank" rel="noopener noreferrer">

@@ -1,5 +1,5 @@
 <template>
-    <section class="section py-44 pb-32 w-full mx-auto lg:w-[740px] pb-24">
+    <section class="section py-44 pb-32 w-full mx-auto lg:w-[740px] pb-24" data-aos="fade-left">
         <img class="rounded-full size-12 mb-4" src="/assets/images/cover.png" alt="bsilverio photo">
         <h1 class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10">
             {{ $t('name') }}

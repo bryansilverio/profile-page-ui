@@ -1,5 +1,5 @@
 <template>
-    <section data-aos="zoom-in" id="experiencia" data-section="experiencia"
+    <section data-aos="fade-left" id="experiencia" data-section="experiencia"
         class="section undefined w-full mx-auto lg:w-[740px] pb-24">
         <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center title-section-color">
             <BriefcaseIcon />
