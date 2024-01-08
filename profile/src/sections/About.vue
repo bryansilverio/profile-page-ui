@@ -1,69 +1,69 @@
 <template>
-  <section id="sobre-mi" data-section="sobre-mi" class="section undefined w-full mx-auto lg:w-[740px] pb-24"
-    data-aos="fade-right">
-    <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center title-section-color">
-      <CodeIcon />
-      Sobre mí
-    </h2>
-    <article>
-      <div class="wrapper">
-        <div class="about-cover">
-          <img class="rounded-full size-20 mb-4" src="/assets/images/cover.png" alt="bsilverio photo">
-        </div>
-        <div class="about-text">
-          <p class="text-lg mb-4 text-pretty text-gray-200">
+  <section id="about" data-aos="fade-right">
+    <p class="section__text__p1">{{ $t('sections.aboutMeText') }}</p>
+    <h1 class="title">{{ $t('sections.aboutMe') }}</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./assets/images/profile-pic.png" alt="Profile picture" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="text-container">
+          <p>
             {{ $t('about') }}
           </p>
         </div>
       </div>
-
-    </article>
+    </div>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Conocimientos</h2>
+          <div class="article-container">
+            <article v-for="(v, i) in skills" :key="i">
+              <img :src="v.icon" alt="Experience icon" class="icon" />
+              <div>
+                <h3>{{ v.name }}</h3>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <font-awesome-icon @click="goToExperienceSectionOnClick()" size="2x" class="arrow" icon="fa-solid fa-angles-down"
+      :style="{ color: '#FF474C', cursor: 'pointer' }" />
   </section>
 </template>
+<style>
+.badge {
+  background-color: red;
+  color: white;
+  padding: 4px 8px;
+  text-align: center;
+  border-radius: 5px;
+}
+</style>
 <script>
 import { defineComponent } from 'vue'
-import { useI18n } from 'vue-i18n-pico'
-
-import CodeIcon from '@/components/icons/CodeIcon.vue';
 import listSocialNetworkService from '@/services/socialNetworks/listSocialNetworkService';
+import listSkillsService from '@/services/skills/listSkillsService'
 export default defineComponent({
   name: "About",
-  components: {
-    CodeIcon
-  },
   mixins: [
     listSocialNetworkService,
+    listSkillsService
   ],
+  methods: {
+    goToExperienceSectionOnClick() {
+      location.href = '#experience'
+    }
+  },
   computed: {
     socialNetworks() {
       return this.executeListSocialNetworks();
+    },
+    skills() {
+      return this.executeListSkills()
     }
-  },
-  setup() {
-    const { t } = useI18n()
-    return { t }
   }
 });
 </script>
-<style>
-.wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
-  grid-auto-rows: minmax(100px, auto);
-}
-
-.about-cover {
-  grid-column: 1;
-  grid-row: 1;
-}
-
-.about-text {
-  grid-column: 2/4;
-  grid-row: 1;
-}
-.size-20 {
-    width: 15rem;
-    height: 15rem
-}
-</style>

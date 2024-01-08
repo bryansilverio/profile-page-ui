@@ -1,34 +1,28 @@
 <template>
-  <section id="contacto" data-section="contacto" class="section undefined w-full mx-auto lg:w-[740px] pb-24"
-    data-aos="fade-left">
-    <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center title-section-color">
-      <CodeIcon />
-      Contacto
-    </h2>
-    <article class="flex gap-4 flex-wrap">
-      <ul class="inline-flex justify-center items-center gap-x-2">
-        <li v-for="(v, i) in socialNetworks" :Key="i">
-          <p class="text-lg mb-4 text-pretty text-gray-200">
-            <a :href="v.url" target="_blank">
-              <font-awesome-icon :icon="v.icon" class="fa-2x" style="color: rgb(30 58 138,1);" />
-            </a>
-          </p>
-        </li>
-      </ul>
-    </article>
+  <section id="contact" data-aos="fade-left">
+    <p class="section__text__p1">{{ $t('sections.contactText') }}</p>
+    <h1 class="title">{{ $t('sections.contact') }}</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container" v-for="(v, i) in socialNetworks" :key="i">
+        <font-awesome-icon @click="goToSocialNetworkSiteOnClick(v.url)" size="2x"
+          :icon="v.icon" :style="{ color: '#FF474C', cursor: 'pointer' }" />
+        <p>{{ v.name }}</p>
+      </div>
+    </div>
   </section>
 </template>
 <script>
-import CodeIcon from '@/components/icons/CodeIcon.vue';
 import listSocialNetworkService from '@/services/socialNetworks/listSocialNetworkService';
 export default {
   name: "Projects",
-  components: {
-    CodeIcon
-  },
   mixins: [
     listSocialNetworkService,
   ],
+  methods: {
+    goToSocialNetworkSiteOnClick(url) {
+      window.open(url, '_blank')
+    }
+  },
   computed: {
     socialNetworks() {
       return this.executeListSocialNetworks();
@@ -36,16 +30,3 @@ export default {
   }
 };
 </script>
-<style>
-.wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
-  grid-auto-rows: minmax(100px, auto);
-}
-
-.contact-icons {
-  grid-column: 2/3;
-  grid-row: 1;
-}
-</style>
