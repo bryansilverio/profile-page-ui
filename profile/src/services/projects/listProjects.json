@@ -2,8 +2,8 @@
     {
         "id":"ApiLibraryExtensionsFilters",
         "name":"Api Library Extensions Filters",
-        "description":"Api.Library.Extensions.Filters es una librería desarrollada para proyectos .NET Core C#, principalmente para APIs, que se usa para controlar las excepciones y que la API regrese una respuesta generica basada en la excepción que se use.",
-        "url":"https://www.nuget.org/packages/Api.Library.Extensions.Filters",
+        "description":"Esta librería fue desarrollada para dar a la respuesta un formato estándar cuando ocurría un error técnico y controlar los errores funcionales o las validaciones de solicitudes en las solicitudes de API.",
+        "url":"https://www.nuget.org/packages/Api.Http.Extensions.Filters.ExceptionHandler",
         "showRepository":false,
         "showSite":true
     }
