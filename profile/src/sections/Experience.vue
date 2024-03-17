@@ -40,7 +40,7 @@
 									<h2 style="font-weight: bold;">
 										<span style="color: black;">{{ v.position }}</span> 
 										<span style="color: black;"> en </span> 
-										<a href="">
+										<a :href="v.link" target="_blank">
 											<span style="color: #FF474C; opacity: 1;"> {{ v.company }} </span>
 										</a>
 										<span> - </span>

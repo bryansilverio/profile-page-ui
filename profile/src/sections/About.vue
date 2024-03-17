@@ -15,26 +15,34 @@
           <div class="row">
             <div class="col-md-3 animate-box" data-animate-effect="fadeInLeft">
               <div class="services color-1">
-                <span class="icon2"><i class="icon-bulb"></i></span>
+                <span class="icon2">
+                  <font-awesome-icon icon="fa-solid fa-sitemap" :style="{ color: '#2c98f0' }" />
+                </span>
                 <h3>APIs REST</h3>
               </div>
             </div>
             <div class="col-md-3 animate-box" data-animate-effect="fadeInRight">
               <div class="services color-2">
-                <span class="icon2"><i class="icon-globe-outline"></i></span>
-                <h3>Web Design</h3>
+                <span class="icon2">
+                  <font-awesome-icon icon="fa-solid fa-terminal" :style="{ color: '#ec5453' }" />
+                </span>
+                <h3>Backend</h3>
               </div>
             </div>
             <div class="col-md-3 animate-box" data-animate-effect="fadeInTop">
               <div class="services color-3">
-                <span class="icon2"><i class="icon-data"></i></span>
-                <h3>Software</h3>
+                <span class="icon2">
+                  <font-awesome-icon icon="fa-solid fa-database" :style="{ color: '#f9bf3f' }" />
+                </span>
+                <h3>Base de datos</h3>
               </div>
             </div>
             <div class="col-md-3 animate-box" data-animate-effect="fadeInBottom">
               <div class="services color-4">
-                <span class="icon2"><i class="icon-phone3"></i></span>
-                <h3>Application</h3>
+                <span class="icon2">
+                  <font-awesome-icon icon="fa-solid fa-code" :style="{ color: '#f9bf3f' }" />
+                </span>
+                <h3>Desarrollo Web</h3>
               </div>
             </div>
           </div>

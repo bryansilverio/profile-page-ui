@@ -20,6 +20,11 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faWordpress } from '@fortawesome/free-brands-svg-icons'
 import { faAnglesDown } from '@fortawesome/free-solid-svg-icons'
 import { faBriefcase } from '@fortawesome/free-solid-svg-icons'
+import { faDatabase } from '@fortawesome/free-solid-svg-icons'
+import { faCode } from '@fortawesome/free-solid-svg-icons'
+import { faDiagramProject } from '@fortawesome/free-solid-svg-icons'
+import { faSitemap } from '@fortawesome/free-solid-svg-icons'
+import { faTerminal } from '@fortawesome/free-solid-svg-icons'
 
 /* add icons to the library */
 library.add(faUserSecret)
@@ -28,7 +33,12 @@ library.add(faLinkedin)
 library.add(faGithub)
 library.add(faWordpress)
 library.add(faAnglesDown)
-library.add(faBriefcase);
+library.add(faBriefcase)
+library.add(faDatabase)
+library.add(faCode)
+library.add(faDiagramProject)
+library.add(faSitemap)
+library.add(faTerminal)
 
 AOS.init();
 
