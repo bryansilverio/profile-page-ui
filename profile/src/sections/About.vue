@@ -51,15 +51,6 @@
     </div>
   </section>
 </template>
-<style>
-.badge {
-  background-color: red;
-  color: white;
-  padding: 4px 8px;
-  text-align: center;
-  border-radius: 5px;
-}
-</style>
 <script>
 import { defineComponent } from 'vue'
 import listSocialNetworkService from '@/services/socialNetworks/listSocialNetworkService';

@@ -42,7 +42,7 @@
 			</div>
 			<div class="row">
 				<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft" v-for="(v, i) in projects" :key="i">
-					<div class="project" style="background-image: url(images/img-1.jpg);">
+					<div class="project">
 						<div class="desc">
 							<div class="con">
 								<h3><a href="work.html">{{ v.name }}</a></h3>
@@ -57,7 +57,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="row">
+			<div class="row" style="margin-top: 50px;">
 				<div class="col-md-12 animate-box">
 					<p><a href="#" class="btn btn-primary btn-lg btn-load-more">Load more <i class="icon-reload"></i></a></p>
 				</div>

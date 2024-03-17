@@ -9,8 +9,8 @@
               <div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight">
                 <div class="slider-text-inner js-fullheight">
                   <div class="desc">
-                    <h1>{{$t('greeting')}} <br>{{$t('name')}}</h1>
-                    <h3>100% html5 bootstrap templates Made by <a href="https://colorlib.com/" target="_blank">colorlib.com</a></h3>
+                    <h1><span style="font-size: medium;">{{$t('greeting')}}</span> <br><span style="color: #FF474C;">{{$t('name')}}</span></h1>
+                    <h4>{{$t('position')}}</h4>
                     <p><a class="btn btn-primary btn-learn">Download CV <i class="icon-download4"></i></a></p>
                   </div>
                 </div>

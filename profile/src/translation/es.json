@@ -10,7 +10,8 @@
     "experience": "Experiencia",
     "projects": "Proyectos",
     "aboutMe": "Sobre mí",
-    "contact": "Contacto"
+    "contact": "Contacto",
+    "skills":"Conocimientos"
   },
   "sections": {
     "aboutMeText":"Conozca más",
@@ -20,7 +21,8 @@
     "projectsText":"Navegar por mis recientes",
     "projects": "Proyectos",
     "contactText":"Póngase en contacto",
-    "contact": "Contacto"
+    "contact": "Contacto",
+    "skills":"Conocimientos"
   },
   "buttons": {
     "linkToRepository": "Repositorio",

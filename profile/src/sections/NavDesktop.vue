@@ -9,15 +9,15 @@
 		<nav id="colorlib-main-menu" role="navigation" class="navbar">
 			<div id="navbar" class="collapse">
 				<ul>
-					<li><a href="#" data-nav-section="home">{{ $t('menu.home') }}</a></li>
-					<li><a href="#about" data-nav-section="about">{{ $t('menu.aboutMe') }}</a></li>
-					<li><a href="#" data-nav-section="services">Services</a></li>
-					<li><a href="#skills" data-nav-section="skills">Skills</a></li>
-					<li><a href="#" data-nav-section="education">Education</a></li>
-					<li><a href="#experience" data-nav-section="experience">{{ $t('menu.experience') }}</a></li>
-					<li><a href="#projects" data-nav-section="work">{{ $t('menu.projects') }}</a></li>
-					<li><a href="#" data-nav-section="blog">Blog</a></li>
-					<li><a href="#contact" data-nav-section="contact">{{ $t('menu.contact') }}</a></li>
+					<li><a href="#" data-nav-section="home" style="color: white;">{{ $t('menu.home') }}</a></li>
+					<li><a href="#about" data-nav-section="about" style="color: white;">{{ $t('menu.aboutMe') }}</a></li>
+					<li><a href="#" data-nav-section="services" style="color: white;">Services</a></li>
+					<li><a href="#skills" data-nav-section="skills" style="color: white;">{{ $t('menu.skills') }}</a></li>
+					<li><a href="#" data-nav-section="education" style="color: white;">Education</a></li>
+					<li><a href="#experience" data-nav-section="experience" style="color: white;">{{ $t('menu.experience') }}</a></li>
+					<li><a href="#projects" data-nav-section="work" style="color: white;">{{ $t('menu.projects') }}</a></li>
+					<li><a href="#" data-nav-section="blog" style="color: white;">Blog</a></li>
+					<li><a href="#contact" data-nav-section="contact" style="color: white;">{{ $t('menu.contact') }}</a></li>
 				</ul>
 			</div>
 		</nav>

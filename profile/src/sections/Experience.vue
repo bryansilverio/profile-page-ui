@@ -37,8 +37,15 @@
 									<i class="icon-pen2"></i>
 								</div>
 								<div class="timeline-label">
-									<h2><a href="#">{{ v.position }}</a> <span style="color: black;">{{ v.date }}</span></h2>
-									<h3 style="color: #FF474C;"> {{ v.company }}</h3>
+									<h2 style="font-weight: bold;">
+										<span style="color: black;">{{ v.position }}</span> 
+										<span style="color: black;"> en </span> 
+										<a href="">
+											<span style="color: #FF474C; opacity: 1;"> {{ v.company }} </span>
+										</a>
+										<span> - </span>
+										<span style="color: black;">{{ v.date }}</span>
+									</h2>
 									<p style="color: black;">{{ v.content }}</p>
 								</div>
 							</div>

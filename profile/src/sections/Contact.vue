@@ -16,8 +16,8 @@
 		<div class="colorlib-narrow-content">
 			<div class="row">
 				<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-					<span class="heading-meta">Get in Touch</span>
-					<h2 class="colorlib-heading">Contact</h2>
+					<span class="heading-meta">{{ $t('sections.contact') }}</span>
+					<h2 class="colorlib-heading">{{ $t('sections.contactText') }}</h2>
 				</div>
 			</div>
 			<div class="row">
