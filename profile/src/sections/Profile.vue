@@ -11,15 +11,22 @@
                   <div class="desc">
                     <h1><span style="font-size: medium;">{{$t('greeting')}}</span> <br><span style="color: #FF474C;">{{$t('name')}}</span></h1>
                     <h4>{{$t('position')}}</h4>
-                    <p><a class="btn btn-primary btn-learn">Download CV <i class="icon-download4"></i></a></p>
+                    <p>
+                      <a class="btn btn-primary btn-learn">{{ $t('buttons.downloadCV') }} 
+                        <font-awesome-icon @click="openCVOnClick()" icon="fa-solid fa-angles-down" :style="{  cursor: 'pointer' }" />
+                      </a>
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="row">
-              <div class="col-md-2" v-for="(v, i) in socialNetworks" :key="i">
-                <font-awesome-icon @click="goToContactSiteOnClick(v.url)" size="2x" :icon="v.icon" :style="{ color: '#FF474C', cursor: 'pointer' }" />
-              </div>
+            <div class="colorlib-footer">
+              <ul>
+                <li v-for="(v, i) in socialNetworks" :key="i" style="display: inline; margin: 20px;">
+                  <font-awesome-icon 
+                    @click="goToContactSiteOnClick(v.url)" size="2x" :icon="v.icon" :style="{ color: '#FF474C', cursor: 'pointer' }" />
+                </li>
+              </ul>
             </div>
           </div>
         </li>
