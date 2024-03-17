@@ -1,7 +1,8 @@
 <template>
-    <div class="px-4">
+    <div id="colorlib-main">
         <Profile />
         <About />
+        <Skills />
         <Experience />
         <Projects />
         <Contact />
@@ -10,6 +11,7 @@
 <script>
 import Profile from "@/sections/Profile.vue"
 import About from "@/sections/About.vue"
+import Skills from "@/sections/Skills.vue"
 import Experience from "@/sections/Experience.vue"
 import Projects from "@/sections/Projects.vue"
 import Contact from "@/sections/Contact.vue"
@@ -18,6 +20,7 @@ export default {
     components: {
         Profile,
         About,
+        Skills,
         Experience,
         Projects,
         Contact

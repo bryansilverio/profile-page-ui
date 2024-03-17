@@ -1,36 +1,54 @@
 <template>
-  <section id="about" data-aos="fade-right">
-    <p class="section__text__p1">{{ $t('sections.aboutMeText') }}</p>
-    <h1 class="title">{{ $t('sections.aboutMe') }}</h1>
-    <div class="section-container">
-      <div class="section__pic-container">
-        <img src="./assets/images/profile-pic.png" alt="Profile picture" class="about-pic" />
-      </div>
-      <div class="about-details-container">
-        <div class="text-container">
-          <p>
-            {{ $t('about') }}
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="experience-details-container">
-      <div class="about-containers">
-        <div class="details-container">
-          <h2 class="experience-sub-title">Conocimientos</h2>
-          <div class="article-container">
-            <article v-for="(v, i) in skills" :key="i">
-              <img :src="v.icon" alt="Experience icon" class="icon" />
-              <div>
-                <h3>{{ v.name }}</h3>
+  <section class="colorlib-about" data-section="about" id="about">
+    <div class="colorlib-narrow-content">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+            <div class="col-md-12">
+              <div class="about-desc">
+                <span class="heading-meta">{{ $t('sections.aboutMe') }}</span>
+                <h2 class="colorlib-heading">{{ $t('sections.aboutMeText') }}</h2>
+                {{ $t('about') }}
               </div>
-            </article>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 animate-box" data-animate-effect="fadeInLeft">
+              <div class="services color-1">
+                <span class="icon2"><i class="icon-bulb"></i></span>
+                <h3>APIs REST</h3>
+              </div>
+            </div>
+            <div class="col-md-3 animate-box" data-animate-effect="fadeInRight">
+              <div class="services color-2">
+                <span class="icon2"><i class="icon-globe-outline"></i></span>
+                <h3>Web Design</h3>
+              </div>
+            </div>
+            <div class="col-md-3 animate-box" data-animate-effect="fadeInTop">
+              <div class="services color-3">
+                <span class="icon2"><i class="icon-data"></i></span>
+                <h3>Software</h3>
+              </div>
+            </div>
+            <div class="col-md-3 animate-box" data-animate-effect="fadeInBottom">
+              <div class="services color-4">
+                <span class="icon2"><i class="icon-phone3"></i></span>
+                <h3>Application</h3>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+              <div class="hire">
+                <h2>I am happy to know you <br>that 300+ projects done sucessfully!</h2>
+                <a href="#" class="btn-hire">Hire me</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <font-awesome-icon @click="goToExperienceSectionOnClick()" size="2x" class="arrow" icon="fa-solid fa-angles-down"
-      :style="{ color: '#FF474C', cursor: 'pointer' }" />
   </section>
 </template>
 <style>

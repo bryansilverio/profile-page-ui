@@ -1,22 +1,30 @@
 <template>
-  <section id="profile">
-    <div class="section__text" style="text-align: left">
-      <p class="section__text__p1">{{ $t('greeting') }}</p>
-      <h1 class="title">{{ $t('name') }}</h1>
-      <p class="section__text__p2">{{ $t('position') }}</p>
-      <div class="btn-container">
-        <button class="btn btn-color-1" @click="openCVOnClick()">
-          {{ $t('buttons.downloadCV') }}
-        </button>
-        <button class="btn btn-color-1" onclick="goToContactSectionOnClick()">
-          {{ $t('menu.contact') }}
-        </button>
+  <section id="colorlib-hero" class="js-fullheight" data-section="home">
+    <div class="flexslider js-fullheight">
+      <ul class="slides">
+        <li>
+          <div class="overlay"></div>
+          <div class="container-fluid" style="margin-top: 100px;">
+            <div class="row">
+              <div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight">
+                <div class="slider-text-inner js-fullheight">
+                  <div class="desc">
+                    <h1>{{$t('greeting')}} <br>{{$t('name')}}</h1>
+                    <h3>100% html5 bootstrap templates Made by <a href="https://colorlib.com/" target="_blank">colorlib.com</a></h3>
+                    <p><a class="btn btn-primary btn-learn">Download CV <i class="icon-download4"></i></a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-2" v-for="(v, i) in socialNetworks" :key="i">
+                <font-awesome-icon @click="goToContactSiteOnClick(v.url)" size="2x" :icon="v.icon" :style="{ color: '#FF474C', cursor: 'pointer' }" />
+              </div>
+            </div>
+          </div>
+        </li>
+        </ul>
       </div>
-      <div id="socials-container">
-        <font-awesome-icon @click="goToContactSiteOnClick(v.url)" v-for="(v, i) in socialNetworks" :key="i" size="2x"
-          :icon="v.icon" :style="{ color: '#FF474C', cursor: 'pointer' }" />
-      </div>
-    </div>
   </section>
 </template>
 <script>

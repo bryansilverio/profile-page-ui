@@ -2,8 +2,7 @@ import { createApp } from 'vue';
 import App from "@/App.vue";
 import { i18n } from "@/translation/i18n";
 import router from '@/router/index.js'
-import '@/index.css'
-import '@/index.mediaqueries.css'
+//import '@/index.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
