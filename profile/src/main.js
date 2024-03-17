@@ -19,6 +19,7 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faWordpress } from '@fortawesome/free-brands-svg-icons'
 import { faAnglesDown } from '@fortawesome/free-solid-svg-icons'
+import { faBriefcase } from '@fortawesome/free-solid-svg-icons'
 
 /* add icons to the library */
 library.add(faUserSecret)
@@ -27,6 +28,7 @@ library.add(faLinkedin)
 library.add(faGithub)
 library.add(faWordpress)
 library.add(faAnglesDown)
+library.add(faBriefcase);
 
 AOS.init();
 

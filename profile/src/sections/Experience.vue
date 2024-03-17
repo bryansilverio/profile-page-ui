@@ -34,7 +34,7 @@
 						<article class="timeline-entry animate-box" data-animate-effect="fadeInLeft" v-for="(v, i) in experiences" :key="i">
 							<div class="timeline-entry-inner">
 								<div class="timeline-icon color-1">
-									<i class="icon-pen2"></i>
+									<font-awesome-icon icon="fa-solid fa-briefcase" :style="{ color: '#fff' }" />
 								</div>
 								<div class="timeline-label">
 									<h2 style="font-weight: bold;">

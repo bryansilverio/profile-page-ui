@@ -8,7 +8,7 @@
               <div class="about-desc">
                 <span class="heading-meta">{{ $t('sections.aboutMe') }}</span>
                 <h2 class="colorlib-heading">{{ $t('sections.aboutMeText') }}</h2>
-                {{ $t('about') }}
+                <span v-html="$t('about')"></span>
               </div>
             </div>
           </div>
@@ -35,14 +35,6 @@
               <div class="services color-4">
                 <span class="icon2"><i class="icon-phone3"></i></span>
                 <h3>Application</h3>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-              <div class="hire">
-                <h2>I am happy to know you <br>that 300+ projects done sucessfully!</h2>
-                <a href="#" class="btn-hire">Hire me</a>
               </div>
             </div>
           </div>
