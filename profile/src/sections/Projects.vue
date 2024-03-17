@@ -12,8 +12,8 @@
 					<div class="project">
 						<div class="desc">
 							<div class="con">
-								<h3><a>{{ v.name }}</a></h3>
-								<span>{{ v.description }}</span>
+								<h3><a style="color: #FF474C;">{{ v.name }}</a></h3>
+								<span style="color: black;">{{ v.description }}</span>
 								<p class="icon">
 									<span v-if="v.showRepository"><a href="#" target="_blank"><i class="icon-eye"></i> Github</a></span>
 									<span v-if="v.showSite"><a :href="v.url" target="_blank"><i class="icon-heart"></i> Documentación</a></span>
