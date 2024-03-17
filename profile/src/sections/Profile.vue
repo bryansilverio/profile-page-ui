@@ -22,7 +22,7 @@
             </div>
             <div class="colorlib-footer">
               <ul>
-                <li v-for="(v, i) in socialNetworks" :key="i" style="display: inline; margin: 20px;">
+                <li v-for="(v, i) in socialNetworks" :key="i" style="display: inline; margin-right: 20px;">
                   <font-awesome-icon 
                     @click="goToContactSiteOnClick(v.url)" size="2x" :icon="v.icon" :style="{ color: '#FF474C', cursor: 'pointer' }" />
                 </li>

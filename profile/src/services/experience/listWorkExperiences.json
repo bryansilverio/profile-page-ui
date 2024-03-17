@@ -1,13 +1,24 @@
 [
     {
+        "id": "SOFTWARE_EXPERT_DEVELOPMENT",
+        "position": "Software Expert Development",
+        "company": "BBVA",
+        "logo": "/assets/images/companies/bbva.png",
+        "link": "https://www.bbva.mx/",
+        "date": "Junio 2023 - Actualmente",
+        "number": "2023",
+        "content": "Participación en el área de Operaciones tomando como principal enfoque las APIs que la app BBVA Mx usa y revisando y validando los cambios que suben a producción y coordinar la gestión de las pruebas de versionados de arquitecturas.",
+        "projects":[]
+    },
+    {
         "id": "JAVA_DEVELOPER",
         "position": "Desarrollador Java",
         "company": "GoNet",
         "logo": "/assets/images/companies/gonet.png",
         "link": "https://www.gonet.us/",
-        "date": "Mayo 2021 - Actualmente",
+        "date": "Mayo 2021 - Junio 2023",
         "number": "2021",
-        "content": "Participación en proyecto dentro de BBVA relacionado con la banca, desarrollo de APIs/microservicios usando Restful, usando Java, RAML para documentar APIs, Kanban (Jira).",
+        "content": "Asignado a BBVA, en donde participe en proyectos con la necesidad de construir APIs para exponer funcionalidad bancaria a terceros exponiendo APIs.",
         "projects": [
             {
                 "id": "MOBILE-RETAIL-SERVICING",
@@ -120,7 +131,7 @@
         "link": "https://bitfx.mx/",
         "date": "Agosto 2019 - Abril 2021",
         "number": "2019",
-        "content": "Participación en proyectos como fullstack, backend (PHP Laravel), Frontend (VueJS, Vuetify), base de datos (MySQL, Eloquent), control de versiones (GIT).",
+        "content": "Participe en la migración de la plataforma LOOP, la cual consistía en una plataforma la gestión de los servicios de transporte ejecutivos, participe en el 80% del proyecto, desde el análisis, construcción de la arquitectura, implementación de APIs y backend, y desarrollo frontend, esta nueva versión de la plataforma LOOP, permitió que se tuviera una mejor experiencia de usuario y usar nueva funcionalidad que en la versión anterior no era posible. También tuve participación en el proyecto de la planta de San Luis Potosí BMW, este proyecto permitió que la planta pudiera automatizar procesos para la generación de instrucciones de seguridad para los empleados en la planta.",
         "projects": [
             {
                 "id": "LOOP",
@@ -243,7 +254,7 @@
         "link": "https://www.tasisoft.com/",
         "date": "Enero 2018 - Agosto 2019",
         "number": "2018",
-        "content": "Participación en proyectos (.NET Framework) y soporte a plataforma de reclutamiento.",
+        "content": "Participe en proyectos web en donde la tecnología principal fue C#, construcción de plataforma web para la envasadora de Querétaro IEQSA, adicional realice la construcción de la nueva versión de la plataforma de la empresa.",
         "projects": [
             {
                 "id": "IEQSA",
@@ -341,7 +352,7 @@
         "link": "https://dwit.mx/",
         "date": "Agosto 2017 - Noviembre 2017",
         "number": "2017",
-        "content": "Participación de proyecto (.NET Framework) relacionado con logística, Ryder y DHL, usando arquitectura SOA.",
+        "content": "Participación en desarrollo de una plataforma web con enfoque logístico para los envíos de paquetes de la empresa Ryder. En este proyecto se realizó una conexión con el Web Service DHL para obtener envíos de los paquetes.",
         "projects": [
             {
                 "id": "RYDER",
@@ -396,7 +407,7 @@
         "link": "https://business-pro.com.mx/",
         "date": "Agosto 2015 - Agosto 2017",
         "number": "2015",
-        "content": "Participación de proyectos web como fullstack, backend (Java, .NET Framework), frontend (Javascript, Html), base de datos (SQL Server, MySQL), control de versiones (GIT).",
+        "content": "Desarrollador web, en donde desarrolle diferentes aplicaciones web, participando desde el análisis, diseño de base de datos, desarrollo backend y frontend.",
         "projects": [
             {
                 "id": "RMK",
