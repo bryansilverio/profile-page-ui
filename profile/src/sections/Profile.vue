@@ -1,5 +1,5 @@
 <template>
-  <section id="colorlib-hero" class="js-fullheight" data-section="home" style="margin-bottom: -200px;">
+  <section id="colorlib-hero" class="js-fullheight" data-section="colorlib-hero" style="margin-bottom: -200px;">
     <div class="flexslider js-fullheight">
       <ul class="slides">
         <li>
