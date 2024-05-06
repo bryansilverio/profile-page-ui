@@ -11,19 +11,19 @@
         aria-controls="navbar">
         <i></i>
       </a>
-      <NavDesktop />
+      <Nav />
       <router-view />
     </div>
   </div>
 </template>
 <script>
-import NavDesktop from "@/sections/NavDesktop.vue"
 
 import { defineComponent } from "vue";
+import Nav from "@/sections/Nav.vue"
 export default defineComponent({
   name: "AppLayout",
-  components: {
-    NavDesktop
+  components:{
+    Nav
   },
   data(){
     return {

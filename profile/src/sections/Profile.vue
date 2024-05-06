@@ -1,32 +1,26 @@
 <template>
-  <section id="colorlib-hero" class="js-fullheight" data-section="home">
+  <section id="colorlib-hero" class="js-fullheight" data-section="home" style="margin-bottom: -200px;">
     <div class="flexslider js-fullheight">
       <ul class="slides">
         <li>
           <div class="overlay"></div>
-          <div class="container-fluid" style="margin-top: 100px;">
+          <div class="container-fluid" style="margin-top: 200px;">
             <div class="row">
-              <div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight">
+              <div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight">            
                 <div class="slider-text-inner js-fullheight">
+                  <img class="author-img" src="assets/images/profile-pic.png" style="width: 15%;border-radius: 100%;"/>
                   <div class="desc">
                     <h1><span style="font-size: medium;">{{$t('greeting')}}</span> <br><span style="color: #FF474C;">{{$t('name')}}</span></h1>
                     <h4>{{$t('position')}}</h4>
-                    <p>
-                      <a class="btn btn-primary btn-learn">{{ $t('buttons.downloadCV') }} 
-                        <font-awesome-icon @click="openCVOnClick()" icon="fa-solid fa-angles-down" :style="{  cursor: 'pointer' }" />
-                      </a>
-                    </p>
+                    <ul class="socialNetworks">
+                      <li v-for="(v, i) in socialNetworks" :key="i">
+                        <font-awesome-icon
+                          @click="goToContactSiteOnClick(v.url)" size="2x" :icon="v.icon" :style="{ color: '#FF474C', cursor: 'pointer' }" />
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="colorlib-footer">
-              <ul>
-                <li v-for="(v, i) in socialNetworks" :key="i" style="display: inline; margin-right: 20px;">
-                  <font-awesome-icon 
-                    @click="goToContactSiteOnClick(v.url)" size="2x" :icon="v.icon" :style="{ color: '#FF474C', cursor: 'pointer' }" />
-                </li>
-              </ul>
             </div>
           </div>
         </li>
@@ -34,6 +28,15 @@
       </div>
   </section>
 </template>
+<style>
+.socialNetworks {
+  display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    justify-content: space-evenly;
+}
+</style>
 <script>
 import { defineComponent } from 'vue'
 import listSocialNetworkService from '@/services/socialNetworks/listSocialNetworkService';

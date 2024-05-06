@@ -220,12 +220,14 @@ figure {
             color: #2c98f0; }
 
 .container-wrap {
-  max-width: 1170px;
+  max-width: max-content;
   margin: 0 auto; }
 
 #colorlib-main {
-  width: calc(100% - 350px);
+  width: calc(100% - 50px);
   float: right;
+  padding-left: 20rem;
+  padding-right: 20rem;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s; }
@@ -384,8 +386,8 @@ body.offcanvas {
 .colorlib-about,
 .colorlib-services,
 .colorlib-contact {
-  padding-top: 4em;
-  padding-bottom: 9em;
+  padding-top: 0em;
+  padding-bottom: 2em;
   clear: both;
   width: 100%;
   display: block; }
