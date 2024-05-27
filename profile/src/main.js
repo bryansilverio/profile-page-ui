@@ -1,7 +1,7 @@
 import { createApp } from 'vue';
 import App from "@/App.vue";
-import { i18n } from "@/translation/i18n";
-import router from '@/router/index.js'
+import { i18n } from "@/config/i18n/i18n";
+import router from '@/config/router/index.js'
 //import '@/index.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css';

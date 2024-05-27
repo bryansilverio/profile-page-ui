@@ -1,0 +1,9 @@
+.services .icon::before{
+    border-color: #222233;
+}
+.services .icon::after{
+    border-color: #222233;
+}
+.services .icon{
+    background: #222233;
+}

@@ -4,7 +4,7 @@
         "name":"Email",
         "icon":"fa-solid fa-envelope",
         "image":"./assets/images/email.png",
-        "url":"mailto:bryansilverio12@gmail.com",
+        "url":"bryansilverio12@gmail.com",
         "show":true
     },
     {
