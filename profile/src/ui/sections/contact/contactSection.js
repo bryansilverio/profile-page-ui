@@ -1,4 +1,4 @@
-import getSocialNetworkByTypeService from '@/services/socialNetworks/getSocialNetworkByTypeService';
+import listSocialNetworkService from '@/services/socialNetworks/listSocialNetworkService';
 export default {
   name: "Projects",
   props:{
@@ -7,10 +7,10 @@ export default {
 		default: ''
 	}
   },
-  mixins: [getSocialNetworkByTypeService],
+  mixins: [listSocialNetworkService],
   computed: {
-    socialNetwork() {
-      return this.executeGetSocialNetworksByType(this.socialNetworkType);
+    socialNetworks() {
+      return this.executeListSocialNetworks();
     }
   }
 };

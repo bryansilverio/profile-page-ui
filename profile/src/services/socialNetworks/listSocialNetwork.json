@@ -13,14 +13,14 @@
         "icon":"fa-brands fa-wordpress",
         "image":"",
         "url":"https://bryansilverio.wordpress.com",
-        "show":true
+        "show":false
     },
     {
         "id":"LINKEDIN",
         "name":"Linkedin",
         "icon":"fa-brands fa-linkedin",
         "image":"./assets/images/linkedin.png",
-        "url":"https://www.linkedin.com/in/bryan-silverio-6b417098",
+        "url":"https://www.linkedin.com/in/bryan-silverio/",
         "show":true
     },
     {

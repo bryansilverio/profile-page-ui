@@ -3,8 +3,7 @@
 		<div class="colorlib-narrow-content">
 			<div class="row">
 				<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-					<span class="heading-meta">{{ $t('sections.experience') }}</span>
-					<h2 class="colorlib-heading animate-box">{{ $t('sections.experienceText') }}</h2>
+					<h2 class="colorlib-heading animate-box">{{ $t('sections.experience') }}</h2>
 				</div>
 			</div>
 			<div class="row">
@@ -15,17 +14,17 @@
 								<div class="timeline-icon color-1">
 									<font-awesome-icon icon="fa-solid fa-briefcase" :style="{ color: '#fff' }" />
 								</div>
-								<div class="timeline-label">
+								<div class="timeline-label" style="background:none;padding-top:0px">
 									<h2 style="font-weight: bold;">
-										<span style="color: black;">{{ v.position }}</span> 
-										<span style="color: black;"> en </span> 
+										<span style="color: white;">{{ v.position }}</span> 
+										<span style="color: white;"> en </span> 
 										<a :href="v.link" target="_blank">
 											<span style="color: #FF474C; opacity: 1;"> {{ v.company }} </span>
 										</a>
 										<span> - </span>
-										<span style="color: black;">{{ v.date }}</span>
+										<span style="color: white;">{{ v.date }}</span>
 									</h2>
-									<p style="color: black;">{{ v.content }}</p>
+									<p style="color: white;">{{ v.content }}</p>
 								</div>
 							</div>
 						</article>

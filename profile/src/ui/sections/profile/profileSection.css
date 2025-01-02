@@ -5,3 +5,10 @@
       padding: 0;
       justify-content: space-evenly;
   }
+  
+  @media screen and (max-width: 768px){
+	#profile-section{
+		height:0px;
+	}
+}
+ 
