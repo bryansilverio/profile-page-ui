@@ -1,13 +1,3 @@
-<template>
-<div class="slider">
-	<div class="slide-track">
-		<div class="slide" v-for="(v,i) in values" :key="i">
-			<img :src="v.icon" height="100" width="100" alt="" />
-		</div>
-	</div>
-</div>
-</template>
-<style>
 @mixin white-gradient {
 	background: linear-gradient(
 		to right,
@@ -66,21 +56,3 @@
 		width: 250px;
 	}
 }
-</style>
-<script>
-import { defineComponent } from 'vue'
-import { useI18n } from 'vue-i18n-pico'
-
-export default defineComponent({
-    name: "Carrusel",
-    props: {
-        values: {
-            type: Array
-        }
-    },
-    setup() {
-        const { t } = useI18n()
-        return { t }
-    }
-});
-</script>

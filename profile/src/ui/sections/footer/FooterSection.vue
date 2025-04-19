@@ -1,3 +1,4 @@
+<script src="./footerSection.js"></script>
 <template>
     <div class="colorlib-footer" style="text-align: center;">
         <p style="color: #FF474C;">Copyright &#169;
@@ -8,4 +9,3 @@
     </div>
 
 </template>
-<script src="./footerSection.js"></script>

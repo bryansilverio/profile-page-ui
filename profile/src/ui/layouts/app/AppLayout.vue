@@ -1,3 +1,4 @@
+<script src="./appLayout.js"></script>
 <template>
   <div class="colorlib-page">
     <div class="container-wrap">
@@ -16,5 +17,4 @@
     </div>
   </div>
 </template>
-<script src="./appLayout.js"></script>
   

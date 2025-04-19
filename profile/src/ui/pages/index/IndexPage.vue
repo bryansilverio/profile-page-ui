@@ -1,3 +1,4 @@
+<script src="./indexPage.js"></script>
 <template>
     <div id="colorlib-main">
         <Profile />
@@ -9,4 +10,3 @@
         <Footer />
     </div>
 </template>
-<script src="./indexPage.js"></script>

@@ -1,3 +1,5 @@
+<script src="./skillsSection.js"></script>
+<style src="./skillsSection.css"></style>
 <template>
     <section class="colorlib-skills" data-section="skills" id="skills">
         <div class="colorlib-narrow-content">
@@ -16,5 +18,3 @@
         </div>
     </section>
 </template>
-<script src="./skillsSection.js"></script>
-<style src="./skillsSection.css"></style>

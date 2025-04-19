@@ -1,3 +1,4 @@
+<script src="./contactSection.js"></script>
 <template>
 	<section class="colorlib-contact" data-section="contact" id="contact">
 		<div class="colorlib-narrow-content">
@@ -25,4 +26,3 @@
 		</div>
 	</section>
 </template>
-<script src="./contactSection.js"></script>

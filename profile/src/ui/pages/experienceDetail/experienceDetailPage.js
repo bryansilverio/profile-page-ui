@@ -2,7 +2,7 @@ import { defineComponent } from 'vue'
 import { useI18n } from 'vue-i18n-pico'
 
 import getWorkExperiencesService from "@/services/experience/getWorkExperiencesService.js"
-import PageTitle from '@/ui/components/basics/PageTitle.vue';
+import PageTitle from '@/ui/components/basics/pageTitle/PageTitle.vue';
 
 export default defineComponent({
     name: "ExperienceDetailPage",

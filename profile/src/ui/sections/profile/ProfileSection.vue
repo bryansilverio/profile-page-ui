@@ -1,3 +1,5 @@
+<style src="./profileSection.css"></style>
+<script src="./profileSection.js"></script>
 <template>
   <section id="colorlib-hero" class="js-fullheight" data-section="colorlib-hero" style="margin-bottom: -200px;">
     <div class="flexslider js-fullheight">
@@ -43,5 +45,3 @@
       </div>
   </section>
 </template>
-<style src="./profileSection.css"></style>
-<script src="./profileSection.js"></script>

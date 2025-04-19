@@ -1,3 +1,4 @@
+<script src="./projectsSection.js"></script>
 <template>
 	<section class="colorlib-work" data-section="projects" id="projects">
 		<div class="colorlib-narrow-content">
@@ -25,4 +26,3 @@
 		</div>
 	</section>
 </template>
-<script src="./projectsSection.js"></script>

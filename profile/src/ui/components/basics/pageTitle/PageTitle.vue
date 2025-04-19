@@ -1,3 +1,4 @@
+<script src="./pageTitle.js"></script>
 <template>
     <section class="section w-full mx-auto lg:w-[740px] pb-24">
         <h1 class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 lg:pb-10">
@@ -13,22 +14,3 @@
         </h1>
     </section>
 </template>
-<script>
-import { defineComponent } from 'vue'
-import { useI18n } from 'vue-i18n-pico'
-
-export default defineComponent({
-    name: "PageTitle",
-    setup() {
-        const { t } = useI18n()
-        return { t }
-    },
-    props: {
-        logo: String,
-        company: String,
-        position: String,
-        date: String,
-        content: String
-    }
-});
-</script>

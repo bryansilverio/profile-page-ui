@@ -1,5 +1,5 @@
 import listSkillsService from '@/services/skills/listSkillsService'
-import Carrusel from '@/ui/components/basics/Carrusel.vue'
+import Carrusel from '@/ui/components/basics/carrusel/Carrusel.vue'
 import { defineComponent } from 'vue'
 export default defineComponent({
     name: "Skills",

@@ -1,3 +1,4 @@
+<script src="./experienceSection.js"></script>
 <template>
 	<section class="colorlib-experience" data-section="experience" id="experience">
 		<div class="colorlib-narrow-content">
@@ -40,4 +41,3 @@
 		</div>
 	</section>
 </template>
-<script src="./experienceSection.js"></script>

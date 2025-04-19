@@ -1,3 +1,5 @@
+<script src="./aboutSection.js"></script>
+<style src="./aboutSection.css"/>
 <template>
   <section class="colorlib-about" data-section="about" id="about">
     <div class="colorlib-narrow-content">
@@ -16,5 +18,3 @@
     </div>
   </section>
 </template>
-<script src="./aboutSection.js"></script>
-<style src="./aboutSection.css"/>

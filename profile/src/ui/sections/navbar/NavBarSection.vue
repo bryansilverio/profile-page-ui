@@ -1,3 +1,5 @@
+<style src="./navbarSection.css"></style>
+<script src="./navbarSection.js"></script>
 <template>
 	<nav id="colorlib-main-menu" role="navigation" class="navbar">
 		<!--
@@ -17,6 +19,3 @@
 		</div>
 	</nav>
 </template>
-
-<style src="./navbarSection.css"></style>
-<script src="./navbarSection.js"></script>
