@@ -2,7 +2,7 @@ import listSocialNetworksData from './listSocialNetwork.json'
 export default {
 	methods: {
 		executeListSocialNetworks() {
-			return listSocialNetworksData.filter(x=>x.show);
+			return listSocialNetworksData.filter(x=>x.show) ?? [];
 		}
 	}
 };
