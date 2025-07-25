@@ -1,8 +1,8 @@
-import listSocialNetworksData from './listSocialNetwork.json'
+import listSocialNetworksData from "./listSocialNetwork.json";
 export default {
-	methods: {
-		executeGetSocialNetworksByType(id='') {
-			return listSocialNetworksData.find(x=>x.id==id) ?? {};
-		}
-	}
+  methods: {
+    executeGetSocialNetworksByType(id = "") {
+      return listSocialNetworksData.find((x) => x.id == id) ?? {};
+    },
+  },
 };

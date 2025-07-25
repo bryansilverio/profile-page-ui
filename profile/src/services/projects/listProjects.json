@@ -1,10 +1,10 @@
 [
-    {
-        "id":"ApiLibraryExtensionsFilters",
-        "name":"Api Library Extensions Filters",
-        "description":"Esta librería fue desarrollada para dar a la respuesta un formato estándar cuando ocurría un error técnico y controlar los errores funcionales o las validaciones de solicitudes en las solicitudes de API.",
-        "url":"https://www.nuget.org/packages/Api.Http.Extensions.Filters.ExceptionHandler",
-        "showRepository":false,
-        "showSite":true
-    }
+  {
+    "id": "ApiLibraryExtensionsFilters",
+    "name": "Api Library Extensions Filters",
+    "description": "Esta librería fue desarrollada para dar a la respuesta un formato estándar cuando ocurría un error técnico y controlar los errores funcionales o las validaciones de solicitudes en las solicitudes de API.",
+    "url": "https://www.nuget.org/packages/Api.Http.Extensions.Filters.ExceptionHandler",
+    "showRepository": false,
+    "showSite": true
+  }
 ]

@@ -1,42 +1,42 @@
 [
-    {
-        "id":"EMAIL",
-        "name":"Email",
-        "icon":"uil uil-envelope",
-        "image":"./assets/images/email.png",
-        "url":"bryansilverio12@gmail.com",
-        "show":true
-    },
-    {
-        "id":"WORDPRESS",
-        "name":"Wordpress",
-        "icon":"uil uil-wordpress-alt",
-        "image":"",
-        "url":"https://bryansilverio.wordpress.com",
-        "show":false
-    },
-    {
-        "id":"LINKEDIN",
-        "name":"Linkedin",
-        "icon":"uil uil-linkedin-alt",
-        "image":"./assets/images/linkedin.png",
-        "url":"https://www.linkedin.com/in/bryan-silverio/",
-        "show":true
-    },
-    {
-        "id":"GITHUB",
-        "name":"GitHub",
-        "icon":"uil uil-github-alt",
-        "image":"",
-        "url":"https://github.com/bryansilverio",
-        "show":true
-    },
-    {
-        "id":"PHONE",
-        "name":"Tel",
-        "icon":"uil uil-github-alt",
-        "image":"",
-        "url":"+52 4423831175",
-        "show":true
-    }
+  {
+    "id": "EMAIL",
+    "name": "Email",
+    "icon": "uil uil-envelope",
+    "image": "./assets/images/email.png",
+    "url": "bryansilverio12@gmail.com",
+    "show": true
+  },
+  {
+    "id": "WORDPRESS",
+    "name": "Wordpress",
+    "icon": "uil uil-wordpress-alt",
+    "image": "",
+    "url": "https://bryansilverio.wordpress.com",
+    "show": false
+  },
+  {
+    "id": "LINKEDIN",
+    "name": "Linkedin",
+    "icon": "uil uil-linkedin-alt",
+    "image": "./assets/images/linkedin.png",
+    "url": "https://www.linkedin.com/in/bryan-silverio/",
+    "show": true
+  },
+  {
+    "id": "GITHUB",
+    "name": "GitHub",
+    "icon": "uil uil-github-alt",
+    "image": "",
+    "url": "https://github.com/bryansilverio",
+    "show": true
+  },
+  {
+    "id": "PHONE",
+    "name": "Tel",
+    "icon": "uil uil-github-alt",
+    "image": "",
+    "url": "+52 4423831175",
+    "show": true
+  }
 ]

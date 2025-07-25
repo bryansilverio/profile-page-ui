@@ -1,8 +1,8 @@
-import listWorkExperiencesData from './listWorkExperiences.json'
+import listWorkExperiencesData from "./listWorkExperiences.json";
 export default {
-	methods: {
-		executeListWorkExperiences() {
-			return listWorkExperiencesData ?? [];
-		}
-	}
+  methods: {
+    executeListWorkExperiences() {
+      return listWorkExperiencesData ?? [];
+    },
+  },
 };

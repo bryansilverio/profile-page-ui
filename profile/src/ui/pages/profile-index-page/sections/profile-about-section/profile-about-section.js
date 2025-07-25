@@ -1,16 +1,13 @@
-import { defineComponent } from 'vue'
-import listContactDetailsService from '@/services/contactDetails/listContactDetailsService';
-import listSkillsService from '@/services/skills/listSkillsService'
+import { defineComponent } from "vue";
+import listContactDetailsService from "@/services/contactDetails/listContactDetailsService";
+import listSkillsService from "@/services/skills/listSkillsService";
 export default defineComponent({
   name: "profile-about-section",
-  mixins: [
-    listContactDetailsService,
-    listSkillsService
-  ],
+  mixins: [listContactDetailsService, listSkillsService],
   methods: {
     goToExperienceSectionOnClick() {
-      location.href = '#experience'
-    }
+      location.href = "#experience";
+    },
   },
   computed: {
     socialNetworks() {
@@ -27,6 +24,6 @@ export default defineComponent({
     },
     devtoolSkills() {
       return this.executeListSkillsDevtools();
-    }
-  }
+    },
+  },
 });

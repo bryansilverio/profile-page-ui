@@ -1,4 +1,4 @@
-import { defineComponent } from 'vue'
+import { defineComponent } from "vue";
 export default defineComponent({
-	name: "profile-navbar-section"
+  name: "profile-navbar-section",
 });

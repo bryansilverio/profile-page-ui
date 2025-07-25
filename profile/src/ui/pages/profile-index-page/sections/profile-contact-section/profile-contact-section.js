@@ -1,4 +1,4 @@
-import listContactDetailsService from '@/services/contactDetails/listContactDetailsService';
+import listContactDetailsService from "@/services/contactDetails/listContactDetailsService";
 export default {
   name: "profile-contact-section",
 
@@ -12,6 +12,6 @@ export default {
     },
     contactDetailsPhone() {
       return this.executeGetContactDetailsPhone();
-    }
-  }
+    },
+  },
 };
