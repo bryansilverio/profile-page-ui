@@ -13,7 +13,7 @@
           <a href="#about">{{ $t("menu.aboutMe") }}</a>
         </li>
         <li class="footer_menu_list">
-          <a href="#projects">{{ $t("menu.projects") }}</a>
+          <a href="#experience">{{ $t("menu.experience") }}</a>
         </li>
         <li class="footer_menu_list">
           <a href="#contact">{{ $t("menu.contact") }}</a>
@@ -22,7 +22,7 @@
     </div>
     <div class="footer-social-icons">
       <div class="icon" v-for="(v, i) in contactDetails" :key="i">
-        <i :class="v.icon"></i>
+        <a :href="v.url"><i :class="v.icon" style="color:#D43F46"></i></a>
       </div>
     </div>
     <div class="bottom-footer">

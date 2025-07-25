@@ -17,7 +17,10 @@
       </div>
       <div class="featured-text-btn">
         <button class="btn blue-btn">
-          <i class="uil uil-envelope"></i> {{ contactDetailsEmail.url }}
+          <a :href="contactDetailsEmail.url"
+            ><i class="uil uil-envelope" style="color:white"></i>
+            <span style="color:white">{{ contactDetailsEmail.value }}</span></a
+          >
         </button>
         <button class="btn">
           {{ $t("buttons.downloadCV") }} <i class="uil uil-file-alt"></i>
@@ -29,7 +32,7 @@
           v-for="(v, i) in contactDetailSocialNetworks"
           :key="i"
         >
-          <i :class="v.icon"></i>
+          <a :href="v.url"><i :class="v.icon" style="color:#D43F46"></i></a>
         </div>
       </div>
     </div>

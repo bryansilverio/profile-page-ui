@@ -17,7 +17,7 @@
           <div class="circle"></div>
         </li>
         <li class="nav_list">
-          <a href="#projects" class="nav-link">{{ $t("menu.projects") }}</a>
+          <a href="#experience" class="nav-link">{{ $t("menu.experience") }}</a>
           <div class="circle"></div>
         </li>
         <li class="nav_list">

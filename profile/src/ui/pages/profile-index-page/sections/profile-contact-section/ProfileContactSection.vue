@@ -13,7 +13,7 @@
           </h2>
           <p>
             <i class="uil uil-envelope"></i>
-            {{ contactDetailsEmail.url }}
+            {{ contactDetailsEmail.value }}
           </p>
         </div>
       </div>
@@ -23,7 +23,7 @@
             {{ $t("profile-contact-section-phone") }}
             <i class="uil uil-corner-right-down"></i>
           </h2>
-          <p><i class="uil uil-phone"></i>{{ contactDetailsPhone.url }}</p>
+          <p><i class="uil uil-phone"></i>{{ contactDetailsPhone.value }}</p>
         </div>
       </div>
       <div class="col" v-show="false">
