@@ -4,7 +4,7 @@
 	<nav id="header">
         <div class="nav-logo">
             <p class="nav-name">BSilverio</p>
-            <span>.</span>
+            <span></span>
         </div>
         <div class="nav-menu" id="myNavMenu">
             <ul class="nav_menu_list">

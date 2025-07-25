@@ -28,5 +28,7 @@
     "linkToRepository": "Repository",
     "linkToSite": "Site",
     "downloadCV":"Download CV"
-  }
+  },
+  "profile-contact-section-email":"Email",
+  "profile-contact-section-phone":"Phone"
 }
