@@ -1,9 +1,7 @@
 import listSkillsService from "@/services/skills/listSkillsService";
-import Carrusel from "@/ui/components/basics/carrusel/Carrusel.vue";
 import { defineComponent } from "vue";
 export default defineComponent({
-  name: "Skills",
-  components: { Carrusel },
+  name: "profile-skills-section",
   mixins: [listSkillsService],
   methods: {},
   computed: {
