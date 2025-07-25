@@ -269,6 +269,30 @@ nav{
     display: flex;
     width: 50%;
 }
+.col-1{
+    display: flex;
+    width: 10%;
+}
+.col-2{
+    display: flex;
+    width: 20%;
+}
+.col-4{
+    display: flex;
+    width: 40%;
+}
+.col-6{
+    display: flex;
+    width: 60%;
+}
+.col-8{
+    display: flex;
+    width: 80%;
+}
+.col-12{
+    display: flex;
+    width: 100%;
+}
 /* -- ## --- RESUABLE CSS -- ## -- */
 .top-header{
     text-align: center;

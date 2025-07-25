@@ -11,12 +11,14 @@
       </div>
       <div class="featured-text-info">
         <p>
-          Experienced frontend developer with a passion for creating visually
-          stunning and user-friendly websites.
+          {{ $t("position") }}
         </p>
+        <p>{{ $t("fromLocation") }}</p>
       </div>
       <div class="featured-text-btn">
-        <button class="btn blue-btn">{{ contactDetailsEmail.url }}</button>
+        <button class="btn blue-btn">
+          <i class="uil uil-envelope"></i> {{ contactDetailsEmail.url }}
+        </button>
         <button class="btn">
           {{ $t("buttons.downloadCV") }} <i class="uil uil-file-alt"></i>
         </button>

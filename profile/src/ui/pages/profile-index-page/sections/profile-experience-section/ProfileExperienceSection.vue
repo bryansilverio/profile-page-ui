@@ -8,13 +8,22 @@
       class="row"
       v-for="(v, i) in experiences"
       :key="i"
-      style="margin-bottom: 5px;"
+      style="margin-bottom: 10px;"
     >
-      <div class="col">
-        <div class="about-info">
-          <h3 style="color: black;">{{ v.company }}: {{ v.position }}</h3>
-          <p>{{ v.content }}</p>
-          <img :src="v.logo" alt="" />
+      <div class="col-12">
+        <div class="row">
+          <div class="col-8">
+            <div class="featured-text-info">
+              <h3 style="color: white;">{{ v.company }}</h3>
+              <h4 style="color: white;">{{ v.position }}</h4>
+              <p style="color: gray;">{{ v.content }}</p>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="featured-text-card">
+              <span>{{ v.date }}</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>

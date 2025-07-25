@@ -12,7 +12,7 @@
             <i class="uil uil-corner-right-down"></i>
           </h2>
           <p>
-            <i class="uil uil-envelope"></i> Email:
+            <i class="uil uil-envelope"></i>
             {{ contactDetailsEmail.url }}
           </p>
         </div>
@@ -23,9 +23,7 @@
             {{ $t("profile-contact-section-phone") }}
             <i class="uil uil-corner-right-down"></i>
           </h2>
-          <p>
-            <i class="uil uil-phone"></i> Tel: {{ contactDetailsPhone.url }}
-          </p>
+          <p><i class="uil uil-phone"></i>{{ contactDetailsPhone.url }}</p>
         </div>
       </div>
       <div class="col" v-show="false">

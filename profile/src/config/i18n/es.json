@@ -1,9 +1,9 @@
 {
   "greeting": "Hola, soy",
   "name": "Bryan Silverio",
-  "about": "<p>Soy desarrollador de software, me he enfocado diseño y desarrollo de APIs y desarrollo backend, pero también trabajo con frontend.</p><p>Constantemente estoy aprendiendo y mejorando en tecnologías, herramientas, buenas prácticas para mejor mis habilidades.</p>",
+  "about": "Soy desarrollador de software, me he enfocado diseño y desarrollo de APIs y desarrollo backend, pero también trabajo con frontend. Constantemente estoy aprendiendo y mejorando en tecnologías, herramientas, buenas prácticas para mejor mis habilidades.",
   "position": "Desarrollador de software",
-  "fromLocation": "De Quéretaro, Mx.",
+  "fromLocation": "Quéretaro, Mx.",
   "brief": "Especializado en crear aplicaciones únicas.",
   "menu": {
     "home": "Inicio",

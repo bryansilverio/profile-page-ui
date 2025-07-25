@@ -7,16 +7,16 @@
     <div class="middle-footer">
       <ul class="footer-menu">
         <li class="footer_menu_list">
-          <a href="#home">Home</a>
+          <a href="#home">{{ $t("menu.home") }}</a>
         </li>
         <li class="footer_menu_list">
-          <a href="#about">About</a>
+          <a href="#about">{{ $t("menu.aboutMe") }}</a>
         </li>
         <li class="footer_menu_list">
-          <a href="#projects">Projects</a>
+          <a href="#projects">{{ $t("menu.projects") }}</a>
         </li>
         <li class="footer_menu_list">
-          <a href="#contact">Contact</a>
+          <a href="#contact">{{ $t("menu.contact") }}</a>
         </li>
       </ul>
     </div>
