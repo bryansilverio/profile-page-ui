@@ -1,5 +1,5 @@
 import { createApp } from 'vue';
-import App from "@/App.vue";
+import ProfileApp from "@/ProfileApp.vue";
 import { i18n } from "@/config/i18n/i18n";
 import router from '@/config/router/index.js'
 //import '@/index.css'
@@ -42,7 +42,7 @@ library.add(faTerminal)
 
 AOS.init();
 
-const app = createApp(App)
+const app = createApp(ProfileApp)
 app.use(i18n)
 app.use(router)
 app.component('font-awesome-icon', FontAwesomeIcon)
