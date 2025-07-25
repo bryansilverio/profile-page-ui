@@ -250,6 +250,7 @@ nav{
    background: var(--color-white);
    border-radius: 30px;
    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+   background-color: #D43F46;
 }
 .scroll-btn i{
     font-size: 20px;
@@ -475,12 +476,13 @@ footer{
     align-items: center;
     flex-direction: column;
     row-gap: 30px;
-    background: #F8F8F8;
+    background: #191924;
     padding-block: 40px 60px;
 }
 .top-footer p{
     font-size: 25px;
     font-weight: 600;
+    color: white;
 }
 .middle-footer .footer-menu{
     display: flex;
@@ -501,6 +503,7 @@ footer{
 .bottom-footer{
     font-size: 14px;
     margin-top: 10px;
+    color: white;
 }
 /* ----- MEDIA QUERY == 1024px / RESPONSIVE ----- */
 @media only screen and (max-width: 1024px){

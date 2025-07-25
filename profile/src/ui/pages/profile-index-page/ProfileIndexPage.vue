@@ -4,10 +4,10 @@
         <main class="wrapper">
             <ProfileHomeSection />
             <ProfileAboutSection />
-            <ProfileSkillsSection />
+            <ProfileSkillsSection v-show="false"/>
             <ProfileExperienceSection />
-            <ProfileProjectsSection />
-            <ProfileContactSection :socialNetworkType="'EMAIL'"/>
+            <ProfileProjectsSection v-show="false"/>
+            <ProfileContactSection/>
         </main>
         <footer>
             <ProfileFooterSection />
