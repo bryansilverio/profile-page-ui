@@ -5,17 +5,8 @@
     "icon": "uil uil-envelope",
     "url": "mailto:bryansilverio12@gmail.com",
     "value":"bryansilverio12@gmail.com",
-    "contactDetailType":"SOCIAL_NETWORK",
+    "contactDetailType":"EMAIL",
     "show": true
-  },
-  {
-    "id": "WORDPRESS",
-    "name": "Wordpress",
-    "icon": "uil uil-wordpress-alt",
-    "url": "https://bryansilverio.wordpress.com",
-    "value":"bryansilverio.wordpress.com",
-    "contactDetailType":"SOCIAL_NETWORK",
-    "show": false
   },
   {
     "id": "LINKEDIN",
@@ -40,7 +31,7 @@
     "name": "Tel",
     "icon": "uil uil-phone-alt",
     "value":"+52 4423831175",
-    "contactDetailType":"SOCIAL_NETWORK",
+    "contactDetailType":"PHONE",
     "url": "phoneto:4423831175",
     "show": true
   }

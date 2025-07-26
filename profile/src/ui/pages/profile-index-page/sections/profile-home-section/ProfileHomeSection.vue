@@ -3,7 +3,7 @@
 <template>
   <section class="featured-box" id="home">
     <div class="featured-text">
-      <div class="featured-text-card">
+      <div class="featured-text-card" v-show="false">
         <span>{{ $t("name") }}</span>
       </div>
       <div class="featured-name">
@@ -41,7 +41,7 @@
         <img src="assets/images/profile-pic.png" alt="avatar" />
       </div>
     </div>
-    <div class="scroll-icon-box">
+    <div class="scroll-icon-box" v-show="false">
       <a href="#about" class="scroll-btn">
         <i class="uil uil-mouse-alt"></i>
         <p>Scroll Down</p>
