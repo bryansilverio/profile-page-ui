@@ -11,17 +11,19 @@
       style="margin-bottom: 10px;"
     >
       <div class="col-12">
-        <div class="row">
-          <div class="col-8">
-            <div class="featured-text-info">
-              <h3 style="color: #D43F46">{{ v.company }}</h3>
-              <h4 style="color: white;">{{ v.position }}</h4>
-              <p style="color: gray;">{{ v.content }}</p>
+        <div class="about-info">
+          <div class="row">
+            <div class="col-8">
+              <div class="featured-text-info">
+                <h3 style="color: #D43F46">{{ v.company }}</h3>
+                <h4 style="color: white;">{{ v.position }}</h4>
+                <p style="color: gray; text-align:left">{{ v.content }}</p>
+              </div>
             </div>
-          </div>
-          <div class="col-2">
-            <div class="featured-text-card">
-              <span>{{ v.date }}</span>
+            <div class="col-2">
+              <div class="featured-text-card">
+                <span>{{ v.date }}</span>
+              </div>
             </div>
           </div>
         </div>

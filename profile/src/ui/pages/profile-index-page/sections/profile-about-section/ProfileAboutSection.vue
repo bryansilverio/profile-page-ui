@@ -8,7 +8,6 @@
     <div class="row">
       <div class="col-12">
         <div class="about-info">
-          <h3>My introduction</h3>
           <p>{{ $t("about") }}
           </p>
           <div class="about-btn">
